@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.livelearn.ignorance.widget.viewpager.SpringBackViewPager
+        android:id="@+id/vp_photo_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_current_item"
+        style="@style/_24sp_PaleText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/margin_36dp"
+        android:layout_marginEnd="@dimen/margin_36dp" />
+
+    <com.livelearn.ignorance.widget.indicatorbox.PointIndicator
+        android:id="@+id/pi_circle_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:orientation="horizontal"
+        app:indicator_gap="@dimen/margin_5dp"
+        app:indicator_height="2dp"
+        app:indicator_width="2dp" />
+</RelativeLayout>

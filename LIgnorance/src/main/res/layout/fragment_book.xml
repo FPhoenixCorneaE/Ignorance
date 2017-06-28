@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/fl_translucent_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#42000000"
+        android:visibility="invisible">
+
+        <com.livelearn.ignorance.widget.arclayout.ArcLayout
+            android:id="@+id/al_arc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:arc_axisRadius="160dp"
+            app:arc_freeAngle="true"
+            app:arc_origin="bottom|right"
+            app:arc_radius="140dp">
+
+
+            <Button
+                android:id="@+id/btn_dou_ban_book"
+                style="@style/_LightPurpleText"
+                android:layout_width="@dimen/width_60dp"
+                android:layout_height="@dimen/height_60dp"
+                android:background="@drawable/selector_oval_solid_normalpale_pressedlightgray"
+                android:text="豆瓣\n图书"
+                app:arc_angle="30"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btn_long_time_book"
+                style="@style/_LightPurpleText"
+                android:layout_width="@dimen/width_60dp"
+                android:layout_height="@dimen/height_60dp"
+                android:background="@drawable/selector_oval_solid_normalpale_pressedlightgray"
+                android:text="久久\n图书"
+                app:arc_angle="60"
+                tools:ignore="HardcodedText" />
+        </com.livelearn.ignorance.widget.arclayout.ArcLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_book_source"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/margin_36dp"
+        android:layout_marginEnd="@dimen/margin_36dp"
+        android:background="@drawable/selector_oval_solid_normallightpurple_presseddarkpurple"
+        android:text="+"
+        android:textColor="@color/color_pale"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+</FrameLayout>

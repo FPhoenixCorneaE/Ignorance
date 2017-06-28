@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/pcfl_pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        cube_ptr:ptr_duration_to_close_either="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/wb_web_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <!-- 网页加载进度显示 -->
+            <LinearLayout
+                android:id="@+id/ll_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible"
+                tools:ignore="UselessParent">
+
+                <ProgressBar
+                    style="@android:style/Widget.ProgressBar.Small"
+                    android:layout_width="@dimen/width_20dp"
+                    android:layout_height="@dimen/height_20dp"
+                    android:indeterminate="false"
+                    android:indeterminateDrawable="@drawable/rotate_loading" />
+
+                <TextView
+                    android:id="@+id/tv_progress"
+                    style="@style/_13sp_LightPurpleText"
+                    android:layout_marginTop="3dip"
+                    android:text="正在加载,已完成0%..."
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</LinearLayout>

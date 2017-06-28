@@ -1,0 +1,403 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/main_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/shape_divider"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <TextView
+                style="@style/_16sp_LightGreenText"
+                android:text="@string/test_smooth_compound_button_switch" />
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:checked="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/test_smooth_compound_button_system_switch"
+                android:textColor="@android:color/black" />
+
+            <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothSwitch
+                style="@style/_CompoundButton"
+                android:text="@string/test_smooth_compound_button_smooth_switch" />
+
+            <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothSwitch
+                style="@style/_CompoundButton"
+                android:adjustViewBounds="true"
+                android:text="@string/test_smooth_compound_button_smooth_switch_click_mark_only" />
+
+            <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothSwitch
+                style="@style/_CompoundButton"
+                android:cropToPadding="true"
+                android:text="@string/test_smooth_compound_button_smooth_switch_reverse_mark_position" />
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothSwitch
+                    android:id="@+id/sample_smoothswitch1"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text=""
+                    android:tint="@color/color_light_blue" />
+
+                <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothSwitch
+                    android:id="@+id/sample_smoothswitch2"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text=""
+                    android:tint="@color/selector_checkedred_normalyellow" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/_16sp_LightGreenText"
+                android:text="@string/test_smooth_compound_button_checkbox" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:checked="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/test_smooth_compound_button_system_checkbox"
+                android:textColor="@android:color/black" />
+
+            <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothCheckBox
+                style="@style/_CompoundButton"
+                android:text="@string/test_smooth_compound_button_smooth_checkbox" />
+
+            <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothCheckBox
+                style="@style/_CompoundButton"
+                android:adjustViewBounds="true"
+                android:text="@string/test_smooth_compound_button_smooth_checkbox_click_mark_only" />
+
+            <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothCheckBox
+                style="@style/_CompoundButton"
+                android:cropToPadding="true"
+                android:text="@string/test_smooth_compound_button_smooth_checkbox_reverse_mark_position" />
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/test_smooth_compound_button_appcompat_check_off"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/test_smooth_compound_button_emptytext_custom_color"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/test_smooth_compound_button_emptytext_custom_color"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/test_smooth_compound_button_appcompat_check_on"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:clickable="true"
+                    android:onClick="onClickAppCompatImageView"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_check_unchecked"
+                    android:tint="#ff6d6d6d"
+                    tools:ignore="contentDescription" />
+
+                <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothCheckBox
+                    android:id="@+id/sample_smoothcheckbox1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:checked="false"
+                    android:enabled="true"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:tint="@color/color_light_blue" />
+
+                <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothCheckBox
+                    android:id="@+id/sample_smoothcheckbox2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:checked="true"
+                    android:enabled="true"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:tint="@color/selector_checkedred_normalyellow" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:clickable="true"
+                    android:onClick="onClickAppCompatImageView"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_check_checked"
+                    android:tint="@color/color_light_blue"
+                    tools:ignore="contentDescription" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/_16sp_LightGreenText"
+                android:text="@string/test_smooth_compound_button_radio_button" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/radioButton1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/test_smooth_compound_button_system_radio_button1"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:checked="false"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/test_smooth_compound_button_system_radio_button2"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothRadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/smoothRadioButton1"
+                android:orientation="vertical">
+
+                <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothRadioButton
+                    android:id="@+id/smoothRadioButton1"
+                    style="@style/_CompoundButton"
+                    android:text="@string/test_smooth_compound_button_smooth_radio_button1_in_radio_group" />
+
+                <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothRadioButton
+                    android:id="@+id/smoothRadioButton2"
+                    style="@style/_CompoundButton"
+                    android:checked="false"
+                    android:text="@string/test_smooth_compound_button_smooth_radio_button2_in_radio_group" />
+            </com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothRadioGroup>
+
+            <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothRadioButton
+                style="@style/_CompoundButton"
+                android:adjustViewBounds="true"
+                android:checked="true"
+                android:text="@string/test_smooth_compound_button_smooth_radio_button_click_mark_only" />
+
+            <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothRadioButton
+                style="@style/_CompoundButton"
+                android:checked="true"
+                android:cropToPadding="true"
+                android:text="@string/test_smooth_compound_button_smooth_radio_button_reverse_mark_position" />
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/test_smooth_compound_button_appcompat_check_off"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/test_smooth_compound_button_emptytext_custom_color"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/test_smooth_compound_button_emptytext_custom_color"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/test_smooth_compound_button_appcompat_check_on"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:clickable="true"
+                    android:onClick="onClickAppCompatImageView"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_radio_unselected"
+                    android:tint="#ff6d6d6d"
+                    tools:ignore="contentDescription" />
+
+                <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothRadioButton
+                    android:id="@+id/sample_smoothradiobutton1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:checked="false"
+                    android:text=""
+                    android:tint="@color/color_light_blue" />
+
+                <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothRadioButton
+                    android:id="@+id/sample_smoothradiobutton2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:checked="true"
+                    android:text=""
+                    android:tint="@color/selector_checkedred_normalyellow" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:clickable="true"
+                    android:onClick="onClickAppCompatImageView"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_radio_selected"
+                    android:tint="@color/color_light_blue"
+                    tools:ignore="contentDescription" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/_16sp_LightGreenText"
+                android:text="@string/test_smooth_compound_button_control_test" />
+
+            <CheckBox
+                android:id="@+id/ctrl_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:checked="true"
+                android:maxLines="1"
+                android:text="@string/test_smooth_compound_button_enabled_ctrl"
+                android:textColor="@android:color/black" />
+
+            <CheckBox
+                android:id="@+id/ctrl_checked_noanimation"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:checked="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/test_smooth_compound_button_checked_ctrl_no_anim"
+                android:textColor="@android:color/black" />
+
+            <CheckBox
+                android:id="@+id/ctrl_checked_withanimation"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:checked="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/test_smooth_compound_button_checked_ctrl_with_anim"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/test_smooth_compound_button_test_in_clickable_viewgroup" />
+
+                <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <com.livelearn.ignorance.widget.smoothcompoundbutton.SmoothCheckBox
+                android:layout_width="56dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="16dp"
+                android:onClick="saveSamplePicture"
+                android:text="@string/test_smooth_compound_button_save_this_sample_as_picture" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

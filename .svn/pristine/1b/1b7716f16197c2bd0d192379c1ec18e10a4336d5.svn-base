@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dialog_width">280dp</dimen>
+    <dimen name="actionBarHeight">48dp</dimen>
+    <dimen name="image_width_standard">100dp</dimen>
+
+    <!--shadow.xml-->
+    <dimen name="cardPadding">2px</dimen>
+    <dimen name="cardRadius">10dp</dimen>
+
+    <dimen name="margin_2dp">2dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_50dp">50dp</dimen>
+
+    <dimen name="textsize_14sp">14sp</dimen>
+    <dimen name="textsize_16sp">16sp</dimen>
+    <dimen name="textsize_18sp">18sp</dimen>
+    <dimen name="textsize_20sp">20sp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+</resources>

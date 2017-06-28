@@ -1,0 +1,414 @@
+[
+    {
+        "outputFile": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 53,
+                    "endOffset": 104
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 53,
+                        "endOffset": 104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 109,
+                    "endColumn": 68,
+                    "endOffset": 173
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 68,
+                        "endOffset": 173
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 178,
+                    "endColumn": 50,
+                    "endOffset": 224
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 178,
+                        "endColumn": 50,
+                        "endOffset": 224
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 229,
+                    "endColumn": 51,
+                    "endOffset": 276
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 51,
+                        "endOffset": 276
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 281,
+                    "endColumn": 51,
+                    "endOffset": 328
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 281,
+                        "endColumn": 51,
+                        "endOffset": 328
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1918,
+                    "endColumn": 54,
+                    "endOffset": 1968
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1918,
+                        "endColumn": 54,
+                        "endOffset": 1968
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1973,
+                    "endColumn": 65,
+                    "endOffset": 2034
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1973,
+                        "endColumn": 65,
+                        "endOffset": 2034
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 2039,
+                    "endColumn": 54,
+                    "endOffset": 2089
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 2039,
+                        "endColumn": 54,
+                        "endOffset": 2089
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 2094,
+                    "endColumn": 61,
+                    "endOffset": 2151
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 2094,
+                        "endColumn": 61,
+                        "endOffset": 2151
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 2156,
+                    "endColumn": 60,
+                    "endOffset": 2212
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 2156,
+                        "endColumn": 60,
+                        "endOffset": 2212
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 2217,
+                    "endColumn": 56,
+                    "endOffset": 2269
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 2217,
+                        "endColumn": 56,
+                        "endOffset": 2269
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 2274,
+                    "endColumn": 58,
+                    "endOffset": 2328
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 2274,
+                        "endColumn": 58,
+                        "endOffset": 2328
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2333,
+                    "endColumn": 81,
+                    "endOffset": 2410
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 2333,
+                        "endColumn": 81,
+                        "endOffset": 2410
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2415,
+                    "endColumn": 78,
+                    "endOffset": 2489
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2415,
+                        "endColumn": 78,
+                        "endOffset": 2489
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2494,
+                    "endColumn": 72,
+                    "endOffset": 2562
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 2494,
+                        "endColumn": 72,
+                        "endOffset": 2562
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2567,
+                    "endColumn": 64,
+                    "endOffset": 2627
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 2567,
+                        "endColumn": 64,
+                        "endOffset": 2627
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2632,
+                    "endLine": 32,
+                    "endColumn": 12,
+                    "endOffset": 3160
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 2632,
+                        "endLine": 32,
+                        "endColumn": 12,
+                        "endOffset": 3160
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 3165,
+                    "endColumn": 70,
+                    "endOffset": 3231
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 3165,
+                        "endColumn": 70,
+                        "endOffset": 3231
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 3236,
+                    "endLine": 43,
+                    "endColumn": 12,
+                    "endOffset": 3901
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 3236,
+                        "endLine": 43,
+                        "endColumn": 12,
+                        "endOffset": 3901
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 3906,
+                    "endLine": 46,
+                    "endColumn": 12,
+                    "endOffset": 4059
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 3906,
+                        "endLine": 46,
+                        "endColumn": 12,
+                        "endOffset": 4059
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 4064,
+                    "endLine": 49,
+                    "endColumn": 12,
+                    "endOffset": 4208
+                },
+                "from": {
+                    "file": "D:\\openproject\\Ignorance\\SmoothProgressBar\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 4064,
+                        "endLine": 49,
+                        "endColumn": 12,
+                        "endOffset": 4208
+                    }
+                }
+            }
+        ]
+    }
+]

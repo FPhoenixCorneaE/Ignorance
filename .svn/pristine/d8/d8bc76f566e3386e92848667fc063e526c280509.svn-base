@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#0055ff</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--basic颜色-->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="red">#FFFF0000</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="purple">#FFAA66CC</color>
+    <color name="darker_gray">#FFAAAAAA</color>
+    <color name="lighter_gray">#FFDDDDDD</color>
+
+    <!--全局背景-->
+    <color name="bg_base">#AE96BC</color>
+
+    <color name="login_thirdparty">#a1b2c3</color>
+
+    <color name="black_overlay">#00000000</color>
+    <!--状态栏颜色-->
+    <color name="status_bar">#0099cc</color>
+
+    <color name="dummy">#22AE96BC</color>
+
+
+    <!--shadow.xml,边缘雾化效果-->
+    <color name="cardBodyColor">#FFFFFF</color>
+    <color name="cardShadowColor_1">#0a8c8c8c</color>
+    <color name="cardShadowColor_2">#0f898989</color>
+    <color name="cardShadowColor_3">#14898989</color>
+    <color name="cardShadowColor_4">#19898989</color>
+    <color name="cardShadowColor_5">#1e898989</color>
+    <color name="cardShadowColor_6">#23898989</color>
+    <color name="cardShadowColor_7">#28898989</color>
+    <color name="cardShadowColor_8">#2d898989</color>
+
+    <!--MaterialLoginView-->
+    <color name="material_login_login_title_color">#ffffff</color>
+    <color name="material_login_register_title_color">#ffffff</color>
+    <color name="material_login_login_color">#ff0000ff</color>
+    <color name="material_login_register_color">#ff0000ff</color>
+    <color name="material_login_register_fab">#579FE2</color>
+    <color name="material_login_login_error_color">#ff5151</color>
+    <color name="material_login_register_error_color">#ffcdce</color>
+    <color name="material_login_login_text_color">#FFFFFF</color>
+    <color name="material_login_register_text_color">#FFFFFF</color>
+
+    <!--RippleView-->
+    <color name="rippelColor">#FFFFFF</color>
+</resources>

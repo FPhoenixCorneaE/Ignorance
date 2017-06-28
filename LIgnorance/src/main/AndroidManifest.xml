@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.livelearn.ignorance">
+
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 允许程序访问有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- 允许程序访问Wi-Fi网络状态信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 允许程序改变Wi-Fi连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- 操作外部存储设备文件(写权限包含了读权限) -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 允许挂载和反挂载文件系统可移动存储 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 允许一个程序初始化一个电话拨号不需通过拨号用户界面需要用户确认 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 请求访问使用照相设备 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 允许程序连接到已配对的蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!-- 允许程序发现和配对蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+
+    <!-- AGPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 通过GPS芯片接收卫星的定位信息，定位精度达10米以内 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 录音时需要的权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 发送短信 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- 收短信 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- 读短信 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!-- 获取APN信息 -->
+    <uses-permission android:name="Android.permission.WRITE_APN_SETTINGS" />
+
+    <application
+        android:name=".application.IgnoranceApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/mybackupscheme"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Base">
+
+        <!-- 启动界面 -->
+        <activity
+            android:name=".ui.activity.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 导航界面 -->
+        <activity
+            android:name=".ui.activity.GuideActivity"
+            android:theme="@style/FullscreenTheme" />
+
+        <!-- 登录界面 -->
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 主界面 -->
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:theme="@style/AppThemeMain" />
+
+        <!-- PhotoPicker 拍照或者从相册选择图片 -->
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- PhotoPicker 图片预览界面 -->
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- UCrop 剪裁图片界面 -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试主界面 -->
+        <activity
+            android:name=".test.TestMainActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试拖拽容器 -->
+        <activity
+            android:name=".test.dragfooterview.TestDragFooterActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试显示更多图片 -->
+        <activity
+            android:name=".test.dragfooterview.TestShowMoreActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试可拖拽流式布局 -->
+        <activity
+            android:name=".test.assembleessay.activity.TestAssembleEssayActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试图片加载库Fresco的使用帮助 -->
+        <activity
+            android:name=".test.frescohelper.activity.TestFrescoHelperActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.frescohelper.activity.TestPhotoWallActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.frescohelper.activity.TestFrescoBaseUseActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.frescohelper.activity.TestUseDataBindingActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.frescohelper.activity.TestBlurActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.frescohelper.activity.TestBlur2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.frescohelper.activity.TestPhotoAlbumActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.frescohelper.activity.TestGifActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.frescohelper.activity.TestMeiziActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.frescohelper.activity.TestWebpActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.frescohelper.activity.TestBigImageActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.frescohelper.activity.TestImageSizeActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试EasyRecyclerView -->
+        <activity
+            android:name=".test.easyrecyclerview.TestEasyRecyclerViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.easyrecyclerview.loadmore.TestRefreshAndMoreActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.easyrecyclerview.multistyle.TestMultiStyleActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.easyrecyclerview.header.TestHeaderFooterActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.easyrecyclerview.collapsing.TestCollapsingActivity"
+            android:label="@string/collapsing"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.easyrecyclerview.staggeredgrid.TestStaggeredGridActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.easyrecyclerview.horizontal.TestHorizontalActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.easyrecyclerview.sticky.TestStickyHeaderActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试联动动画 -->
+        <activity
+            android:name=".test.linkageanimation.TestLinkageAnimationActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试顶部快餐店 -->
+        <activity
+            android:name=".test.topsnackbar.TestTopSnackbarActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试滑动背景图 -->
+        <activity
+            android:name=".test.movingimageview.TestMovingImageViewActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试状态按钮 -->
+        <activity
+            android:name=".test.statebutton.TestStateButtonActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试平滑混合按钮 -->
+        <activity
+            android:name=".test.smoothcompoundbutton.TestSmoothCompoundButtonActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试悬垂幕广告 -->
+        <activity
+            android:name=".test.verticalbannerview.TestVerticalBannerViewActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试花哨多面控件 -->
+        <activity
+            android:name=".test.viewpager.TestJazzyViewPagerActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试活动对话框 -->
+        <activity
+            android:name=".test.viewpager.TestDialogTopRightActivity"
+            android:theme="@style/DialogTopRightTheme" />
+
+        <!-- 测试上传单张图片 -->
+        <activity
+            android:name=".test.uploadimage.TestUploadSingleImageActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试上传多张图片 -->
+        <activity
+            android:name=".test.uploadimage.TestUploadMultipleImageActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 上传图片后台服务 -->
+        <service android:name=".service.UploadImageService" />
+
+        <!-- 测试通用item布局 -->
+        <activity
+            android:name=".test.baseitemlayout.TestBaseItemLayoutActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试搜索弹框（仿哔哩哔哩） -->
+        <activity
+            android:name=".test.searchdialog.TestSearchDialogActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试载入控件 -->
+        <activity
+            android:name=".test.loaderview.TestLoaderViewActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 书库全部分类 -->
+        <activity
+            android:name=".ui.activity.book.LongTimeBookClassActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 书籍详情 -->
+        <activity
+            android:name=".ui.activity.book.LongTimeBookDetailsActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 搜索书籍 -->
+        <activity
+            android:name=".ui.activity.book.SearchBookActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试3D效果多面控件 -->
+        <activity
+            android:name=".test.viewpager.TestThreeDimensionViewPagerActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试动画多面控件 -->
+        <activity
+            android:name=".test.viewpager.TestAnimationViewPagerActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试九宫格布局 -->
+        <activity
+            android:name=".test.ninegridlayout.TestNineGridLayoutActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 图片画廊 -->
+        <activity
+            android:name=".ui.activity.gallery.PhotoGalleryActivity"
+            android:theme="@style/PhotoGalleryTheme" />
+        <activity
+            android:name=".ui.activity.gallery.PictureBrowsingActivity"
+            android:theme="@style/PhotoGalleryTheme" />
+
+        <!-- 测试下拉刷新加载更多组件 -->
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPullToRefreshWithLoadMoreHomeActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrWithGridViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrWithScrollViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrWithWebViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrWithTextViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrWithListViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrWithListViewAndEmptyViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrAutoRefreshActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrAutoLoadMoreActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrHideHeaderActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrKeepHeaderActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrMaterialStyleActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrMaterialStylePinContentActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrRentalsStyleActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrStoreHouseStyleUsingPointListActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrStoreHouseStyleUsingStringActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrStoreHouseStyleUsingStringArrayActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.pulltorefreshwithloadmore.activity.TestPtrWithViewPagerActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试收缩按钮 -->
+        <activity
+            android:name=".test.indicatorbox.TestShrinkButtonActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试闪现边框 -->
+        <activity
+            android:name=".test.indicatorbox.TestFlashBorderViewActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试可观察的滚动控件 -->
+        <activity
+            android:name=".test.observablescrollview.TestObservableScrollViewMainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.observablescrollview.TestTitleBarControlGridViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.observablescrollview.TestTitleBarControlListViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.observablescrollview.TestTitleBarControlRecyclerViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.observablescrollview.TestTitleBarControlScrollViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.observablescrollview.TestTitleBarControlWebViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.observablescrollview.TestParallaxTitleBarGridViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.observablescrollview.TestParallaxTitleBarListViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.observablescrollview.TestParallaxTitleBarScrollViewActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试数据库 -->
+        <activity
+            android:name=".test.database.TestQueryDatabaseActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.database.TestQueryDatabaseTypeActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 设置 -->
+        <activity
+            android:name=".ui.activity.mine.SettingsActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试平滑进度条 -->
+        <activity
+            android:name=".test.smoothprogressbar.TestSmoothProgressBarMainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.smoothprogressbar.TestCustomSmoothProgressBarActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试分组悬停索引右侧边栏 -->
+        <activity
+            android:name=".test.suspensionindexbar.activity.TestSuspensionIndexBarMainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.suspensionindexbar.activity.TestImitateWeChatAddressBookActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.suspensionindexbar.activity.TestNormalCityListActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.suspensionindexbar.activity.TestGoWithSwipeDeleteActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.suspensionindexbar.activity.TestMeiTuanCityListActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试大图查看器 -->
+        <activity
+            android:name=".test.bigimageviewer.TestBigImageViewerMainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.bigimageviewer.TestFrescoLoaderActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.bigimageviewer.TestGlideLoaderActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".test.bigimageviewer.TestLongImageActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试圆圈刷新布局 -->
+        <activity
+            android:name=".test.circlerefreshlayout.TestCircleRefreshLayoutActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 豆瓣图书详情 -->
+        <activity
+            android:name=".ui.activity.book.doubanbook.DouBanBookDetailsActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 测试字体颜色渐变控件 -->
+        <activity
+            android:name=".test.colortrackview.TestColorTrackViewActivity"
+            android:theme="@style/AppTheme" />
+
+        <!--测试微信底部滑动渐变标签栏-->
+        <activity
+            android:name=".test.alphatabview.TestAlphaTabViewActivity"
+            android:theme="@style/AppTheme" />
+
+        <!--测试QQ空间九宫格显示多图-->
+        <activity
+            android:name=".test.ninegridlayout.TestMultiViewActivity"
+            android:theme="@style/AppTheme" />
+
+        <!--测试九宫格以及图片画廊-->
+        <activity
+            android:name=".test.transferee.TestTransfereeActivity"
+            android:theme="@style/AppTheme" />
+
+        <!--测试加载中控件-->
+        <activity
+            android:name=".test.loadingview.TestLoadingViewActivity"
+            android:theme="@style/AppTheme" />
+
+        <!--微影详情-->
+        <activity
+            android:name=".ui.activity.video.PhotoLithographyDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

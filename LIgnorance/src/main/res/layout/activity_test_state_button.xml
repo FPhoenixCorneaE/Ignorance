@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_dark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.livelearn.ignorance.widget.StateButton
+                android:id="@+id/text_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/test_state_button_change_text_color"
+                android:textAllCaps="false"
+                app:normalBackgroundColor="@color/color_light_blue"
+                app:normalTextColor="@android:color/white"
+                app:pressedBackgroundColor="@color/color_light_blue"
+                app:pressedTextColor="@android:color/holo_red_light"
+                app:unableBackgroundColor="@color/color_light_blue"
+                app:unableTextColor="@android:color/holo_orange_dark" />
+
+
+            <com.livelearn.ignorance.widget.StateButton
+                android:id="@+id/background_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/test_state_button_change_background"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:normalBackgroundColor="@color/color_light_blue"
+                app:pressedBackgroundColor="@color/color_dark_blue"
+                app:unableBackgroundColor="@android:color/holo_red_light" />
+
+
+            <com.livelearn.ignorance.widget.StateButton
+                android:id="@+id/radius_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/test_state_button_with_radius"
+                android:textColor="@android:color/white"
+                app:normalBackgroundColor="@color/color_light_blue"
+                app:pressedBackgroundColor="@color/color_dark_blue"
+                app:radius="10dp"
+                app:unableBackgroundColor="@android:color/holo_red_light" />
+
+            <com.livelearn.ignorance.widget.StateButton
+                android:id="@+id/round_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/test_state_button_round_radius"
+                android:textColor="@android:color/white"
+                app:normalBackgroundColor="@color/color_light_blue"
+                app:pressedBackgroundColor="@color/color_dark_blue"
+                app:radius="2dp"
+                app:round="true"
+                app:unableBackgroundColor="@android:color/holo_red_light" />
+
+            <com.livelearn.ignorance.widget.StateButton
+                android:id="@+id/different_radius_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/test_state_button_different_radius"
+                android:textColor="@android:color/white"
+                app:normalBackgroundColor="@color/color_light_blue"
+                app:pressedBackgroundColor="@color/color_dark_blue"
+                app:unableBackgroundColor="@android:color/holo_red_light" />
+
+            <com.livelearn.ignorance.widget.StateButton
+                android:id="@+id/dash_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/test_state_button_with_dash"
+                app:normalStrokeColor="@android:color/white"
+                app:normalStrokeWidth="2dp"
+                app:normalTextColor="@android:color/white"
+                app:pressedStrokeColor="@android:color/holo_red_light"
+                app:pressedStrokeWidth="2dp"
+                app:pressedTextColor="@android:color/holo_red_light"
+                app:radius="5dp"
+                app:strokeDashGap="5dp"
+                app:strokeDashWidth="5dp"
+                app:unableStrokeColor="@android:color/holo_orange_dark"
+                app:unableStrokeWidth="2dp"
+                app:unableTextColor="@android:color/holo_orange_dark" />
+
+            <com.livelearn.ignorance.widget.StateButton
+                android:id="@+id/stroke_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/test_state_button_with_stroke"
+                app:normalStrokeColor="@android:color/white"
+                app:normalStrokeWidth="2dp"
+                app:normalTextColor="@android:color/white"
+                app:pressedStrokeColor="@android:color/holo_red_light"
+                app:pressedStrokeWidth="2dp"
+                app:pressedTextColor="@android:color/holo_red_light"
+                app:radius="5dp"
+                app:unableStrokeColor="@android:color/holo_orange_dark"
+                app:unableStrokeWidth="2dp"
+                app:unableTextColor="@android:color/holo_orange_dark" />
+
+            <com.livelearn.ignorance.widget.StateButton
+                android:id="@+id/stroke_background_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/test_state_button_keep_stroke"
+                app:normalStrokeColor="@android:color/white"
+                app:normalStrokeWidth="2dp"
+                app:normalTextColor="@android:color/white"
+                app:pressedBackgroundColor="@color/color_dark_blue"
+                app:pressedStrokeColor="@android:color/white"
+                app:pressedStrokeWidth="2dp"
+                app:pressedTextColor="@android:color/white"
+                app:radius="5dp" />
+
+            <com.livelearn.ignorance.widget.StateButton
+                android:id="@+id/stroke_background_test2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/test_state_button_stroke_background"
+                app:normalStrokeColor="@android:color/white"
+                app:normalStrokeWidth="2dp"
+                app:normalTextColor="@android:color/white"
+                app:pressedBackgroundColor="@color/color_dark_blue"
+                app:pressedTextColor="@android:color/white"
+                app:radius="5dp" />
+
+            <com.livelearn.ignorance.widget.StateButton
+                android:id="@+id/stroke_background_animation_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/test_state_button_stroke_background_animation"
+                app:animationDuration="200"
+                app:normalStrokeColor="@android:color/white"
+                app:normalStrokeWidth="2dp"
+                app:normalTextColor="@android:color/white"
+                app:pressedBackgroundColor="@color/color_dark_blue"
+                app:pressedTextColor="@android:color/white"
+                app:radius="5dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

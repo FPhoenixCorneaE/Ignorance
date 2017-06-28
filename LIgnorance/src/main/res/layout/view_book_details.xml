@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pa_progress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.livelearn.ignorance.widget.slidinglayout.SlidingLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:background_view="@layout/layout_background_view"
+        app:sliding_mode="top"
+        app:sliding_pointer_mode="more"
+        app:top_max="200dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_book_url"
+                        android:layout_width="90dp"
+                        android:layout_height="130dp"
+                        android:src="@mipmap/ic_nocover"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_book_name"
+                            style="@style/_18sp_PurpleText"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="哀家有喜，都是邪王惹的祸"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/tv_book_author"
+                            style="@style/_13sp_BlackText"
+                            android:layout_marginTop="@dimen/margin_10dp"
+                            android:text="作者：灵婉兮"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/tv_book_type"
+                            style="@style/_13sp_BlackText"
+                            android:layout_marginTop="@dimen/margin_2dp"
+                            android:text="分类：穿越小说"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/tv_book_length"
+                            style="@style/_13sp_BlackText"
+                            android:layout_marginTop="@dimen/margin_2dp"
+                            android:text="字数：1341517字"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/tv_book_progress"
+                            style="@style/_13sp_BlackText"
+                            android:layout_marginTop="@dimen/margin_2dp"
+                            android:text="进度：已完结"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/tv_book_update_time"
+                            style="@style/_13sp_BlackText"
+                            android:layout_marginTop="@dimen/margin_2dp"
+                            android:text="更新时间：2016-09-19 09:31"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@color/white"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_online_reading"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_background_online_reading"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_8dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_20dp"
+                            android:layout_height="@dimen/height_20dp"
+                            app:srcCompat="@drawable/selector_srcicon_online_reading"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            style="@style/_LightGrayText"
+                            android:layout_marginStart="@dimen/margin_10dp"
+                            android:text="在线阅读"
+                            android:textColor="@color/selector_pressedlightpurple_normalgray"
+                            android:textSize="@dimen/text_size_20sp"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_file_download"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_background_txt_download"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_8dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_20dp"
+                            android:layout_height="@dimen/height_20dp"
+                            app:srcCompat="@drawable/selector_srcicon_file_download"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            style="@style/_20sp_PurpleText"
+                            android:layout_marginStart="@dimen/margin_10dp"
+                            android:text="TXT下载"
+                            android:textColor="@color/selector_pressedlightpurple_normalgray"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_10dp">
+
+                    <TextView
+                        style="@style/_18sp_BlackText"
+                        android:text="作品简介:"
+                        tools:ignore="HardcodedText" />
+
+                    <View
+                        style="@style/_View_Divider_1px"
+                        android:layout_marginBottom="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_10dp" />
+
+                    <com.ms.expandable.ExpandableTextView
+                        android:id="@+id/tv_book_introduction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:animAlphaStart="1"
+                        app:collapseDrawable="@drawable/ic_expand_less_lightpurple"
+                        app:expandDrawable="@drawable/ic_expand_more_lightpurple"
+                        app:maxCollapsedLines="4">
+
+                        <TextView
+                            android:id="@id/tv_expandable"
+                            style="@style/_15sp_GrayText"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="fill_horizontal"
+                            android:text="详情...."
+                            tools:ignore="HardcodedText" />
+
+                        <ImageButton
+                            android:id="@id/iv_expand_collapse"
+                            android:layout_width="@dimen/width_24dp"
+                            android:layout_height="@dimen/height_24dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:color/transparent"
+                            tools:ignore="ContentDescription" />
+                    </com.ms.expandable.ExpandableTextView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.livelearn.ignorance.widget.slidinglayout.SlidingLayout>
+</com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity>

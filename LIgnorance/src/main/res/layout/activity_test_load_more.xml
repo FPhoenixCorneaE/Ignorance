@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        app:layout_empty="@layout/custom_view_empty_easy_recycler_view"
+        app:layout_progress="@layout/custom_view_loading_easy_recycler_view"
+        app:scrollbarStyle="insideOverlay" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="16dp"
+        app:fab_elevationCompat="6dp"
+        app:menu_animationDelayPerItem="50"
+        app:menu_colorNormal="#F50057"
+        app:menu_colorPressed="#E8004A"
+        app:menu_colorRipple="#C20024"
+        app:menu_fab_size="mini"
+        app:menu_labels_ellipsize="end"
+        app:menu_labels_maxLines="1"
+        app:menu_labels_position="left"
+        app:menu_shadowColor="#000">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_return_top"
+            app:fab_colorNormal="@color/base_background"
+            app:fab_colorPressed="@color/purple"
+            app:fab_label="返回顶部"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_edit"
+            app:fab_colorNormal="@color/base_background"
+            app:fab_colorPressed="@color/purple"
+            app:fab_label="链接网络"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_disconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_edit"
+            app:fab_colorNormal="@color/base_background"
+            app:fab_colorPressed="@color/purple"
+            app:fab_label="断开网络"
+            app:fab_size="mini" />
+    </com.github.clans.fab.FloatingActionMenu>
+</FrameLayout>

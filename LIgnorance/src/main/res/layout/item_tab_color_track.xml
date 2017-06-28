@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.livelearn.ignorance.widget.ColorTrackView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ctv_text"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/margin_10dp"
+    android:paddingStart="@dimen/margin_10dp"
+    app:ctv_text="推荐"
+    app:ctv_text_change_color="@color/purple"
+    app:ctv_text_origin_color="@color/color_dark_black"
+    app:ctv_text_size="@dimen/text_size_18sp" />

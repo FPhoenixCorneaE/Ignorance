@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.livelearn.ignorance.widget.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sml_swipe_menu"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:background="@color/background_white"
+    android:paddingEnd="0dp"
+    android:paddingStart="@dimen/margin_16dp"
+    app:ios="false">
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/margin_24dp"
+        android:paddingStart="0dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/width_48dp"
+            android:layout_height="@dimen/height_48dp"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/shape_circle_solidlightgray" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/_16sp_BlackText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:gravity="center_vertical"
+            tools:text="波雅·汉库克" />
+    </LinearLayout>
+
+    <com.livelearn.ignorance.widget.StateButton
+        android:id="@+id/sb_delete"
+        android:layout_width="@dimen/width_100dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="删除"
+        android:textSize="@dimen/text_size_16sp"
+        app:normalBackgroundColor="@color/color_light_red"
+        app:normalTextColor="@color/color_pale"
+        app:pressedBackgroundColor="@color/color_dark_red"
+        app:pressedTextColor="@color/color_pale_translucent"
+        tools:ignore="HardcodedText" />
+</com.livelearn.ignorance.widget.SwipeMenuLayout>

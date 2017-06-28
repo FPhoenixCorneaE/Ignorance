@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_solidbasebg"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:text="@string/login"
+            android:textColor="@color/material_login_login_title_color"
+            android:textSize="24sp" />
+
+        <am.widget.shapeimageview.ShapeImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/image_width_standard"
+            android:layout_height="@dimen/image_width_standard"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:scaleType="centerCrop"
+            app:sivBorderColor="@color/darker_gray"
+            app:sivBorderWidth="@dimen/margin_2dp"
+            app:sivHeightScale="1"
+            app:sivScaleTarget="height"
+            app:sivShape="Circle"
+            app:sivWidthScale="1" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/login_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            app:errorTextAppearance="@style/MaterialLoginTheme.TextAppearanceLoginError"
+            app:theme="@style/MaterialLoginTheme.TextAppearanceLogin">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:inputType="textVisiblePassword|textNoSuggestions"
+                android:textColor="@color/material_login_login_text_color"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/login_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            app:errorTextAppearance="@style/MaterialLoginTheme.TextAppearanceLoginError"
+            app:theme="@style/MaterialLoginTheme.TextAppearanceLogin">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/material_login_login_text_color"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <com.livelearn.ignorance.widget.jellytogglebutton.JellyToggleButton
+            android:id="@+id/jtb_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:checked="false"
+            app:jtbColorChangeType="hsv"
+            app:jtbJelly="lazy_tremble_body_slim_jim"
+            app:jtbLeftBackgroundColor="@color/purple"
+            app:jtbLeftText="@string/default_off_text"
+            app:jtbLeftTextColor="@color/purple"
+            app:jtbLeftTextSize="@dimen/textsize_16sp"
+            app:jtbLeftThumbColor="@color/white"
+            app:jtbRightBackgroundColor="@color/white"
+            app:jtbRightText="@string/default_on_text"
+            app:jtbRightTextColor="@color/white"
+            app:jtbRightTextSize="@dimen/textsize_16sp"
+            app:jtbRightThumbColor="@color/purple" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_solidtransparent_strokewhite">
+
+            <com.livelearn.ignorance.widget.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_color="@color/purple"
+                app:rv_type="rectangle"
+                app:rv_zoom="true">
+
+                <TextView
+                    android:id="@+id/login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/go"
+                    android:textColor="@color/material_login_login_color"
+                    android:textSize="20sp" />
+            </com.livelearn.ignorance.widget.RippleView>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

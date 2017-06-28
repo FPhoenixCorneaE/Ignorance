@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_8dp"
+    android:paddingTop="@dimen/margin_8dp">
+
+    <TextView
+        android:id="@+id/tv_review_title"
+        style="@style/_PinkText"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_soliddarkpale_cornersfive"
+        android:ellipsize="end"
+        android:gravity="fill_horizontal"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/margin_2dp"
+        android:paddingEnd="@dimen/margin_10dp"
+        android:paddingStart="@dimen/margin_10dp"
+        android:paddingTop="@dimen/margin_2dp"
+        android:textSize="@dimen/text_size_16sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_5dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_review_create_user_avatar"
+            android:layout_width="@dimen/width_36dp"
+            android:layout_height="@dimen/height_36dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shape_circle_solidlightgray"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_review_create_user_name"
+            style="@style/_LightPurpleText"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:textSize="@dimen/text_size_15sp" />
+
+        <RatingBar
+            android:id="@+id/rb_review_create_user_starts_rating"
+            style="@style/_RatingBar"
+            android:layout_width="@dimen/width_80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:isIndicator="true"
+            android:numStars="5" />
+
+        <TextView
+            android:id="@+id/tv_review_create_date"
+            style="@style/_GrayText"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:textSize="@dimen/text_size_12sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_5dp" />
+
+    <TextView
+        android:id="@+id/tv_review_content"
+        style="@style/_BlackText"
+        android:gravity="fill_horizontal"
+        android:lineSpacingExtra="@dimen/margin_3dp"
+        android:textSize="@dimen/text_size_15sp" />
+</LinearLayout>

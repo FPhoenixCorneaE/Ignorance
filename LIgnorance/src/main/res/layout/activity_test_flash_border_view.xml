@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <com.livelearn.ignorance.widget.indicatorbox.FlashBorderView
+            android:id="@+id/fbv_flash_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height_46dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:background="@color/color_light_gray"
+            app:border_color="@color/color_light_purple"
+            app:border_width="@dimen/width_2dp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_book_name"
+            style="@style/_LightPurpleText"
+            android:layout_marginTop="6dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_book_author"
+            style="@style/_BlackText"
+            android:paddingTop="5dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_book_publisher"
+            style="@style/_BlackText"
+            android:paddingTop="2dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_book_pubtime"
+            style="@style/_BlackText"
+            android:paddingTop="2dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_book_pages"
+            style="@style/_BlackText"
+            android:paddingTop="2dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_book_pricing"
+            style="@style/_BlackText"
+            android:paddingTop="2dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_book_binding"
+            style="@style/_BlackText"
+            android:paddingTop="2dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_book_series"
+            style="@style/_BlackText"
+            android:paddingTop="2dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_book_isbn"
+            style="@style/_BlackText"
+            android:paddingTop="2dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_8dp"
+            android:paddingEnd="@dimen/margin_16dp"
+            android:paddingStart="@dimen/margin_16dp"
+            android:paddingTop="@dimen/margin_8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rating_number"
+                    style="@style/_LightPurpleText"
+                    android:layout_width="match_parent"
+                    android:textSize="22sp" />
+
+                <RatingBar
+                    android:id="@+id/rb_rating_number"
+                    style="@style/_RatingBar"
+                    android:layout_width="@dimen/width_80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"
+                    android:numStars="5" />
+
+                <TextView
+                    android:id="@+id/tv_rating_sum"
+                    style="@style/_BlackText"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_stars_percent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_36dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/_BlackText"
+                        android:text="5星"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+
+                    <com.livelearn.ignorance.widget.cbprogressBar.CBProgressBar
+                        android:id="@+id/pb_stars5"
+                        android:layout_width="@dimen/width_80dp"
+                        android:layout_height="@dimen/height_8dp"
+                        android:layout_margin="@dimen/margin_5dp"
+                        app:percentTextColor="@color/transparent"
+                        app:progressBarBgColor="@color/background"
+                        app:progressColor="@color/color_light_purple"
+                        app:rectRound="0dp"
+                        app:showPercentSign="false" />
+
+                    <TextView
+                        android:id="@+id/tv_stars5_percent"
+                        style="@style/_BlackText"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/_BlackText"
+                        android:text="4星"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+
+                    <com.livelearn.ignorance.widget.cbprogressBar.CBProgressBar
+                        android:id="@+id/pb_stars4"
+                        android:layout_width="@dimen/width_80dp"
+                        android:layout_height="@dimen/height_8dp"
+                        android:layout_margin="@dimen/margin_5dp"
+                        app:percentTextColor="@color/transparent"
+                        app:progressBarBgColor="@color/background"
+                        app:progressColor="@color/color_light_purple"
+                        app:rectRound="0dp"
+                        app:showPercentSign="false" />
+
+                    <TextView
+                        android:id="@+id/tv_stars4_percent"
+                        style="@style/_BlackText"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/_BlackText"
+                        android:text="3星"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+
+                    <com.livelearn.ignorance.widget.cbprogressBar.CBProgressBar
+                        android:id="@+id/pb_stars3"
+                        android:layout_width="@dimen/width_80dp"
+                        android:layout_height="@dimen/height_8dp"
+                        android:layout_margin="@dimen/margin_5dp"
+                        app:percentTextColor="@color/transparent"
+                        app:progressBarBgColor="@color/background"
+                        app:progressColor="@color/color_light_purple"
+                        app:rectRound="0dp"
+                        app:showPercentSign="false" />
+
+                    <TextView
+                        android:id="@+id/tv_stars3_percent"
+                        style="@style/_BlackText"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/_BlackText"
+                        android:text="2星"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+
+                    <com.livelearn.ignorance.widget.cbprogressBar.CBProgressBar
+                        android:id="@+id/pb_stars2"
+                        android:layout_width="@dimen/width_80dp"
+                        android:layout_height="@dimen/height_8dp"
+                        android:layout_margin="@dimen/margin_5dp"
+                        app:percentTextColor="@color/transparent"
+                        app:progressBarBgColor="@color/background"
+                        app:progressColor="@color/color_light_purple"
+                        app:rectRound="0dp"
+                        app:showPercentSign="false" />
+
+                    <TextView
+                        android:id="@+id/tv_stars2_percent"
+                        style="@style/_BlackText"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/_BlackText"
+                        android:text="1星"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+
+                    <com.livelearn.ignorance.widget.cbprogressBar.CBProgressBar
+                        android:id="@+id/pb_stars1"
+                        android:layout_width="@dimen/width_80dp"
+                        android:layout_height="@dimen/height_8dp"
+                        android:layout_margin="@dimen/margin_5dp"
+                        app:percentTextColor="@color/transparent"
+                        app:progressBarBgColor="@color/background"
+                        app:progressColor="@color/color_light_purple"
+                        app:rectRound="0dp"
+                        app:showPercentSign="false" />
+
+                    <TextView
+                        android:id="@+id/tv_stars1_percent"
+                        style="@style/_BlackText"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</merge>

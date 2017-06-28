@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--BaseItemLayout-->
+    <declare-styleable name="ItemAttrs">
+
+        <attr name="item_background_resource" format="reference" />
+        <attr name="item_height" format="integer" />
+        <attr name="text_size" format="integer" />
+        <attr name="text_color" format="color|reference" />
+        <attr name="icon_margin_left" format="integer" />
+        <attr name="icon_text_margin" format="integer" />
+        <attr name="icon_width" format="integer" />
+        <attr name="icon_height" format="integer" />
+
+        <attr name="line_color" format="color|reference" />
+        <attr name="line_margin_left" format="integer" />
+        <attr name="line_margin_right" format="integer" />
+        <attr name="show_start_line" format="boolean" />
+        <attr name="show_end_line" format="boolean" />
+
+        <attr name="margin_right" format="integer" />
+        <attr name="right_text_size" format="integer" />
+        <attr name="right_text_color" format="color|reference" />
+        <attr name="right_text_margin" format="integer" />
+        <attr name="arrow_res_id" format="reference" />
+        <attr name="arrow_width" format="integer" />
+        <attr name="arrow_height" format="integer" />
+        <attr name="arrow_is_show" format="boolean" />
+
+        <attr name="switch_turn_off_res_id" format="reference" />
+        <attr name="switch_turn_on_res_id" format="reference" />
+
+        <attr name="rmswitch_checked" format="boolean" />
+        <attr name="rmswitch_enabled" format="boolean" />
+        <attr name="rmswitch_force_aspect_ratio" format="boolean" />
+        <attr name="rmswitch_checked_bg_color" format="color|reference" />
+        <attr name="rmswitch_checked_toggle_color" format="color|reference" />
+        <attr name="rmswitch_checked_toggle_res_id" format="reference" />
+        <attr name="rmswitch_not_checked_bg_color" format="color|reference" />
+        <attr name="rmswitch_not_checked_toggle_color" format="color|reference" />
+        <attr name="rmswitch_not_checked_toggle_res_id" format="reference" />
+    </declare-styleable>
+
+
+    <attr name="enabled" format="boolean" />
+    <attr name="forceAspectRatio" format="boolean" />
+
+    <attr name="switchDesign" format="enum">
+        <enum name="large" value="0" />
+        <enum name="slim" value="1" />
+        <enum name="android" value="2" />
+    </attr>
+
+    <declare-styleable name="RMSwitch">
+        <attr name="checked" format="boolean" />
+        <attr name="enabled" />
+        <attr name="forceAspectRatio" />
+
+        <attr name="switchDesign" />
+
+        <attr name="switchBkgCheckedColor" format="color|reference" />
+        <attr name="switchBkgNotCheckedColor" format="color|reference" />
+
+        <attr name="switchToggleCheckedColor" format="color|reference" />
+        <attr name="switchToggleNotCheckedColor" format="color|reference" />
+
+        <attr name="switchToggleCheckedImage" format="reference" />
+        <attr name="switchToggleNotCheckedImage" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RMTristateSwitch">
+        <attr name="state" format="enum">
+            <enum name="left" value="0" />
+            <enum name="middle" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="enabled" />
+        <attr name="forceAspectRatio" />
+
+        <attr name="switchDesign" />
+
+        <attr name="right_to_left" format="boolean" />
+
+        <attr name="switchBkgRightColor" format="color|reference" />
+        <attr name="switchBkgMiddleColor" format="color|reference" />
+        <attr name="switchBkgLeftColor" format="color|reference" />
+
+        <attr name="switchToggleRightColor" format="color|reference" />
+        <attr name="switchToggleMiddleColor" format="color|reference" />
+        <attr name="switchToggleLeftColor" format="color|reference" />
+
+        <attr name="switchToggleRightImage" format="reference" />
+        <attr name="switchToggleMiddleImage" format="reference" />
+        <attr name="switchToggleLeftImage" format="reference" />
+    </declare-styleable>
+</resources>

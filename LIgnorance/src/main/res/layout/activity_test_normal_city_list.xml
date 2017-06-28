@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/_View_Divider_10dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:id="@+id/rv_normal_city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <com.mcxtzhang.indexbar.IndexBar
+            android:id="@+id/ib_index_bar"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            app:indexBarPressBackground="#39000000"
+            app:indexBarTextSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_side_bar_hint"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_soliddarkblacktranslucent_cornersfive"
+            android:gravity="center"
+            android:textColor="@color/color_pale"
+            android:textSize="48sp"
+            android:visibility="gone"
+            tools:text="A"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_update_datas"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_30dp"
+            android:background="@drawable/shape_soliddarkblacktranslucent_cornersfive"
+            android:text="更新数据源"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+    </FrameLayout>
+</LinearLayout>

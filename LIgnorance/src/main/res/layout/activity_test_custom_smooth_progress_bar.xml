@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_16dp">
+
+        <fr.castor.flex.smoothprogressbar.SmoothProgressBar
+            android:id="@+id/spb_smooth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:indeterminate="true"
+            android:indeterminateOnly="false" />
+
+        <fr.castor.flex.circularprogressbar.CircularProgressBar
+            android:id="@+id/cpb_circular"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:indeterminate="true"
+            android:indeterminateOnly="false" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <CheckBox
+                    android:id="@+id/cb_reversed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reversed"
+                    tools:ignore="HardcodedText" />
+
+                <CheckBox
+                    android:id="@+id/cb_mirror"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mirror Mode"
+                    tools:ignore="HardcodedText" />
+
+                <CheckBox
+                    android:id="@+id/cb_gradients"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gradients"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:text="Speed: "
+                tools:ignore="HardcodedText" />
+
+            <SeekBar
+                android:id="@+id/sb_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="31" />
+
+            <TextView
+                android:id="@+id/tv_stroke_width"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:text="Stroke width: "
+                tools:ignore="HardcodedText" />
+
+            <SeekBar
+                android:id="@+id/sb_stroke_width"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="12" />
+
+            <TextView
+                android:id="@+id/tv_separator_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:text="Separator length"
+                tools:ignore="HardcodedText" />
+
+            <SeekBar
+                android:id="@+id/sb_separator_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="48" />
+
+            <TextView
+                android:id="@+id/tv_sections_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:text="Sections Count"
+                tools:ignore="HardcodedText" />
+
+            <SeekBar
+                android:id="@+id/sb_sections_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="12" />
+
+            <Spinner
+                android:id="@+id/spn_interpolator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_factor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:text="Speed: "
+                tools:ignore="HardcodedText" />
+
+            <SeekBar
+                android:id="@+id/sb_factor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="31" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_start"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:text="START"
+                    tools:ignore="ButtonStyle,HardcodedText" />
+
+                <Button
+                    android:id="@+id/btn_stop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:text="STOP"
+                    tools:ignore="ButtonStyle,HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingEnd="@dimen/margin_10dp"
+    android:paddingStart="@dimen/margin_10dp">
+
+    <TextView
+        android:id="@+id/tv_my_label"
+        style="@style/_BlackText"
+        android:layout_centerVertical="true"
+        android:text="我的标签"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        style="@style/_GrayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_my_label"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_toEndOf="@id/tv_my_label"
+        android:text="长按编辑，点击删添，拖拽排序"
+        android:textSize="@dimen/text_size_12sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_solid_normalpale_presseddarkpale_stroke_normallightred_corners_five"
+        android:gravity="center"
+        android:text="编辑"
+        android:textColor="@color/color_light_red"
+        android:textSize="13sp"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_shadow_below" />
+</RelativeLayout>

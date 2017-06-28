@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_show_sheet_dialog_crop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_show_sheet_dialog_crop"
+                    android:layout_width="@dimen/width_80dp"
+                    android:layout_height="@dimen/height_80dp"
+                    app:actualImageScaleType="centerCrop"
+                    app:fadeDuration="3000"
+                    app:failureImage="@mipmap/pic_default"
+                    app:failureImageScaleType="centerCrop"
+                    app:placeholderImage="@mipmap/pic_default"
+                    app:placeholderImageScaleType="centerCrop"
+                    app:progressBarAutoRotateInterval="5000"
+                    app:progressBarImage="@mipmap/pic_default"
+                    app:progressBarImageScaleType="centerCrop"
+                    app:retryImage="@mipmap/pic_default"
+                    app:retryImageScaleType="centerCrop"
+                    app:roundAsCircle="true"
+                    app:roundingBorderColor="@color/color_light_yellow"
+                    app:roundingBorderWidth="2dp" />
+
+                <ImageView xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/iv_show_sheet_dialog_crop"
+                    android:layout_width="@dimen/width_80dp"
+                    android:layout_height="@dimen/height_80dp"
+                    android:layout_marginStart="@dimen/margin_30dp"
+                    tools:ignore="contentDescription" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_show_sheet_dialog_nocrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:gravity="center" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_show_sheet_dialog_nocrop"
+                android:layout_width="@dimen/width_80dp"
+                android:layout_height="@dimen/height_80dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                app:actualImageScaleType="centerCrop"
+                app:fadeDuration="3000"
+                app:failureImage="@mipmap/pic_default"
+                app:failureImageScaleType="centerCrop"
+                app:placeholderImage="@mipmap/pic_default"
+                app:placeholderImageScaleType="centerCrop"
+                app:progressBarAutoRotateInterval="5000"
+                app:progressBarImage="@mipmap/pic_default"
+                app:progressBarImageScaleType="centerCrop"
+                app:retryImage="@mipmap/pic_default"
+                app:retryImageScaleType="centerCrop"
+                app:roundAsCircle="true"
+                app:roundingBorderColor="@color/color_light_yellow"
+                app:roundingBorderWidth="2dp" />
+
+            <TextView
+                android:id="@+id/tv_open_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:gravity="center" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_open_camera"
+                android:layout_width="@dimen/width_80dp"
+                android:layout_height="@dimen/height_80dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                app:actualImageScaleType="centerCrop"
+                app:fadeDuration="3000"
+                app:failureImage="@mipmap/pic_default"
+                app:failureImageScaleType="centerCrop"
+                app:placeholderImage="@mipmap/pic_default"
+                app:placeholderImageScaleType="centerCrop"
+                app:progressBarAutoRotateInterval="5000"
+                app:progressBarImage="@mipmap/pic_default"
+                app:progressBarImageScaleType="centerCrop"
+                app:retryImage="@mipmap/pic_default"
+                app:retryImageScaleType="centerCrop"
+                app:roundAsCircle="true"
+                app:roundingBorderColor="@color/color_light_yellow"
+                app:roundingBorderWidth="2dp" />
+
+            <TextView
+                android:id="@+id/tv_open_album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:gravity="center" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_open_album"
+                android:layout_width="@dimen/width_80dp"
+                android:layout_height="@dimen/height_80dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                app:actualImageScaleType="centerCrop"
+                app:fadeDuration="3000"
+                app:failureImage="@mipmap/pic_default"
+                app:failureImageScaleType="centerCrop"
+                app:placeholderImage="@mipmap/pic_default"
+                app:placeholderImageScaleType="centerCrop"
+                app:progressBarAutoRotateInterval="5000"
+                app:progressBarImage="@mipmap/pic_default"
+                app:progressBarImageScaleType="centerCrop"
+                app:retryImage="@mipmap/pic_default"
+                app:retryImageScaleType="centerCrop"
+                app:roundAsCircle="true"
+                app:roundingBorderColor="@color/color_light_yellow"
+                app:roundingBorderWidth="2dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

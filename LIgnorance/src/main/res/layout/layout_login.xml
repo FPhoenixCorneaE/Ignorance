@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_solidlightpurple_cornersten"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/login_title"
+            style="@style/_24sp_PaleText"
+            android:text="@string/login" />
+
+        <am.widget.shapeimageview.ShapeImageView
+            android:id="@+id/iv_avatar"
+            style="@style/_ShapeImageView_Circle_radius50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_20dp"
+            android:src="@drawable/shape_circle_solidlightgray" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/login_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            app:errorTextAppearance="@style/MaterialLoginTheme.TextAppearanceLoginError"
+            app:theme="@style/MaterialLoginTheme.TextAppearanceLogin">
+
+            <EditText
+                style="@style/_EditText_MaterialLoginRegister"
+                android:hint="@string/name"
+                android:inputType="textVisiblePassword|textNoSuggestions" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/login_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            app:errorTextAppearance="@style/MaterialLoginTheme.TextAppearanceLoginError"
+            app:theme="@style/MaterialLoginTheme.TextAppearanceLogin">
+
+            <EditText
+                style="@style/_EditText_MaterialLoginRegister"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.livelearn.ignorance.widget.jellytogglebutton.JellyToggleButton
+                android:id="@+id/jtb_remember"
+                style="@style/_JellyToggleButton"
+                android:checked="false" />
+
+            <TextView
+                style="@style/_16sp_PaleText"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:text="@string/password_remember" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.livelearn.ignorance.widget.jellytogglebutton.JellyToggleButton
+                android:id="@+id/jtb_auto_login"
+                style="@style/_JellyToggleButton"
+                android:checked="false" />
+
+            <TextView
+                style="@style/_16sp_PaleText"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:text="@string/auto_login" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_20dp">
+
+            <com.livelearn.ignorance.widget.RippleView style="@style/_RippleView_rectangle">
+
+                <TextView
+                    android:id="@+id/login_btn"
+                    style="@style/_Button_MaterialLoginRegister"
+                    android:background="@drawable/shape_solidtransparent_strokewhite"
+                    android:text="@string/go" />
+            </com.livelearn.ignorance.widget.RippleView>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

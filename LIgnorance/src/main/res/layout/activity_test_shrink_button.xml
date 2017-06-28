@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <com.livelearn.ignorance.widget.indicatorbox.ShrinkButton
+            android:id="@+id/sb_sign_in"
+            style="@style/_20sp_PaleText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height_46dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:background="@drawable/shape_solidlightpurple_cornersthirty"
+            android:elevation="6dp"
+            android:text="SIGN IN"
+            tools:ignore="HardcodedText"
+            tools:targetApi="lollipop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_30dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_20dp">
+
+            <TextView
+                android:id="@+id/tv_pause"
+                style="@style/_15sp_PaleText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_46dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_solidlightpurple_cornersten"
+                android:text="暂停"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_reset"
+                style="@style/_15sp_PaleText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_46dp"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_solidlightpurple_cornersten"
+                android:text="重置"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <com.livelearn.ignorance.widget.viewpagerzoomtitle.ViewPagerZoomTitle
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:hvPadding="@dimen/margin_15dp"
+            app:hvTextAlpha="0.8"
+            app:hvTextAlphaActiveTab="1.0"
+            app:hvTextColor="@color/color_dark_black"
+            app:hvTextColorActiveTab="@color/color_light_purple"
+            app:hvTextScale="0.8"
+            app:hvTextScaleActiveTab="1.0"
+            app:hvTextSize="@dimen/text_size_18sp">
+
+            <com.livelearn.ignorance.widget.viewpager.jazzyviewpager.JazzyViewPager
+                android:id="@+id/vp_jazzy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.livelearn.ignorance.widget.viewpagerzoomtitle.ViewPagerZoomTitle>
+
+        <com.livelearn.ignorance.widget.indicatorbox.ViewPagerIndicator
+            android:id="@+id/vpi_page"
+            android:layout_width="@dimen/width_80dp"
+            android:layout_height="@dimen/height_80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_30dp" />
+
+        <com.livelearn.ignorance.widget.tabstrip.OvalTabStrip
+            android:id="@+id/ots_tab_strip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            app:otsDrawable="@drawable/selector_oval_solid_normalpale_selectedlightpurple_size_five"
+            app:otsScale="1.3" />
+    </RelativeLayout>
+</LinearLayout>

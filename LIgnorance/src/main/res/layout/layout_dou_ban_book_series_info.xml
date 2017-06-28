@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_series_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_20dp" />
+
+    <TextView
+        style="@style/_BlackText"
+        android:padding="@dimen/margin_5dp"
+        android:text="丛书信息"
+        android:textSize="@dimen/text_size_16sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_series_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:lineSpacingExtra="6dp"
+        android:maxLines="6"
+        android:paddingEnd="@dimen/margin_16dp"
+        android:paddingStart="@dimen/margin_16dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="14sp" />
+</LinearLayout>

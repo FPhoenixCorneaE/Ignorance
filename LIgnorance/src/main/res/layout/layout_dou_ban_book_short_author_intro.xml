@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_book_author_intro_title"
+        style="@style/_BlackText"
+        android:padding="@dimen/margin_5dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_book_author_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/margin_8dp"
+        android:paddingStart="@dimen/margin_16dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/tv_book_author_intro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="4"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="@dimen/width_24dp"
+            android:layout_height="@dimen/height_24dp"
+            android:src="@mipmap/ic_next"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+</merge>

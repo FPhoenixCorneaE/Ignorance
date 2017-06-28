@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <me.iwf.photopicker.widget.MultiPickResultView
+                android:id="@+id/mprv_select"
+                style="@style/_Margin_Left16dp_Right16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp" />
+
+            <me.iwf.photopicker.widget.MultiPickResultView
+                android:id="@+id/mprv_only_show"
+                style="@style/_Margin_Left16dp_Right16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp" />
+
+            <com.livelearn.ignorance.widget.StateButton
+                android:id="@+id/sb_upload_start"
+                style="@style/_Margin_Left36dp_Right36dp"
+                android:layout_height="@dimen/height_48dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:textSize="@dimen/text_size_20sp"
+                app:normalBackgroundColor="@color/base_background"
+                app:normalStrokeColor="@color/color_pale"
+                app:normalStrokeWidth="1px"
+                app:normalTextColor="@color/color_pale"
+                app:pressedBackgroundColor="@color/color_pale"
+                app:pressedStrokeColor="@color/purple"
+                app:pressedStrokeWidth="1px"
+                app:pressedTextColor="@color/purple"
+                app:radius="@dimen/margin_30dp"
+                app:round="true"
+                app:unableBackgroundColor="@color/color_light_red"
+                app:unableStrokeColor="@color/color_light_red"
+                app:unableStrokeWidth="1px"
+                app:unableTextColor="@color/color_dark_red" />
+
+            <TextView
+                android:id="@+id/tv_selected_image_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:gravity="fill_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

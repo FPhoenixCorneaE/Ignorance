@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/color_pale"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp"
+    app:contentPadding="1dp">
+
+    <com.livelearn.ignorance.widget.RippleView
+        style="@style/_RippleView_rectangle"
+        android:layout_width="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:id="@+id/iv_like_book"
+                android:layout_width="100dp"
+                android:layout_height="145dp"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_like_book_name"
+                style="@style/_PaleText"
+                android:layout_width="100dp"
+                android:layout_gravity="bottom"
+                android:background="#42424242"
+                android:gravity="center"
+                android:lines="1"
+                android:textSize="14sp" />
+        </FrameLayout>
+    </com.livelearn.ignorance.widget.RippleView>
+</android.support.v7.widget.CardView>

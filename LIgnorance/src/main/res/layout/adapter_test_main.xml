@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/_CardView"
+    app:contentPadding="0dp">
+
+    <com.livelearn.ignorance.widget.RippleView style="@style/_RippleView_rectangle">
+
+        <RelativeLayout
+            android:id="@+id/rl_test_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height_30dp">
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="@dimen/height_24dp"
+                android:layout_height="@dimen/height_24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_next"
+                tools:ignore="contentDescription" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/_16sp_BlackText"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_toStartOf="@+id/iv_next"
+                android:ellipsize="end"
+                android:gravity="fill_horizontal"
+                android:maxLines="1" />
+        </RelativeLayout>
+    </com.livelearn.ignorance.widget.RippleView>
+</android.support.v7.widget.CardView>

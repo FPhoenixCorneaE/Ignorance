@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_book_dir_title"
+        style="@style/_16sp_BlackText"
+        android:padding="@dimen/margin_5dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_book_dir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/margin_8dp"
+        android:paddingStart="@dimen/margin_16dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/tv_book_short_dir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="6"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="@dimen/width_24dp"
+            android:layout_height="@dimen/height_24dp"
+            android:src="@mipmap/ic_next"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+</merge>

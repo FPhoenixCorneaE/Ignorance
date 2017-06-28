@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_common_tag"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_20dp" />
+
+    <TextView
+        android:id="@+id/tv_common_tag_title"
+        style="@style/_16sp_BlackText"
+        android:padding="@dimen/margin_5dp"
+        android:textStyle="bold" />
+
+    <com.livelearn.ignorance.widget.flowlayout.TagCloudView
+        android:id="@+id/tcv_common_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/margin_16dp"
+        android:paddingStart="@dimen/margin_16dp"
+        app:tcvBackground="@drawable/shape_soliddarkpale_cornersfive"
+        app:tcvBorder="8dp"
+        app:tcvCanTagClick="false"
+        app:tcvItemBorderHorizontal="8dp"
+        app:tcvItemBorderVertical="6dp"
+        app:tcvTextColor="@color/color_light_purple"
+        app:tcvTextSize="15" />
+</LinearLayout>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Ignorance</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="login_QQlogin">QQ 登录</string>
+    <string name="login_WeChatlogin">微信登录</string>
+    <string name="login_Weibologin">微博登录</string>
+
+    <!--启动页文字-->
+    <string name="dummy_button">跳过 3</string>
+
+    <!--导航文字-->
+    <string name="guide_text">美丽风景......</string>
+    <string name="guide_subtext">便便的离去，是马桶的吸引，还是屁股的不挽留？</string>
+
+    <!--登录相关文本-->
+    <string name="login">LOGIN</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="login_action">Log In ！</string>
+    <string name="go">GO</string>
+    <string name="register">REGISTER</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="register_action">Sign Up ！</string>
+    <string name="next">NEXT</string>
+    <string name="user_name_empty">UserName can not be empty</string>
+    <string name="user_name_error">UserName is wrong</string>
+    <string name="user_password_empty">UserPassword can not be empty</string>
+    <string name="user_password_error">UserPassword is wrong</string>
+    <string name="user_passwordRep_error">UserPasswordRepeat is wrong</string>
+    <string name="user_password_different">UserPasswords are different</string>
+    <string name="login_success">Log in success!</string>
+    <string name="register_success">Register success! Please log in!</string>
+
+
+    <!--PhotoPicker-->
+    <string name="empty_sdcard">No SD card</string>
+    <string name="open_gallery_fail">Gallery init failure!</string>
+
+    <!--JellyToggleButton-->
+    <string name="default_on_text">On</string>
+    <string name="default_off_text">Off</string>
+</resources>

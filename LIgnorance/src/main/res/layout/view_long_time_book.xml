@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pa_progress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.livelearn.ignorance.widget.smarttablayout.SmartTabLayout
+                android:id="@+id/stl_book"
+                style="@style/_SmartTabLayout_PureTextTab_Smart"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+            <View
+                style="@style/_View_Divider_1px"
+                android:layout_width="1px"
+                android:layout_height="@dimen/height_20dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_book_category"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/width_20dp"
+                    android:layout_height="@dimen/height_20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_category"
+                    tools:ignore="contentDescription" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.livelearn.ignorance.widget.viewpager.jazzyviewpager.JazzyViewPager
+            android:id="@+id/jvp_book"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity>

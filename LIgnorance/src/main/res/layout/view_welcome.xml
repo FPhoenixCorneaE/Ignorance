@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_welcome_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        tools:ignore="contentDescription" />
+
+    <TextView
+        style="@style/_16sp_PaleText"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/margin_20dp"
+        android:text="@string/welcome" />
+
+</merge>

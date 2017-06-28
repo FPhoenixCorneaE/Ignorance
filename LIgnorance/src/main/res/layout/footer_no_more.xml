@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_footer_no_more"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="-- 我也是有底线的 --"
+        android:textColor="@color/color_dark_black"
+        android:textSize="@dimen/text_size_16sp"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

@@ -1,0 +1,120 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="fab_return_top_margin_end">26dp</dimen>
+    <dimen name="fab_return_top_margin_bottom">76dp</dimen>
+
+    <!--状态栏高度-->
+    <dimen name="status_bar_height">0dp</dimen>
+    <!--标题栏大小-->
+    <dimen name="actionBarSize">48dp</dimen>
+    <!--标题栏左边图标大小-->
+    <dimen name="title_bar_icon_size">24dp</dimen>
+
+    <!--按钮高度-->
+    <dimen name="btn_height_46dp">46dp</dimen>
+
+    <!--smarttab-->
+    <dimen name="smart_tab_width">46dp</dimen>
+
+    <!--shadow.xml 阴影布局内边距和圆角半径-->
+    <dimen name="cardPadding">2px</dimen>
+    <dimen name="cardRadius">5dp</dimen>
+
+    <!--通用width-->
+    <dimen name="width_1dp">1dp</dimen>
+    <dimen name="width_2dp">2dp</dimen>
+    <dimen name="width_4dp">4dp</dimen>
+    <dimen name="width_5dp">5dp</dimen>
+    <dimen name="width_8dp">8dp</dimen>
+    <dimen name="width_10dp">10dp</dimen>
+    <dimen name="width_12dp">12dp</dimen>
+    <dimen name="width_15dp">15dp</dimen>
+    <dimen name="width_16dp">16dp</dimen>
+    <dimen name="width_18dp">18dp</dimen>
+    <dimen name="width_20dp">20dp</dimen>
+    <dimen name="width_24dp">24dp</dimen>
+    <dimen name="width_28dp">28dp</dimen>
+    <dimen name="width_30dp">30dp</dimen>
+    <dimen name="width_32dp">32dp</dimen>
+    <dimen name="width_36dp">36dp</dimen>
+    <dimen name="width_40dp">40dp</dimen>
+    <dimen name="width_48dp">48dp</dimen>
+    <dimen name="width_50dp">50dp</dimen>
+    <dimen name="width_60dp">60dp</dimen>
+    <dimen name="width_80dp">80dp</dimen>
+    <dimen name="width_100dp">100dp</dimen>
+    <dimen name="width_120dp">120dp</dimen>
+    <dimen name="width_200dp">200dp</dimen>
+
+    <!--通用height-->
+    <dimen name="height_1dp">1dp</dimen>
+    <dimen name="height_2dp">2dp</dimen>
+    <dimen name="height_3dp">3dp</dimen>
+    <dimen name="height_4dp">4dp</dimen>
+    <dimen name="height_5dp">5dp</dimen>
+    <dimen name="height_8dp">8dp</dimen>
+    <dimen name="height_10dp">10dp</dimen>
+    <dimen name="height_12dp">12dp</dimen>
+    <dimen name="height_15dp">15dp</dimen>
+    <dimen name="height_16dp">16dp</dimen>
+    <dimen name="height_18dp">18dp</dimen>
+    <dimen name="height_20dp">20dp</dimen>
+    <dimen name="height_24dp">24dp</dimen>
+    <dimen name="height_28dp">28dp</dimen>
+    <dimen name="height_30dp">30dp</dimen>
+    <dimen name="height_32dp">32dp</dimen>
+    <dimen name="height_36dp">36dp</dimen>
+    <dimen name="height_40dp">40dp</dimen>
+    <dimen name="height_48dp">48dp</dimen>
+    <dimen name="height_49dp">49dp</dimen>
+    <dimen name="height_50dp">50dp</dimen>
+    <dimen name="height_60dp">60dp</dimen>
+    <dimen name="height_80dp">80dp</dimen>
+    <dimen name="height_100dp">100dp</dimen>
+    <dimen name="height_120dp">120dp</dimen>
+    <dimen name="height_200dp">200dp</dimen>
+
+    <!--通用margin-->
+    <dimen name="margin_1dp">1dp</dimen>
+    <dimen name="margin_2dp">2dp</dimen>
+    <dimen name="margin_3dp">3dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_18dp">18dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_25dp">25dp</dimen>
+    <dimen name="margin_28dp">28dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_36dp">36dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_50dp">50dp</dimen>
+
+    <!--通用textsize-->
+    <dimen name="text_size_8sp">8sp</dimen>
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_11sp">11sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_13sp">13sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_15sp">15sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_28sp">28sp</dimen>
+    <dimen name="text_size_32sp">32sp</dimen>
+    <dimen name="text_size_36sp">36sp</dimen>
+</resources>

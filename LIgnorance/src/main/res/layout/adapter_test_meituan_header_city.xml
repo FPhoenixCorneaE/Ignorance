@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_city"
+    style="@style/_15sp_LightPurpleText"
+    android:layout_height="40dp"
+    android:layout_marginBottom="@dimen/margin_16dp"
+    android:background="@drawable/shape_strokelightpurple"
+    android:minWidth="100dp"
+    tools:text="上海" />

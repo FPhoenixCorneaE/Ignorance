@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_black">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/btn_fresco_loader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:paddingEnd="@dimen/margin_20dp"
+                android:paddingStart="@dimen/margin_20dp"
+                android:text="fresco loader"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btn_glide_loader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:paddingEnd="@dimen/margin_20dp"
+                android:paddingStart="@dimen/margin_20dp"
+                android:text="glide loader"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btn_long_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:paddingEnd="@dimen/margin_20dp"
+                android:paddingStart="@dimen/margin_20dp"
+                android:text="long image"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

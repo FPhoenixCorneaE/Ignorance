@@ -1,0 +1,148 @@
+package com.livelearn.ignorance.utils;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
+import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
+import android.widget.ImageView;
+
+import com.bumptech.glide.DrawableTypeRequest;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.RequestManager;
+import com.bumptech.glide.load.Transformation;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.livelearn.ignorance.R;
+
+import jp.wasabeef.glide.transformations.CropCircleTransformation;
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
+
+/**
+ * Glide加载图片工具类
+ * 不要在非主线程里面使用Glide加载图片，如果真的使用了，请把context参数换成getApplicationContext
+ */
+public class GlideUtils {
+
+    /**
+     * 设置图片
+     */
+    public static void setupImage(Context context, ImageView imageView, Object picurl) {
+        setupImage(context, imageView, picurl, -1);
+    }
+
+    public static void setupImage(Context context, ImageView imageView, Object picurl, int errorResId) {
+        setupImage(context, imageView, picurl, -1, false, true, true, errorResId);
+    }
+
+    public static void setupImage(Context context, ImageView imageView, Object picurl, Drawable errorDrawable) {
+        setupImage(context, imageView, picurl, -1, false, true, true, errorDrawable);
+    }
+
+    @SafeVarargs
+    public static void setupImage(Context context, ImageView imageView, Object picurl, int cornerRadius, boolean isCircle, boolean isCenterCrop, boolean isCrossFade, int errorResId, Transformation<Bitmap>... bitmapTransformations) {
+        DrawableTypeRequest drawableTypeRequest = getDrawableTypeRequest(context, picurl);
+        if (isCenterCrop) {
+            drawableTypeRequest.centerCrop();
+        }
+        if (isCrossFade) {
+            drawableTypeRequest.crossFade();
+        }
+        if (bitmapTransformations != null && bitmapTransformations.length > 0)
+            drawableTypeRequest.bitmapTransform(bitmapTransformations);
+        if (cornerRadius == -1) {
+            if (isCircle) {
+                RoundedBitmapDrawable errorDrawable = RoundedBitmapDrawableFactory.create(context.getResources(), BitmapFactory.decodeResource(context.getResources(), errorResId));
+                errorDrawable.setCircular(true);
+            } else if (errorResId != -1) {
+                drawableTypeRequest.error(errorResId);
+            } else {
+                drawableTypeRequest.error(new ColorDrawable(ContextCompat.getColor(context, R.color.lighter_gray)));
+            }
+        } else {
+            if (errorResId != -1) {
+                RoundedBitmapDrawable errorDrawable = RoundedBitmapDrawableFactory.create(context.getResources(), BitmapFactory.decodeResource(context.getResources(), errorResId));
+                errorDrawable.setCornerRadius(cornerRadius);
+                drawableTypeRequest.error(errorDrawable);
+            } else {
+                drawableTypeRequest.error(new ColorDrawable(ContextCompat.getColor(context, R.color.lighter_gray)));
+            }
+        }
+        drawableTypeRequest.into(imageView);
+    }
+
+    @SafeVarargs
+    public static void setupImage(Context context, ImageView imageView, Object picurl, int cornerRadius, boolean isCircle, boolean isCenterCrop, boolean isCrossFade, Drawable errorDrawable, Transformation<Bitmap>... bitmapTransformations) {
+        DrawableTypeRequest drawableTypeRequest = getDrawableTypeRequest(context, picurl);
+        if (isCenterCrop) {
+            drawableTypeRequest.centerCrop();
+        }
+        if (isCrossFade) {
+            drawableTypeRequest.crossFade();
+        }
+        if (bitmapTransformations != null && bitmapTransformations.length > 0)
+            drawableTypeRequest.bitmapTransform(bitmapTransformations);
+        if (errorDrawable != null)
+            drawableTypeRequest.error(errorDrawable);
+        drawableTypeRequest.into(imageView);
+    }
+
+    @NonNull
+    private static DrawableTypeRequest getDrawableTypeRequest(Context context, Object picurl) {
+        RequestManager requestManager = Glide.with(context);
+        DrawableTypeRequest drawableTypeRequest = requestManager.load(picurl);
+        drawableTypeRequest.thumbnail(0.5f)
+                .diskCacheStrategy(DiskCacheStrategy.RESULT)
+                .skipMemoryCache(false);
+        return drawableTypeRequest;
+    }
+
+    /**
+     * 设置圆角图片
+     */
+    public static void setupRoundedImage(Context context, ImageView imageView, Object picurl, int cornerRadius) {
+        setupRoundedImage(context, imageView, picurl, cornerRadius, -1);
+    }
+
+    public static void setupRoundedImage(Context context, ImageView imageView, Object picurl, int cornerRadius, int errorResId) {
+        setupRoundedImage(context, imageView, picurl, cornerRadius, errorResId, true, true);
+    }
+
+    public static void setupRoundedImage(Context context, ImageView imageView, Object picurl, int cornerRadius, Drawable errorDrawable) {
+        setupRoundedImage(context, imageView, picurl, cornerRadius, errorDrawable, true, true);
+    }
+
+    public static void setupRoundedImage(Context context, ImageView imageView, Object picurl, int cornerRadius, int errorResId, boolean isCenterCrop, boolean isCrossFade) {
+        setupImage(context, imageView, picurl, cornerRadius, false, isCenterCrop, isCrossFade, errorResId, new RoundedCornersTransformation(context, cornerRadius, 0, RoundedCornersTransformation.CornerType.ALL));
+    }
+
+    public static void setupRoundedImage(Context context, ImageView imageView, Object picurl, int cornerRadius, Drawable errorDrawable, boolean isCenterCrop, boolean isCrossFade) {
+        setupImage(context, imageView, picurl, cornerRadius, false, isCenterCrop, isCrossFade, errorDrawable, new RoundedCornersTransformation(context, cornerRadius, 0, RoundedCornersTransformation.CornerType.ALL));
+    }
+
+    /**
+     * 设置圆形图片
+     */
+    public static void setupCircleImage(Context context, ImageView imageView, Object picurl) {
+        setupCircleImage(context, imageView, picurl, -1);
+    }
+
+    public static void setupCircleImage(Context context, ImageView imageView, Object picurl, int errorResId) {
+        setupCircleImage(context, imageView, picurl, true, true, errorResId);
+    }
+
+    public static void setupCircleImage(Context context, ImageView imageView, Object picurl, Drawable errorDrawable) {
+        setupCircleImage(context, imageView, picurl, true, true, errorDrawable);
+    }
+
+    public static void setupCircleImage(Context context, ImageView imageView, Object picurl, boolean isCenterCrop, boolean isCrossFade, int errorResId) {
+        setupImage(context, imageView, picurl, -1, true, isCenterCrop, isCrossFade, errorResId, new CropCircleTransformation(context));
+    }
+
+    public static void setupCircleImage(Context context, ImageView imageView, Object picurl, boolean isCenterCrop, boolean isCrossFade, Drawable errorDrawable) {
+        setupImage(context, imageView, picurl, -1, true, isCenterCrop, isCrossFade, errorDrawable, new CropCircleTransformation(context));
+    }
+}

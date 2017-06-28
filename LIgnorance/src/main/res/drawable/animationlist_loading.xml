@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Android动画分为View Animation（一般作用于整个View，故称视图动画，包括Frame Animation和Tween Animation）、
+Property Animation-->
+<!--View Animation之Frame Animation，我们常见的Gif其实也是帧动画-->
+<!--animation-list是动画的根元素，在根元素中的oneshot表示只播放一次，如果false则表示会一直循环执行。
+在根元素下有item元素，该元素就是我们要添加的图片，每一个item表示一帧，item下的drawable就是我们的图片资源，
+duration就是该帧动画执行的时间。用代码可以用AnimationDrawable实现-->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@mipmap/ic_loading_white_01"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/ic_loading_white_02"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/ic_loading_white_03"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/ic_loading_white_04"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/ic_loading_white_05"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/ic_loading_white_06"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/ic_loading_white_07"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/ic_loading_white_08"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/ic_loading_white_09"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/ic_loading_white_10"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/ic_loading_white_11"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/ic_loading_white_12"
+        android:duration="80" />
+
+</animation-list>

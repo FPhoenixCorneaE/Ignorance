@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:padding="4dp"
+    app:cardBackgroundColor="@color/color_pale"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp">
+
+    <com.livelearn.ignorance.widget.RippleView style="@style/_RippleView_rectangle">
+
+        <LinearLayout
+            android:id="@+id/ll_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="4dp">
+
+            <ImageView
+                android:id="@+id/iv_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_video_default_200w"
+                tools:ignore="contentDescription" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="2"
+                android:padding="@dimen/margin_2dp"
+                android:textColor="@color/color_light_purple"
+                android:textSize="@dimen/text_size_12sp" />
+        </LinearLayout>
+    </com.livelearn.ignorance.widget.RippleView>
+</android.support.v7.widget.CardView>

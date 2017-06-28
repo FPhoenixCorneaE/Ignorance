@@ -1,0 +1,188 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+    <string name="app_name">学无止境</string>
+    <string name="action_settings">Settings</string>
+
+    <!--测试下拉刷新加载更多组件-->
+
+    <string name="ptr_home_block_with_grid_view">Contains A GridView With Footer</string>
+    <string name="ptr_home_block_with_list_view">Contains A ListView</string>
+    <string name="ptr_home_block_with_list_view_and_empty_view">EmptyView and ListView</string>
+    <string name="ptr_home_block_with_scroll_view">Contains A ScrollView</string>
+    <string name="ptr_home_block_with_text_view">Contains A TextView</string>
+    <string name="ptr_home_block_with_web_view">Contains A WebView</string>
+    <string name="ptr_home_block_auto_fresh">Auto Refresh</string>
+    <string name="ptr_home_block_auto_load_more">Auto Load More</string>
+    <string name="ptr_home_block_keep_header">Keep Header while Refreshing</string>
+    <string name="ptr_home_block_hide_header">Hide Header while Refreshing</string>
+    <string name="ptr_home_block_with_view_pager">Contains A ViewPager</string>
+    <string name="ptr_home_block_storehouse_style_using_string_array">StoreHouse Style\n使用xml中的字符串数组</string>
+    <string name="ptr_home_block_storehouse_style_using_string">StoreHouse Style\n使用字符串</string>
+    <string name="ptr_home_block_storehouse_style_using_point_list">StoreHouse Style\n使用PointList</string>
+    <string name="ptr_home_block_material_style">Material Style</string>
+    <string name="ptr_home_block_material_style_pin_content">Material Style\n内容不动，原生风格</string>
+    <string name="ptr_home_block_rentals_style">Rentals Style</string>
+    <string name="ptr_home_enable_next_ptr_at_once">Enable Next PTR at once</string>
+
+    <!--测试悬垂幕广告-->
+    <string name="test_vertical_banner_view_start">开始</string>
+    <string name="test_vertical_banner_view_stop">停止</string>
+    <string name="test_vertical_banner_view_update">更新数据</string>
+    <string name="test_vertical_banner_view_style_custom">样式定制</string>
+    <string name="test_vertical_banner_view_taobao_headlines">淘宝头条</string>
+
+    <!--测试顶部快餐店-->
+    <string name="test_top_snackbar_example_1">example 1</string>
+    <string name="test_top_snackbar_example_2">example 2</string>
+    <string name="test_top_snackbar_example_3">example 3</string>
+    <string name="test_top_snackbar_example_4">example 4</string>
+    <string name="test_top_snackbar_vector_icon">Vector Icon</string>
+    <string name="test_top_snackbar_icon_left_and_right">Icon Left &amp; Right</string>
+
+    <!--测试状态按钮-->
+    <string name="test_state_button_change_text_color">change text color</string>
+    <string name="test_state_button_change_background">change Background</string>
+    <string name="test_state_button_with_radius">with radius</string>
+    <string name="test_state_button_round_radius">round radius</string>
+    <string name="test_state_button_different_radius">different_radius</string>
+    <string name="test_state_button_with_dash">with dash</string>
+    <string name="test_state_button_with_stroke">with stroke</string>
+    <string name="test_state_button_keep_stroke">keep stroke</string>
+    <string name="test_state_button_stroke_background">stroke_background</string>
+    <string name="test_state_button_stroke_background_animation">stroke_background_animation</string>
+
+    <!--测试平滑混合按钮-->
+    <string name="test_smooth_compound_button_switch">Switch [width=match_parent, paddingLeft/Right=16dp]</string>
+    <string name="test_smooth_compound_button_system_switch">SystemSwitch</string>
+    <string name="test_smooth_compound_button_smooth_switch">SmoothSwitch</string>
+    <string name="test_smooth_compound_button_smooth_switch_click_mark_only">SmoothSwitch ClickMarkOnly</string>
+    <string name="test_smooth_compound_button_smooth_switch_reverse_mark_position">SmoothSwitch ReverseMarkPosition</string>
+    <string name="test_smooth_compound_button_checkbox">CheckBox [width=match_parent, paddingLeft/Right=16dp]</string>
+    <string name="test_smooth_compound_button_system_checkbox">SystemCheckBox</string>
+    <string name="test_smooth_compound_button_smooth_checkbox">SmoothCheckBox</string>
+    <string name="test_smooth_compound_button_smooth_checkbox_click_mark_only">SmoothCheckBox ClickMarkOnly</string>
+    <string name="test_smooth_compound_button_smooth_checkbox_reverse_mark_position">SmoothCheckBox ReverseMarkPosition</string>
+    <string name="test_smooth_compound_button_appcompat_check_off">AppCompat\nCheckOff</string>
+    <string name="test_smooth_compound_button_emptytext_custom_color">EmptyText\nCustomColor</string>
+    <string name="test_smooth_compound_button_appcompat_check_on">AppCompat\nCheckOn</string>
+    <string name="test_smooth_compound_button_radio_button">RadioButton [width=match_parent, paddingLeft/Right=16dp]</string>
+    <string name="test_smooth_compound_button_system_radio_button1">SystemRadioButton1</string>
+    <string name="test_smooth_compound_button_system_radio_button2">SystemRadioButton2</string>
+    <string name="test_smooth_compound_button_smooth_radio_button1_in_radio_group">SmoothRadioButton1 in RadioGroup</string>
+    <string name="test_smooth_compound_button_smooth_radio_button2_in_radio_group">SmoothRadioButton2 in RadioGroup</string>
+    <string name="test_smooth_compound_button_smooth_radio_button_click_mark_only">SmoothRadioButton ClickMarkOnly</string>
+    <string name="test_smooth_compound_button_smooth_radio_button_reverse_mark_position">SmoothRadioButton ReverseMarkPosition</string>
+    <string name="test_smooth_compound_button_control_test">Control Test</string>
+    <string name="test_smooth_compound_button_enabled_ctrl">Enabled-ctrl(SystemCheckBox)</string>
+    <string name="test_smooth_compound_button_checked_ctrl_no_anim">Checked-ctrl no-anim(SystemCheckBox)</string>
+    <string name="test_smooth_compound_button_checked_ctrl_with_anim">Checked-ctrl with-anim(SystemCheckBox)</string>
+    <string name="test_smooth_compound_button_test_in_clickable_viewgroup">Test in clickable viewgroup</string>
+    <string name="test_smooth_compound_button_save_this_sample_as_picture">Save this sample as picture</string>
+
+    <!--测试滑动背景图-->
+    <string name="test_moving_image_view_movingimageview">MovingImageView</string>
+    <string name="test_moving_image_view_next">下一张</string>
+    <string name="test_moving_image_view_up_down">上下移动</string>
+    <string name="test_moving_image_view_left_right">左右移动</string>
+    <string name="test_moving_image_view_lefttop_rightbottom">左上右下移动</string>
+    <string name="test_moving_image_view_leftbottom_righttop">左下右上移动</string>
+    <string name="test_moving_image_view_loiter_around">四处逛荡</string>
+    <string name="test_moving_image_view_stop_moving">停止移动</string>
+    <string name="test_moving_image_view_start_moving">开始移动</string>
+    <string name="test_moving_image_view_default_moving">默认移动（清除自定义路线）</string>
+    <string name="test_moving_image_view_udlrmovingimageview">UDLRMovingImageView</string>
+
+    <!--测试联动动画-->
+    <string name="test_linkage_animation_bring_into_use">开始使用</string>
+
+    <!--测试Fresco帮助-->
+    <string name="test_fresco_helper_basic_usage">基本用法</string>
+    <string name="test_fresco_helper_clear_memory_cache">清除所有图片的内存缓存</string>
+    <string name="test_fresco_helper_displays_a_larger_image">显示大图</string>
+    <string name="test_fresco_helper_display_the_size_of_the_specified_figure">显示指定尺寸的图</string>
+    <string name="test_fresco_helper_display_gif_image">显示gif图片</string>
+    <string name="test_fresco_helper_display_local_resource_images">显示本地资源图片</string>
+    <string name="test_fresco_helper_display_webp_images">显示webp格式的图片</string>
+    <string name="test_fresco_helper_use_data_binding">使用DataBinding</string>
+    <string name="test_fresco_helper_display_images_after_gaussian_blur">显示高斯模糊后的图片</string>
+    <string name="test_fresco_helper_for_any_view_of_background_with_gaussian_blur">对任意View的背景，进行高斯模糊效果</string>
+    <string name="test_fresco_helper_from_the_network_loading_photo_wall">显示从网络加载的图片墙</string>
+    <string name="test_fresco_helper_from_the_local_album_loading_photo_wall">显示从本地相册加载的图片墙</string>
+
+    <!--测试拖拽容器-->
+    <string name="test_drag_footer_contain_recycler_view">包含RecyclerView</string>
+    <string name="test_drag_footer_contain_horizontal_scroll_view">包含HorizontalScrollView</string>
+    <string name="test_drag_footer_contain_image_view">包含ImageView</string>
+    <string name="test_drag_footer_contain_text_view_button">包含TextView, Button</string>
+    <string name="test_drag_footer_text_view">TextView</string>
+    <string name="test_drag_footer_button">Button</string>
+
+    <!--测试右上角弹窗-->
+    <string name="test_dialog_top_right_a_chat">发起聊天</string>
+    <string name="test_dialog_top_right_login_page_version">登录网页版</string>
+    <string name="test_dialog_top_right_rich_scan">扫一扫</string>
+    <string name="test_dialog_top_right_receiver_model">听筒模式</string>
+
+    <!--测试EasyRecyclerView-->
+    <string name="refresh_and_more">Refresh&amp;More</string>
+    <string name="header_and_footer">Header&amp;Footer</string>
+    <string name="multi_style">MultiType</string>
+    <string name="collapsing">Collapsing</string>
+    <string name="staggered_grid">StaggeredGrid</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="stiky_header">StickyHeader</string>
+    <string name="easy_recycler_view_empty">暂无数据</string>
+    <string name="easy_recycler_view_error">ヽ(≧Д≦)ノ\n加载失败,请点击重试</string>
+    <string name="easy_recycler_view_error_footer">网络错误,点击重试</string>
+    <string name="easy_recycler_view_more">更多加载中……</string>
+    <string name="easy_recycler_view_nomore">(*￣ω￣) 没有更多了</string>
+
+    <!--测试-->
+    <string name="test_main_title">测试</string>
+
+    <!--书籍详情-->
+    <string name="book_details_title">书籍详情</string>
+
+    <!--书籍全部分类-->
+    <string name="book_class_title">全部分类</string>
+
+    <!--书籍推荐-->
+    <string name="book_recommend_recommend_hot">热门推荐</string>
+    <string name="book_recommend_recommend_new">最近更新</string>
+    <string name="book_recommend_novel_name">小说名字</string>
+
+    <!--首页-->
+    <string name="main_activity_exit">再按一次返回键回到桌面</string>
+
+    <!--登录相关文本-->
+    <string name="login">LOGIN</string>
+    <string name="name">Account</string>
+    <string name="nickname">Nickname</string>
+    <string name="password">Password</string>
+    <string name="password_remember">Remember</string>
+    <string name="auto_login">AutoLogin</string>
+    <string name="login_action">Log In ！</string>
+    <string name="go">GO</string>
+    <string name="register">REGISTER</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="register_action">Sign Up ！</string>
+    <string name="next">NEXT</string>
+    <string name="user_name_empty">UserName can not be empty</string>
+    <string name="user_name_error">UserName is wrong</string>
+    <string name="user_password_empty">UserPassword can not be empty</string>
+    <string name="user_password_error">UserPassword is wrong</string>
+    <string name="user_passwordRep_error">UserPasswordRepeat is wrong</string>
+    <string name="user_password_different">UserPasswords are different</string>
+    <string name="login_success">Log in success!</string>
+    <string name="register_success">Register success! Please log in!</string>
+
+    <!--欢迎页文字-->
+    <string name="welcome">学无止境</string>
+
+    <!--PhotoPicker-->
+    <string name="empty_sdcard">No SD card</string>
+    <string name="open_gallery_fail">Gallery init failure!</string>
+
+    <!--JellyToggleButton-->
+    <string name="default_on_text">On</string>
+    <string name="default_off_text">Off</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <com.maiml.library.BaseItemLayout
+                android:id="@+id/bil_base_item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_logout"
+                style="@style/_Button_Background_LightRedDarkRed_Corners_Five_Text_PaleTranslucentPale"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:text="退出当前账号"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_49dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

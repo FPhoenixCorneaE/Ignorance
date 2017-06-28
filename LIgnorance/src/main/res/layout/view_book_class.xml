@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.livelearn.ignorance.widget.slidinglayout.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sl_sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:background_view="@layout/layout_background_view"
+    app:sliding_mode="both"
+    app:sliding_pointer_mode="more"
+    app:top_max="200dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_book_class"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background" />
+</com.livelearn.ignorance.widget.slidinglayout.SlidingLayout>

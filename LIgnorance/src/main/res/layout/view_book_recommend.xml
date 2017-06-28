@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pa_progress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.livelearn.ignorance.widget.slidinglayout.SlidingLayout
+        android:id="@+id/sl_sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:background_view="@layout/layout_background_view"
+        app:sliding_mode="both"
+        app:sliding_pointer_mode="more"
+        app:top_max="200dp">
+
+        <com.livelearn.ignorance.widget.RSCScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <cn.bingoogolapple.bgabanner.BGABanner
+                    android:id="@+id/bga_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    app:banner_indicatorGravity="right"
+                    app:banner_pageChangeDuration="1000"
+                    app:banner_pointAutoPlayAble="true"
+                    app:banner_pointContainerBackground="@color/color_dark_black_translucent"
+                    app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+                    app:banner_pointTopBottomMargin="5dp"
+                    app:banner_tipTextColor="@color/white"
+                    app:banner_tipTextSize="15dp"
+                    app:banner_transitionEffect="alpha" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/_16sp_BlackText"
+                        android:text="@string/book_recommend_recommend_hot" />
+
+                    <View
+                        style="@style/_View_Divider_1px"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_recommend_hot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/_16sp_BlackText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/book_recommend_recommend_new" />
+
+                    <View
+                        style="@style/_View_Divider_1px"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_recommend_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.livelearn.ignorance.widget.RSCScrollView>
+    </com.livelearn.ignorance.widget.slidinglayout.SlidingLayout>
+</com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity>

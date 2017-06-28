@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="@color/background_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/margin_24dp"
+    android:paddingStart="@dimen/margin_16dp">
+
+    <TextView
+        android:id="@+id/tv_current"
+        style="@style/_15sp_BlackText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="fill_horizontal"
+        android:text="当前：上海"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_select_county"
+        style="@style/_13sp_GrayText"
+        android:text="选择县区"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

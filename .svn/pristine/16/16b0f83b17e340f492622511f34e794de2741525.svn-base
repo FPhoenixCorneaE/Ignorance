@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.livelearn.ignorance.widget.materiallogin.DefaultLoginView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:loginActionText="@string/login_action"
+    app:loginHint="@string/name"
+    app:loginPasswordHint="@string/password"
+    app:loginTextColor="@color/material_login_login_text_color"
+    app:loginTitle="@string/login" />

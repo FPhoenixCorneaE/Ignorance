@@ -1,0 +1,65 @@
+/*
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2016 Piasy
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 6
+        versionName "1.2.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile "com.android.support:support-annotations:25.3.1"
+    compile 'com.android.support:support-v4:25.3.1'
+
+    compile('com.tbruyelle.rxpermissions2:rxpermissions:0.8.2') {
+        exclude module: 'rxjava'
+    }
+    compile 'io.reactivex.rxjava2:rxjava:2.0.0'
+
+    compile "com.facebook.fresco:fresco:0.14.1"
+    compile "commons-io:commons-io:2.5"
+
+    compile "com.github.bumptech.glide:glide:3.7.0"
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    compile 'com.squareup.okhttp3:okhttp:3.4.2'
+
+    /**
+     * 微博和微信加载高清长图却不OOM,双击放大，单击返回，手动放大等，目前只能加载本地
+     */
+    compile project(path: ':SubsamplingScaleImageView')
+}

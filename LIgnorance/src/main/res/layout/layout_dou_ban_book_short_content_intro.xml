@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_content_intro_title"
+        style="@style/_BlackText"
+        android:padding="@dimen/margin_5dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.ms.expandable.ExpandableTextView
+        android:id="@+id/tv_short_content_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        app:animAlphaStart="1"
+        app:maxCollapsedLines="4">
+
+        <TextView
+            android:id="@id/tv_expandable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="fill_horizontal"
+            android:lineSpacingExtra="6dp"
+            android:paddingEnd="@dimen/margin_16dp"
+            android:paddingStart="@dimen/margin_16dp"
+            android:text="详情...."
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@id/tv_expand_collapse"
+            style="@style/_LightPurpleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </com.ms.expandable.ExpandableTextView>
+</merge>

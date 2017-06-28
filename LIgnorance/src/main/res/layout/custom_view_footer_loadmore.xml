@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <ProgressBar
+        android:layout_width="@dimen/margin_25dp"
+        android:layout_height="@dimen/margin_25dp" />
+
+    <TextView
+        android:id="@+id/tv_footer"
+        style="@style/_16sp_LightPurpleText"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:text="正在努力加载中..."
+        tools:ignore="HardcodedText" />
+</LinearLayout>

@@ -1,0 +1,636 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <declare-styleable name="ButtonBarContainerTheme" tools:ignore="ResourceName">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <!--Titlebar  标题栏-->
+    <declare-styleable name="Titlebar" tools:ignore="ResourceName">
+        <attr name="tb_left_text" format="string" />
+        <attr name="tb_left_text_visibility" format="enum">
+            <enum name="visible" value="2" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="0" />
+        </attr>
+        <attr name="tb_left_icon" format="reference" />
+        <attr name="tb_left_icon_visibility" format="enum">
+            <enum name="visible" value="2" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="0" />
+        </attr>
+        <attr name="tb_title_text" format="string" />
+        <attr name="tb_title_text_visibility" format="enum">
+            <enum name="visible" value="2" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="0" />
+        </attr>
+        <attr name="tb_right_text" format="string" />
+        <attr name="tb_right_text_visibility" format="enum">
+            <enum name="visible" value="2" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="0" />
+        </attr>
+        <attr name="tb_right_icon" format="reference" />
+        <attr name="tb_right_icon_visibility" format="enum">
+            <enum name="visible" value="2" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="0" />
+        </attr>
+    </declare-styleable>
+
+    <!--MaterialLogin  登录-->
+    <declare-styleable name="MaterialLoginView" tools:ignore="ResourceName">
+        <attr name="registerIcon" format="reference" />
+        <attr name="registerEnabled" format="boolean" />
+        <attr name="loginView" format="reference" />
+        <attr name="registerView" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DefaultLoginView" tools:ignore="ResourceName">
+        <attr name="loginTitle" format="string" />
+        <attr name="loginHint" format="string" />
+        <attr name="loginPasswordHint" format="string" />
+        <attr name="loginActionText" format="string" />
+        <attr name="loginTextColor" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DefaultRegisterView" tools:ignore="ResourceName">
+        <attr name="registerTitle" format="string" />
+        <attr name="registerHint" format="string" />
+        <attr name="registerNicknameHint" format="string" />
+        <attr name="registerPasswordHint" format="string" />
+        <attr name="registerRepeatPasswordHint" format="string" />
+        <attr name="registerActionText" format="string" />
+        <attr name="registerTextColor" format="reference" />
+    </declare-styleable>
+
+    <!--RippleView  波纹-->
+    <declare-styleable name="RippleView" tools:ignore="ResourceName">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer" />
+        <attr name="rv_rippleDuration" format="integer" />
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0" />
+            <enum name="doubleRipple" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+    </declare-styleable>
+
+    <!--JellyToggleButton  果冻开关按钮-->
+    <declare-styleable name="JellyToggleButton" tools:ignore="ResourceName">
+        <attr name="jtbLeftBackgroundColor" format="color|reference" />
+        <attr name="jtbRightBackgroundColor" format="color|reference" />
+        <attr name="jtbLeftThumbColor" format="color|reference" />
+        <attr name="jtbRightThumbColor" format="color|reference" />
+        <attr name="jtbLeftTextColor" format="color|reference" />
+        <attr name="jtbRightTextColor" format="color|reference" />
+        <attr name="jtbLeftTextTypeface" format="string" />
+        <attr name="jtbRightTextTypeface" format="string" />
+        <attr name="jtbLeftTextSize" format="dimension|reference" />
+        <attr name="jtbRightTextSize" format="dimension|reference" />
+        <attr name="jtbLeftText" format="string|reference" />
+        <attr name="jtbRightText" format="string|reference" />
+
+        <attr name="jtbTextMarginLeft" format="dimension|reference" />
+        <attr name="jtbTextMarginRight" format="dimension|reference" />
+        <attr name="jtbTextMarginTop" format="dimension|reference" />
+        <attr name="jtbTextMarginBottom" format="dimension|reference" />
+        <attr name="jtbTextMarginCenter" format="dimension|reference" />
+
+        <attr name="jtbThumbRadius" format="dimension|reference" />
+
+        <attr name="jtbBackgroundMeasureRatioValue" format="float|reference" />
+        <attr name="jtbBackgroundRadius" format="dimension|reference" />
+
+        <attr name="jtbColorChangeType" format="enum">
+            <enum name="rgb" value="0" />
+            <enum name="hsv" value="1" />
+        </attr>
+
+        <attr name="jtbJelly" format="enum">
+            <enum name="itself" value="0" />
+            <enum name="lazy_tremble_head_fatty" value="1" />
+            <enum name="lazy_tremble_head_slim_jim" value="2" />
+            <enum name="lazy_tremble_tail_fatty" value="3" />
+            <enum name="lazy_tremble_tail_slim_jim" value="4" />
+            <enum name="lazy_tremble_body_fatty" value="5" />
+            <enum name="lazy_tremble_body_slim_jim" value="6" />
+            <enum name="lazy_stiff_fatty" value="7" />
+            <enum name="lazy_stiff_slim_jim" value="8" />
+            <enum name="active_tremble_head_fatty" value="9" />
+            <enum name="active_tremble_head_slim_jim" value="10" />
+            <enum name="active_tremble_tail_fatty" value="11" />
+            <enum name="active_tremble_tail_slim_jim" value="12" />
+            <enum name="active_tremble_body_fatty" value="13" />
+            <enum name="active_tremble_body_slim_jim" value="14" />
+            <enum name="active_stiff_fatty" value="15" />
+            <enum name="active_stiff_slim_jim" value="16" />
+            <enum name="random" value="17" />
+        </attr>
+
+        <attr name="jtbEaseType" format="enum">
+            <enum name="ease_in_sine" value="0" />
+            <enum name="ease_out_sine" value="1" />
+            <enum name="ease_in_out_sine" value="2" />
+            <enum name="ease_in_quad" value="3" />
+            <enum name="ease_out_quad" value="4" />
+            <enum name="ease_in_out_quad" value="5" />
+            <enum name="ease_in_cubic" value="6" />
+            <enum name="ease_out_cubic" value="7" />
+            <enum name="ease_in_out_cubic" value="8" />
+            <enum name="ease_in_quart" value="9" />
+            <enum name="ease_out_quart" value="10" />
+            <enum name="ease_in_out_quart" value="11" />
+            <enum name="ease_in_quint" value="12" />
+            <enum name="ease_out_quint" value="13" />
+            <enum name="ease_in_out_quint" value="14" />
+            <enum name="ease_in_expo" value="15" />
+            <enum name="ease_out_expo" value="16" />
+            <enum name="ease_in_out_expo" value="17" />
+            <enum name="ease_in_circ" value="18" />
+            <enum name="ease_out_circ" value="19" />
+            <enum name="ease_in_out_circ" value="20" />
+            <enum name="ease_in_back" value="21" />
+            <enum name="ease_out_back" value="22" />
+            <enum name="ease_in_out_back" value="23" />
+            <enum name="ease_in_elastic" value="24" />
+            <enum name="ease_out_elastic" value="25" />
+            <enum name="ease_in_out_elastic" value="26" />
+            <enum name="ease_in_bounce" value="27" />
+            <enum name="ease_out_bounce" value="28" />
+            <enum name="ease_in_out_bounce" value="29" />
+            <enum name="linear" value="30" />
+        </attr>
+
+        <attr name="jtbDuration" format="integer|reference" />
+
+        <attr name="jtbTouchMoveRatioValue" format="float|reference" />
+        <attr name="jtbBezierControlValue" format="float|reference" />
+        <attr name="jtbStretchDistanceRatioValue" format="float|reference" />
+        <attr name="jtbBezierScaleRatioValue" format="float|reference" />
+
+        <attr name="jtbMoveToSameStateCallListener" format="boolean|reference" />
+        <attr name="jtbDraggable" format="boolean|reference" />
+
+    </declare-styleable>
+
+    <!--SmartTabLayout  平滑过渡标签布局-->
+    <declare-styleable name="stl_SmartTabLayout" tools:ignore="ResourceName">
+        <attr name="stl_indicatorAlwaysInCenter" format="boolean" />
+        <attr name="stl_indicatorWithoutPadding" format="boolean" />
+        <attr name="stl_indicatorInFront" format="boolean" />
+        <attr name="stl_indicatorInterpolation" format="enum">
+            <enum name="smart" value="0" />
+            <enum name="linear" value="1" />
+        </attr>
+        <attr name="stl_indicatorGravity" format="enum">
+            <enum name="bottom" value="0" />
+            <enum name="top" value="1" />
+            <enum name="center" value="2" />
+        </attr>
+        <attr name="stl_indicatorColor" format="color" />
+        <attr name="stl_indicatorColors" format="reference" />
+        <attr name="stl_indicatorThickness" format="dimension" />
+        <attr name="stl_indicatorWidth" format="dimension">
+            <enum name="auto" value="-1" />
+        </attr>
+        <attr name="stl_indicatorCornerRadius" format="dimension" />
+        <attr name="stl_overlineColor" format="color" />
+        <attr name="stl_overlineThickness" format="dimension" />
+        <attr name="stl_underlineColor" format="color" />
+        <attr name="stl_underlineThickness" format="dimension" />
+        <attr name="stl_dividerColor" format="color" />
+        <attr name="stl_dividerColors" format="reference" />
+        <attr name="stl_dividerThickness" format="dimension" />
+        <attr name="stl_defaultTabBackground" format="reference" />
+        <attr name="stl_defaultTabTextAllCaps" format="boolean" />
+        <attr name="stl_defaultTabTextColor" format="color|reference" />
+        <attr name="stl_defaultTabTextSize" format="dimension" />
+        <attr name="stl_defaultTabTextHorizontalPadding" format="dimension" />
+        <attr name="stl_defaultTabTextMinWidth" format="dimension" />
+        <attr name="stl_customTabTextLayoutId" format="reference" />
+        <attr name="stl_customTabTextViewId" format="reference" />
+        <attr name="stl_distributeEvenly" format="boolean" />
+        <attr name="stl_clickable" format="boolean" />
+        <attr name="stl_titleOffset" format="dimension">
+            <enum name="auto_center" value="-1" />
+        </attr>
+        <attr name="stl_drawDecorationAfterTab" format="boolean" />
+    </declare-styleable>
+
+
+    <!--DragContainer  拖拽容器-->
+    <declare-styleable name="DragContainer" tools:ignore="ResourceName">
+        <attr name="dc_icon_drawable" format="reference" />
+        <attr name="dc_icon_size" format="dimension|reference" />
+        <attr name="dc_text_normal" format="string|reference" />
+        <attr name="dc_text_event" format="string|reference" />
+        <attr name="dc_text_size" format="dimension|reference" />
+        <attr name="dc_text_color" format="color|reference" />
+        <attr name="dc_text_icon_gap" format="dimension|reference" />
+        <attr name="dc_footer_height" format="dimension|reference" />
+        <attr name="dc_footer_color" format="color|reference" />
+        <attr name="dc_reset_animator_duration" format="integer|reference" />
+        <attr name="dc_drag_damp" format="float|reference" />
+        <attr name="dc_bezier_threshold" format="dimension|reference" />
+    </declare-styleable>
+
+
+    <!--MovingImageView 图片四处逛荡-->
+    <declare-styleable name="MovingImageView">
+        <attr name="miv_speed" format="integer" />
+        <attr name="miv_repetitions" format="integer" />
+        <attr name="miv_max_relative_size" format="float" />
+        <attr name="miv_min_relative_offset" format="float" />
+        <attr name="miv_start_delay" format="integer" />
+        <attr name="miv_load_on_create" format="boolean" />
+    </declare-styleable>
+
+    <!--UDLRMovingImageView 只能上下或者左右移动-->
+    <declare-styleable name="UDLRMovingImageView">
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--StateButton  状态（普通、按压、不可操作）按钮-->
+    <declare-styleable name="StateButton">
+        <!--text color-->
+        <attr name="normalTextColor" format="color|reference" />
+        <attr name="pressedTextColor" format="color|reference" />
+        <attr name="unableTextColor" format="color|reference" />
+
+        <!--stroke width and color, dash width, dash gap-->
+        <attr name="strokeDashWidth" format="dimension|reference" />
+        <attr name="strokeDashGap" format="dimension|reference" />
+        <attr name="normalStrokeWidth" format="dimension|reference" />
+        <attr name="pressedStrokeWidth" format="dimension|reference" />
+        <attr name="unableStrokeWidth" format="dimension|reference" />
+        <attr name="normalStrokeColor" format="color|reference" />
+        <attr name="pressedStrokeColor" format="color|reference" />
+        <attr name="unableStrokeColor" format="color|reference" />
+
+        <!--background color-->
+        <attr name="normalBackgroundColor" format="color|reference" />
+        <attr name="pressedBackgroundColor" format="color|reference" />
+        <attr name="unableBackgroundColor" format="color|reference" />
+
+        <!--background radius-->
+        <attr name="radius" format="dimension|reference" />
+        <attr name="round" format="boolean|reference" />
+
+        <!--animation duration-->
+        <attr name="animationDuration" format="integer|reference" />
+    </declare-styleable>
+
+
+    <!--VerticalBannerView  悬垂幕广告-->
+    <declare-styleable name="VerticalBannerView">
+        <attr name="gap" format="integer" />
+        <attr name="animDuration" format="integer" />
+    </declare-styleable>
+
+    <!--JazzyViewPager  花哨多面控件-->
+    <declare-styleable name="JazzyViewPager">
+        <attr name="style">
+            <enum name="standard" value="0" />
+            <enum name="tablet" value="1" />
+            <enum name="cubein" value="2" />
+            <enum name="cubeout" value="3" />
+            <enum name="flipvertical" value="4" />
+            <enum name="fliphorizontal" value="5" />
+            <enum name="stack" value="6" />
+            <enum name="zoomin" value="7" />
+            <enum name="zoomout" value="8" />
+            <enum name="rotateup" value="9" />
+            <enum name="rotatedown" value="10" />
+            <enum name="accordion" value="11" />
+        </attr>
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="outlineEnabled" format="boolean" />
+        <attr name="outlineColor" format="color|reference" />
+    </declare-styleable>
+
+    <!--CBProgressBar 圆形，矩形，扇形进度条-->
+    <declare-styleable name="CBProgressBar">
+        <!-- 进度百分比文字大小 -->
+        <attr name="percentTextSize" format="dimension" />
+        <!-- 圆形进度条边框大小 -->
+        <attr name="strokeWidth" format="dimension" />
+        <!-- 矩形进度条 四周圆角大小 -->
+        <attr name="rectRound" format="dimension" />
+        <!-- 矩形进度条 是空心样式还是实心样式 -->
+        <attr name="isHorizonStroke" format="boolean" />
+        <!-- 进度百分比文字颜色 -->
+        <attr name="percentTextColor" format="color|integer" />
+        <!-- 进度条背景颜色 -->
+        <attr name="progressBarBgColor" format="color|integer" />
+        <!-- 扇形进度条颜色 -->
+        <attr name="sectorColor" format="color|integer" />
+        <!-- 扇形背景颜色 -->
+        <attr name="unSweepColor" format="color|integer" />
+        <!-- 进度颜色 -->
+        <attr name="progressColor" format="color|integer" />
+        <!-- 进度文字是否显示百分号 -->
+        <attr name="showPercentSign" format="boolean" />
+        <!-- 进度条样式圆形还是矩形 -->
+        <attr name="cbprogressBarStyle">
+            <enum name="horizontal" value="0" />
+            <enum name="circle" value="1" />
+            <enum name="sector" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!--LoaderView-->
+    <declare-styleable name="LoaderView">
+        <attr name="width_weight" format="float" />
+        <attr name="height_weight" format="float" />
+    </declare-styleable>
+
+    <!--SlidingLayout 可以实现类似微信网页浏览的下拉功能，也可以实现类似iOS中UITableView的下拉上拉弹跳的果冻效果-->
+    <declare-styleable name="SlidingLayout">
+        <attr name="background_view" format="reference" />
+        <attr name="sliding_mode" format="enum">
+            <enum name="both" value="0" />
+            <enum name="top" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+        <attr name="sliding_pointer_mode" format="enum">
+            <enum name="one" value="0" />
+            <enum name="more" value="1" />
+        </attr>
+        <attr name="top_max" format="dimension" />
+    </declare-styleable>
+
+    <!--流式布局 TagCloudView-->
+    <declare-styleable name="TagCloudView">
+        <attr name="tcvBackground" format="reference" />
+        <attr name="tcvTextColor" format="color" />
+        <attr name="tcvBorder" format="dimension" />
+        <attr name="tcvTextSize" format="integer" />
+        <attr name="tcvBorderItem" format="dimension" />
+        <attr name="tcvItemBorderVertical" format="dimension" />
+        <attr name="tcvItemBorderHorizontal" format="dimension" />
+
+        <attr name="tcvSingleLine" format="boolean" />
+        <attr name="tcvShowEndText" format="boolean" />
+        <attr name="tcvShowRightImg" format="boolean" />
+        <attr name="tcvEndText" format="string" />
+        <attr name="tcvRightResId" format="reference" />
+        <attr name="tcvCanTagClick" format="boolean" />
+
+        <attr name="tcvTagResId" format="reference" />
+    </declare-styleable>
+
+    <!--3DViewPager-->
+    <declare-styleable name="ThreeDimensionViewPager">
+        <attr name="overscroll_rotation" format="float" />
+        <attr name="swipe_rotation" format="float" />
+        <attr name="swipe_translation" format="integer" />
+        <attr name="overscroll_translation" format="integer" />
+        <attr name="overscroll_animation_duration" format="integer" />
+        <attr name="animate_alpha" format="boolean" />
+    </declare-styleable>
+
+    <!--闪现边框FlashBorderView-->
+    <declare-styleable name="FlashBorderView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <!--圆形涟漪-->
+    <declare-styleable name="RippleCircle">
+        <attr name="circle_radius" format="dimension" />
+        <attr name="circle_color" format="color" />
+        <attr name="ripple_color" format="color" />
+        <attr name="ripple_width" format="dimension" />
+    </declare-styleable>
+
+    <!--圆点指示器-->
+    <declare-styleable name="PointIndicator">
+        <attr name="indicator_width" format="dimension" />
+        <attr name="indicator_height" format="dimension" />
+        <attr name="indicator_gap" format="dimension" />
+        <attr name="indicator_animator" format="reference" />
+        <attr name="indicator_selected_src" format="reference" />
+        <attr name="indicator_unselected_src" format="reference" />
+    </declare-styleable>
+
+    <!--viewpager页数指示器-->
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="small_text_color" format="color" />
+        <attr name="big_text_color" format="color" />
+        <attr name="slash_color" format="color" />
+        <attr name="small_text_size" format="dimension" />
+        <attr name="big_text_size" format="dimension" />
+    </declare-styleable>
+
+    <!--Item侧滑删除菜单-->
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean" />
+        <attr name="ios" format="boolean" />
+        <attr name="leftSwipe" format="boolean" />
+    </declare-styleable>
+
+    <!--多面控件缩放标题（只限文字）-->
+    <declare-styleable name="ViewPagerZoomTitle">
+        <attr name="hvTextSize" format="dimension" />
+        <attr name="hvTextColor" format="color" />
+        <attr name="hvTextColorActiveTab" format="color" />
+        <attr name="hvTextAlpha" format="float" />
+        <attr name="hvTextAlphaActiveTab" format="float" />
+        <attr name="hvTextScale" format="float" />
+        <attr name="hvTextScaleActiveTab" format="float" />
+        <attr name="hvPadding" format="dimension" />
+    </declare-styleable>
+
+    <!--圆圈刷新布局-->
+    <declare-styleable name="CirCleRefreshLayout">
+        <attr name="AniBackColor" format="color" />
+        <attr name="AniForeColor" format="color" />
+        <attr name="CircleSmaller" format="integer" />
+    </declare-styleable>
+
+    <!--弧形布局-->
+    <attr name="arc_origin">
+        <!-- Value same as the android:gravity -->
+        <flag name="top" value="0x30" />
+        <flag name="bottom" value="0x50" />
+        <flag name="left" value="0x03" />
+        <flag name="right" value="0x05" />
+        <flag name="center_vertical" value="0x10" />
+        <flag name="center_horizontal" value="0x01" />
+        <flag name="center" value="0x11" />
+        <flag name="start" value="0x00800003" />
+        <flag name="end" value="0x00800005" />
+    </attr>
+
+    <declare-styleable name="arc_ArcLayout">
+        <attr name="arc_origin" />
+        <attr name="arc_color" format="color" />
+        <attr name="arc_radius" format="dimension" />
+        <attr name="arc_axisRadius" format="dimension" />
+        <attr name="arc_freeAngle" format="boolean" />
+        <attr name="arc_reverseAngle" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="arc_ArcLayout_Layout">
+        <attr name="arc_origin" />
+        <attr name="arc_angle" format="float" />
+    </declare-styleable>
+
+    <!--圆点指示器-->
+    <declare-styleable name="OvalTabStrip">
+        <attr name="otsDrawable" format="reference" />
+        <attr name="otsDrawablePadding" format="dimension" />
+        <attr name="otsScale" format="float" />
+    </declare-styleable>
+
+    <!--微信式渐变底部Tab效果-->
+    <declare-styleable name="GradientTabStrip">
+        <attr name="gtsTextSize" format="dimension" />
+        <attr name="gtsTextColor" format="color" />
+        <attr name="gtsDrawablePadding" format="dimension" />
+        <attr name="gtsBackground" format="reference" />
+        <attr name="gtsInterval" format="reference" />
+        <attr name="gtsMinItemWidth" format="dimension" />
+        <attr name="gtsTagTextSize" format="dimension" />
+        <attr name="gtsTagTextColor" format="color" />
+        <attr name="gtsTagBackground" format="reference" />
+        <attr name="gtsTagPadding" format="dimension" />
+        <attr name="gtsTagPaddingLeft" format="dimension" />
+        <attr name="gtsTagPaddingTop" format="dimension" />
+        <attr name="gtsTagPaddingRight" format="dimension" />
+        <attr name="gtsTagPaddingBottom" format="dimension" />
+        <attr name="gtsTagMargin" format="dimension" />
+        <attr name="gtsTagMarginLeft" format="dimension" />
+        <attr name="gtsTagMarginTop" format="dimension" />
+        <attr name="gtsTagMarginRight" format="dimension" />
+        <attr name="gtsTagMarginBottom" format="dimension" />
+        <attr name="gtsTagMinSizeMode" format="enum">
+            <enum name="OnlyHasText" value="0" />
+            <enum name="Always" value="1" />
+        </attr>
+        <attr name="gtsTagMinWidth" format="dimension" />
+        <attr name="gtsTagMinHeight" format="dimension" />
+        <attr name="gtsCenterGap" format="dimension" />
+    </declare-styleable>
+
+    <!--移动式下标渐变缩放Tab-->
+    <declare-styleable name="IndicatorTabStrip">
+        <attr name="ttsTextSize" format="dimension" />
+        <attr name="ttsTextColor" format="color" />
+        <attr name="ttsTextScale" format="float" />
+        <attr name="ttsBackground" format="reference" />
+        <attr name="ttsGradient" format="color" />
+        <attr name="ttsDivider" format="reference" />
+        <attr name="ttsIndicator" format="reference" />
+        <attr name="ttsIndicatorWidthMode" format="enum">
+            <enum name="BySet" value="0" />
+            <enum name="ByTab" value="1" />
+        </attr>
+        <attr name="ttsIndicatorPadding" format="dimension" />
+        <attr name="ttsIndicatorWidth" format="dimension">
+            <flag name="DrawableWidth" value="-1" />
+        </attr>
+        <attr name="ttsIndicatorHeight" format="dimension">
+            <flag name="DrawableHeight" value="-1" />
+        </attr>
+        <attr name="ttsInterval" format="reference" />
+        <attr name="ttsMinItemWidth" format="dimension" />
+        <attr name="ttsMinItemHeight" format="dimension" />
+        <attr name="ttsTagTextSize" format="dimension" />
+        <attr name="ttsTagTextColor" format="color" />
+        <attr name="ttsTagBackground" format="reference" />
+        <attr name="ttsTagPadding" format="dimension" />
+        <attr name="ttsTagPaddingLeft" format="dimension" />
+        <attr name="ttsTagPaddingTop" format="dimension" />
+        <attr name="ttsTagPaddingRight" format="dimension" />
+        <attr name="ttsTagPaddingBottom" format="dimension" />
+        <attr name="ttsTagMargin" format="dimension" />
+        <attr name="ttsTagMarginLeft" format="dimension" />
+        <attr name="ttsTagMarginTop" format="dimension" />
+        <attr name="ttsTagMarginRight" format="dimension" />
+        <attr name="ttsTagMarginBottom" format="dimension" />
+        <attr name="ttsTagMinSizeMode" format="enum">
+            <enum name="OnlyHasText" value="0" />
+            <enum name="Always" value="1" />
+        </attr>
+        <attr name="ttsTagMinWidth" format="dimension" />
+        <attr name="ttsTagMinHeight" format="dimension" />
+    </declare-styleable>
+
+    <!--仿今日头条之字体颜色随ViewPager的滑动步伐而改变-->
+    <declare-styleable name="ColorTrackView">
+        <attr name="ctv_text" format="string" />
+        <attr name="ctv_text_size" format="dimension" />
+        <attr name="ctv_text_origin_color" format="color|reference" />
+        <attr name="ctv_text_change_color" format="color|reference" />
+        <attr name="ctv_progress" format="float" />
+        <attr name="ctv_direction" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <!--仿微信底部滑动渐变标签栏-->
+    <declare-styleable name="AlphaTabView">
+        <attr name="tabIconNormal" format="reference" />
+        <attr name="tabIconSelected" format="reference" />
+        <attr name="tabText" format="string" />
+        <attr name="tabTextSize" format="dimension" />
+        <attr name="textColorNormal" format="color" />
+        <attr name="textColorSelected" format="color" />
+        <attr name="badgeBackgroundColor" format="color" />
+        <attr name="paddingTexwithIcon" format="dimension" />
+    </declare-styleable>
+
+    <!--仿 instagram 和微博的头像点击进行加载的 Android 动画-->
+    <declare-styleable name="InsLoadingViewAttr">
+        <attr name="ilv_rotate_duration" format="integer" />
+        <attr name="ilv_circle_duration" format="integer" />
+        <attr name="ilv_start_color" format="color" />
+        <attr name="ilv_end_color" format="color" />
+        <attr name="ilv_status">
+            <enum name="loading" value="0" />
+            <enum name="clicked" value="1" />
+            <enum name="unclicked" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!--回弹ViewPager-->
+    <declare-styleable name="BounceBackViewPager">
+        <!--
+        determines the maximum amount of translation along the z-axis during the overscroll.
+        Default is 150.
+        -->
+        <attr name="bounceback_overscroll_translation" format="dimension" />
+
+        <!-- Duration of animation when user releases the over scroll. Default is 400 ms. -->
+        <attr name="bounceback_overscroll_animation_duration" format="integer" />
+    </declare-styleable>
+
+    <!--九宫格显示多图或item，仿照QQ空间图片列表-->
+    <declare-styleable name="MultiView">
+        <attr name="divideSpace" format="dimension"/>
+        <attr name="placeholder" format="reference"/>
+    </declare-styleable>
+
+    <!--circle progress animation view-->
+    <declare-styleable name="CircleProgress">
+        <attr name="color1" format="reference|color"/>
+        <attr name="color2" format="reference|color"/>
+        <attr name="color3" format="reference|color"/>
+        <attr name="autoStart" format="boolean"/>
+    </declare-styleable>
+</resources>

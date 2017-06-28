@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <!--全屏主题-->
+    <style name="FullscreenTheme" parent="AppTheme.Base">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 首页专用 -->
+    <style name="AppThemeMain" parent="AppTheme.Base">
+        <!--标题栏颜色-->
+        <item name="colorPrimary">@color/title_bar</item>
+        <!--底部导航栏底色-->
+        <item name="android:navigationBarColor">@color/purple</item>
+        <!--状态栏底色-->
+        <item name="colorPrimaryDark">@color/status_bar</item>
+        <item name="colorAccent">@color/purple</item>
+        <item name="actionBarSize">@dimen/actionBarSize</item>
+        <item name="android:textColorPrimary">@android:color/primary_text_light</item>
+        <item name="android:actionBarSize">@dimen/actionBarSize</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 通用主题 -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!--标题栏颜色-->
+        <item name="colorPrimary">@color/title_bar</item>
+        <!--底部导航栏底色-->
+        <item name="android:navigationBarColor">@color/purple</item>
+        <!--状态栏底色-->
+        <item name="colorPrimaryDark">@color/status_bar</item>
+        <item name="colorAccent">@color/purple</item>
+        <item name="actionBarSize">@dimen/actionBarSize</item>
+        <item name="android:textColorPrimary">@android:color/primary_text_light</item>
+        <item name="android:actionBarSize">@dimen/actionBarSize</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

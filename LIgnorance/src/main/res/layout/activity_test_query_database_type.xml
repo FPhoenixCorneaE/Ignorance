@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_hospital"
+            style="@style/_Button_Background_LightPurpleDarkPurple_Text_PaleTranslucentPale"
+            android:layout_marginEnd="@dimen/margin_36dp"
+            android:layout_marginStart="@dimen/margin_36dp"
+            android:text="医院"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_department"
+            style="@style/_Button_Background_LightPurpleDarkPurple_Text_PaleTranslucentPale"
+            android:layout_marginEnd="@dimen/margin_36dp"
+            android:layout_marginStart="@dimen/margin_36dp"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:text="科室"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_disease"
+            style="@style/_Button_Background_LightPurpleDarkPurple_Text_PaleTranslucentPale"
+            android:layout_marginEnd="@dimen/margin_36dp"
+            android:layout_marginStart="@dimen/margin_36dp"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:text="疾病"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_return_result"
+            style="@style/_Button_Background_LightPurpleDarkPurple_Text_PaleTranslucentPale"
+            android:layout_marginEnd="@dimen/margin_36dp"
+            android:layout_marginStart="@dimen/margin_36dp"
+            android:layout_marginTop="@dimen/margin_50dp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</LinearLayout>

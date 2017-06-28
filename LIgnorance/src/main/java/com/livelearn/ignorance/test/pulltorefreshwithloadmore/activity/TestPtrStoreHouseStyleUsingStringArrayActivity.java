@@ -1,0 +1,115 @@
+package com.livelearn.ignorance.test.pulltorefreshwithloadmore.activity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+
+import com.livelearn.ignorance.R;
+import com.livelearn.ignorance.base.BaseActivity;
+import com.livelearn.ignorance.utils.DisplayUtils;
+import com.livelearn.ignorance.utils.GlideUtils;
+import com.livelearn.ignorance.widget.TitleBar;
+
+import butterknife.BindView;
+import in.srain.cube.views.ptr.PtrFrameLayout;
+import in.srain.cube.views.ptr.PtrHandler;
+import in.srain.cube.views.ptr.PtrUIHandler;
+import in.srain.cube.views.ptr.header.StoreHouseHeader;
+import in.srain.cube.views.ptr.indicator.PtrIndicator;
+
+public class TestPtrStoreHouseStyleUsingStringArrayActivity extends BaseActivity {
+
+    @BindView(R.id.tb_title)
+    TitleBar tbTitle;
+
+    @BindView(R.id.iv_image)
+    ImageView ivImage;
+
+    @BindView(R.id.pfl_pull_to_refresh)
+    PtrFrameLayout pflPullToRefresh;
+
+    private StoreHouseHeader header;
+
+    @Override
+    public int getLayoutResource() {
+        return R.layout.activity_test_ptr_material_style;
+    }
+
+    @Override
+    public void initLayout(Bundle savedInstanceState) {
+        tbTitle.setTitleText(className);
+
+        String picUrl = "http://img5.duitang.com/uploads/item/201406/28/20140628122218_fLQyP.thumb.jpeg";
+        GlideUtils.setupImage(mContext, ivImage, picUrl);
+        header = new StoreHouseHeader(mContext);
+        header.setPadding(0, DisplayUtils.dp2px(15f), 0, 0);
+        header.initWithStringArray(R.array.StoreHouseStyle_Store);
+
+        pflPullToRefresh.setDurationToCloseHeader(3000);
+        pflPullToRefresh.setHeaderView(header);
+        pflPullToRefresh.addPtrUIHandler(header);
+        pflPullToRefresh.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                pflPullToRefresh.autoRefresh(false);
+            }
+        }, 100);
+    }
+
+    @Override
+    public void setListeners() {
+        pflPullToRefresh.addPtrUIHandler(new PtrUIHandler() {
+            private int mLoadTime = 0;
+
+            @Override
+            public void onUIReset(PtrFrameLayout frame) {
+                mLoadTime++;
+                if (mLoadTime % 2 == 0) {
+                    header.setScale(1);
+                    header.initWithStringArray(R.array.StoreHouseStyle_Store);
+                } else {
+                    header.setScale(0.5f);
+                    header.initWithStringArray(R.array.StoreHouseStyle_Akta);
+                }
+            }
+
+            @Override
+            public void onUIRefreshPrepare(PtrFrameLayout frame) {
+
+            }
+
+            @Override
+            public void onUIRefreshBegin(PtrFrameLayout frame) {
+
+            }
+
+            @Override
+            public void onUIRefreshComplete(PtrFrameLayout frame, boolean isHeader) {
+
+            }
+
+            @Override
+            public void onUIPositionChange(PtrFrameLayout frame, boolean isUnderTouch, byte status, PtrIndicator ptrIndicator) {
+
+            }
+        });
+
+        pflPullToRefresh.setPtrHandler(new PtrHandler() {
+            @Override
+            public boolean checkCanDoRefresh(PtrFrameLayout frame, View content, View header) {
+                return true;
+            }
+
+            @Override
+            public void onRefreshBegin(PtrFrameLayout frame) {
+                pflPullToRefresh.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (pflPullToRefresh != null)
+                            pflPullToRefresh.refreshComplete();
+                    }
+                }, 2000);
+            }
+        });
+    }
+}

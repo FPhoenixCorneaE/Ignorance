@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pa_progress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_book_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_book_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_return_top"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="@dimen/fab_return_top_margin_bottom"
+            android:layout_marginEnd="@dimen/fab_return_top_margin_end"
+            app:backgroundTint="@color/color_light_purple"
+            app:layout_anchor="@id/rv_book_pager"
+            app:layout_anchorGravity="bottom|end"
+            app:layout_behavior="com.livelearn.ignorance.widget.behavior.ScrollAwareFABBehavior"
+            app:rippleColor="@color/color_dark_purple"
+            app:srcCompat="@drawable/ic_arrow_upward_white" />
+    </android.support.design.widget.CoordinatorLayout>
+</com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity>

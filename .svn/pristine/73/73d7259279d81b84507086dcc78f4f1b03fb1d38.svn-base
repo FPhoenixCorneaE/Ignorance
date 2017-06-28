@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_solidbasebg"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/register_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/register"
+                android:textColor="@color/material_login_register_title_color"
+                android:textSize="24sp" />
+
+            <com.livelearn.ignorance.widget.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rv_centered="true"
+                app:rv_color="@color/red"
+                app:rv_type="doubleRipple"
+                app:rv_zoom="true">
+
+                <ImageView
+                    android:id="@+id/register_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:src="@drawable/ic_clear"
+                    android:tint="@color/material_login_register_title_color" />
+            </com.livelearn.ignorance.widget.RippleView>
+        </LinearLayout>
+
+        <am.widget.shapeimageview.ShapeImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/image_width_standard"
+            android:layout_height="@dimen/image_width_standard"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:scaleType="centerCrop"
+            app:sivBorderColor="@color/darker_gray"
+            app:sivBorderWidth="@dimen/margin_2dp"
+            app:sivHeightScale="1"
+            app:sivScaleTarget="height"
+            app:sivShape="Circle"
+            app:sivWidthScale="1" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            app:errorTextAppearance="@style/MaterialLoginTheme.TextAppearanceRegisterError"
+            app:theme="@style/MaterialLoginTheme.TextAppearanceRegister">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:inputType="textVisiblePassword|textNoSuggestions"
+                android:textColor="@color/material_login_register_text_color"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            app:errorTextAppearance="@style/MaterialLoginTheme.TextAppearanceRegisterError"
+            app:theme="@style/MaterialLoginTheme.TextAppearanceRegister">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/material_login_register_text_color"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_pass_rep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            app:errorTextAppearance="@style/MaterialLoginTheme.TextAppearanceRegisterError"
+            app:theme="@style/MaterialLoginTheme.TextAppearanceRegister">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/repeat_password"
+                android:inputType="textPassword"
+                android:textColor="@color/material_login_register_text_color"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_solidwhite">
+
+            <com.livelearn.ignorance.widget.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_color="@color/purple"
+                app:rv_type="rectangle"
+                app:rv_zoom="true">
+
+                <TextView
+                    android:id="@+id/register_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/next"
+                    android:textColor="@color/material_login_register_color"
+                    android:textSize="20sp" />
+            </com.livelearn.ignorance.widget.RippleView>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

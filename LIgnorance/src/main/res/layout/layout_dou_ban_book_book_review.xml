@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_book_review"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_5dp"
+    android:visibility="gone">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_20dp" />
+
+    <TextView
+        android:id="@+id/tv_book_review_title"
+        style="@style/_16sp_BlackText"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_5dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_book_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_16dp" />
+
+    <TextView
+        android:id="@+id/tv_more_book_review"
+        style="@style/_15sp_LightPurpleText"
+        android:layout_width="match_parent"
+        android:gravity="end"
+        android:paddingEnd="0dp"
+        android:paddingStart="@dimen/margin_16dp"
+        android:text=">>更多书评"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

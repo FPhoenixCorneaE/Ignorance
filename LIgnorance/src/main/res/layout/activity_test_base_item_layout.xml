@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.maiml.library.BaseItemLayout
+            android:id="@+id/base_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_20dp"
+            android:paddingTop="@dimen/margin_20dp"
+            app:icon_margin_left="10"
+            app:icon_text_margin="10"
+            app:item_height="46"
+            app:line_color="@color/divider"
+            app:line_margin_left="10"
+            app:line_margin_right="16"
+            app:margin_right="8"
+            app:right_text_color="@color/color_dark_gray"
+            app:right_text_margin="5"
+            app:right_text_size="15"
+            app:text_color="@color/color_dark_black"
+            app:text_size="18" />
+    </ScrollView>
+</LinearLayout>

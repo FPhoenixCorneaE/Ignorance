@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--从android3.0开始，安卓关闭了硬件加速功能，所以就不能显示了;
+    stroke宽度要比size高度小，结合vDashLine.setLayerType(View.LAYER_TYPE_SOFTWARE, null)，
+    虚线方可显示-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line">
+
+    <size android:height="1dp" />
+
+    <stroke
+        android:width="1px"
+        android:color="#dddddd"
+        android:dashGap="4dp"
+        android:dashWidth="6dp" />
+</shape>

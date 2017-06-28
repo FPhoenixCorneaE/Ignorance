@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="DB_Department">
+        [
+    {
+        \"dept_id\": 101,
+        \"dept_name\": \"全科\",
+        \"sub_dept_name\": \"全科\",
+        \"sub_dept_id\": 100001
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"儿科\",
+        \"sub_dept_id\": 100002
+    },
+    {
+        \"dept_id\": 103,
+        \"dept_name\": \"妇产科\",
+        \"sub_dept_name\": \"妇产科\",
+        \"sub_dept_id\": 100003
+    },
+    {
+        \"dept_id\": 103,
+        \"dept_name\": \"妇产科\",
+        \"sub_dept_name\": \"妇科\",
+        \"sub_dept_id\": 100004
+    },
+    {
+        \"dept_id\": 103,
+        \"dept_name\": \"妇产科\",
+        \"sub_dept_name\": \"产科\",
+        \"sub_dept_id\": 100005
+    },
+    {
+        \"dept_id\": 104,
+        \"dept_name\": \"皮肤性病科\",
+        \"sub_dept_name\": \"皮肤性病科\",
+        \"sub_dept_id\": 100006
+    },
+    {
+        \"dept_id\": 104,
+        \"dept_name\": \"皮肤性病科\",
+        \"sub_dept_name\": \"皮肤科\",
+        \"sub_dept_id\": 100007
+    },
+    {
+        \"dept_id\": 104,
+        \"dept_name\": \"皮肤性病科\",
+        \"sub_dept_name\": \"性病科\",
+        \"sub_dept_id\": 100008
+    },
+    {
+        \"dept_id\": 105,
+        \"dept_name\": \"生殖科\",
+        \"sub_dept_name\": \"生殖科\",
+        \"sub_dept_id\": 100009
+    },
+    {
+        \"dept_id\": 105,
+        \"dept_name\": \"生殖科\",
+        \"sub_dept_name\": \"男性生殖科\",
+        \"sub_dept_id\": 100010
+    },
+    {
+        \"dept_id\": 105,
+        \"dept_name\": \"生殖科\",
+        \"sub_dept_name\": \"女性生殖科\",
+        \"sub_dept_id\": 100011
+    },
+    {
+        \"dept_id\": 106,
+        \"dept_name\": \"内科\",
+        \"sub_dept_name\": \"内科\",
+        \"sub_dept_id\": 100012
+    },
+    {
+        \"dept_id\": 106,
+        \"dept_name\": \"内科\",
+        \"sub_dept_name\": \"呼吸内科\",
+        \"sub_dept_id\": 100013
+    },
+    {
+        \"dept_id\": 106,
+        \"dept_name\": \"内科\",
+        \"sub_dept_name\": \"心血管内科\",
+        \"sub_dept_id\": 100014
+    },
+    {
+        \"dept_id\": 106,
+        \"dept_name\": \"内科\",
+        \"sub_dept_name\": \"神经内科\",
+        \"sub_dept_id\": 100015
+    },
+    {
+        \"dept_id\": 106,
+        \"dept_name\": \"内科\",
+        \"sub_dept_name\": \"消化内科\",
+        \"sub_dept_id\": 100016
+    },
+    {
+        \"dept_id\": 106,
+        \"dept_name\": \"内科\",
+        \"sub_dept_name\": \"泌尿内科\",
+        \"sub_dept_id\": 100017
+    },
+    {
+        \"dept_id\": 106,
+        \"dept_name\": \"内科\",
+        \"sub_dept_name\": \"内分泌科\",
+        \"sub_dept_id\": 100018
+    },
+    {
+        \"dept_id\": 106,
+        \"dept_name\": \"内科\",
+        \"sub_dept_name\": \"风湿科\",
+        \"sub_dept_id\": 100019
+    },
+    {
+        \"dept_id\": 106,
+        \"dept_name\": \"内科\",
+        \"sub_dept_name\": \"血液内科\",
+        \"sub_dept_id\": 100020
+    },
+    {
+        \"dept_id\": 107,
+        \"dept_name\": \"外科\",
+        \"sub_dept_name\": \"外科\",
+        \"sub_dept_id\": 100021
+    },
+    {
+        \"dept_id\": 107,
+        \"dept_name\": \"外科\",
+        \"sub_dept_name\": \"外伤科\",
+        \"sub_dept_id\": 100022
+    },
+    {
+        \"dept_id\": 107,
+        \"dept_name\": \"外科\",
+        \"sub_dept_name\": \"胸外科\",
+        \"sub_dept_id\": 100023
+    },
+    {
+        \"dept_id\": 107,
+        \"dept_name\": \"外科\",
+        \"sub_dept_name\": \"神经外科\",
+        \"sub_dept_id\": 100024
+    },
+    {
+        \"dept_id\": 107,
+        \"dept_name\": \"外科\",
+        \"sub_dept_name\": \"肝胆外科\",
+        \"sub_dept_id\": 100025
+    },
+    {
+        \"dept_id\": 107,
+        \"dept_name\": \"外科\",
+        \"sub_dept_name\": \"泌尿外科\",
+        \"sub_dept_id\": 100026
+    },
+    {
+        \"dept_id\": 107,
+        \"dept_name\": \"外科\",
+        \"sub_dept_name\": \"胃肠外科\",
+        \"sub_dept_id\": 100027
+    },
+    {
+        \"dept_id\": 107,
+        \"dept_name\": \"外科\",
+        \"sub_dept_name\": \"肛肠外科\",
+        \"sub_dept_id\": 100028
+    },
+    {
+        \"dept_id\": 107,
+        \"dept_name\": \"外科\",
+        \"sub_dept_name\": \"头颈外科\",
+        \"sub_dept_id\": 100029
+    },
+    {
+        \"dept_id\": 107,
+        \"dept_name\": \"外科\",
+        \"sub_dept_name\": \"心血管外科\",
+        \"sub_dept_id\": 100030
+    },
+    {
+        \"dept_id\": 107,
+        \"dept_name\": \"外科\",
+        \"sub_dept_name\": \"骨科\",
+        \"sub_dept_id\": 100031
+    },
+    {
+        \"dept_id\": 107,
+        \"dept_name\": \"外科\",
+        \"sub_dept_name\": \"脊柱外科\",
+        \"sub_dept_id\": 100032
+    },
+    {
+        \"dept_id\": 107,
+        \"dept_name\": \"外科\",
+        \"sub_dept_name\": \"烧伤科\",
+        \"sub_dept_id\": 100033
+    },
+    {
+        \"dept_id\": 108,
+        \"dept_name\": \"中医科\",
+        \"sub_dept_name\": \"中医科\",
+        \"sub_dept_id\": 100034
+    },
+    {
+        \"dept_id\": 109,
+        \"dept_name\": \"耳鼻喉科\",
+        \"sub_dept_name\": \"耳鼻喉科\",
+        \"sub_dept_id\": 100035
+    },
+    {
+        \"dept_id\": 110,
+        \"dept_name\": \"眼科\",
+        \"sub_dept_name\": \"眼科\",
+        \"sub_dept_id\": 100036
+    },
+    {
+        \"dept_id\": 111,
+        \"dept_name\": \"口腔科\",
+        \"sub_dept_name\": \"口腔科\",
+        \"sub_dept_id\": 100037
+    },
+    {
+        \"dept_id\": 112,
+        \"dept_name\": \"肿瘤科\",
+        \"sub_dept_name\": \"肿瘤科\",
+        \"sub_dept_id\": 100038
+    },
+    {
+        \"dept_id\": 113,
+        \"dept_name\": \"传染科\",
+        \"sub_dept_name\": \"传染科\",
+        \"sub_dept_id\": 100039
+    },
+    {
+        \"dept_id\": 114,
+        \"dept_name\": \"精神心理科\",
+        \"sub_dept_name\": \"心理科\",
+        \"sub_dept_id\": 100040
+    },
+    {
+        \"dept_id\": 115,
+        \"dept_name\": \"康复医学科\",
+        \"sub_dept_name\": \"康复医学科\",
+        \"sub_dept_id\": 100041
+    },
+    {
+        \"dept_id\": 116,
+        \"dept_name\": \"疼痛专科\",
+        \"sub_dept_name\": \"疼痛专科\",
+        \"sub_dept_id\": 100042
+    },
+    {
+        \"dept_id\": 117,
+        \"dept_name\": \"整形美容科\",
+        \"sub_dept_name\": \"整形美容科\",
+        \"sub_dept_id\": 100043
+    },
+    {
+        \"dept_id\": 118,
+        \"dept_name\": \"急诊科\",
+        \"sub_dept_name\": \"重症医学科（ICU）\",
+        \"sub_dept_id\": 100044
+    },
+    {
+        \"dept_id\": 118,
+        \"dept_name\": \"急诊科\",
+        \"sub_dept_name\": \"急诊科\",
+        \"sub_dept_id\": 100045
+    },
+    {
+        \"dept_id\": 120,
+        \"dept_name\": \"其他\",
+        \"sub_dept_name\": \"麻醉科\",
+        \"sub_dept_id\": 100046
+    },
+    {
+        \"dept_id\": 120,
+        \"dept_name\": \"其他\",
+        \"sub_dept_name\": \"病理科\",
+        \"sub_dept_id\": 100047
+    },
+    {
+        \"dept_id\": 121,
+        \"dept_name\": \"医学影像科\",
+        \"sub_dept_name\": \"心电图室\",
+        \"sub_dept_id\": 100048
+    },
+    {
+        \"dept_id\": 121,
+        \"dept_name\": \"医学影像科\",
+        \"sub_dept_name\": \"超声诊断科\",
+        \"sub_dept_id\": 100049
+    },
+    {
+        \"dept_id\": 121,
+        \"dept_name\": \"医学影像科\",
+        \"sub_dept_name\": \"医学影像科\",
+        \"sub_dept_id\": 100050
+    },
+    {
+        \"dept_id\": 120,
+        \"dept_name\": \"其他\",
+        \"sub_dept_name\": \"检验科\",
+        \"sub_dept_id\": 100051
+    },
+    {
+        \"dept_id\": 120,
+        \"dept_name\": \"其他\",
+        \"sub_dept_name\": \"内窥镜科\",
+        \"sub_dept_id\": 100052
+    },
+    {
+        \"dept_id\": 120,
+        \"dept_name\": \"其他\",
+        \"sub_dept_name\": \"放射科\",
+        \"sub_dept_id\": 100053
+    },
+    {
+        \"dept_id\": 120,
+        \"dept_name\": \"其他\",
+        \"sub_dept_name\": \"介入室\",
+        \"sub_dept_id\": 100054
+    },
+    {
+        \"dept_id\": 120,
+        \"dept_name\": \"其他\",
+        \"sub_dept_name\": \"医学研究领域\",
+        \"sub_dept_id\": 100055
+    },
+    {
+        \"dept_id\": 120,
+        \"dept_name\": \"其他\",
+        \"sub_dept_name\": \"药学\",
+        \"sub_dept_id\": 100056
+    },
+    {
+        \"dept_id\": 114,
+        \"dept_name\": \"精神心理科\",
+        \"sub_dept_name\": \"精神心理科\",
+        \"sub_dept_id\": 100057
+    },
+    {
+        \"dept_id\": 120,
+        \"dept_name\": \"其他\",
+        \"sub_dept_name\": \"其他\",
+        \"sub_dept_id\": 100058
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"新生儿科\",
+        \"sub_dept_id\": 102001
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"儿科综合\",
+        \"sub_dept_id\": 102002
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿呼吸内科\",
+        \"sub_dept_id\": 102003
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿消化内科\",
+        \"sub_dept_id\": 102004
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿心血管内科\",
+        \"sub_dept_id\": 102005
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿神经内科\",
+        \"sub_dept_id\": 102006
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿泌尿内科\",
+        \"sub_dept_id\": 102007
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿血液内科\",
+        \"sub_dept_id\": 102008
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿内分泌科\",
+        \"sub_dept_id\": 102009
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿心胸内科\",
+        \"sub_dept_id\": 102010
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿五官科\",
+        \"sub_dept_id\": 102011
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿感染科\",
+        \"sub_dept_id\": 102012
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿心血管外科\",
+        \"sub_dept_id\": 102013
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿胸外科\",
+        \"sub_dept_id\": 102014
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿神经外科\",
+        \"sub_dept_id\": 102015
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿消化外科\",
+        \"sub_dept_id\": 102016
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿泌尿外科\",
+        \"sub_dept_id\": 102017
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿急诊科\",
+        \"sub_dept_id\": 102018
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿重症病房(PICU)\",
+        \"sub_dept_id\": 102019
+    },
+    {
+        \"dept_id\": 102,
+        \"dept_name\": \"儿科\",
+        \"sub_dept_name\": \"小儿骨科\",
+        \"sub_dept_id\": 102020
+    },
+    {
+        \"dept_id\": 106,
+        \"dept_name\": \"内科\",
+        \"sub_dept_name\": \"遗传免疫科\",
+        \"sub_dept_id\": 106001
+    },
+    {
+        \"dept_id\": 107,
+        \"dept_name\": \"外科\",
+        \"sub_dept_name\": \"手足外科\",
+        \"sub_dept_id\": 107001
+    },
+    {
+        \"dept_id\": 120,
+        \"dept_name\": \"其他\",
+        \"sub_dept_name\": \"药剂科\",
+        \"sub_dept_id\": 120001
+    },
+    {
+        \"dept_id\": 114,
+        \"dept_name\": \"精神心理科\",
+        \"sub_dept_name\": \"精神科\",
+        \"sub_dept_id\": 122001
+    },
+    {
+        \"dept_id\": 210,
+        \"dept_name\": \"护理\",
+        \"sub_dept_name\": \"护理学\",
+        \"sub_dept_id\": 200001
+    },
+    {
+        \"dept_id\": 210,
+        \"dept_name\": \"护理\",
+        \"sub_dept_name\": \"内科护理科\",
+        \"sub_dept_id\": 200002
+    },
+    {
+        \"dept_id\": 210,
+        \"dept_name\": \"护理\",
+        \"sub_dept_name\": \"外科护理科\",
+        \"sub_dept_id\": 200003
+    },
+    {
+        \"dept_id\": 210,
+        \"dept_name\": \"护理\",
+        \"sub_dept_name\": \"妇产科护理\",
+        \"sub_dept_id\": 200004
+    },
+    {
+        \"dept_id\": 210,
+        \"dept_name\": \"护理\",
+        \"sub_dept_name\": \"儿科护理\",
+        \"sub_dept_id\": 200005
+    },
+    {
+        \"dept_id\": 210,
+        \"dept_name\": \"护理\",
+        \"sub_dept_name\": \"社区护理\",
+        \"sub_dept_id\": 200006
+    },
+    {
+        \"dept_id\": 311,
+        \"dept_name\": \"营养科\",
+        \"sub_dept_name\": \"营养科\",
+        \"sub_dept_id\": 300001
+    }
+]
+    </string>
+
+</resources>

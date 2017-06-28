@@ -1,0 +1,180 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <!--Base application theme-->
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--全屏主题-->
+    <style name="FullscreenTheme" parent="AppTheme.Base">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 首页专用 -->
+    <style name="AppThemeMain" parent="AppTheme.Base">
+        <!--标题栏颜色-->
+        <item name="colorPrimary">@color/title_bar</item>
+        <!--状态栏底色-->
+        <item name="colorPrimaryDark">@color/status_bar</item>
+        <item name="colorAccent">@color/purple</item>
+        <item name="actionBarSize">@dimen/actionBarSize</item>
+        <item name="android:textColorPrimary">@android:color/primary_text_light</item>
+        <item name="android:actionBarSize">@dimen/actionBarSize</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 通用主题 -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!--标题栏颜色-->
+        <item name="colorPrimary">@color/title_bar</item>
+        <!--状态栏底色-->
+        <item name="colorPrimaryDark">@color/status_bar</item>
+        <item name="colorAccent">@color/purple</item>
+        <item name="actionBarSize">@dimen/actionBarSize</item>
+        <item name="android:textColorPrimary">@android:color/primary_text_light</item>
+        <item name="android:actionBarSize">@dimen/actionBarSize</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 图片画廊主题 -->
+    <style name="PhotoGalleryTheme" parent="AppTheme.Base">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <!--活动对话框主题-->
+    <style name="DialogTopRightTheme" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Anim_scale</item>
+    </style>
+
+    <style name="Anim_scale" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/scale_in_from_top_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/scale_out_to_top_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/scale_in_from_top_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/scale_out_to_top_right</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--材料登录控件MaterialLoginView-->
+    <style name="MaterialLoginTheme" parent="Theme.AppCompat.Light.DarkActionBar" />
+
+    <style name="MaterialLoginTheme.SelectableItemTheme">
+        <item name="colorControlHighlight">@color/material_login_login_register_btn_color</item>
+    </style>
+
+    <style name="MaterialLoginTheme.SelectableItemBackground">
+        <item name="android:theme">@style/MaterialLoginTheme.SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="MaterialLoginTheme.TextAppearanceRegister">
+        <item name="android:textColor">@color/material_login_login_register_text_color</item>
+        <item name="colorControlNormal">@color/material_login_login_register_text_color</item>
+        <item name="android:textColorHint">@color/material_login_login_register_text_color</item>
+        <item name="colorControlActivated">@color/material_login_login_register_text_color</item>
+        <item name="colorControlHighlight">@color/material_login_login_register_text_color</item>
+    </style>
+
+    <style name="MaterialLoginTheme.TextAppearanceLogin">
+        <item name="android:textColor">@color/material_login_login_register_text_color</item>
+        <item name="colorControlNormal">@color/material_login_login_register_text_color</item>
+        <item name="android:textColorHint">@color/material_login_login_register_text_color</item>
+        <item name="colorControlActivated">@color/material_login_login_register_text_color</item>
+        <item name="colorControlHighlight">@color/material_login_login_register_text_color</item>
+    </style>
+
+    <style name="MaterialLoginTheme.TextAppearanceLoginError" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/material_login_register_error_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MaterialLoginTheme.TextAppearanceRegisterError" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/material_login_register_error_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--EasyRecyclerView  TestCollapsingActivity-->
+    <style name="transText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#0000</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!--对话框透明主题-->
+    <style name="DialogTheme_Transparent" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--对话框无窗口背景主题-->
+    <style name="DialogTheme_JumpingBeans_Loading" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="GPlusProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">12dp</item>
+        <item name="spb_sections_count">4</item>
+        <item name="spb_speed">0.7</item>
+        <item name="spb_interpolator">spb_interpolator_linear</item>
+        <item name="spb_colors">@array/SmoothProgressBar_GPlus_Colors</item>
+    </style>
+
+    <style name="GNowProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">8dp</item>
+        <item name="spb_sections_count">2</item>
+        <item name="spb_speed">1.7</item>
+        <item name="spb_progressiveStart_speed">2</item>
+        <item name="spb_progressiveStop_speed">3.4</item>
+        <item name="spb_interpolator">spb_interpolator_acceleratedecelerate</item>
+        <item name="spb_mirror_mode">true</item>
+        <item name="spb_reversed">true</item>
+        <item name="spb_colors">@array/SmoothProgressBar_GPlus_Colors</item>
+        <item name="spb_progressiveStart_activated">true</item>
+        <item name="spb_generate_background_with_colors">false</item>
+    </style>
+
+    <style name="GradientProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">0dp</item>
+        <item name="spb_sections_count">3</item>
+        <item name="spb_speed">1.7</item>
+        <item name="android:interpolator">@android:anim/decelerate_interpolator</item>
+        <item name="spb_colors">@array/SmoothProgressBar_GPlus_Colors</item>
+        <item name="spb_gradients">true</item>
+    </style>
+
+    <style name="PocketProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">4dp</item>
+        <item name="spb_sections_count">4</item>
+        <item name="spb_speed">1</item>
+        <item name="android:interpolator">@anim/accelerate_interpolator_pocket</item>
+        <item name="spb_colors">@array/SmoothProgressBar_PocketBar_Colors</item>
+        <item name="spb_progressiveStart_activated">true</item>
+        <item name="spb_generate_background_with_colors">false</item>
+    </style>
+</resources>

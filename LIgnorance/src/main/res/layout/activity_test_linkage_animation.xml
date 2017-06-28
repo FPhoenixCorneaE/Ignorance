@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6D2EA2"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <com.livelearn.ignorance.widget.viewpager.SwipeBackViewPager
+        android:id="@+id/vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="60dp" />
+
+    <TextView
+        android:id="@+id/tv_bring_into_use"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/test_linkage_animation_bring_into_use"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/text_size_18sp" />
+
+    <com.livelearn.ignorance.widget.smarttablayout.SmartTabLayout
+        android:id="@+id/stl_tab"
+        style="@style/_SmartTabLayout_Circle"
+        android:layout_marginBottom="70dp" />
+</RelativeLayout>

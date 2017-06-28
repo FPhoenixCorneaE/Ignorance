@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pa_progress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xiaochao.lcrapiddeveloplibrary.widget.SpringView
+        android:id="@+id/sv_book_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_book_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+    </com.xiaochao.lcrapiddeveloplibrary.widget.SpringView>
+</com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/_15sp_BlackText"
+                android:padding="10dp"
+                android:text="@string/test_drag_footer_contain_recycler_view" />
+
+            <com.livelearn.ignorance.widget.dragfooterview.DragContainer
+                android:id="@+id/drag_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:dc_bezier_threshold="100dp"
+                app:dc_footer_height="15dp"
+                app:dc_icon_drawable="@mipmap/ic_double_arrow_left"
+                app:dc_icon_size="10dp"
+                app:dc_reset_animator_duration="500"
+                app:dc_text_event="释放查看"
+                app:dc_text_normal="查看更多">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white" />
+
+            </com.livelearn.ignorance.widget.dragfooterview.DragContainer>
+
+            <TextView
+                style="@style/_15sp_BlackText"
+                android:padding="10dp"
+                android:text="@string/test_drag_footer_contain_horizontal_scroll_view" />
+
+            <com.livelearn.ignorance.widget.dragfooterview.DragContainer
+                android:id="@+id/drag_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:dc_bezier_threshold="100dp"
+                app:dc_footer_height="15dp"
+                app:dc_icon_drawable="@mipmap/ic_double_arrow_left"
+                app:dc_icon_size="10dp"
+                app:dc_reset_animator_duration="500"
+                app:dc_text_event="释放查看"
+                app:dc_text_normal="查看更多">
+
+                <HorizontalScrollView
+                    android:id="@+id/scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        android:orientation="horizontal" />
+
+                </HorizontalScrollView>
+
+            </com.livelearn.ignorance.widget.dragfooterview.DragContainer>
+
+            <TextView
+                style="@style/_15sp_BlackText"
+                android:padding="10dp"
+                android:text="@string/test_drag_footer_contain_image_view" />
+
+            <com.livelearn.ignorance.widget.dragfooterview.DragContainer
+                android:id="@+id/drag_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:dc_bezier_threshold="70dp"
+                app:dc_drag_damp="0.66"
+                app:dc_footer_height="15dp"
+                app:dc_icon_drawable="@mipmap/ic_double_arrow_left"
+                app:dc_icon_size="10dp"
+                app:dc_reset_animator_duration="500"
+                app:dc_text_event="释放查看"
+                app:dc_text_normal="查看更多">
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    tools:ignore="contentDescription" />
+
+            </com.livelearn.ignorance.widget.dragfooterview.DragContainer>
+
+            <TextView
+                style="@style/_15sp_BlackText"
+                android:padding="10dp"
+                android:text="@string/test_drag_footer_contain_text_view_button" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <com.livelearn.ignorance.widget.dragfooterview.DragContainer
+                    android:id="@+id/drag_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    app:dc_bezier_threshold="50dp"
+                    app:dc_footer_height="10dp"
+                    app:dc_icon_drawable="@mipmap/ic_double_arrow_left"
+                    app:dc_icon_size="8dp"
+                    app:dc_reset_animator_duration="500"
+                    app:dc_text_event="释放查看"
+                    app:dc_text_normal="查看更多"
+                    app:dc_text_size="8sp">
+
+                    <TextView
+                        android:id="@+id/text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="#66ee66"
+                        android:gravity="center"
+                        android:scaleType="centerCrop"
+                        android:text="@string/test_drag_footer_text_view" />
+
+                </com.livelearn.ignorance.widget.dragfooterview.DragContainer>
+
+                <com.livelearn.ignorance.widget.dragfooterview.DragContainer
+                    android:id="@+id/drag_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    app:dc_bezier_threshold="50dp"
+                    app:dc_footer_height="10dp"
+                    app:dc_icon_drawable="@mipmap/ic_double_arrow_left"
+                    app:dc_icon_size="8dp"
+                    app:dc_reset_animator_duration="500"
+                    app:dc_text_event="释放查看"
+                    app:dc_text_normal="查看更多"
+                    app:dc_text_size="8sp">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="#ff6600"
+                        android:scaleType="centerCrop"
+                        android:text="@string/test_drag_footer_button" />
+
+                </com.livelearn.ignorance.widget.dragfooterview.DragContainer>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

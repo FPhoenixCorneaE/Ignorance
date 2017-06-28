@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <!--basic颜色：透明、白黑赤橙黄绿青蓝紫-->
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="red">#FFFF0000</color>
+    <color name="orange">#FFFFA500</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="green">#FF00FF00</color>
+    <color name="indigo">#FF4B0082</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="purple">#FF800080</color>
+
+    <!--底部背景-->
+    <color name="base_background">#FFAA66CC</color>
+
+    <!--状态栏颜色-->
+    <color name="status_bar">#FFAA66CC</color>
+    <!--标题栏颜色-->
+    <color name="title_bar">#FFAA66CC</color>
+
+    <!--滑动返回阴影-->
+    <color name="shadow_swipe_back">#7f000000</color>
+
+
+    <!--背景色-->
+    <color name="background">#FFF7F7F7</color>
+    <color name="background_black">#000000</color>
+    <color name="background_white">#FFFFFFFF</color>
+    <!--分割线-->
+    <color name="divider">#FFE5E5E5</color>
+
+
+    <!--暗黑色-->
+    <color name="color_dark_black">#FF333333</color>
+    <!--黑色半透明-->
+    <color name="color_dark_black_translucent">#90333333</color>
+    <!--浅灰色-->
+    <color name="color_light_gray">#FFCCCCCC</color>
+    <!--灰色-->
+    <color name="color_gray">#FF999999</color>
+    <!--暗灰色-->
+    <color name="color_dark_gray">#FF666666</color>
+    <!--苍白色-->
+    <color name="color_pale">#FFF7F7F7</color>
+    <!--苍白色半透明-->
+    <color name="color_pale_translucent">#50F7F7F7</color>
+    <!--暗苍白色-->
+    <color name="color_dark_pale">#FFE5E5E5</color>
+    <!--浅绿色-->
+    <color name="color_light_green">#FF4CD964</color>
+    <!--暗绿色-->
+    <color name="color_dark_green">#FF3AA64C</color>
+    <!--粉红色-->
+    <color name="color_pink">#fa7d95</color>
+    <!--暗粉红色-->
+    <color name="color_dark_pink">#c76377</color>
+    <!--浅红色-->
+    <color name="color_light_red">#FFFF3B30</color>
+    <!--暗红色-->
+    <color name="color_dark_red">#FFCC2F27</color>
+    <!--浅橘黄色-->
+    <color name="color_light_orange">#FFFF9500</color>
+    <!--暗橘黄色-->
+    <color name="color_dark_orange">#FFCC7700</color>
+    <!--浅黄色-->
+    <color name="color_light_yellow">#FFFFCC00</color>
+    <!--暗黄色-->
+    <color name="color_dark_yellow">#FFCCA300</color>
+    <!--浅褐色-->
+    <color name="color_light_brown">#FF8E8E93</color>
+    <!--暗褐色-->
+    <color name="color_dark_brown">#FF5E5E61</color>
+    <!--浅天蓝色-->
+    <color name="color_light_skyblue">#FF5AC8FA</color>
+    <!--暗天蓝色-->
+    <color name="color_dark_skyblue">#FF489FC7</color>
+    <!--浅蓝色-->
+    <color name="color_light_blue">#FF007AFF</color>
+    <!--暗蓝色-->
+    <color name="color_dark_blue">#FF0063CC</color>
+    <!--浅海蓝色-->
+    <color name="color_light_oceanblue">#FF5856D6</color>
+    <!--暗海蓝色-->
+    <color name="color_dark_oceanblue">#FF4341A3</color>
+    <!--浅紫色-->
+    <color name="color_light_purple">#FF9932CC</color>
+    <!--暗紫色-->
+    <color name="color_dark_purple">#FF800080</color>
+
+
+    <!--shadow.xml,边缘雾化效果-->
+    <color name="cardShadowColor_1">#0A4C4C4C</color>
+    <color name="cardShadowColor_2">#0F494949</color>
+    <color name="cardShadowColor_3">#14494949</color>
+    <color name="cardShadowColor_4">#19494949</color>
+    <color name="cardBodyColor">#60000000</color>
+
+    <!--MaterialLoginView-->
+    <color name="material_login_login_register_title_color">#F7F7F7</color>
+    <color name="material_login_login_register_btn_color">#FF0000FF</color>
+    <color name="material_login_register_fab">#579FE2</color>
+    <color name="material_login_login_error_color">#FF5151</color>
+    <color name="material_login_register_error_color">#FFCDCE</color>
+    <color name="material_login_login_register_text_color">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionBarSize"
+    android:background="@color/title_bar"
+    android:minHeight="@dimen/actionBarSize">
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:minWidth="@dimen/actionBarSize"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_left"
+            android:layout_width="@dimen/title_bar_icon_size"
+            android:layout_height="@dimen/title_bar_icon_size"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:scaleType="centerInside"
+            tools:ignore="contentDescription" />
+
+        <TextView
+            android:id="@+id/tv_left"
+            style="@style/_16sp_BlackText"
+            android:ellipsize="end"
+            android:gravity="fill_horizontal"
+            android:maxLines="1"
+            android:maxWidth="220dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/_20sp_BlackText"
+        android:layout_width="200dp"
+        android:layout_centerInParent="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="@dimen/width_24dp"
+        android:layout_height="@dimen/height_24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_5dp"
+        android:layout_toStartOf="@+id/tv_title"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/animationlist_loading"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_right"
+            android:layout_width="@dimen/title_bar_icon_size"
+            android:layout_height="@dimen/title_bar_icon_size"
+            android:layout_marginEnd="@dimen/margin_12dp"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            tools:ignore="contentDescription" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/_16sp_BlackText"
+            android:layout_marginEnd="@dimen/margin_12dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

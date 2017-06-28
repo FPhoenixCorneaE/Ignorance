@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/tv_init_count_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_dark_black" />
+
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_base_use"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_dark_pale"
+                    android:text="@string/test_fresco_helper_basic_usage"
+                    android:textColor="@color/color_dark_black" />
+
+                <Button
+                    android:id="@+id/btn_clear_memory"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:background="@color/color_dark_pale"
+                    android:text="@string/test_fresco_helper_clear_memory_cache"
+                    android:textColor="@color/color_dark_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_big"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_dark_pale"
+                    android:text="@string/test_fresco_helper_displays_a_larger_image"
+                    android:textColor="@color/color_dark_black" />
+
+                <Button
+                    android:id="@+id/btn_small"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:background="@color/color_dark_pale"
+                    android:text="@string/test_fresco_helper_display_the_size_of_the_specified_figure"
+                    android:textColor="@color/color_dark_black" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_gif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/color_dark_pale"
+                android:text="@string/test_fresco_helper_display_gif_image"
+                android:textColor="@color/color_dark_black" />
+
+            <Button
+                android:id="@+id/btn_meizi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/color_dark_pale"
+                android:text="@string/test_fresco_helper_display_local_resource_images"
+                android:textColor="@color/color_dark_black" />
+
+            <Button
+                android:id="@+id/btn_meizi_webp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/color_dark_pale"
+                android:text="@string/test_fresco_helper_display_webp_images"
+                android:textColor="@color/color_dark_black" />
+
+            <Button
+                android:id="@+id/btn_use_databinding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/color_dark_pale"
+                android:text="@string/test_fresco_helper_use_data_binding"
+                android:textColor="@color/color_dark_black" />
+
+            <Button
+                android:id="@+id/btn_blur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/color_dark_pale"
+                android:text="@string/test_fresco_helper_display_images_after_gaussian_blur"
+                android:textColor="@color/color_dark_black" />
+
+            <Button
+                android:id="@+id/btn_blur2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/color_dark_pale"
+                android:text="@string/test_fresco_helper_for_any_view_of_background_with_gaussian_blur"
+                android:textColor="@color/color_dark_black" />
+
+            <Button
+                android:id="@+id/btn_open_photo_wall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/color_dark_pale"
+                android:text="@string/test_fresco_helper_from_the_network_loading_photo_wall"
+                android:textColor="@color/color_dark_black" />
+
+            <Button
+                android:id="@+id/btn_open_photo_album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/color_dark_pale"
+                android:text="@string/test_fresco_helper_from_the_local_album_loading_photo_wall"
+                android:textColor="@color/color_dark_black" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

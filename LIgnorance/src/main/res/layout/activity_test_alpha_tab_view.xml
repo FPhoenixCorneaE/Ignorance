@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.viewpager.SwipeBackViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View style="@style/_View_Divider_1px" />
+
+    <com.livelearn.ignorance.widget.alphatabs.AlphaTabsIndicator
+        android:id="@+id/ati_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/background"
+        android:orientation="horizontal">
+
+        <com.livelearn.ignorance.widget.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/margin_5dp"
+            app:tabIconNormal="@mipmap/ic_wechat_home_normal"
+            app:tabIconSelected="@mipmap/ic_wechat_home_selected"
+            app:tabText="微信"
+            app:tabTextSize="@dimen/text_size_14sp"
+            app:textColorNormal="@color/color_dark_black"
+            app:textColorSelected="@color/color_light_purple" />
+
+        <com.livelearn.ignorance.widget.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/margin_5dp"
+            app:tabIconNormal="@mipmap/ic_wechat_addressbook_normal"
+            app:tabIconSelected="@mipmap/ic_wechat_addressbook_selected"
+            app:tabText="通讯录"
+            app:tabTextSize="@dimen/text_size_14sp"
+            app:textColorNormal="@color/color_dark_black"
+            app:textColorSelected="@color/color_light_purple" />
+
+        <com.livelearn.ignorance.widget.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/margin_5dp"
+            app:tabIconNormal="@mipmap/ic_wechat_discover_normal"
+            app:tabIconSelected="@mipmap/ic_wechat_discover_selected"
+            app:tabText="发现"
+            app:tabTextSize="@dimen/text_size_14sp"
+            app:textColorNormal="@color/color_dark_black"
+            app:textColorSelected="@color/color_light_purple" />
+
+
+        <com.livelearn.ignorance.widget.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/margin_5dp"
+            app:tabIconNormal="@mipmap/ic_wechat_mine_normal"
+            app:tabIconSelected="@mipmap/ic_wechat_mine_selected"
+            app:tabText="我的"
+            app:tabTextSize="@dimen/text_size_14sp"
+            app:textColorNormal="@color/color_dark_black"
+            app:textColorSelected="@color/color_light_purple" />
+    </com.livelearn.ignorance.widget.alphatabs.AlphaTabsIndicator>
+</LinearLayout>

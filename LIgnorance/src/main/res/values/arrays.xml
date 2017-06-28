@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+    <!--GuideText-->
+    <array name="GuideText">
+        <item>夕阳...</item>
+        <item>曼珠沙华...</item>
+        <item>向日葵...</item>
+        <item>波光粼粼...</item>
+    </array>
+
+    <!--GuideSubText-->
+    <array name="GuideSubText">
+        <item>向晚意不适，驱车登古原。夕阳无限好，只是近黄昏。</item>
+        <item>彼岸花开开彼岸，断肠草愁愁断肠。奈何桥前可奈何，三生石前定三生。</item>
+        <item>结庐在人境，而无车马喧。问君何能尔？心远地自偏。采菊东篱下，悠然见南山。山气日夕佳，飞鸟相与还。此中有真意，欲辨已忘言。</item>
+        <item>一道残阳铺水中,半江瑟瑟半江红。可怜九月初三夜，露似真珠月似弓。</item>
+    </array>
+
+    <!--DialogItem-->
+    <array name="ImageSourceDialogItem">
+        <item>拍照</item>
+        <item>从相册选择</item>
+    </array>
+
+    <!--MainActivityTab 主页标签-->
+    <array name="MainActivityTab">
+        <item>视频</item>
+        <item>书库</item>
+        <item>消息</item>
+        <item>图片</item>
+        <item>我的</item>
+    </array>
+
+    <!--微影分类-->
+    <array name="VideoFragment_PhotoLithography">
+        <item>精彩推荐</item>
+        <item>热点资讯</item>
+        <item>大咖剧场</item>
+        <item>大片抢先看</item>
+        <item>微电影</item>
+        <item>香港映象</item>
+        <item>午夜剧场</item>
+        <item>好莱坞</item>
+    </array>
+
+    <!--微影目录id-->
+    <array name="PhotoLithography_CatalogId">
+        <!--精彩推荐-->
+        <item>402834815584e463015584e53843000b</item>
+        <!--热点资讯-->
+        <item>402834815584e463015584e539700019</item>
+        <!--大咖剧场-->
+        <item>ff808081586ae7e60158713d14450283</item>
+        <!--大片抢先看-->
+        <item>402834815584e463015584e539330016</item>
+        <!--微电影-->
+        <item>0000000055b9a5a00155ba33b405000d</item>
+        <!--香港映象-->
+        <item>ff8080815b9075a6015b94ef79dc0284</item>
+        <!--午夜剧场-->
+        <item>402834815584e463015584e538d30011</item>
+        <!--好莱坞-->
+        <item>402834815584e463015584e538140009</item>
+    </array>
+
+    <!--天狗美图种类-->
+    <array name="ImageFragment_TianGouPrettyPicture">
+        <item name="sexy">性感美女</item>
+        <item name="japan">韩日美女</item>
+        <item name="legs">丝袜美腿</item>
+        <item name="girl_photo">美女照片</item>
+        <item name="portrait">美女写真</item>
+        <item name="pure_girl">清纯美女</item>
+        <item name="car_model">性感车模</item>
+    </array>
+
+    <!--豆瓣图书种类-->
+    <array name="BookFragment_DouBanBookDefaultCategory">
+        <item>小说</item>
+        <item>名著</item>
+        <item>科幻</item>
+        <item>历史</item>
+        <item>爱情</item>
+        <item>编程</item>
+    </array>
+
+    <!--豆瓣图书所有种类-->
+    <array name="BookFragment_DouBanBookAllCategory">
+        <item>小说</item>
+        <item>日本</item>
+        <item>历史</item>
+        <item>外国文学</item>
+        <item>漫画</item>
+        <item>文学</item>
+        <item>中国</item>
+        <item>心理学</item>
+        <item>随笔</item>
+        <item>哲学</item>
+        <item>绘本</item>
+        <item>中国文学</item>
+        <item>推理</item>
+        <item>美国</item>
+        <item>爱情</item>
+        <item>经典</item>
+        <item>传记</item>
+        <item>日本文学</item>
+        <item>散文</item>
+        <item>文化</item>
+        <item>青春</item>
+        <item>科普</item>
+        <item>生活</item>
+        <item>东野圭吾</item>
+        <item>村上春树</item>
+        <item>艺术</item>
+        <item>悬疑</item>
+        <item>成长</item>
+        <item>台湾</item>
+        <item>经济学</item>
+        <item>设计</item>
+        <item>管理</item>
+        <item>励志</item>
+        <item>法国</item>
+        <item>武侠</item>
+        <item>社会</item>
+        <item>政治</item>
+        <item>诗歌</item>
+        <item>童话</item>
+        <item>韩寒</item>
+        <item>摄影</item>
+        <item>日本漫画</item>
+        <item>建筑</item>
+        <item>耽美</item>
+        <item>商业</item>
+        <item>亦舒</item>
+        <item>金融</item>
+        <item>女性</item>
+        <item>宗教</item>
+        <item>电影</item>
+        <item>人生</item>
+        <item>编程</item>
+        <item>杂文</item>
+        <item>互联网</item>
+        <item>王小波</item>
+        <item>三毛</item>
+        <item>英国文学</item>
+        <item>儿童文学</item>
+        <item>计算机</item>
+        <item>古典文学</item>
+        <item>数学</item>
+        <item>投资</item>
+        <item>推理小说</item>
+        <item>网络小说</item>
+        <item>职场</item>
+        <item>张爱玲</item>
+        <item>安妮宝贝</item>
+        <item>政治学</item>
+        <item>美国文学</item>
+        <item>名著</item>
+        <item>香港</item>
+        <item>余华</item>
+        <item>美食</item>
+        <item>教育</item>
+        <item>郭敬明</item>
+        <item>穿越</item>
+        <item>个人管理</item>
+        <item>金庸</item>
+        <item>工具书</item>
+        <item>德国</item>
+    </array>
+
+    <!--我的Fragment子项-->
+    <array name="MineFragment_Item">
+        <item>测试</item>
+        <item>设置</item>
+    </array>
+
+    <!--设置子项-->
+    <array name="Settings_Item">
+        <item>清除缓存</item>
+        <item>清除Glide缓存</item>
+    </array>
+
+    <!--测试主界面-->
+    <array name="TestMainItem">
+        <item>AlphaTabView 微信底部滑动渐变标签栏</item>
+        <item>AnimationViewPager 动画多面控件</item>
+        <item>BaseItemLayout 通用item布局</item>
+        <item>BigImageViewer 大图查看器</item>
+        <item>CircleRefreshLayout 圆圈刷新布局</item>
+        <item>ColorTrackView 字体颜色渐变控件</item>
+        <item>Database 数据库</item>
+        <item>DragContainer 拖拽容器</item>
+        <item>EasyRecyclerView 取代GridView和ListView</item>
+        <item>FlashBorderView 闪现边框</item>
+        <item>FlowDragLayout 可拖拽流式布局</item>
+        <item>FrescoHelper Fresco的使用帮助</item>
+        <item>JazzyViewPager 花哨多面控件</item>
+        <item>LinkageAnimation 联动动画</item>
+        <item>LoaderView 载入控件</item>
+        <item>LoadingView 加载中控件</item>
+        <item>MovingImageView 滑动背景图</item>
+        <item>MultiView QQ空间九宫格视图</item>
+        <item>NineGridLayout 微信九宫格视图</item>
+        <item>ObservableScrollView 可观察的滚动控件</item>
+        <item>PullToRefreshWithLoadMore 下拉刷新加载更多组件</item>
+        <item>SearchDialog 仿哔哩哔哩搜索框效果</item>
+        <item>ShrinkButton 可收缩成进度条的按钮</item>
+        <item>SmoothCompoundButton 平滑混合按钮</item>
+        <item>SmoothProgressBar 平滑进度条</item>
+        <item>StateButton 状态按钮</item>
+        <item>SuspensionIndexBar 分组悬停索引右侧边栏</item>
+        <item>ThreeDimensionViewPager 3D效果多面控件</item>
+        <item>TopSnackbar 顶部快餐店</item>
+        <item>Transferee 九宫格以及图片画廊</item>
+        <item>UploadMultipleImage 上传多张图片</item>
+        <item>UploadSingleImage 上传单张图片</item>
+        <item>VerticalBannerView 悬垂幕广告</item>
+    </array>
+
+    <!--测试可拖拽流式布局-->
+    <array name="TestAssembleEssay">
+        <item>向中对齐</item>
+        <item>向右对齐</item>
+        <item>向左对齐</item>
+        <item>两边对齐</item>
+    </array>
+
+    <!--多面控件转换效果-->
+    <string-array name="Jazzy_Effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+    <!--日记动态-->
+    <string-array name="Journal_Name">
+        <item>陈雨溪</item>
+        <item>凌玉书</item>
+        <item>凌逸月</item>
+        <item>水如烟</item>
+        <item>冷薇</item>
+        <item>皇甫问情</item>
+        <item>皇甫千叶</item>
+    </string-array>
+
+    <string-array name="Journal_AvatarUrl">
+        <item>http://o84n5syhk.bkt.clouddn.com/57154327_p0.png</item>
+        <item>http://o84n5syhk.bkt.clouddn.com/57180221_p0.jpg</item>
+        <item>http://o84n5syhk.bkt.clouddn.com/57174070_p0.jpg</item>
+        <item>http://o84n5syhk.bkt.clouddn.com/57166531_p0.jpg</item>
+        <item>http://o84n5syhk.bkt.clouddn.com/57151022_p0.jpg</item>
+        <item>http://o84n5syhk.bkt.clouddn.com/57172236_p0.jpg</item>
+        <item>http://o84n5syhk.bkt.clouddn.com/57174564_p0.jpg</item>
+    </string-array>
+
+    <string-array name="Journal_Description">
+        <item>若我会见到你，事隔经年。我如何向你招呼，以眼泪，以沉默。我遇见你，我记得你，这座城市天生就适合恋爱，你天生就是和我的灵魂。</item>
+        <item>我去旅行，是因为我决定了要去，并不是因为对风景的兴趣。这世上真话本就不多，一位女子的脸红胜过一大段对白。</item>
+        <item>她并不是我的花，我只是恰巧途径了她的盛放。日日重复同样的事，遵循着与昨日相同的惯例，若能避开猛烈的狂喜，自然也不会有悲伤来袭。</item>
+        <item>后来许多人问我一个人夜晚踟蹰路上的心情，我想起的却不是孤单和路长，而是波澜壮阔的海和天空中闪耀的星光。</item>
+        <item>桃李春风一杯酒，江湖夜雨十年灯。思念无果，大雨滂沱。所谓世人，不就是你吗？世间文字八万个，唯有情字最杀人。</item>
+        <item>我是一个在黑暗中大雪纷飞的人啊。你不过是每一个孤独的瞬息。我也是恨不过嘛，才爱来试试。</item>
+        <item>黄昏时，等人来敲门。而敲门的人走错时间，也在等黄昏。飞鸟也风情，抖一片羽毛作信物。人间情事太俗，不如一个人看日出。</item>
+    </string-array>
+
+    <string-array name="Journal_Pictures">
+        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJlfJV9qIZajjAAj8g_wzob4AAU-GgFNzS4ACPyb291.jpg"</item>
+        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJ1fJTbGIJWRJAACiwgeBNq4AAU9JQEafxMAAKLa278.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/0F/0F/ChMkJlfJTQaIFpLdAADF5jW4CYwAAU9FwMj5oMAAMX-169.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/0F/0F/ChMkJ1fJTMOIAVNdAAcj_9TZb-gAAU9EQNdY8kAByQX562.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/04/ChMkJlfJWDCIWFS8AAp0UKGB2ZgAAU-IwCEk5gACnRo369.jpg"</item>
+        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJT76IRwXPAAlFOKyV0j8AAU9TwEXKmcACUVQ237.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJ1fJT5GIH-5rAAH437f_8CUAAU9TAHciDcAAfj3168.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJTuOIHGIgAAPGCqdqSMgAAU9OwLbb8QAA8Yi174.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJ1fJTuGINg3GAAYuHhM8mlYAAU9OwJIcEsABi42788.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJTs-IA_4jAA-zniVyvgoAAU9OQKbCiUAD7O2323.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJTpeIWZ1OAALlEIQzcHMAAU9NAOq784AAuUo531.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJTn2ILWZxAAVYsql8et8AAU9MwBokBkABVjK814.jpg"</item>
+        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJV8iIYQ4AAAcIriGCaLIAAU-GAH2-wcABwjG920.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJlfJV6aIcDHCAAyjNar0X-8AAU-FANlTDsADKNN096.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJV3-IXf6BAAo0zp74h3IAAU-EQAyv2YACjTm431.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJVsqIFEv-ABOCj3O54GgAAU-AAKkzcEAE4Kn698.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJVrOIIKxzAAJsGfgQXUEAAU9_gE0SjQAAmwx931.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJlfJVnCIZU2NAAZv5V8zF1cAAU99wO8aRsABm_9797.jpg"</item>
+        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJTnuIRJ1OAA753IXDvGcAAU9MwAhC_QADvn0629.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJ1fJTnGIHFaAAAPjZpbLBYQAAU9MgFtzSQAA-N-003.jpg"</item>
+        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJVieIXioqACJAJZZ8ZqUAAU98QAm5O0AIkA9233.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJlfJVb-IACezAAm1RnI-xKIAAU95gMrdEIACbVe956.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJVYWIZxn_AAFGxU01BkcAAU94QHVo_0AAUbd033.jpg"</item>
+        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJ1fJUYiIEtDDAAGcif4js8oAAU9egJmm74AAZyh409.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUVqIG9E4AAXem303o8UAAU9dgMjCU4ABd6z036.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUTeIKL3LAAefkYj1Ju0AAU9cwOiAJYAB5-p242.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJ1fJUTaIGQK6AAHvReuOQUkAAU9cwNWTfoAAe9d468.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUQWIfCz_AAeU25AxkMMAAU9bwAvrToAB5Tz853.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUMOIAR3HAAQcsgvxeScAAU9aAHAXRIABBzK941.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUJWIYJuuAAS7Xt4OToUAAU9ZABDXPsABLt2483.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUIOIEaGVAAhG5zFfIHUAAU9YgHSaeYACEb_983.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUGyIJwKnAAWs4nLQ8aEAAU9YAA7vMgABaz6509.jpg"</item>
+    </string-array>
+
+    <string-array name="Journal_Location">
+        <item>北京市东城区五四大街中国美术馆</item>
+        <item>上海市浦东新区陆家嘴东方明珠塔</item>
+        <item>塞纳河南岸法国巴黎的战神广场埃菲尔铁塔</item>
+        <item>美国纽约海港内自由岛的哈德逊河口附近自由女神像</item>
+        <item>中国西藏自治区的首府拉萨市区西北玛布日山布达拉宫</item>
+        <item>安徽省南部黄山市黄山</item>
+        <item>中国贵州省安顺市镇宁布依族苗族自治县黄果树大瀑布</item>
+    </string-array>
+
+    <string-array name="Journal_Time">
+        <item>2016年02月29日 12:01:01</item>
+        <item>2017年01月13日 10:30:21</item>
+        <item>2017年03月09日 10:02:11</item>
+        <item>2017年02月22日 18:11:23</item>
+        <item>2017年03月09日 05:48:38</item>
+        <item>2017年03月09日 10:24:35</item>
+        <item>2016年08月29日 02:03:28</item>
+    </string-array>
+
+    <!--SwipeRefreshLayout 下拉刷新进度条颜色-->
+    <integer-array name="SwipeRefresh_Colors">
+        <item>@color/red</item>
+        <item>@color/blue</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+    </integer-array>
+
+    <!--StoreHouseStyleHeader-->
+    <string-array name="StoreHouseStyle_Akta">
+        <item>22,0,0,30,</item>
+        <item>22,0,30,0,</item>
+        <item>30,0,52,30,</item>
+        <item>0,30,26,30,</item>
+        <item>60,0,60,15,</item>
+        <item>60,15,60,30,</item>
+        <item>60,15,85,15,</item>
+        <item>85,15,108,0,</item>
+        <item>85,15,108,30,</item>
+        <item>117,0,147,0,</item>
+        <item>147,0,177,0,</item>
+        <item>147,0,147,32,</item>
+        <item>198,0,176,30,</item>
+        <item>198,0,206,0,</item>
+        <item>206,0,228,30,</item>
+        <item>176,30,202,30,</item>
+    </string-array>
+
+    <string-array name="StoreHouseStyle_Store">
+        <item>0,35,12,42,</item>
+        <item>12,42,24,35,</item>
+        <item>24,35,12,28,</item>
+        <item>0,35,12,28,</item>
+        <item>0,21,12,28,</item>
+        <item>12,28,24,21,</item>
+        <item>24,35,24,21,</item>
+        <item>24,21,12,14,</item>
+        <item>0,21,12,14,</item>
+        <item>0,21,0,7,</item>
+        <item>12,14,0,7,</item>
+        <item>12,14,24,7,</item>
+        <item>24,7,12,0,</item>
+        <item>0,7,12,0,</item>
+    </string-array>
+
+    <!--可观察的滚动控件-->
+    <string-array name="TestObservableScrollViewItem">
+        <item>TitleBarControlGridView\nGridView&amp;TitleBar</item>
+        <item>TitleBarControlListView\nListView&amp;TitleBar</item>
+        <item>TitleBarControlRecyclerView\nRecyclerView&amp;TitleBar</item>
+        <item>TitleBarControlScrollView\nScrollView&amp;TitleBar</item>
+        <item>TitleBarControlWebView\nWebView&amp;TitleBar</item>
+        <item>ParallaxTitleBarGridView\nParallax GridView&amp;TitleBar</item>
+        <item>ParallaxTitleBarListView\nParallax ListView&amp;TitleBar</item>
+        <item>ParallaxTitleBarScrollView\nParallax ScrollView&amp;TitleBar</item>
+    </string-array>
+
+    <integer-array name="SmoothProgressBar_GPlus_Colors">
+        <item>@color/color_light_green</item>
+        <item>@color/color_light_yellow</item>
+        <item>@color/color_light_blue</item>
+        <item>@color/color_light_red</item>
+    </integer-array>
+
+    <integer-array name="SmoothProgressBar_PocketBar_Colors">
+        <item>@color/color_pink</item>
+        <item>@color/color_pink</item>
+        <item>@color/color_pink</item>
+        <item>@color/color_pink</item>
+        <item>@color/color_light_purple</item>
+        <item>@color/color_light_purple</item>
+        <item>@color/color_light_purple</item>
+        <item>@color/color_light_purple</item>
+        <item>@color/color_light_orange</item>
+        <item>@color/color_light_orange</item>
+        <item>@color/color_light_orange</item>
+        <item>@color/color_light_orange</item>
+        <item>@color/color_light_oceanblue</item>
+        <item>@color/color_light_oceanblue</item>
+        <item>@color/color_light_oceanblue</item>
+        <item>@color/color_light_oceanblue</item>
+    </integer-array>
+
+    <integer-array name="SmoothProgressBar_PocketBackground_Colors">
+        <item>@color/color_pink</item>
+        <item>@color/color_light_purple</item>
+        <item>@color/color_light_orange</item>
+        <item>@color/color_light_oceanblue</item>
+    </integer-array>
+
+    <string-array name="SmoothProgressBar_Interpolator">
+        <item>Accelerate</item>
+        <item>Linear</item>
+        <item>AccelerateDecelerate</item>
+        <item>Decelerate</item>
+        <item>FastOutSlowIn</item>
+    </string-array>
+
+    <string-array name="AddressBook_Friends">
+        <item>艾利克斯</item>
+        <item>艾丽斯</item>
+        <item>艾萨克</item>
+        <item>艾斯德斯</item>
+        <item>艾米丽娅</item>
+        <item>敖烈</item>
+        <item>阿娜</item>
+        <item>安娜</item>
+        <item>阿清</item>
+        <item>伯乐</item>
+        <item>采儿</item>
+        <item>蔡青</item>
+        <item>但丁</item>
+        <item>迪拉姆</item>
+        <item>Erwin</item>
+        <item>迩康</item>
+        <item>方敏芳</item>
+        <item>冯雪</item>
+        <item>冯蕾</item>
+        <item>风尸兄</item>
+        <item>耿尔</item>
+        <item>郝克双</item>
+        <item>I薇儿</item>
+        <item>Jack</item>
+        <item>贾浩</item>
+        <item>贾仁贾奕</item>
+        <item>孔莉</item>
+        <item>孔丽</item>
+        <item>Obama</item>
+        <item>欧巴马</item>
+        <item>欧博</item>
+        <item>o二等分＋</item>
+        <item>彭亮</item>
+        <item>彭磊</item>
+        <item>平凉</item>
+        <item>钱良</item>
+        <item>浅籁</item>
+        <item>仁者无敌</item>
+        <item>热辣辣</item>
+        <item>森林</item>
+        <item>single</item>
+        <item>思露琳</item>
+        <item>贪狼</item>
+        <item>踏浪</item>
+        <item>滕云</item>
+        <item>天了噜</item>
+        <item>天良</item>
+        <item>鹿鼎记</item>
+        <item>ullToRefresh</item>
+        <item>vip</item>
+        <item>VV</item>
+        <item>亡灵</item>
+        <item>WID来来来</item>
+        <item>无敌了</item>
+        <item>项羽</item>
+        <item>香格里拉</item>
+        <item>杨丽</item>
+        <item>刘莉莉</item>
+        <item>哩哩啦啦</item>
+        <item>颜灵果</item>
+        <item>紫罗兰</item>
+        <item>紫清强</item>
+        <item>慕沐沐</item>
+        <item>木婉清</item>
+        <item>尼尔</item>
+        <item>1生1世</item>
+        <item>3生3世</item>
+        <item>--Hero--</item>
+        <item>~666!</item>
+    </string-array>
+
+    <string-array name="AddressBook_City">
+        <item>鞍山</item>
+        <item>安康</item>
+        <item>澳门</item>
+        <item>北京</item>
+        <item>保定</item>
+        <item>蚌埠</item>
+        <item>北海</item>
+        <item>成都</item>
+        <item>重庆</item>
+        <item>长沙</item>
+        <item>滁州</item>
+        <item>长兴</item>
+        <item>朝阳</item>
+        <item>潮州</item>
+        <item>从化</item>
+        <item>岑溪</item>
+        <item>赤壁</item>
+        <item>大连</item>
+        <item>德州</item>
+        <item>大理</item>
+        <item>恩平</item>
+        <item>鄂尔多斯</item>
+        <item>福州</item>
+        <item>凤城</item>
+        <item>广州</item>
+        <item>赣州</item>
+        <item>杭州</item>
+        <item>济南</item>
+        <item>酒泉</item>
+        <item>昆明</item>
+        <item>开封</item>
+        <item>柳山</item>
+        <item>兰溪</item>
+        <item>牡丹江</item>
+        <item>南京</item>
+        <item>宁波</item>
+        <item>南沙</item>
+        <item>攀枝花</item>
+        <item>青岛</item>
+        <item>秦皇岛</item>
+        <item>汝阳</item>
+        <item>上海</item>
+        <item>太原</item>
+        <item>武汉</item>
+        <item>西安</item>
+        <item>扬州</item>
+        <item>珠海</item>
+        <item>张家界</item>
+    </string-array>
+</resources>
