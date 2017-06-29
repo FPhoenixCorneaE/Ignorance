@@ -45,7 +45,8 @@ public class DialogUtils {
     public static Dialog createLoadingIndicatorDialog(Context context, boolean showProgressBar, String loadingText) {
         Dialog loadingDialog = new Dialog(context, R.style.DialogTheme_Transparent);
         loadingDialog.setContentView(R.layout.dialog_loading_indicator);
-        loadingDialog.setCancelable(false);
+        loadingDialog.setCancelable(true);
+        loadingDialog.setCanceledOnTouchOutside(false);
 
         CBProgressBar cbProgressBar = (CBProgressBar) loadingDialog.findViewById(R.id.cbpb_loading);
         if (showProgressBar)

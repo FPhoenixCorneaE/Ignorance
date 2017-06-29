@@ -58,8 +58,8 @@ public abstract class NineGridAdapter {
         String url = getUrl(position);
         Glide.with(mContext)
                 .load(url)
-                .placeholder(R.drawable.shape_solidpale)
-                .error(R.drawable.shape_solidpale)
+                .placeholder(R.drawable.shape_solidlightgray)
+                .error(R.drawable.shape_solidlightgray)
                 .crossFade()
                 .into(iv);
         return iv;

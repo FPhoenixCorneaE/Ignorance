@@ -12,6 +12,7 @@ import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.common.Constant;
 import com.livelearn.ignorance.receiver.UploadImageBroadcastReceiver;
 import com.livelearn.ignorance.utils.DialogUtils;
+import com.livelearn.ignorance.utils.ToastUtils;
 import com.livelearn.ignorance.utils.aliyunupload.UploadMultipleImageUtils;
 import com.livelearn.ignorance.widget.StateButton;
 import com.livelearn.ignorance.widget.TitleBar;
@@ -78,6 +79,10 @@ public class TestUploadMultipleImageActivity extends BaseActivity {
 
     @OnClick(R.id.sb_upload_start)
     public void onClick() {
+        if (selectedPhotos.isEmpty()) {
+            ToastUtils.showToast("请选择照片");
+            return;
+        }
         uploadingDialog.show();
         new UploadMultipleImageUtils(mContext, selectedPhotos).startUpload();
     }
