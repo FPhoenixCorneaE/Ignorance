@@ -96,7 +96,7 @@ android {
     dexOptions {
         maxProcessCount 8
         //增加java堆内存大小
-        javaMaxHeapSize "6g"
+        javaMaxHeapSize "4g"
         //让它不要对Lib做preDexing
         preDexLibraries = false
         //开启incremental dexing,优化编译效率，这个功能android studio默认是关闭的
