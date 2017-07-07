@@ -485,8 +485,11 @@
         <!--微影详情-->
         <activity
             android:name=".ui.activity.video.PhotoLithographyDetailsActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--测试Nice首页9图样式及拖拽效果-->
+        <activity
+            android:name=".test.ninegridlayout.TestNiceNineImageLayoutActivity"
             android:theme="@style/AppTheme" />
     </application>
 

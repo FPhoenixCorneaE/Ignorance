@@ -440,6 +440,9 @@ public class ThreeDimensionViewPager extends ViewPager {
     float mLastX;
     float mLastY;
 
+    /**
+     * 解决SwipeBackLayout滑动返回与ViewPager水平滑动冲突
+     */
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         if (getCurrentItem() == 0) {

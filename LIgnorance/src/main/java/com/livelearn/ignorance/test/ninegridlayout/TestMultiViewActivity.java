@@ -7,8 +7,8 @@ import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.ui.activity.gallery.PictureBrowsingActivity;
 import com.livelearn.ignorance.utils.ToastUtils;
 import com.livelearn.ignorance.widget.TitleBar;
-import com.livelearn.ignorance.widget.ninegridlayout.MultiView;
-import com.livelearn.ignorance.widget.ninegridlayout.Utils;
+import com.livelearn.ignorance.widget.ninegridlayout.multiview.MultiView;
+import com.livelearn.ignorance.widget.ninegridlayout.multiview.Utils;
 
 import java.util.List;
 

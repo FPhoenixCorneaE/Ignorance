@@ -200,6 +200,7 @@
         <item>LoadingView 加载中控件</item>
         <item>MovingImageView 滑动背景图</item>
         <item>MultiView QQ空间九宫格视图</item>
+        <item>NiceNineImageLayout Nice首页9图样式及拖拽效果</item>
         <item>NineGridLayout 微信九宫格视图</item>
         <item>ObservableScrollView 可观察的滚动控件</item>
         <item>PullToRefreshWithLoadMore 下拉刷新加载更多组件</item>
@@ -250,6 +251,8 @@
         <item>冷薇</item>
         <item>皇甫问情</item>
         <item>皇甫千叶</item>
+        <item>艾斯德斯</item>
+        <item>切尔茜</item>
     </string-array>
 
     <string-array name="Journal_AvatarUrl">
@@ -260,6 +263,8 @@
         <item>http://o84n5syhk.bkt.clouddn.com/57151022_p0.jpg</item>
         <item>http://o84n5syhk.bkt.clouddn.com/57172236_p0.jpg</item>
         <item>http://o84n5syhk.bkt.clouddn.com/57174564_p0.jpg</item>
+        <item>http://o84n5syhk.bkt.clouddn.com/57156832_p0.jpg</item>
+        <item>http://o84n5syhk.bkt.clouddn.com/57151474_p0.png</item>
     </string-array>
 
     <string-array name="Journal_Description">
@@ -270,15 +275,19 @@
         <item>桃李春风一杯酒，江湖夜雨十年灯。思念无果，大雨滂沱。所谓世人，不就是你吗？世间文字八万个，唯有情字最杀人。</item>
         <item>我是一个在黑暗中大雪纷飞的人啊。你不过是每一个孤独的瞬息。我也是恨不过嘛，才爱来试试。</item>
         <item>黄昏时，等人来敲门。而敲门的人走错时间，也在等黄昏。飞鸟也风情，抖一片羽毛作信物。人间情事太俗，不如一个人看日出。</item>
+        <item>江南好，风景旧曾谙。日出江花红胜火，春来江水绿如蓝。能不忆江南？</item>
+        <item>寻寻觅觅，冷冷清清，凄凄惨惨戚戚。</item>
     </string-array>
 
     <string-array name="Journal_Pictures">
         <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJlfJV9qIZajjAAj8g_wzob4AAU-GgFNzS4ACPyb291.jpg"</item>
-        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJ1fJTbGIJWRJAACiwgeBNq4AAU9JQEafxMAAKLa278.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/0F/0F/ChMkJlfJTQaIFpLdAADF5jW4CYwAAU9FwMj5oMAAMX-169.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/0F/0F/ChMkJ1fJTMOIAVNdAAcj_9TZb-gAAU9EQNdY8kAByQX562.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/04/ChMkJlfJWDCIWFS8AAp0UKGB2ZgAAU-IwCEk5gACnRo369.jpg"</item>
-        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJT76IRwXPAAlFOKyV0j8AAU9TwEXKmcACUVQ237.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJ1fJT5GIH-5rAAH437f_8CUAAU9TAHciDcAAfj3168.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJTuOIHGIgAAPGCqdqSMgAAU9OwLbb8QAA8Yi174.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJ1fJTuGINg3GAAYuHhM8mlYAAU9OwJIcEsABi42788.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJTs-IA_4jAA-zniVyvgoAAU9OQKbCiUAD7O2323.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJTpeIWZ1OAALlEIQzcHMAAU9NAOq784AAuUo531.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJTn2ILWZxAAVYsql8et8AAU9MwBokBkABVjK814.jpg"</item>
-        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJV8iIYQ4AAAcIriGCaLIAAU-GAH2-wcABwjG920.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJlfJV6aIcDHCAAyjNar0X-8AAU-FANlTDsADKNN096.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJV3-IXf6BAAo0zp74h3IAAU-EQAyv2YACjTm431.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJVsqIFEv-ABOCj3O54GgAAU-AAKkzcEAE4Kn698.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJVrOIIKxzAAJsGfgQXUEAAU9_gE0SjQAAmwx931.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJlfJVnCIZU2NAAZv5V8zF1cAAU99wO8aRsABm_9797.jpg"</item>
         <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJTnuIRJ1OAA753IXDvGcAAU9MwAhC_QADvn0629.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJ1fJTnGIHFaAAAPjZpbLBYQAAU9MgFtzSQAA-N-003.jpg"</item>
         <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJVieIXioqACJAJZZ8ZqUAAU98QAm5O0AIkA9233.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJlfJVb-IACezAAm1RnI-xKIAAU95gMrdEIACbVe956.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJVYWIZxn_AAFGxU01BkcAAU94QHVo_0AAUbd033.jpg"</item>
+        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJ1fJTbGIJWRJAACiwgeBNq4AAU9JQEafxMAAKLa278.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/0F/0F/ChMkJlfJTQaIFpLdAADF5jW4CYwAAU9FwMj5oMAAMX-169.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/0F/0F/ChMkJ1fJTMOIAVNdAAcj_9TZb-gAAU9EQNdY8kAByQX562.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/04/ChMkJlfJWDCIWFS8AAp0UKGB2ZgAAU-IwCEk5gACnRo369.jpg"</item>
+        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJV8iIYQ4AAAcIriGCaLIAAU-GAH2-wcABwjG920.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJlfJV6aIcDHCAAyjNar0X-8AAU-FANlTDsADKNN096.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJV3-IXf6BAAo0zp74h3IAAU-EQAyv2YACjTm431.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJVsqIFEv-ABOCj3O54GgAAU-AAKkzcEAE4Kn698.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJVrOIIKxzAAJsGfgQXUEAAU9_gE0SjQAAmwx931.jpg"</item>
+        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJV8iIYQ4AAAcIriGCaLIAAU-GAH2-wcABwjG920.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJlfJV6aIcDHCAAyjNar0X-8AAU-FANlTDsADKNN096.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJV3-IXf6BAAo0zp74h3IAAU-EQAyv2YACjTm431.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJVsqIFEv-ABOCj3O54GgAAU-AAKkzcEAE4Kn698.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJ1fJVrOIIKxzAAJsGfgQXUEAAU9_gE0SjQAAmwx931.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/03/ChMkJlfJVnCIZU2NAAZv5V8zF1cAAU99wO8aRsABm_9797.jpg"</item>
+        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJT76IRwXPAAlFOKyV0j8AAU9TwEXKmcACUVQ237.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJ1fJT5GIH-5rAAH437f_8CUAAU9TAHciDcAAfj3168.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJTuOIHGIgAAPGCqdqSMgAAU9OwLbb8QAA8Yi174.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJ1fJTuGINg3GAAYuHhM8mlYAAU9OwJIcEsABi42788.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJTs-IA_4jAA-zniVyvgoAAU9OQKbCiUAD7O2323.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJTpeIWZ1OAALlEIQzcHMAAU9NAOq784AAuUo531.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/00/ChMkJlfJTn2ILWZxAAVYsql8et8AAU9MwBokBkABVjK814.jpg"</item>
+        <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJ1fJUYiIEtDDAAGcif4js8oAAU9egJmm74AAZyh409.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUVqIG9E4AAXem303o8UAAU9dgMjCU4ABd6z036.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUTeIKL3LAAefkYj1Ju0AAU9cwOiAJYAB5-p242.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJ1fJUTaIGQK6AAHvReuOQUkAAU9cwNWTfoAAe9d468.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUQWIfCz_AAeU25AxkMMAAU9bwAvrToAB5Tz853.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUMOIAR3HAAQcsgvxeScAAU9aAHAXRIABBzK941.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUJWIYJuuAAS7Xt4OToUAAU9ZABDXPsABLt2483.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUIOIEaGVAAhG5zFfIHUAAU9YgHSaeYACEb_983.jpg"</item>
         <item>"http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJ1fJUYiIEtDDAAGcif4js8oAAU9egJmm74AAZyh409.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUVqIG9E4AAXem303o8UAAU9dgMjCU4ABd6z036.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUTeIKL3LAAefkYj1Ju0AAU9cwOiAJYAB5-p242.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJ1fJUTaIGQK6AAHvReuOQUkAAU9cwNWTfoAAe9d468.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUQWIfCz_AAeU25AxkMMAAU9bwAvrToAB5Tz853.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUMOIAR3HAAQcsgvxeScAAU9aAHAXRIABBzK941.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUJWIYJuuAAS7Xt4OToUAAU9ZABDXPsABLt2483.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUIOIEaGVAAhG5zFfIHUAAU9YgHSaeYACEb_983.jpg","http://sjbz.fd.zol-img.com.cn/t_s208x312c/g5/M00/00/01/ChMkJlfJUGyIJwKnAAWs4nLQ8aEAAU9YAA7vMgABaz6509.jpg"</item>
     </string-array>
 
@@ -290,6 +299,8 @@
         <item>中国西藏自治区的首府拉萨市区西北玛布日山布达拉宫</item>
         <item>安徽省南部黄山市黄山</item>
         <item>中国贵州省安顺市镇宁布依族苗族自治县黄果树大瀑布</item>
+        <item>中国福建省厦门市鼓浪屿</item>
+        <item>中国云南省大理市蝴蝶泉</item>
     </string-array>
 
     <string-array name="Journal_Time">
@@ -300,6 +311,8 @@
         <item>2017年03月09日 05:48:38</item>
         <item>2017年03月09日 10:24:35</item>
         <item>2016年08月29日 02:03:28</item>
+        <item>2017年09月19日 12:43:08</item>
+        <item>2017年05月20日 17:52:00</item>
     </string-array>
 
     <!--SwipeRefreshLayout 下拉刷新进度条颜色-->

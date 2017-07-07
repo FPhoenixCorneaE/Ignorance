@@ -38,7 +38,6 @@ public class TestColorTrackViewActivity extends BaseActivity {
         SimpleFragmentPagerAdapter pagerAdapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
         vpPager.setAdapter(pagerAdapter);
         tlTab.setupWithViewPager(vpPager);
-        tlTab.setTabMode(TabLayout.MODE_SCROLLABLE);
         for (int i = 0; i < tlTab.getTabCount(); i++) {
             TabLayout.Tab tab = tlTab.getTabAt(i);
             if (tab == null) return;

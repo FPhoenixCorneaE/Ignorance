@@ -531,19 +531,24 @@
 
     <!--标签布局-->
     <style name="_TabLayout" parent="Widget.Design.TabLayout">
-        <item name="tabMaxWidth">@dimen/width_60dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_40dp</item>
+        <item name="android:background">@color/background</item>
+        <item name="tabMode">scrollable</item>
+        <!--TabGravity属性只有在TabMode为fixed情况下才有用-->
+        <item name="tabGravity">fill</item>
         <item name="tabIndicatorColor">@color/color_light_purple</item>
         <item name="tabIndicatorHeight">2dp</item>
         <item name="tabPaddingStart">0dp</item>
         <item name="tabPaddingEnd">0dp</item>
         <item name="tabBackground">?attr/selectableItemBackground</item>
         <item name="tabTextAppearance">@style/_TabTextAppearance</item>
-        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+        <item name="tabTextColor">@color/color_dark_black</item>
+        <item name="tabSelectedTextColor">@color/color_light_purple</item>
     </style>
 
     <style name="_TabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">?android:textColorSecondary</item>
         <item name="textAllCaps">false</item>
     </style>
 </resources>

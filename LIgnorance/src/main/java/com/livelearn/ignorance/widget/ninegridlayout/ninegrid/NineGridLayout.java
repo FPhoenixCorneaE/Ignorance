@@ -1,4 +1,4 @@
-package com.livelearn.ignorance.widget.ninegridlayout;
+package com.livelearn.ignorance.widget.ninegridlayout.ninegrid;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -12,7 +12,7 @@ import android.widget.ImageView;
 public class NineGridLayout extends ViewGroup {
 
     private NineGridAdapter adapter;
-    private OnItemClickListerner onItemClickListerner;
+    private OnItemClickListener onItemClickListener;
     /**
      * 默认图片间隔
      */
@@ -120,8 +120,8 @@ public class NineGridLayout extends ViewGroup {
             childrenView.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (onItemClickListerner != null) {
-                        onItemClickListerner.onItemClick(adapter, v, itemPosition);
+                    if (onItemClickListener != null) {
+                        onItemClickListener.onItemClick(adapter, v, itemPosition);
                     }
                 }
             });
@@ -189,11 +189,11 @@ public class NineGridLayout extends ViewGroup {
         return (int) (dpValue * scale + 0.5f);
     }
 
-    public void setOnItemClickListerner(OnItemClickListerner onItemClickListerner) {
-        this.onItemClickListerner = onItemClickListerner;
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
     }
 
-    public interface OnItemClickListerner {
+    public interface OnItemClickListener {
         void onItemClick(NineGridAdapter nineGridAdapter, View view, int position);
     }
 }

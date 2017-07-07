@@ -5,7 +5,7 @@ import android.os.Bundle;
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.test.ninegridlayout.OnePiece;
-import com.livelearn.ignorance.widget.ninegridlayout.SimpleNineGridView;
+import com.livelearn.ignorance.widget.ninegridlayout.simpleninegrid.SimpleNineGridView;
 
 import butterknife.BindView;
 

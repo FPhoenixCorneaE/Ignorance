@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorPrimary"
@@ -15,9 +16,7 @@
     <android.support.design.widget.TabLayout
         android:id="@+id/tl_tab"
         style="@style/_TabLayout"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/height_40dp"
-        android:background="@color/background" />
+        app:tabMaxWidth="@dimen/width_60dp" />
 
     <com.livelearn.ignorance.widget.viewpager.SwipeBackViewPager
         android:id="@+id/vp_pager"

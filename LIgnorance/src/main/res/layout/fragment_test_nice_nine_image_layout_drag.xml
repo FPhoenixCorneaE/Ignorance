@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_16dp">
+
+        <com.livelearn.ignorance.widget.ninegridlayout.niceninelayout.NiceNineImageLayout
+            android:id="@+id/nnil_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:nice9_canDrag="true"
+            app:nice9_itemMargin="@dimen/margin_8dp"
+            app:nice9_tipColor="#456778"
+            app:nice9_tipText="新的风暴已经降临" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_16dp">
+
+            <Button
+                android:id="@+id/btn_minus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_get_url"
+            style="@style/_Button_Background_LightPurpleDarkPurple_Text_PaleTranslucentPale"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:text="获取图片地址"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_picUrl"
+            style="@style/_16sp_BlackText"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:gravity="fill_horizontal"
+            android:lineSpacingExtra="@dimen/margin_5dp" />
+    </LinearLayout>
+</ScrollView>

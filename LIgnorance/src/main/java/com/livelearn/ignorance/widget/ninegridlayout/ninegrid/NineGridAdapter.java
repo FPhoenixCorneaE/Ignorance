@@ -1,4 +1,4 @@
-package com.livelearn.ignorance.widget.ninegridlayout;
+package com.livelearn.ignorance.widget.ninegridlayout.ninegrid;
 
 import android.content.Context;
 import android.support.v4.content.ContextCompat;

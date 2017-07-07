@@ -10,8 +10,8 @@ import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.ui.activity.gallery.PhotoGalleryActivity;
 import com.livelearn.ignorance.utils.DateUtils;
 import com.livelearn.ignorance.utils.GlideUtils;
-import com.livelearn.ignorance.widget.ninegridlayout.NineGridAdapter;
-import com.livelearn.ignorance.widget.ninegridlayout.NineGridLayout;
+import com.livelearn.ignorance.widget.ninegridlayout.ninegrid.NineGridAdapter;
+import com.livelearn.ignorance.widget.ninegridlayout.ninegrid.NineGridLayout;
 
 /**
  * Created on 2017/3/8.
@@ -50,7 +50,7 @@ class NineGridLayoutViewHolder extends BaseViewHolder<Journal> {
         tvReleaseLocation.setText(journal.getReleaseLocation());
         tvReleaseTime.setText(DateUtils.timeDisposal(journal.getReleaseTime(), "yyyy年MM月dd日 HH:mm:ss"));
 
-        nglPicture.setOnItemClickListerner(new NineGridLayout.OnItemClickListerner() {
+        nglPicture.setOnItemClickListener(new NineGridLayout.OnItemClickListener() {
             @SuppressWarnings("unchecked")
             @Override
             public void onItemClick(NineGridAdapter nineGridAdapter, View view, int position) {

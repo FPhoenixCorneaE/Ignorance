@@ -6,7 +6,7 @@ apply from: "${rootDir}/gradle/version.gradle"
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "25.0.3"
 
     productFlavors {
         dev {
@@ -94,13 +94,11 @@ android {
 
     //multiDex的一些相关配置，这样配置可以让你的编译速度更快
     dexOptions {
-        maxProcessCount 8
+        maxProcessCount 6
         //增加java堆内存大小
-        javaMaxHeapSize "4g"
+        javaMaxHeapSize "6g"
         //让它不要对Lib做preDexing
         preDexLibraries = false
-        //开启incremental dexing,优化编译效率，这个功能android studio默认是关闭的
-        incremental true
         //忽略方法数限制的检查
         jumboMode = true
     }
@@ -433,5 +431,11 @@ dependencies {
      * 节操视频播放控件
      */
     compile 'fm.jiecao:jiecaovideoplayer:5.5.4'
+    /**
+     * VirtualLayout是一个针对RecyclerView的LayoutManager扩展, 主要提供一整套布局方案和布局间的组件复用的问题。
+     */
+    compile('com.alibaba.android:vlayout:1.0.9@aar') {
+        transitive = true
+    }
 }
 

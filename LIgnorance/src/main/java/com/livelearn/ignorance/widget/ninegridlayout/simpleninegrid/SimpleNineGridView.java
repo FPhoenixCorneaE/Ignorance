@@ -1,4 +1,4 @@
-package com.livelearn.ignorance.widget.ninegridlayout;
+package com.livelearn.ignorance.widget.ninegridlayout.simpleninegrid;
 
 import android.content.Context;
 import android.graphics.Color;

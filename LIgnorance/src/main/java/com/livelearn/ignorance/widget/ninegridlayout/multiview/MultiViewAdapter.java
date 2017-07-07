@@ -1,4 +1,4 @@
-package com.livelearn.ignorance.widget.ninegridlayout;
+package com.livelearn.ignorance.widget.ninegridlayout.multiview;
 
 import android.content.Context;
 import android.view.View;

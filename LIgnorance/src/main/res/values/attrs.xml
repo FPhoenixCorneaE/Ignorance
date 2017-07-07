@@ -622,15 +622,29 @@
 
     <!--九宫格显示多图或item，仿照QQ空间图片列表-->
     <declare-styleable name="MultiView">
-        <attr name="divideSpace" format="dimension"/>
-        <attr name="placeholder" format="reference"/>
+        <attr name="divideSpace" format="dimension" />
+        <attr name="placeholder" format="reference" />
     </declare-styleable>
 
     <!--circle progress animation view-->
     <declare-styleable name="CircleProgress">
-        <attr name="color1" format="reference|color"/>
-        <attr name="color2" format="reference|color"/>
-        <attr name="color3" format="reference|color"/>
-        <attr name="autoStart" format="boolean"/>
+        <attr name="color1" format="reference|color" />
+        <attr name="color2" format="reference|color" />
+        <attr name="color3" format="reference|color" />
+        <attr name="autoStart" format="boolean" />
+    </declare-styleable>
+
+    <!--仿Nice首页图片列表9图样式，并实现拖拽效果-->
+    <declare-styleable name="NiceNineImageLayout">
+        <attr name="nice9_canDrag" format="boolean" />
+        <attr name="nice9_itemMargin" format="dimension" />
+        <attr name="nice9_tipText" format="reference|string" />
+        <attr name="nice9_tipColor" format="reference|color" />
+        <attr name="nice9_tipBgColor" format="reference|color" />
+        <attr name="nice9_tipBgDrawable" format="reference" />
+        <attr name="nice9_marginStart" format="dimension" />
+        <attr name="nice9_marginEnd" format="dimension" />
+        <attr name="nice9_paddingStart" format="dimension" />
+        <attr name="nice9_paddingEnd" format="dimension" />
     </declare-styleable>
 </resources>

@@ -22,6 +22,7 @@ import com.livelearn.ignorance.test.loaderview.TestLoaderViewActivity;
 import com.livelearn.ignorance.test.loadingview.TestLoadingViewActivity;
 import com.livelearn.ignorance.test.movingimageview.TestMovingImageViewActivity;
 import com.livelearn.ignorance.test.ninegridlayout.TestMultiViewActivity;
+import com.livelearn.ignorance.test.ninegridlayout.TestNiceNineImageLayoutActivity;
 import com.livelearn.ignorance.test.ninegridlayout.TestNineGridLayoutActivity;
 import com.livelearn.ignorance.test.observablescrollview.TestObservableScrollViewMainActivity;
 import com.livelearn.ignorance.test.pulltorefreshwithloadmore.activity.TestPullToRefreshWithLoadMoreHomeActivity;
@@ -130,6 +131,9 @@ public class TestMainActivity extends BaseActivity implements TestMainAdapter.On
                 break;
             case "MultiView QQ空间九宫格视图":
                 IntentUtils.startActivity(mContext, TestMultiViewActivity.class);
+                break;
+            case "NiceNineImageLayout Nice首页9图样式及拖拽效果":
+                IntentUtils.startActivity(mContext, TestNiceNineImageLayoutActivity.class);
                 break;
             case "NineGridLayout 微信九宫格视图":
                 IntentUtils.startActivity(mContext, TestNineGridLayoutActivity.class);

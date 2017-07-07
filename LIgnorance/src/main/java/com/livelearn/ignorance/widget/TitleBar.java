@@ -3,6 +3,7 @@ package com.livelearn.ignorance.widget;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
@@ -191,19 +192,39 @@ public class TitleBar extends RelativeLayout {
         return showLeftText();
     }
 
-    public TitleBar setLeftTextColor(int titleTextColor) {
-        tvLeft.setTextColor(titleTextColor);
+    public TitleBar setLeftTextColor(int leftTextColor) {
+        tvLeft.setTextColor(leftTextColor);
         return this;
     }
 
-    public TitleBar setLeftTextSize(float titleTextSize) {
-        tvLeft.setTextSize(titleTextSize);
+    public TitleBar setLeftTextColor(ColorStateList leftTextColors) {
+        tvLeft.setTextColor(leftTextColors);
+        return this;
+    }
+
+    public TitleBar setLeftTextSize(float leftTextSize) {
+        tvLeft.setTextSize(leftTextSize);
         return this;
     }
 
     public TitleBar setRightText(CharSequence rightText) {
         tvRight.setText(rightText);
         return showRightText();
+    }
+
+    public TitleBar setRightTextColor(int rightTextColor) {
+        tvRight.setTextColor(rightTextColor);
+        return this;
+    }
+
+    public TitleBar setRightTextColor(ColorStateList rightTextColors) {
+        tvRight.setTextColor(rightTextColors);
+        return this;
+    }
+
+    public TitleBar setRightTextSize(float rightTextSize) {
+        tvRight.setTextSize(rightTextSize);
+        return this;
     }
 
     public TitleBar setTitleText(CharSequence titleText) {

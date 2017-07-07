@@ -13,17 +13,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <View style="@style/_View_Divider_10dp" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_tab"
+        style="@style/_TabLayout"
+        app:tabMode="fixed" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background_white">
+        android:background="@color/background">
 
-        <com.livelearn.ignorance.widget.ninegridlayout.multiview.MultiView
-            android:id="@+id/mv_multi"
+        <com.livelearn.ignorance.widget.viewpager.SpringBackViewPager
+            android:id="@+id/vp_pager"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            app:divideSpace="8dp"
-            app:placeholder="@drawable/shape_solidlightgray" />
+            android:layout_height="match_parent" />
     </FrameLayout>
 </LinearLayout>

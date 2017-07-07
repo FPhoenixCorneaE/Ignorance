@@ -36,13 +36,18 @@
             android:text="今天天气真好，好开心！你若安好便是晴天！"
             tools:ignore="HardcodedText" />
 
-        <com.livelearn.ignorance.widget.ninegridlayout.ninegrid.NineGridLayout
-            android:id="@+id/ngl_picture"
+        <com.livelearn.ignorance.widget.ninegridlayout.niceninelayout.NiceNineImageLayout
+            android:id="@+id/nnil_picture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_8dp"
-            android:paddingEnd="@dimen/margin_30dp"
-            android:paddingStart="0dp" />
+            android:orientation="vertical"
+            app:nice9_canDrag="false"
+            app:nice9_itemMargin="5dp"
+            app:nice9_marginEnd="10dp"
+            app:nice9_marginStart="80dp"
+            app:nice9_paddingEnd="@dimen/margin_30dp"
+            app:nice9_paddingStart="0dp" />
 
         <TextView
             android:id="@+id/tv_release_location"

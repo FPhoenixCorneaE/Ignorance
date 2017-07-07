@@ -6,6 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
+import android.view.ViewConfiguration;
 import android.view.animation.TranslateAnimation;
 
 /**
@@ -20,12 +21,21 @@ public class SpringBackViewPager extends ViewPager {
     private static final float RATIO = 0.5f;//摩擦系数
     private static final float SCROLL_WIDTH = 10f;
 
+    private int mTouchSlop;
+
     public SpringBackViewPager(Context context) {
-        super(context);
+        this(context, null);
     }
 
     public SpringBackViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init();
+    }
+
+    private void init() {
+        Context context = getContext();
+        ViewConfiguration configuration = ViewConfiguration.get(context);
+        mTouchSlop = configuration.getScaledPagingTouchSlop();
     }
 
     @Override
@@ -121,6 +131,42 @@ public class SpringBackViewPager extends ViewPager {
         layout(mRect.left, mRect.top, mRect.right, mRect.bottom);
         mRect.setEmpty();
         handleDefault = true;
+    }
+
+    float mLastX;
+    float mLastY;
+
+    /**
+     * 解决SwipeBackLayout滑动返回与ViewPager水平滑动冲突
+     */
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        if (getCurrentItem() == 0) {
+            float x = ev.getX();
+            float y = ev.getY();
+            switch (ev.getAction()) {
+                case MotionEvent.ACTION_MOVE:
+                    float xDiff = Math.abs(x - mLastY);
+                    float yDiff = Math.abs(y - mLastY);
+                    //在第一页，判断到是向左边滑动，即想滑动第二页
+                    if (xDiff > 0 && x - mLastX < 0 && xDiff * 0.5f > yDiff) {
+                        //告诉父容器不要拦截事件
+                        getParent().requestDisallowInterceptTouchEvent(true);
+                    } else if (yDiff > mTouchSlop && xDiff < mTouchSlop) {
+                        //竖直滑动时，告诉父容器拦截事件，用于在ScrollView中可以竖直滑动
+                        getParent().requestDisallowInterceptTouchEvent(false);
+                    }
+                    break;
+                case MotionEvent.ACTION_UP:
+                    getParent().requestDisallowInterceptTouchEvent(false);
+                    break;
+            }
+            mLastX = x;
+            mLastY = y;
+        } else {
+            getParent().requestDisallowInterceptTouchEvent(true);
+        }
+        return super.dispatchTouchEvent(ev);
     }
 
 }
