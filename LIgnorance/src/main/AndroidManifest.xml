@@ -289,7 +289,7 @@
 
         <!-- 测试九宫格布局 -->
         <activity
-            android:name=".test.ninegridlayout.TestNineGridLayoutActivity"
+            android:name=".test.ninegridimagelayout.ninegridlayout.TestNineGridLayoutActivity"
             android:theme="@style/AppTheme" />
 
         <!-- 图片画廊 -->
@@ -469,7 +469,7 @@
 
         <!--测试QQ空间九宫格显示多图-->
         <activity
-            android:name=".test.ninegridlayout.TestMultiViewActivity"
+            android:name=".test.ninegridimagelayout.multiview.TestMultiViewActivity"
             android:theme="@style/AppTheme" />
 
         <!--测试九宫格以及图片画廊-->
@@ -489,7 +489,12 @@
 
         <!--测试Nice首页9图样式及拖拽效果-->
         <activity
-            android:name=".test.ninegridlayout.TestNiceNineImageLayoutActivity"
+            android:name=".test.ninegridimagelayout.nicenineimage.TestNiceNineImageLayoutActivity"
+            android:theme="@style/AppTheme" />
+
+        <!--测试类似朋友圈或微博的可跨行跨列九宫格图片控件-->
+        <activity
+            android:name=".test.ninegridimagelayout.ninegridimageview.TestNineGridImageViewActivity"
             android:theme="@style/AppTheme" />
     </application>
 

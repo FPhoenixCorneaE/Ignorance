@@ -89,17 +89,27 @@ public class GlideUtils {
      *
      * @param context               绑定Context/Activity/FragmentActivity/Fragment
      * @param imageView             展示图片ImageView或ImageView子类
-     * @param picurl                图片路径
+     * @param picUrl                图片路径
      * @param cornerRadius          圆角大小
      * @param isCircle              是否是圆形
      * @param isCenterCrop          是否中心剪裁
      * @param isCrossFade           是否淡入淡出
      * @param errorResId            加载错误资源图片id
-     * @param bitmapTransformations 位图转换，可以转换一种或多种
+     * @param bitmapTransformations 位图转换，可以转换一种或多种:
+     *                              1)图片剪裁:CropCircleTransformation(圆形剪裁显示)、CropSquareTransformation(正方形剪裁)、
+     *                              RoundedCornersTransformation(圆角剪裁)、CropTransformation(自定义矩形剪裁);
+     *                              2)颜色转换:ColorFilterTransformation(颜色滤镜)、GrayscaleTransformation(灰度级转换);
+     *                              3)模糊处理:BlurTransformation;
+     *                              4)遮罩掩饰(视图叠加处理):MaskTransformation;
+     *                              5)GPU过滤(需要依赖GPUImage库):ToonFilterTransformation(卡通滤波器)、SepiaFilterTransformation(乌墨色滤波器)、
+     *                              ContrastFilterTransformation(对比度滤波器)、InvertFilterTransformation(反转滤波器)、
+     *                              PixelationFilterTransformation(像素化滤波器)、SketchFilterTransformation(素描滤波器)、
+     *                              SwirlFilterTransformation(旋转滤波器)、BrightnessFilterTransformation(亮度滤波器)、
+     *                              KuwaharaFilterTransformation(Kuwahara滤波器)、VignetteFilterTransformation(装饰图滤波器).
      */
     @SafeVarargs
-    public static void setupImage(Context context, @NonNull ImageView imageView, Object picurl, int cornerRadius, boolean isCircle, boolean isCenterCrop, boolean isCrossFade, int errorResId, Transformation<Bitmap>... bitmapTransformations) {
-        DrawableTypeRequest drawableTypeRequest = getDrawableTypeRequest(context, picurl);
+    public static void setupImage(Context context, @NonNull ImageView imageView, Object picUrl, int cornerRadius, boolean isCircle, boolean isCenterCrop, boolean isCrossFade, int errorResId, Transformation<Bitmap>... bitmapTransformations) {
+        DrawableTypeRequest drawableTypeRequest = getDrawableTypeRequest(context, picUrl);
         if (isCenterCrop)
             drawableTypeRequest.centerCrop();
 
@@ -143,7 +153,7 @@ public class GlideUtils {
      *
      * @param context               绑定Context/Activity/FragmentActivity/Fragment
      * @param imageView             展示图片ImageView或ImageView子类
-     * @param picurl                图片路径
+     * @param picUrl                图片路径
      * @param cornerRadius          圆角大小
      * @param isCircle              是否是圆形
      * @param isCenterCrop          是否中心剪裁
@@ -152,8 +162,8 @@ public class GlideUtils {
      * @param bitmapTransformations 位图转换，可以转换一种或多种
      */
     @SafeVarargs
-    public static void setupImage(Context context, @NonNull ImageView imageView, Object picurl, int cornerRadius, boolean isCircle, boolean isCenterCrop, boolean isCrossFade, Drawable errorDrawable, Transformation<Bitmap>... bitmapTransformations) {
-        DrawableTypeRequest drawableTypeRequest = getDrawableTypeRequest(context, picurl);
+    public static void setupImage(Context context, @NonNull ImageView imageView, Object picUrl, int cornerRadius, boolean isCircle, boolean isCenterCrop, boolean isCrossFade, Drawable errorDrawable, Transformation<Bitmap>... bitmapTransformations) {
+        DrawableTypeRequest drawableTypeRequest = getDrawableTypeRequest(context, picUrl);
         if (isCenterCrop) {
             drawableTypeRequest.centerCrop();
         }

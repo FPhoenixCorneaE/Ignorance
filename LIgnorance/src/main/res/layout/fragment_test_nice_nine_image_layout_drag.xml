@@ -15,7 +15,7 @@
         android:orientation="vertical"
         android:padding="@dimen/margin_16dp">
 
-        <com.livelearn.ignorance.widget.ninegridlayout.niceninelayout.NiceNineImageLayout
+        <com.livelearn.ignorance.widget.ninegridimagelayout.niceninelayout.NiceNineImageLayout
             android:id="@+id/nnil_picture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

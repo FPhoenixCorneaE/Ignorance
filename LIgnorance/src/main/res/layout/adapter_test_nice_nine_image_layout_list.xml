@@ -36,7 +36,7 @@
             android:text="今天天气真好，好开心！你若安好便是晴天！"
             tools:ignore="HardcodedText" />
 
-        <com.livelearn.ignorance.widget.ninegridlayout.niceninelayout.NiceNineImageLayout
+        <com.livelearn.ignorance.widget.ninegridimagelayout.niceninelayout.NiceNineImageLayout
             android:id="@+id/nnil_picture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

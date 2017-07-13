@@ -21,9 +21,10 @@ import com.livelearn.ignorance.test.linkageanimation.TestLinkageAnimationActivit
 import com.livelearn.ignorance.test.loaderview.TestLoaderViewActivity;
 import com.livelearn.ignorance.test.loadingview.TestLoadingViewActivity;
 import com.livelearn.ignorance.test.movingimageview.TestMovingImageViewActivity;
-import com.livelearn.ignorance.test.ninegridlayout.TestMultiViewActivity;
-import com.livelearn.ignorance.test.ninegridlayout.TestNiceNineImageLayoutActivity;
-import com.livelearn.ignorance.test.ninegridlayout.TestNineGridLayoutActivity;
+import com.livelearn.ignorance.test.ninegridimagelayout.multiview.TestMultiViewActivity;
+import com.livelearn.ignorance.test.ninegridimagelayout.nicenineimage.TestNiceNineImageLayoutActivity;
+import com.livelearn.ignorance.test.ninegridimagelayout.ninegridimageview.TestNineGridImageViewActivity;
+import com.livelearn.ignorance.test.ninegridimagelayout.ninegridlayout.TestNineGridLayoutActivity;
 import com.livelearn.ignorance.test.observablescrollview.TestObservableScrollViewMainActivity;
 import com.livelearn.ignorance.test.pulltorefreshwithloadmore.activity.TestPullToRefreshWithLoadMoreHomeActivity;
 import com.livelearn.ignorance.test.searchdialog.TestSearchDialogActivity;
@@ -134,6 +135,9 @@ public class TestMainActivity extends BaseActivity implements TestMainAdapter.On
                 break;
             case "NiceNineImageLayout Nice首页9图样式及拖拽效果":
                 IntentUtils.startActivity(mContext, TestNiceNineImageLayoutActivity.class);
+                break;
+            case "NineGridImageView 可跨行跨列九宫格图片控件":
+                IntentUtils.startActivity(mContext, TestNineGridImageViewActivity.class);
                 break;
             case "NineGridLayout 微信九宫格视图":
                 IntentUtils.startActivity(mContext, TestNineGridLayoutActivity.class);

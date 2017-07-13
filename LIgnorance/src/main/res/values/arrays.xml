@@ -201,6 +201,7 @@
         <item>MovingImageView 滑动背景图</item>
         <item>MultiView QQ空间九宫格视图</item>
         <item>NiceNineImageLayout Nice首页9图样式及拖拽效果</item>
+        <item>NineGridImageView 可跨行跨列九宫格图片控件</item>
         <item>NineGridLayout 微信九宫格视图</item>
         <item>ObservableScrollView 可观察的滚动控件</item>
         <item>PullToRefreshWithLoadMore 下拉刷新加载更多组件</item>

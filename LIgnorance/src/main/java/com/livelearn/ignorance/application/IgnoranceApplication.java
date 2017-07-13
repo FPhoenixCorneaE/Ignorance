@@ -62,7 +62,7 @@ public class IgnoranceApplication extends MultiDexApplication {
         //GreenDao的初始化,数据库的创建、更新
         setDataBase();
 
-        //清空文件缓存
+        //文件缓存数据结构有变，必须清空文件缓存，否则程序会抛错
         clearFileCache();
 
         //初始化Facebook图片加载库Fresco

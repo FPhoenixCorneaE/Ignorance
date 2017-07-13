@@ -647,4 +647,15 @@
         <attr name="nice9_paddingStart" format="dimension" />
         <attr name="nice9_paddingEnd" format="dimension" />
     </declare-styleable>
+
+    <!--类似朋友圈或微博的可跨行跨列九宫格图片控件-->
+    <declare-styleable name="NineGridImageView">
+        <attr name="singleImgSize" format="dimension" />
+        <attr name="imgGap" format="dimension" />
+        <attr name="maxSize" format="integer" />
+        <attr name="showStyle" format="enum">
+            <enum name="grid" value="0" />
+            <enum name="fill" value="1" />
+        </attr>
+    </declare-styleable>
 </resources>

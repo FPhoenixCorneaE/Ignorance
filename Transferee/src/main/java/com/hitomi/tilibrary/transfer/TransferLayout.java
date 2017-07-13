@@ -128,7 +128,7 @@ class TransferLayout extends FrameLayout {
      * 加载 [position - offset] 到 [position + offset] 范围内有效索引位置的图片
      *
      * @param position 当前显示图片的索引
-     * @param offset   postion 左右便宜量
+     * @param offset   position 左右便宜量
      */
     private void loadSourceImageOffset(int position, int offset) {
         int left = position - offset;
@@ -377,5 +377,4 @@ class TransferLayout extends FrameLayout {
          */
         void onReset();
     }
-
 }

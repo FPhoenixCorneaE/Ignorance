@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-    <com.livelearn.ignorance.widget.ninegridlayout.simpleninegrid.SimpleNineGridView
+    <com.livelearn.ignorance.widget.ninegridimagelayout.simpleninegrid.SimpleNineGridView
         android:id="@+id/sngv_nine_grid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
