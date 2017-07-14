@@ -12,6 +12,7 @@ import android.view.animation.AnticipateInterpolator;
 import android.view.animation.OvershootInterpolator;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseFragment;
@@ -43,8 +44,8 @@ public class BookFragment extends BaseFragment implements DouBanBookView.OnPanel
     @BindView(R.id.fl_translucent_background)
     FrameLayout flTranslucentBackground;
 
-    @BindView(R.id.btn_book_source)
-    Button btnBookSource;
+    @BindView(R.id.iv_book_source)
+    ImageView ivBookSource;
 
     @BindView(R.id.btn_dou_ban_book)
     Button btnDouBanBook;
@@ -83,14 +84,14 @@ public class BookFragment extends BaseFragment implements DouBanBookView.OnPanel
 
     }
 
-    @OnClick(R.id.btn_book_source)
+    @OnClick(R.id.iv_book_source)
     public void onViewClicked() {
-        if (btnBookSource.isSelected()) {
+        if (ivBookSource.isSelected()) {
             hideMenu();
         } else {
             showMenu();
         }
-        btnBookSource.setSelected(!btnBookSource.isSelected());
+        ivBookSource.setSelected(!ivBookSource.isSelected());
     }
 
     @OnClick({R.id.btn_dou_ban_book, R.id.btn_long_time_book})
@@ -151,8 +152,8 @@ public class BookFragment extends BaseFragment implements DouBanBookView.OnPanel
 
     private Animator createShowItemAnimator(View item) {
 
-        float dx = btnBookSource.getX() - item.getX();
-        float dy = btnBookSource.getY() - item.getY();
+        float dx = ivBookSource.getX() - item.getX();
+        float dy = ivBookSource.getY() - item.getY();
 
         item.setRotation(0f);
         item.setTranslationX(dx);
@@ -167,8 +168,8 @@ public class BookFragment extends BaseFragment implements DouBanBookView.OnPanel
     }
 
     private Animator createHideItemAnimator(final View item) {
-        float dx = btnBookSource.getX() - item.getX();
-        float dy = btnBookSource.getY() - item.getY();
+        float dx = ivBookSource.getX() - item.getX();
+        float dy = ivBookSource.getY() - item.getY();
 
         Animator anim = ObjectAnimator.ofPropertyValuesHolder(
                 item,
@@ -193,10 +194,10 @@ public class BookFragment extends BaseFragment implements DouBanBookView.OnPanel
     public void onPanelStateChanged(View panel, SlidingUpPanelLayout.PanelState previousState, SlidingUpPanelLayout.PanelState newState) {
         if (SlidingUpPanelLayout.PanelState.ANCHORED == newState
                 || SlidingUpPanelLayout.PanelState.EXPANDED == newState) {
-            btnBookSource.setVisibility(View.INVISIBLE);
+            ivBookSource.setVisibility(View.INVISIBLE);
         } else if (SlidingUpPanelLayout.PanelState.COLLAPSED == newState
                 || SlidingUpPanelLayout.PanelState.HIDDEN == newState) {
-            btnBookSource.setVisibility(View.VISIBLE);
+            ivBookSource.setVisibility(View.VISIBLE);
         }
     }
 }

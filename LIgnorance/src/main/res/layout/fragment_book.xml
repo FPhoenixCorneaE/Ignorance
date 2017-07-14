@@ -50,16 +50,15 @@
 
     </FrameLayout>
 
-    <Button
-        android:id="@+id/btn_book_source"
+    <ImageView
+        android:id="@+id/iv_book_source"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_gravity="bottom|end"
-        android:layout_marginBottom="@dimen/margin_36dp"
+        android:layout_marginBottom="@dimen/margin_50dp"
         android:layout_marginEnd="@dimen/margin_36dp"
         android:background="@drawable/selector_oval_solid_normallightpurple_presseddarkpurple"
-        android:text="+"
-        android:textColor="@color/color_pale"
-        android:textSize="24sp"
-        tools:ignore="HardcodedText" />
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/ic_menu_white"
+        tools:ignore="ContentDescription" />
 </FrameLayout>

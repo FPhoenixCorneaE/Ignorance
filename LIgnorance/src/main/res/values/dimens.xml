@@ -7,7 +7,7 @@
     <dimen name="fab_margin">16dp</dimen>
 
     <dimen name="fab_return_top_margin_end">26dp</dimen>
-    <dimen name="fab_return_top_margin_bottom">76dp</dimen>
+    <dimen name="fab_return_top_margin_bottom">90dp</dimen>
 
     <!--状态栏高度-->
     <dimen name="status_bar_height">0dp</dimen>

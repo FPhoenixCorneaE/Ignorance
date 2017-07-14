@@ -1,8 +1,13 @@
 package com.livelearn.ignorance.ui.activity;
 
 import android.os.Bundle;
+import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;
@@ -66,6 +71,35 @@ public class MainActivity extends BaseActivity {
         FragmentPagerItemAdapter pagerItemAdapter = new FragmentPagerItemAdapter(getSupportFragmentManager(), pagerItems);
 
         vpUnScroll.setAdapter(pagerItemAdapter);
+
+        final LayoutInflater mLayoutInflater = LayoutInflater.from(mContext);
+        stlTab.setCustomTabView(new SmartTabLayout.TabProvider() {
+            @Override
+            public View createTabView(ViewGroup container, int position, PagerAdapter adapter) {
+                View itemView = mLayoutInflater.inflate(R.layout.item_tab_icon_and_text, container, false);
+                ImageView ivIcon = (ImageView) itemView.findViewById(R.id.iv_icon);
+                TextView tvText = (TextView) itemView.findViewById(R.id.tv_text);
+                tvText.setText(tabArray[position]);
+                switch (position) {
+                    case 0:
+                        ivIcon.setImageResource(R.drawable.ic_home_video);
+                        break;
+                    case 1:
+                        ivIcon.setImageResource(R.drawable.ic_home_book);
+                        break;
+                    case 2:
+                        ivIcon.setImageResource(R.drawable.ic_home_message);
+                        break;
+                    case 3:
+                        ivIcon.setImageResource(R.drawable.ic_home_image);
+                        break;
+                    case 4:
+                        ivIcon.setImageResource(R.drawable.ic_home_mine);
+                        break;
+                }
+                return itemView;
+            }
+        });
         stlTab.setViewPager(vpUnScroll);
     }
 

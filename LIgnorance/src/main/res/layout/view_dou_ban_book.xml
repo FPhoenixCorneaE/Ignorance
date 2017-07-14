@@ -21,6 +21,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
             android:baselineAligned="false"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -40,7 +41,6 @@
                 android:id="@+id/ll_add_label"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="@color/white"
                 android:gravity="center">
 
                 <ImageView
@@ -64,19 +64,33 @@
         android:layout_height="match_parent"
         android:background="@color/background">
 
-        <ImageView
-            android:id="@+id/iv_close"
-            android:layout_width="@dimen/width_24dp"
-            android:layout_height="@dimen/height_24dp"
-            android:layout_margin="@dimen/margin_10dp"
-            app:srcCompat="@mipmap/ic_delete_gray"
-            tools:ignore="ContentDescription" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="@dimen/width_24dp"
+                android:layout_height="@dimen/height_24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_10dp"
+                app:srcCompat="@mipmap/ic_delete_gray"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/_18sp_BlackText"
+                android:layout_centerInParent="true"
+                android:text="编辑标签"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_book_label"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/margin_36dp"
+            android:layout_marginTop="@dimen/margin_50dp"
             android:clipChildren="false"
             android:clipToPadding="false"
             android:padding="8dp" />

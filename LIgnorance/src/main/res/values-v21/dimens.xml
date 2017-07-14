@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
     <dimen name="fab_return_top_margin_end">36dp</dimen>
-    <dimen name="fab_return_top_margin_bottom">94dp</dimen>
+    <dimen name="fab_return_top_margin_bottom">108dp</dimen>
 </resources>

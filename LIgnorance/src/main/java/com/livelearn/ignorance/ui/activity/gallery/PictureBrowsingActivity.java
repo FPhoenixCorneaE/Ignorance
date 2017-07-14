@@ -12,6 +12,7 @@ import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.ui.adapter.gallery.PictureBrowsingAdapter;
 import com.livelearn.ignorance.utils.IntentUtils;
 import com.livelearn.ignorance.utils.ResourceUtils;
+import com.livelearn.ignorance.utils.ToastUtils;
 import com.livelearn.ignorance.widget.viewpager.SpringBackViewPager;
 import com.livelearn.ignorance.widget.viewpagertransformer.RotationAlphaTransformer;
 
@@ -47,7 +48,7 @@ public class PictureBrowsingActivity extends BaseActivity {
         args.putStringArray(IMAGE_LIST, paths.toArray(new String[paths.size()]));
         args.putInt(CURRENT_ITEM, currentItem);
 
-        IntentUtils.startActivity(context,PictureBrowsingActivity.class,args,"fade");
+        IntentUtils.startActivity(context, PictureBrowsingActivity.class, args, "fade");
     }
 
     @Override
@@ -98,6 +99,9 @@ public class PictureBrowsingActivity extends BaseActivity {
     @Override
     public void setListeners() {
         vpPictureBrowsing.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+
+            private boolean misScrolled;
+
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
@@ -110,7 +114,21 @@ public class PictureBrowsingActivity extends BaseActivity {
 
             @Override
             public void onPageScrollStateChanged(int state) {
-
+                switch (state) {
+                    case ViewPager.SCROLL_STATE_DRAGGING:
+                        misScrolled = false;
+                        break;
+                    case ViewPager.SCROLL_STATE_SETTLING:
+                        misScrolled = true;
+                        break;
+                    case ViewPager.SCROLL_STATE_IDLE:
+                        //最后一页向左滑动进入首页
+                        if (vpPictureBrowsing.getCurrentItem() == vpPictureBrowsing.getAdapter().getCount() - 1 && !misScrolled) {
+                            ToastUtils.showCenterToast("已经是最后一页");
+                        }
+                        misScrolled = true;
+                        break;
+                }
             }
         });
     }

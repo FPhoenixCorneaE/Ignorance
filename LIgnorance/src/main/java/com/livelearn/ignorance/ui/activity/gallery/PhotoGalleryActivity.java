@@ -17,6 +17,7 @@ import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.ui.adapter.gallery.PhotoGalleryAdapter;
 import com.livelearn.ignorance.utils.ResourceUtils;
+import com.livelearn.ignorance.utils.ToastUtils;
 import com.livelearn.ignorance.widget.indicatorbox.PointIndicator;
 import com.livelearn.ignorance.widget.viewpagertransformer.RotationAlphaTransformer;
 import com.nineoldandroids.animation.Animator;
@@ -310,6 +311,9 @@ public class PhotoGalleryActivity extends BaseActivity {
     @Override
     public void setListeners() {
         vpPhotoGallery.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+
+            private boolean misScrolled;
+
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
@@ -323,7 +327,21 @@ public class PhotoGalleryActivity extends BaseActivity {
 
             @Override
             public void onPageScrollStateChanged(int state) {
-
+                switch (state) {
+                    case ViewPager.SCROLL_STATE_DRAGGING:
+                        misScrolled = false;
+                        break;
+                    case ViewPager.SCROLL_STATE_SETTLING:
+                        misScrolled = true;
+                        break;
+                    case ViewPager.SCROLL_STATE_IDLE:
+                        //最后一页向左滑动进入首页
+                        if (vpPhotoGallery.getCurrentItem() == vpPhotoGallery.getAdapter().getCount() - 1 && !misScrolled) {
+                            ToastUtils.showCenterToast("已经是最后一页");
+                        }
+                        misScrolled = true;
+                        break;
+                }
             }
         });
     }

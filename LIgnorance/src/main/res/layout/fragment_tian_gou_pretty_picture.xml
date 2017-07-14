@@ -8,6 +8,7 @@
     <com.livelearn.ignorance.widget.smarttablayout.SmartTabLayout
         android:id="@+id/stl_image"
         style="@style/_SmartTabLayout_PureTextTab_Linear"
+        android:background="?attr/colorPrimary"
         app:stl_customTabTextLayoutId="@layout/item_tab_color_track"
         app:stl_titleOffset="auto_center" />
 

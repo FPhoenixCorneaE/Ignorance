@@ -458,6 +458,10 @@ public class InsLoadingView extends AppCompatImageView {
         }
         int w = drawable.getIntrinsicWidth();
         int h = drawable.getIntrinsicHeight();
+        if (w <= 0 || h <= 0) {
+            w = MIN_WIDTH;
+            h = MIN_WIDTH;
+        }
         Bitmap bitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
         drawable.setBounds(0, 0, w, h);
