@@ -117,12 +117,11 @@ public class PhotoLithographyPagerView extends RootView implements PhotoLithogra
         mAdapter.setMore(R.layout.custom_view_footer_loadmore_easy_recycler_view, new RecyclerArrayAdapter.OnMoreListener() {
             @Override
             public void onMoreShow() {
-                mPresenter.getPhotoLithographyTypeList(pageNum++);
+                mPresenter.getPhotoLithographyTypeList(++pageNum);
             }
 
             @Override
             public void onMoreClick() {
-                mAdapter.resumeMore();
             }
         });
         mAdapter.setError(R.layout.custom_view_footer_error_easy_recycler_view, new RecyclerArrayAdapter.OnErrorListener() {

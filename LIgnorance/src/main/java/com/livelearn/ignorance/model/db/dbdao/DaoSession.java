@@ -12,6 +12,7 @@ import com.livelearn.ignorance.model.db.dbentity.Department;
 import com.livelearn.ignorance.model.db.dbentity.Disease;
 import com.livelearn.ignorance.model.db.dbentity.DouBanBookCollection;
 import com.livelearn.ignorance.model.db.dbentity.Hospital;
+import com.livelearn.ignorance.model.db.dbentity.LongTimeBookCollection;
 import com.livelearn.ignorance.model.db.dbentity.ProvinceCity;
 import com.livelearn.ignorance.model.db.dbentity.Symptom;
 
@@ -19,6 +20,7 @@ import com.livelearn.ignorance.model.db.dbdao.DepartmentDao;
 import com.livelearn.ignorance.model.db.dbdao.DiseaseDao;
 import com.livelearn.ignorance.model.db.dbdao.DouBanBookCollectionDao;
 import com.livelearn.ignorance.model.db.dbdao.HospitalDao;
+import com.livelearn.ignorance.model.db.dbdao.LongTimeBookCollectionDao;
 import com.livelearn.ignorance.model.db.dbdao.ProvinceCityDao;
 import com.livelearn.ignorance.model.db.dbdao.SymptomDao;
 
@@ -35,6 +37,7 @@ public class DaoSession extends AbstractDaoSession {
     private final DaoConfig diseaseDaoConfig;
     private final DaoConfig douBanBookCollectionDaoConfig;
     private final DaoConfig hospitalDaoConfig;
+    private final DaoConfig longTimeBookCollectionDaoConfig;
     private final DaoConfig provinceCityDaoConfig;
     private final DaoConfig symptomDaoConfig;
 
@@ -42,6 +45,7 @@ public class DaoSession extends AbstractDaoSession {
     private final DiseaseDao diseaseDao;
     private final DouBanBookCollectionDao douBanBookCollectionDao;
     private final HospitalDao hospitalDao;
+    private final LongTimeBookCollectionDao longTimeBookCollectionDao;
     private final ProvinceCityDao provinceCityDao;
     private final SymptomDao symptomDao;
 
@@ -61,6 +65,9 @@ public class DaoSession extends AbstractDaoSession {
         hospitalDaoConfig = daoConfigMap.get(HospitalDao.class).clone();
         hospitalDaoConfig.initIdentityScope(type);
 
+        longTimeBookCollectionDaoConfig = daoConfigMap.get(LongTimeBookCollectionDao.class).clone();
+        longTimeBookCollectionDaoConfig.initIdentityScope(type);
+
         provinceCityDaoConfig = daoConfigMap.get(ProvinceCityDao.class).clone();
         provinceCityDaoConfig.initIdentityScope(type);
 
@@ -71,6 +78,7 @@ public class DaoSession extends AbstractDaoSession {
         diseaseDao = new DiseaseDao(diseaseDaoConfig, this);
         douBanBookCollectionDao = new DouBanBookCollectionDao(douBanBookCollectionDaoConfig, this);
         hospitalDao = new HospitalDao(hospitalDaoConfig, this);
+        longTimeBookCollectionDao = new LongTimeBookCollectionDao(longTimeBookCollectionDaoConfig, this);
         provinceCityDao = new ProvinceCityDao(provinceCityDaoConfig, this);
         symptomDao = new SymptomDao(symptomDaoConfig, this);
 
@@ -78,6 +86,7 @@ public class DaoSession extends AbstractDaoSession {
         registerDao(Disease.class, diseaseDao);
         registerDao(DouBanBookCollection.class, douBanBookCollectionDao);
         registerDao(Hospital.class, hospitalDao);
+        registerDao(LongTimeBookCollection.class, longTimeBookCollectionDao);
         registerDao(ProvinceCity.class, provinceCityDao);
         registerDao(Symptom.class, symptomDao);
     }
@@ -87,6 +96,7 @@ public class DaoSession extends AbstractDaoSession {
         diseaseDaoConfig.clearIdentityScope();
         douBanBookCollectionDaoConfig.clearIdentityScope();
         hospitalDaoConfig.clearIdentityScope();
+        longTimeBookCollectionDaoConfig.clearIdentityScope();
         provinceCityDaoConfig.clearIdentityScope();
         symptomDaoConfig.clearIdentityScope();
     }
@@ -105,6 +115,10 @@ public class DaoSession extends AbstractDaoSession {
 
     public HospitalDao getHospitalDao() {
         return hospitalDao;
+    }
+
+    public LongTimeBookCollectionDao getLongTimeBookCollectionDao() {
+        return longTimeBookCollectionDao;
     }
 
     public ProvinceCityDao getProvinceCityDao() {

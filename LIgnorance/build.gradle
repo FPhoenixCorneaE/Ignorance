@@ -186,8 +186,8 @@ android {
 
     //数据库ORM框架之GreenDao配置
     greendao {
-        //指定数据库schema版本号，迁移等操作会用到
-        schemaVersion 1
+        //指定数据库schema版本号，迁移、新增等操作会用到
+        schemaVersion 2
         //通过gradle插件生成的数据库相关文件的包名，默认为你的entity所在的包名
         daoPackage 'com.livelearn.ignorance.model.db.dbdao'
         //自定义生成数据库文件的目录
@@ -444,5 +444,9 @@ dependencies {
     compile('com.alibaba.android:vlayout:1.0.9@aar') {
         transitive = true
     }
+    /**
+     * 强大、可定制、易扩展的 ViewPager 指示器框架。是ViewPagerIndicator、TabLayout、PagerSlidingTabStrip的最佳替代品。
+     */
+    compile project(path: ':MagicIndicator')
 }
 

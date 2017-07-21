@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface WelcomeContract {
 
-    interface View extends BaseView<Presenter,List<String>> {
+    interface View extends BaseView<Presenter, List<String>> {
 
         boolean isActive();
 

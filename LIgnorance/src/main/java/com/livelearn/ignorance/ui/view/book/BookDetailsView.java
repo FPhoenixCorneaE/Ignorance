@@ -12,6 +12,8 @@ import android.widget.TextView;
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.common.Constant;
 import com.livelearn.ignorance.model.bean.book.BookDetailsModel;
+import com.livelearn.ignorance.model.db.dbentity.LongTimeBookCollection;
+import com.livelearn.ignorance.model.db.dbhelper.LongTimeBookCollectionDBHelper;
 import com.livelearn.ignorance.presenter.contract.book.BookDetailsContract;
 import com.livelearn.ignorance.utils.GlideUtils;
 import com.livelearn.ignorance.utils.IntentUtils;
@@ -19,6 +21,12 @@ import com.livelearn.ignorance.utils.ResourceUtils;
 import com.livelearn.ignorance.widget.RootView;
 import com.ms.expandable.ExpandableTextView;
 import com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity;
+
+import org.simple.eventbus.EventBus;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -90,6 +98,7 @@ public class BookDetailsView extends RootView implements BookDetailsContract.Vie
 
     @Override
     public void setListeners() {
+        //是否展开状态监听
         tvBookIntroduction.setOnExpandStateChangeListener(new ExpandableTextView.OnExpandStateChangeListener() {
             @Override
             public void onExpandStateChanged(TextView textView, boolean isExpanded) {
@@ -161,5 +170,42 @@ public class BookDetailsView extends RootView implements BookDetailsContract.Vie
 
                 break;
         }
+    }
+
+    /**
+     * 收藏图书
+     */
+    public void collectionBook(LongTimeBookCollectionDBHelper bookCollectionDBHelper) {
+        boolean isCollected;
+        if (bookDetailsModel != null) {
+            LongTimeBookCollection bookCollection = new LongTimeBookCollection();
+            bookCollection.setBook_name(bookDetailsModel.getBookName());
+            bookCollection.setBook_image_url(bookDetailsModel.getBookImageUrl());
+            bookCollection.setBook_author(bookDetailsModel.getBookAuthor());
+            bookCollection.setBook_type(bookDetailsModel.getBookType());
+            bookCollection.setBook_length(bookDetailsModel.getBookLength());
+            bookCollection.setBook_progress(bookDetailsModel.getBookProgress());
+            bookCollection.setBook_update_time(bookDetailsModel.getBookUpdateTime());
+            bookCollection.setBook_download(bookDetailsModel.getBookDownload());
+            bookCollection.setBook_introduction(bookDetailsModel.getBookIntroduction());
+            bookCollection.setBook_read_url(bookDetailsModel.getBookReadUrl());
+            Date now = new Date();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss", Locale.getDefault());
+            String time = dateFormat.format(now);
+            bookCollection.setCollected_time(time);
+            isCollected = bookCollectionDBHelper.addBookCollection(bookCollection);
+        } else {
+            isCollected = false;
+        }
+        EventBus.getDefault().post(isCollected, Constant.BOOK_COLLECTION);
+    }
+
+    /**
+     * 取消图书收藏
+     */
+    public void cancelBookCollection(LongTimeBookCollectionDBHelper bookCollectionDBHelper) {
+        boolean isCancelCollected;
+        isCancelCollected = bookDetailsModel != null && bookCollectionDBHelper.cancelBookCollection(bookDetailsModel.getBookName());
+        EventBus.getDefault().post(isCancelCollected, Constant.BOOK_COLLECTION_CANCEL);
     }
 }

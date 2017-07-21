@@ -455,7 +455,7 @@
         <item name="android:layout_height">@dimen/height_40dp</item>
         <item name="android:background">?attr/colorPrimary</item>
         <item name="stl_defaultTabTextColor">@color/selector_selectedpale_normalblack</item>
-        <item name="stl_defaultTabTextSize">@dimen/text_size_16sp</item>
+        <item name="stl_defaultTabTextSize">@dimen/text_size_18sp</item>
         <item name="stl_defaultTabTextHorizontalPadding">@dimen/margin_15dp</item>
         <item name="stl_defaultTabBackground">@color/transparent</item>
         <item name="stl_distributeEvenly">true</item>

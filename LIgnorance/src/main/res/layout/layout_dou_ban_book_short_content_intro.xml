@@ -17,7 +17,7 @@
         android:layout_marginBottom="6dp"
         android:layout_marginTop="6dp"
         android:orientation="vertical"
-        app:animAlphaStart="1"
+        app:animAlphaStart="0.3"
         app:maxCollapsedLines="4">
 
         <TextView

@@ -111,7 +111,7 @@
     <!--EasyRecyclerView  TestCollapsingActivity-->
     <style name="transText" parent="TextAppearance.AppCompat">
         <item name="android:textColor">#0000</item>
-        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:textSize">@dimen/text_size_20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:maxLines">1</item>
         <item name="android:ellipsize">end</item>

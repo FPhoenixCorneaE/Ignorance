@@ -175,7 +175,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        app:animAlphaStart="1"
+                        app:animAlphaStart="0.3"
                         app:collapseDrawable="@drawable/ic_expand_less_lightpurple"
                         app:expandDrawable="@drawable/ic_expand_more_lightpurple"
                         app:maxCollapsedLines="4">

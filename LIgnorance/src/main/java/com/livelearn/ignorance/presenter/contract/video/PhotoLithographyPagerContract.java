@@ -8,13 +8,13 @@ import com.livelearn.ignorance.model.bean.video.PhotoLithographyTypeListModel;
  * Created on 2017/6/22.
  */
 
-public class PhotoLithographyPagerContract {
+public interface PhotoLithographyPagerContract {
 
-    public interface View extends BaseView<Presenter, PhotoLithographyTypeListModel> {
+    interface View extends BaseView<Presenter, PhotoLithographyTypeListModel> {
 
     }
 
-    public interface Presenter extends BasePresenter {
+    interface Presenter extends BasePresenter {
         void getPhotoLithographyTypeList(int pageNum);
     }
 }

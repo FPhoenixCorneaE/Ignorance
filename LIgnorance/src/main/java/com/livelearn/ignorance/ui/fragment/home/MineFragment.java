@@ -13,6 +13,7 @@ import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseFragment;
 import com.livelearn.ignorance.test.TestMainActivity;
 import com.livelearn.ignorance.ui.activity.LoginActivity;
+import com.livelearn.ignorance.ui.activity.mine.CollectionActivity;
 import com.livelearn.ignorance.ui.activity.mine.SettingsActivity;
 import com.livelearn.ignorance.utils.GlideUtils;
 import com.livelearn.ignorance.utils.IntentUtils;
@@ -90,7 +91,9 @@ public class MineFragment extends BaseFragment {
 
     private void initItemLayout() {
         List<String> valueList = Arrays.asList(ResourceUtils.getStringArray(R.array.MineFragment_Item));
-        List<Integer> resIdList = Arrays.asList(0, R.mipmap.ic_mine_setup);
+        List<Integer> resIdList = Arrays.asList(0,
+                R.mipmap.ic_mine_collection,
+                R.mipmap.ic_mine_setup);
 
         ConfigAttrs configAttrs = new ConfigAttrs();
         configAttrs.setValueList(valueList)//文字List
@@ -116,14 +119,17 @@ public class MineFragment extends BaseFragment {
 
     @Override
     public void setListeners() {
-        bilBaseItemLayout.setOnBaseItemClick(new int[]{0, 1}, new BaseItemLayout.OnBaseItemClick() {
+        bilBaseItemLayout.setOnBaseItemClick(new int[]{0, 1, 2}, new BaseItemLayout.OnBaseItemClick() {
             @Override
             public void onItemClick(View view, int position) {
                 switch (position) {
                     case 0://测试
                         IntentUtils.startActivity(mContext, TestMainActivity.class);
                         break;
-                    case 1://设置
+                    case 1://收藏
+                        IntentUtils.startActivity(mContext, CollectionActivity.class);
+                        break;
+                    case 2://设置
                         IntentUtils.startActivity(mContext, SettingsActivity.class);
                         break;
                 }

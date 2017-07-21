@@ -14,8 +14,6 @@ import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -25,7 +23,6 @@ import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.common.Constant;
 import com.livelearn.ignorance.model.bean.video.PhotoLithographyDetailsModel;
 import com.livelearn.ignorance.presenter.contract.video.PhotoLithographyDetailsContract;
-import com.livelearn.ignorance.ui.activity.video.PhotoLithographyDetailsActivity;
 import com.livelearn.ignorance.ui.adapter.video.PhotoLithographyRecommendListAdapter;
 import com.livelearn.ignorance.utils.DisplayUtils;
 import com.livelearn.ignorance.utils.GlideUtils;
@@ -99,8 +96,6 @@ public class PhotoLithographyDetailsView extends RootView implements PhotoLithog
     @BindView(R.id.fab_collection)
     FloatingActionButton fabCollection;
 
-
-    private Animation animation;
     private PhotoLithographyDetailsContract.Presenter mPresenter;
     private PhotoLithographyRecommendListAdapter mAdapter;
     private PhotoLithographyDetailsModel mData;
@@ -131,7 +126,6 @@ public class PhotoLithographyDetailsView extends RootView implements PhotoLithog
                 .setLoadingViewResId(R.id.v_loading)
                 .initWithState(StateLayout.VIEW_LOADING);
 
-        animation = AnimationUtils.loadAnimation(mContext, R.anim.set_play_pendulum);
         ctlCollapsingToolbar.setTitle(((Activity) mContext).getIntent().getStringExtra(Constant.VIDEO_TITLE));
         //设置收缩后Toolbar上字体的颜色
         ctlCollapsingToolbar.setCollapsedTitleTextColor(ResourceUtils.getColor(R.color.color_pale));

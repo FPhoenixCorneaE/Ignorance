@@ -171,8 +171,15 @@
     <!--我的Fragment子项-->
     <array name="MineFragment_Item">
         <item>测试</item>
+        <item>收藏</item>
         <item>设置</item>
     </array>
+
+    <!--收藏Fragment标签标题-->
+    <string-array name="CollectionFragment_TabTitle">
+        <item>久久图书</item>
+        <item>豆瓣图书</item>
+    </string-array>
 
     <!--设置子项-->
     <array name="Settings_Item">

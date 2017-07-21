@@ -29,19 +29,6 @@ public class BookDetailsModel implements Parcelable {
     public BookDetailsModel() {
     }
 
-    public BookDetailsModel(String bookImageUrl, String bookName, String bookAuthor, String bookType, String bookLength, String bookProgress, String bookUpdateTime, String bookDownload, String bookIntroduction, String bookReadUrl) {
-        this.bookImageUrl = bookImageUrl;
-        this.bookName = bookName;
-        this.bookAuthor = bookAuthor;
-        this.bookType = bookType;
-        this.bookLength = bookLength;
-        this.bookProgress = bookProgress;
-        this.bookUpdateTime = bookUpdateTime;
-        this.bookDownload = bookDownload;
-        this.bookIntroduction = bookIntroduction;
-        this.bookReadUrl = bookReadUrl;
-    }
-
     protected BookDetailsModel(Parcel in) {
         bookImageUrl = in.readString();
         bookName = in.readString();

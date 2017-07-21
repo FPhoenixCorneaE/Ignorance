@@ -1,5 +1,7 @@
 package com.livelearn.ignorance.ui.view;
 
+import android.animation.ObjectAnimator;
+import android.animation.PropertyValuesHolder;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
@@ -88,7 +90,15 @@ public class WelcomeView extends RootView implements WelcomeContract.View {
         if (data != null) {
             int index = getRandomNumber(0, data.size());
             GlideUtils.setupImage(mContext, ivWelcomeBg, data.get(index));
-            ivWelcomeBg.animate().scaleX(1.30f).scaleY(1.30f).setDuration(WelcomePresenter.COUNT_DOWN_TIME).setStartDelay(100).start();
+
+            //启动动画
+            PropertyValuesHolder alphaAnim = PropertyValuesHolder.ofFloat("alpha", 0.0F, 1.0F);
+            PropertyValuesHolder scaleXAnim = PropertyValuesHolder.ofFloat("scaleX", 1.0F, 1.3F);
+            PropertyValuesHolder scaleYAnim = PropertyValuesHolder.ofFloat("scaleY", 1.0F, 1.3F);
+
+            ObjectAnimator.ofPropertyValuesHolder(ivWelcomeBg, alphaAnim, scaleXAnim, scaleYAnim)
+                    .setDuration(WelcomePresenter.COUNT_DOWN_TIME)
+                    .start();
         }
     }
 

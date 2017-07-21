@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_main">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
         android:orientation="vertical"
-        app:theme="@style/ThemeOverlay.AppCompat.Light"
-        tools:showIn="@layout/activity_main">
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
         <com.livelearn.ignorance.widget.TitleBar
             android:id="@+id/tb_title"
@@ -22,4 +27,4 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-</merge>
+</android.support.design.widget.CoordinatorLayout>

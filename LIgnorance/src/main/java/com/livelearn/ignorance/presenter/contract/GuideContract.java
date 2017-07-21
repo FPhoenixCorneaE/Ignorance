@@ -9,9 +9,9 @@ import com.livelearn.ignorance.model.bean.image.GuideModel;
 
 public interface GuideContract {
 
-    interface View extends BaseView<Presenter,GuideModel> {
+    interface View extends BaseView<Presenter, GuideModel> {
 
-        void setPresenter(@NonNull Presenter presenter,@NonNull BaseFragment fragment);
+        void setPresenter(@NonNull Presenter presenter, @NonNull BaseFragment fragment);
 
     }
 

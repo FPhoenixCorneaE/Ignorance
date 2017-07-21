@@ -5,4 +5,4 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:textColor="@color/selector_selectedpurple_normalgray"
-    android:textSize="@dimen/text_size_20sp" />
+    android:textSize="@dimen/text_size_18sp" />

@@ -496,6 +496,11 @@
         <activity
             android:name=".test.ninegridimagelayout.ninegridimageview.TestNineGridImageViewActivity"
             android:theme="@style/AppTheme" />
+
+        <!--收藏-->
+        <activity
+            android:name=".ui.activity.mine.CollectionActivity"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

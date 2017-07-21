@@ -8,14 +8,14 @@ import com.livelearn.ignorance.model.bean.video.PhotoLithographyDetailsModel;
  * Created on 2017/6/26.
  */
 
-public class PhotoLithographyDetailsContract {
+public interface PhotoLithographyDetailsContract {
 
-    public interface View extends BaseView<Presenter, PhotoLithographyDetailsModel> {
+    interface View extends BaseView<Presenter, PhotoLithographyDetailsModel> {
 
         void onEmpty();
     }
 
-    public interface Presenter extends BasePresenter {
+    interface Presenter extends BasePresenter {
 
         void getPhotoLithographyDetailsByMediaId();
     }

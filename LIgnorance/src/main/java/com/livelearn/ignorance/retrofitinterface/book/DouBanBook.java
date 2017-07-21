@@ -1,13 +1,11 @@
 package com.livelearn.ignorance.retrofitinterface.book;
 
 
-import com.livelearn.ignorance.model.bean.book.douban.ActorDetailsBean;
 import com.livelearn.ignorance.model.bean.book.douban.DouBanBookBean;
 
 import java.util.List;
 
 import retrofit2.http.GET;
-import retrofit2.http.Path;
 import retrofit2.http.Query;
 import rx.Observable;
 
@@ -17,9 +15,6 @@ import rx.Observable;
  * URL中只出现参数的值,不出现键值对,比如:“/users/2011/06/30”
  */
 public interface DouBanBook {
-
-    @GET("celebrity/{actorId}")
-    Observable<ActorDetailsBean> getActorDetails(@Path("actorId") String actorId);
 
     /**
      * 根据tag获取图书

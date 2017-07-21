@@ -164,6 +164,14 @@ public class ExpandableTextView extends LinearLayout implements View.OnClickList
                 // clear the animation flag
                 mAnimating = false;
 
+                if (!mCollapsed) {
+                    mTv.setMaxLines(Integer.MAX_VALUE);
+                    mTv.setEllipsize(null);
+                } else {
+                    mTv.setMaxLines(getMaxCollapsedLines());
+                    mTv.setEllipsize(TextUtils.TruncateAt.END);
+                }
+
                 // notify the listener
                 if (mListener != null) {
                     mListener.onExpandStateChanged(mTv, !mCollapsed);
@@ -210,6 +218,7 @@ public class ExpandableTextView extends LinearLayout implements View.OnClickList
             mTvExpandCollapse.setVisibility(GONE);
 
         mTv.setMaxLines(Integer.MAX_VALUE);
+        mTv.setEllipsize(null);
 
         // Measure
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
@@ -227,6 +236,7 @@ public class ExpandableTextView extends LinearLayout implements View.OnClickList
         // button.
         if (mCollapsed) {
             mTv.setMaxLines(mMaxCollapsedLines);
+            mTv.setEllipsize(TextUtils.TruncateAt.END);
         }
 
         if (mButton != null)
@@ -286,6 +296,10 @@ public class ExpandableTextView extends LinearLayout implements View.OnClickList
             return "";
         }
         return mTv.getText();
+    }
+
+    public int getMaxCollapsedLines() {
+        return mMaxCollapsedLines;
     }
 
     private void init(AttributeSet attrs) {

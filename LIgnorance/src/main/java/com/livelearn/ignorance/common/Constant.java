@@ -113,6 +113,8 @@ public class Constant {
     public static final String BOOK_NAME = "book_name";
     public static final String BOOK_TYPE = "book_type";
     public static final String BOOK_CLASS = "book_class";
+    public static final String BOOK_COLLECTION = "book_collection";
+    public static final String BOOK_COLLECTION_CANCEL = "book_collection_cancel";
     /**
      * 图片地址
      */
