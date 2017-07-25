@@ -57,6 +57,8 @@ import com.livelearn.ignorance.widget.flowlayout.TagCloudView;
 import com.ms.expandable.ExpandableTextView;
 import com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity;
 
+import org.simple.eventbus.EventBus;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -687,24 +689,25 @@ public class DouBanBookDetailsView extends RootView implements DouBanBookDetails
                 break;
             case R.id.fab_book_collection://图书收藏
                 if (isCollection) {
-                    boolean b = bookCollectionDBHelper.cancelBookCollection(bookId);
-                    if (b) {
+                    boolean isCollected = bookCollectionDBHelper.cancelBookCollection(bookId);
+                    if (isCollected) {
                         GlideUtils.setupImage(mContext, fabBookCollection, R.mipmap.ic_collection_false);
                         isCollection = false;
                         showSnackbar("取消收藏成功");
                     } else {
                         showSnackbar("取消收藏失败");
                     }
-
+                    EventBus.getDefault().post(isCollected, Constant.BOOK_COLLECTION_DOU_BAN);
                 } else {
-                    boolean b = collectionBook();
-                    if (b) {
+                    boolean isCancelCollected = collectionBook();
+                    if (isCancelCollected) {
                         GlideUtils.setupImage(mContext, fabBookCollection, R.mipmap.ic_collection_true);
                         isCollection = true;
                         showSnackbar("收藏成功");
                     } else {
                         showSnackbar("收藏失败");
                     }
+                    EventBus.getDefault().post(isCancelCollected, Constant.BOOK_COLLECTION_CANCEL_DOU_BAN);
                 }
                 break;
         }

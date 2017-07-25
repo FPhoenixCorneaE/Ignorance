@@ -197,7 +197,7 @@ public class BookDetailsView extends RootView implements BookDetailsContract.Vie
         } else {
             isCollected = false;
         }
-        EventBus.getDefault().post(isCollected, Constant.BOOK_COLLECTION);
+        EventBus.getDefault().post(isCollected, Constant.BOOK_COLLECTION_LONG_TIME);
     }
 
     /**
@@ -206,6 +206,6 @@ public class BookDetailsView extends RootView implements BookDetailsContract.Vie
     public void cancelBookCollection(LongTimeBookCollectionDBHelper bookCollectionDBHelper) {
         boolean isCancelCollected;
         isCancelCollected = bookDetailsModel != null && bookCollectionDBHelper.cancelBookCollection(bookDetailsModel.getBookName());
-        EventBus.getDefault().post(isCancelCollected, Constant.BOOK_COLLECTION_CANCEL);
+        EventBus.getDefault().post(isCancelCollected, Constant.BOOK_COLLECTION_CANCEL_LONG_TIME);
     }
 }

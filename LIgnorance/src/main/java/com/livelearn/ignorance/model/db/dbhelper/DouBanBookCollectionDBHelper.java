@@ -32,6 +32,22 @@ public class DouBanBookCollectionDBHelper {
     }
 
     /**
+     * 分页查询已收藏的图书，每页10条数据
+     *
+     * @param pageNum  页数
+     * @param pageSize 每页数据大小
+     */
+    public List<DouBanBookCollection> queryBookCollectionByPage(int pageNum, int pageSize) {
+        return GreenDaoManager.getInstance().getSession()
+                .getDouBanBookCollectionDao()
+                .queryBuilder()
+                .offset(pageNum * pageSize)
+                .limit(pageSize)
+                .build()
+                .list();
+    }
+
+    /**
      * 查询图书是否已收藏
      */
     public boolean queryBookHasCollected(String bookId) {

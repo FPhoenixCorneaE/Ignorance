@@ -62,7 +62,7 @@ public class Constant {
     /**
      * 文件缓存版本号
      */
-    public static final String FILE_CACHE_BEAN_VERSION = "FileCacheBeanVersion";
+    public static final String FILE_CACHE_BEAN_VERSION = "file_cache_bean_version";
     /**
      * 用户信息实体类
      */
@@ -113,8 +113,13 @@ public class Constant {
     public static final String BOOK_NAME = "book_name";
     public static final String BOOK_TYPE = "book_type";
     public static final String BOOK_CLASS = "book_class";
-    public static final String BOOK_COLLECTION = "book_collection";
-    public static final String BOOK_COLLECTION_CANCEL = "book_collection_cancel";
+    public static final String BOOK_COLLECTION_LONG_TIME = "book_collection_long_time";
+    public static final String BOOK_COLLECTION_DOU_BAN = "book_collection_dou_ban";
+    public static final String BOOK_COLLECTION_CANCEL_LONG_TIME = "book_collection_cancel_long_time";
+    public static final String BOOK_COLLECTION_CANCEL_DOU_BAN = "book_collection_cancel_dou_ban";
+    public static final String BOOK_COLLECTION_ARRANGEMENT_MODE = "book_collection_arrangement_mode";
+    public static final String BOOK_COLLECTION_ARRANGEMENT_MODE_LIST = "book_collection_arrangement_mode_list";
+    public static final String BOOK_COLLECTION_ARRANGEMENT_MODE_GRID = "book_collection_arrangement_mode_grid";
     /**
      * 图片地址
      */

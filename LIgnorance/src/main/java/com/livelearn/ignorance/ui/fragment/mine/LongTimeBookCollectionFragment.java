@@ -49,7 +49,7 @@ public class LongTimeBookCollectionFragment extends BaseFragment {
      *
      * @param isCollectedSuccess 收藏成功与否
      */
-    @Subscriber(tag = Constant.BOOK_COLLECTION, mode = ThreadMode.MAIN)
+    @Subscriber(tag = Constant.BOOK_COLLECTION_LONG_TIME, mode = ThreadMode.MAIN)
     public void onCollection(boolean isCollectedSuccess) {
         if (isCollectedSuccess) {
             vLongTimeBookCollection.updateBookCollection();
@@ -61,10 +61,20 @@ public class LongTimeBookCollectionFragment extends BaseFragment {
      *
      * @param isCancelCollectedSuccess 取消收藏成功与否
      */
-    @Subscriber(tag = Constant.BOOK_COLLECTION_CANCEL, mode = ThreadMode.MAIN)
+    @Subscriber(tag = Constant.BOOK_COLLECTION_CANCEL_LONG_TIME, mode = ThreadMode.MAIN)
     public void onCancelCollection(boolean isCancelCollectedSuccess) {
         if (isCancelCollectedSuccess) {
             vLongTimeBookCollection.updateBookCollection();
         }
+    }
+
+    /**
+     * 列表或者九宫格显示
+     *
+     * @param arrangementMode 排列方式
+     */
+    @Subscriber(tag = Constant.BOOK_COLLECTION_ARRANGEMENT_MODE, mode = ThreadMode.MAIN)
+    public void onToggleArrangementMode(String arrangementMode) {
+        vLongTimeBookCollection.toggleArrangementMode(arrangementMode);
     }
 }

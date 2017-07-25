@@ -90,7 +90,7 @@ public class LongTimeBookDetailsActivity extends BaseActivity {
      *
      * @param isCollectedSuccess 收藏成功与否
      */
-    @Subscriber(tag = Constant.BOOK_COLLECTION, mode = ThreadMode.MAIN)
+    @Subscriber(tag = Constant.BOOK_COLLECTION_LONG_TIME, mode = ThreadMode.MAIN)
     public void onCollection(boolean isCollectedSuccess) {
         if (isCollectedSuccess) {
             tbTitle.setRightIcon(R.mipmap.ic_collection_true);
@@ -106,7 +106,7 @@ public class LongTimeBookDetailsActivity extends BaseActivity {
      *
      * @param isCancelCollectedSuccess 取消收藏成功与否
      */
-    @Subscriber(tag = Constant.BOOK_COLLECTION_CANCEL, mode = ThreadMode.MAIN)
+    @Subscriber(tag = Constant.BOOK_COLLECTION_CANCEL_LONG_TIME, mode = ThreadMode.MAIN)
     public void onCancelCollection(boolean isCancelCollectedSuccess) {
         if (isCancelCollectedSuccess) {
             tbTitle.setRightIcon(R.mipmap.ic_collection_false);
