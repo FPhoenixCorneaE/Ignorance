@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.livelearn.ignorance.widget.BaiDuTieBaLoadingWaveView
+        android:layout_width="@dimen/width_50dp"
+        android:layout_height="@dimen/height_50dp"
+        app:blw_duration="300"
+        app:blw_text="学"
+        app:blw_text_color="@color/color_light_purple"
+        app:blw_text_scale="0.7"
+        app:blw_wave_color="@color/color_light_purple" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_16dp" />
+
+    <TextView
+        style="@style/_16sp_LightPurpleText"
+        android:text="加载中..."
+        tools:ignore="HardcodedText" />
+</LinearLayout>

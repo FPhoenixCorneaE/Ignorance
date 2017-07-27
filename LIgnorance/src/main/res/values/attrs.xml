@@ -650,4 +650,13 @@
     <declare-styleable name="TintableImageView">
         <attr name="tint" format="reference|color" />
     </declare-styleable>
+
+    <!--百度贴吧加载中波浪视图-->
+    <declare-styleable name="BaiDuTieBaLoadingWaveView">
+        <attr name="blw_wave_color" format="color" />
+        <attr name="blw_text" format="string" />
+        <attr name="blw_text_scale" format="float" />
+        <attr name="blw_text_color" format="color" />
+        <attr name="blw_duration" format="integer" />
+    </declare-styleable>
 </resources>

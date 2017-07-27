@@ -30,7 +30,7 @@
         android:layout_height="match_parent"
         android:background="@color/background">
 
-        <include layout="@layout/custom_view_loading_circle_progress" />
+        <include layout="@layout/custom_view_loading_baidu_tieba_wave" />
     </FrameLayout>
 
     <android.support.design.widget.CoordinatorLayout
