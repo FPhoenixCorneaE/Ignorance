@@ -15,6 +15,7 @@
  */
 package com.livelearn.ignorance.utils;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
@@ -30,6 +31,7 @@ import com.apkfuns.logutils.LogUtils;
  */
 public class DisplayUtils {
 
+    @SuppressLint("StaticFieldLeak")
     private static Context mContext;
 
     /**

@@ -1,5 +1,6 @@
 package com.livelearn.ignorance.utils;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.ColorStateList;
@@ -17,6 +18,7 @@ import java.io.InputStreamReader;
  */
 public class ResourceUtils {
 
+    @SuppressLint("StaticFieldLeak")
     private static Context mContext;
 
     /**

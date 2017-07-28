@@ -6,6 +6,7 @@ import android.support.multidex.MultiDexApplication;
 
 import com.apkfuns.logutils.LogUtils;
 import com.facebook.fresco.helper.Phoenix;
+import com.jingewenku.abrahamcaijin.commonutil.application.CommonUtils;
 import com.livelearn.ignorance.common.Constant;
 import com.livelearn.ignorance.model.db.GreenDaoManager;
 import com.livelearn.ignorance.utils.CleanCacheUtils;
@@ -43,6 +44,9 @@ public class IgnoranceApplication extends MultiDexApplication {
         LogUtils.configAllowLog = true;
         // 配置日志前缀
         LogUtils.configTagPrefix = "ILog-";
+
+        //初始化开发工具类
+        CommonUtils.init(getInstance());
 
         //初始化SharedPreferences
         SharedPreferencesUtils.init(getInstance());

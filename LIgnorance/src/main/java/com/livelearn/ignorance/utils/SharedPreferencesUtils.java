@@ -1,5 +1,6 @@
 package com.livelearn.ignorance.utils;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -13,6 +14,7 @@ import java.util.Map;
  */
 public class SharedPreferencesUtils {
 
+    @SuppressLint("StaticFieldLeak")
     private static Context mContext;
 
     /**

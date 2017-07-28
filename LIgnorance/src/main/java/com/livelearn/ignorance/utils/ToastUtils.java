@@ -1,5 +1,6 @@
 package com.livelearn.ignorance.utils;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
@@ -28,8 +29,9 @@ public class ToastUtils {
     private static final int DEFAULT_XOFFSET = 0;
     private static final int DEFAULT_YOFFSET = Integer.MAX_VALUE;
 
-    private static Toast mToast = null;
+    @SuppressLint("StaticFieldLeak")
     private static Context mContext = null;
+    private static Toast mToast = null;
     private static Object mTN = null;
     private static Handler mHandler = new Handler(Looper.getMainLooper());
 

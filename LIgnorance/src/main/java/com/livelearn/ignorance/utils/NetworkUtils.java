@@ -1,5 +1,6 @@
 package com.livelearn.ignorance.utils;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -32,6 +33,7 @@ public class NetworkUtils {
     private static final String ETHERNET_MASK = "[dhcp.eth0.mask]";
     private static final String WLAN_MASK = "[dhcp.wlan0.mask]";
 
+    @SuppressLint("StaticFieldLeak")
     private static Context mContext;
 
     /**

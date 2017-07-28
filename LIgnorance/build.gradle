@@ -206,20 +206,22 @@ android {
 
 //里面是项目的依赖信息，包括jar包和第三方库等信息
 dependencies {
+    final SUPPORT_VERSION = '25.3.1'
+
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile files('libs/rebound-core.jar')
     testCompile 'junit:junit:4.12'
     /**
      * Support Libs
      */
-    compile 'com.android.support:support-v4:25.3.1'
-    compile 'com.android.support:animated-vector-drawable:25.3.1'
-    compile 'com.android.support:support-vector-drawable:25.3.1'
-    compile 'com.android.support:support-compat:25.3.1'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:design:25.3.1'
-    compile 'com.android.support:palette-v7:25.3.1'
-    compile 'com.android.support:preference-v7:25.3.1'
+    compile "com.android.support:support-v4:$SUPPORT_VERSION"
+    compile "com.android.support:animated-vector-drawable:$SUPPORT_VERSION"
+    compile "com.android.support:support-vector-drawable:$SUPPORT_VERSION"
+    compile "com.android.support:support-compat:$SUPPORT_VERSION"
+    compile "com.android.support:appcompat-v7:$SUPPORT_VERSION"
+    compile "com.android.support:design:$SUPPORT_VERSION"
+    compile "com.android.support:palette-v7:$SUPPORT_VERSION"
+    compile "com.android.support:preference-v7:$SUPPORT_VERSION"
     /**
      * 应用方法数爆棚解决方案
      */
@@ -448,5 +450,9 @@ dependencies {
      * 强大、可定制、易扩展的 ViewPager 指示器框架。是ViewPagerIndicator、TabLayout、PagerSlidingTabStrip的最佳替代品。
      */
     compile project(path: ':MagicIndicator')
+    /**
+     * 快速开发工具类收集，史上最全的开发工具类
+     */
+    compile project(path: ':CommonUtils')
 }
 
