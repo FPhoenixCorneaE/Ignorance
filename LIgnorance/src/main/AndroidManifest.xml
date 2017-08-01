@@ -67,6 +67,10 @@
         android:theme="@style/AppTheme.Base">
 
         <!-- 启动界面 -->
+        <!--1.不设置Activity的android:configChanges时，切屏会重新调用各个生命周期，切横、竖屏时都会执行两次
+            2.设置Activity的android:configChanges="orientation"时，切屏还是会重新调用各个生命周期，切横、竖屏时只会执行一次
+            3.设置Activity的android:configChanges="orientation|keyboardHidden"时，切屏不会重新调用各个生命周期，只会执行onConfigurationChanged方法
+            4.注意4.0以上配置configChanges要加上screenSize，要不还会调用onCreate()-->
         <activity
             android:name=".ui.activity.WelcomeActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -81,167 +85,207 @@
         <!-- 导航界面 -->
         <activity
             android:name=".ui.activity.GuideActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/FullscreenTheme" />
 
         <!-- 登录界面 -->
         <activity
             android:name=".ui.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 主界面 -->
         <activity
             android:name=".ui.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppThemeMain" />
 
         <!-- PhotoPicker 拍照或者从相册选择图片 -->
         <activity
             android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- PhotoPicker 图片预览界面 -->
         <activity
             android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- UCrop 剪裁图片界面 -->
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
         <!-- 测试主界面 -->
         <activity
             android:name=".test.TestMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试拖拽容器 -->
         <activity
             android:name=".test.dragfooterview.TestDragFooterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试显示更多图片 -->
         <activity
             android:name=".test.dragfooterview.TestShowMoreActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试可拖拽流式布局 -->
         <activity
             android:name=".test.assembleessay.activity.TestAssembleEssayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试图片加载库Fresco的使用帮助 -->
         <activity
             android:name=".test.frescohelper.activity.TestFrescoHelperActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.frescohelper.activity.TestPhotoWallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.frescohelper.activity.TestFrescoBaseUseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.frescohelper.activity.TestUseDataBindingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.frescohelper.activity.TestBlurActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.frescohelper.activity.TestBlur2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.frescohelper.activity.TestPhotoAlbumActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.frescohelper.activity.TestGifActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.frescohelper.activity.TestMeiziActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.frescohelper.activity.TestWebpActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.frescohelper.activity.TestBigImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.frescohelper.activity.TestImageSizeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试EasyRecyclerView -->
         <activity
             android:name=".test.easyrecyclerview.TestEasyRecyclerViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.easyrecyclerview.loadmore.TestRefreshAndMoreActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.easyrecyclerview.multistyle.TestMultiStyleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.easyrecyclerview.header.TestHeaderFooterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.easyrecyclerview.collapsing.TestCollapsingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/collapsing"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.easyrecyclerview.staggeredgrid.TestStaggeredGridActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.easyrecyclerview.horizontal.TestHorizontalActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.easyrecyclerview.sticky.TestStickyHeaderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试联动动画 -->
         <activity
             android:name=".test.linkageanimation.TestLinkageAnimationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试顶部快餐店 -->
         <activity
             android:name=".test.topsnackbar.TestTopSnackbarActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试滑动背景图 -->
         <activity
             android:name=".test.movingimageview.TestMovingImageViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试状态按钮 -->
         <activity
             android:name=".test.statebutton.TestStateButtonActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试平滑混合按钮 -->
         <activity
             android:name=".test.smoothcompoundbutton.TestSmoothCompoundButtonActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试悬垂幕广告 -->
         <activity
             android:name=".test.verticalbannerview.TestVerticalBannerViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试花哨多面控件 -->
         <activity
             android:name=".test.viewpager.TestJazzyViewPagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试活动对话框 -->
         <activity
             android:name=".test.viewpager.TestDialogTopRightActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/DialogTopRightTheme" />
 
         <!-- 测试上传单张图片 -->
         <activity
             android:name=".test.uploadimage.TestUploadSingleImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试上传多张图片 -->
         <activity
             android:name=".test.uploadimage.TestUploadMultipleImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 上传图片后台服务 -->
@@ -250,256 +294,321 @@
         <!-- 测试通用item布局 -->
         <activity
             android:name=".test.baseitemlayout.TestBaseItemLayoutActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试搜索弹框（仿哔哩哔哩） -->
         <activity
             android:name=".test.searchdialog.TestSearchDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试载入控件 -->
         <activity
             android:name=".test.loaderview.TestLoaderViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 书库全部分类 -->
         <activity
             android:name=".ui.activity.book.LongTimeBookClassActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 书籍详情 -->
         <activity
             android:name=".ui.activity.book.LongTimeBookDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 搜索书籍 -->
         <activity
             android:name=".ui.activity.book.SearchBookActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试3D效果多面控件 -->
         <activity
             android:name=".test.viewpager.TestThreeDimensionViewPagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试动画多面控件 -->
         <activity
             android:name=".test.viewpager.TestAnimationViewPagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试九宫格布局 -->
         <activity
             android:name=".test.ninegridimagelayout.ninegridlayout.TestNineGridLayoutActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 图片画廊 -->
         <activity
             android:name=".ui.activity.gallery.PhotoGalleryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/PhotoGalleryTheme" />
         <activity
             android:name=".ui.activity.gallery.PictureBrowsingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/PhotoGalleryTheme" />
 
         <!-- 测试下拉刷新加载更多组件 -->
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPullToRefreshWithLoadMoreHomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrWithGridViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrWithScrollViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrWithWebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrWithTextViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrWithListViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrWithListViewAndEmptyViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrAutoRefreshActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrAutoLoadMoreActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrHideHeaderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrKeepHeaderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrMaterialStyleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrMaterialStylePinContentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrRentalsStyleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrStoreHouseStyleUsingPointListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrStoreHouseStyleUsingStringActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrStoreHouseStyleUsingStringArrayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.pulltorefreshwithloadmore.activity.TestPtrWithViewPagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试收缩按钮 -->
         <activity
             android:name=".test.indicatorbox.TestShrinkButtonActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试闪现边框 -->
         <activity
             android:name=".test.indicatorbox.TestFlashBorderViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试可观察的滚动控件 -->
         <activity
             android:name=".test.observablescrollview.TestObservableScrollViewMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.observablescrollview.TestTitleBarControlGridViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.observablescrollview.TestTitleBarControlListViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.observablescrollview.TestTitleBarControlRecyclerViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.observablescrollview.TestTitleBarControlScrollViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.observablescrollview.TestTitleBarControlWebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.observablescrollview.TestParallaxTitleBarGridViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.observablescrollview.TestParallaxTitleBarListViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.observablescrollview.TestParallaxTitleBarScrollViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试数据库 -->
         <activity
             android:name=".test.database.TestQueryDatabaseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.database.TestQueryDatabaseTypeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 设置 -->
         <activity
             android:name=".ui.activity.mine.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试平滑进度条 -->
         <activity
             android:name=".test.smoothprogressbar.TestSmoothProgressBarMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.smoothprogressbar.TestCustomSmoothProgressBarActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试分组悬停索引右侧边栏 -->
         <activity
             android:name=".test.suspensionindexbar.activity.TestSuspensionIndexBarMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.suspensionindexbar.activity.TestImitateWeChatAddressBookActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.suspensionindexbar.activity.TestNormalCityListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.suspensionindexbar.activity.TestGoWithSwipeDeleteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.suspensionindexbar.activity.TestMeiTuanCityListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试大图查看器 -->
         <activity
             android:name=".test.bigimageviewer.TestBigImageViewerMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.bigimageviewer.TestFrescoLoaderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.bigimageviewer.TestGlideLoaderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".test.bigimageviewer.TestLongImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试圆圈刷新布局 -->
         <activity
             android:name=".test.circlerefreshlayout.TestCircleRefreshLayoutActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 豆瓣图书详情 -->
         <activity
             android:name=".ui.activity.book.doubanbook.DouBanBookDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!-- 测试字体颜色渐变控件 -->
         <activity
             android:name=".test.colortrackview.TestColorTrackViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!--测试微信底部滑动渐变标签栏-->
         <activity
             android:name=".test.alphatabview.TestAlphaTabViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!--测试QQ空间九宫格显示多图-->
         <activity
             android:name=".test.ninegridimagelayout.multiview.TestMultiViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!--测试九宫格以及图片画廊-->
         <activity
             android:name=".test.transferee.TestTransfereeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!--测试加载中控件-->
         <activity
             android:name=".test.loadingview.TestLoadingViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!--微影详情-->
         <activity
             android:name=".ui.activity.video.PhotoLithographyDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!--测试Nice首页9图样式及拖拽效果-->
         <activity
             android:name=".test.ninegridimagelayout.nicenineimage.TestNiceNineImageLayoutActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!--测试类似朋友圈或微博的可跨行跨列九宫格图片控件-->
         <activity
             android:name=".test.ninegridimagelayout.ninegridimageview.TestNineGridImageViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
         <!--收藏-->
         <activity
             android:name=".ui.activity.mine.CollectionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
     </application>
 
