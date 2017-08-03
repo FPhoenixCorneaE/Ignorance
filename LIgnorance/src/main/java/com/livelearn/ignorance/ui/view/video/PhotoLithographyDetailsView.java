@@ -13,7 +13,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -34,6 +33,7 @@ import com.ms.expandable.ExpandableTextView;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
 
 /**
@@ -218,9 +218,7 @@ public class PhotoLithographyDetailsView extends RootView implements PhotoLithog
         switch (view.getId()) {
             case R.id.btn_play:
                 if (null != mData && !mData.getRet().getVideoUrl().isEmpty()) {
-                    ((Activity) mContext).getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                            WindowManager.LayoutParams.FLAG_FULLSCREEN);
-                    JCVideoPlayerStandard.startFullscreen(mContext, JCVideoPlayerStandard.class,
+                    JCVideoPlayer.startFullscreen(mContext, JCVideoPlayerStandard.class,
                             mData.getRet().getVideoUrl(), mData.getRet().getTitle());
                 } else {
                     ToastUtils.showToast("该视频暂时不能播放");

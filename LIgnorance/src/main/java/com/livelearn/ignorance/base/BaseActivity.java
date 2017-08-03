@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.widget.SlidingPaneLayout;
 import android.support.v7.app.AppCompatDelegate;
@@ -141,14 +142,14 @@ public abstract class BaseActivity<P extends BasePresenter> extends EdgeSwipeBac
                 e.printStackTrace();
             }
             slidingPaneLayout.setPanelSlideListener(this);
-            slidingPaneLayout.setSliderFadeColor(getResources().getColor(android.R.color.transparent));
+            slidingPaneLayout.setSliderFadeColor(Color.TRANSPARENT);
 
             View leftView = new View(this);
             leftView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
             slidingPaneLayout.addView(leftView, 0);
             ViewGroup decor = (ViewGroup) getWindow().getDecorView();
             ViewGroup decorChild = (ViewGroup) decor.getChildAt(0);
-            decorChild.setBackgroundColor(getResources().getColor(android.R.color.white));
+            decorChild.setBackgroundColor(Color.WHITE);
             decor.removeView(decorChild);
             decor.addView(slidingPaneLayout);
             slidingPaneLayout.addView(decorChild, 1);
@@ -164,7 +165,7 @@ public abstract class BaseActivity<P extends BasePresenter> extends EdgeSwipeBac
 
     /**
      * //TODO 这里因为还没找到更好的解决办法，先暂时这样解决
-     * 是否包含水平滚动的子空间
+     * 是否包含水平滚动的子控件
      * <p>
      * 包含则滑动边缘返回，不包含则可以全屏滑动返回
      */

@@ -439,7 +439,7 @@ dependencies {
     /**
      * 节操视频播放控件
      */
-    compile 'fm.jiecao:jiecaovideoplayer:5.5.4'
+    compile project(path: ':JieCaoVideoPlayer')
     /**
      * VirtualLayout是一个针对RecyclerView的LayoutManager扩展, 主要提供一整套布局方案和布局间的组件复用的问题。
      */

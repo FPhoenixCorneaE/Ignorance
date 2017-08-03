@@ -28,6 +28,9 @@ public class PhotoLithographyDetailsActivity extends BaseActivity {
 
     @Override
     public void initLayout(Bundle savedInstanceState) {
+
+        setSwipeBackEnable(false);
+
         String title = getIntent().getStringExtra(Constant.VIDEO_TITLE);
         String mediaId = getIntent().getStringExtra(Constant.VIDEO_MEDIA_ID);
         mPresenter = new PhotoLithographyDetailsPresenter(vPhotoLithographyDetails, title, mediaId);
@@ -46,7 +49,7 @@ public class PhotoLithographyDetailsActivity extends BaseActivity {
 
     @Override
     public void onBackPressed() {
-        if (JCVideoPlayer.backPress()) {
+        if (JCVideoPlayer.backPress(mContext)) {
             return;
         }
         finish();
