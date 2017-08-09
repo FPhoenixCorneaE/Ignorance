@@ -181,6 +181,17 @@
         <item>豆瓣图书</item>
     </string-array>
 
+    <!--我的资料移动背景-->
+    <string-array name="MyInformation_Background">
+        <item>file:///android_asset/movingbackground/pic_moving_bg_anime.webp</item>
+        <item>file:///android_asset/movingbackground/pic_moving_bg_forest.webp</item>
+        <item>file:///android_asset/movingbackground/pic_moving_bg_lake.webp</item>
+        <item>file:///android_asset/movingbackground/pic_moving_bg_lamborghini.webp</item>
+        <item>file:///android_asset/movingbackground/pic_moving_bg_mockingbird.webp</item>
+        <item>file:///android_asset/movingbackground/pic_moving_bg_yoona.webp</item>
+        <item>file:///android_asset/movingbackground/pic_moving_bg_yourname.webp</item>
+    </string-array>
+
     <!--设置子项-->
     <array name="Settings_Item">
         <item>清除缓存</item>

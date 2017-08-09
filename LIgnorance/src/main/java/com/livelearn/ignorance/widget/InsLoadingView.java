@@ -405,12 +405,12 @@ public class InsLoadingView extends AppCompatImageView {
         mTouchAnim.start();
     }
 
-    private void startAnim() {
+    public void startAnim() {
         mRotateAnim.start();
         mCircleAnim.start();
     }
 
-    private void endAnim() {
+    public void endAnim() {
         mRotateAnim.end();
         mCircleAnim.end();
     }

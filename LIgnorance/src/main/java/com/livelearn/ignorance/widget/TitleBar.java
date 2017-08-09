@@ -8,7 +8,10 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.annotation.ColorInt;
+import android.support.annotation.ColorRes;
 import android.support.annotation.DrawableRes;
+import android.support.annotation.NonNull;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.widget.AppCompatImageView;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -21,6 +24,7 @@ import android.widget.TextView;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.utils.GlideUtils;
+import com.livelearn.ignorance.utils.ResourceUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -106,9 +110,9 @@ public class TitleBar extends RelativeLayout {
         int rightIconVisibility = typedArray.getInt(R.styleable.Titlebar_tb_right_icon_visibility, 0);
 
         if (leftIconId != NO_ID) {
-            GlideUtils.setupImage(context, ivLeft, leftIconId);
+            ivLeft.setImageDrawable(ResourceUtils.getDrawable(leftIconId));
         } else {
-            GlideUtils.setupImage(context, ivLeft, R.mipmap.ic_nav_back_black);
+            ivLeft.setImageDrawable(ResourceUtils.getDrawable(R.mipmap.ic_nav_back_black));
         }
         if (leftIconVisibility == 2) {
             ivLeft.setVisibility(VISIBLE);
@@ -177,6 +181,69 @@ public class TitleBar extends RelativeLayout {
         }
     }
 
+    /**
+     * 获取可以进行tint的Drawable
+     * <p>
+     * 对原drawable进行重新实例化  newDrawable()
+     * 包装  warp()
+     * 可变操作 mutate()
+     *
+     * @param drawable 原始drawable
+     * @return 可着色的drawable
+     */
+    @NonNull
+    private static Drawable getCanTintDrawable(@NonNull Drawable drawable) {
+        // 获取此drawable的共享状态实例
+        Drawable.ConstantState state = drawable.getConstantState();
+        // 对drawable 进行重新实例化、包装、可变操作
+        return DrawableCompat.wrap(state == null ? drawable : state.newDrawable()).mutate();
+    }
+
+    /**
+     * 对左边图标进行着色
+     */
+    public TitleBar setLeftIconTintColor(@ColorRes int colorResId) {
+        return setLeftIconTintColor(0, colorResId);
+    }
+
+    /**
+     * 对左边图标进行着色
+     *
+     * @param drawableResId 左边图标id
+     * @param colorResId    着色的颜色值id
+     */
+    public TitleBar setLeftIconTintColor(@DrawableRes int drawableResId, @ColorRes int colorResId) {
+        // 获取此drawable的共享状态实例
+        Drawable wrappedDrawable = getCanTintDrawable(ResourceUtils.getDrawable(drawableResId == 0 ? R.mipmap.ic_nav_back_black : drawableResId));
+        // 进行着色
+        DrawableCompat.setTint(wrappedDrawable, ResourceUtils.getColor(colorResId));
+        ivLeft.setImageDrawable(wrappedDrawable);
+        return this;
+    }
+
+    /**
+     * 对左边图标进行着色
+     * 通过ColorStateList 指定颜色状态列表
+     */
+    public TitleBar setLeftIconTintColorState(@ColorRes int colorResId) {
+        return setLeftIconTintColorState(0, colorResId);
+    }
+
+    /**
+     * 对左边图标进行着色
+     * 通过ColorStateList 指定颜色状态列表
+     *
+     * @param drawableResId 左边图标id
+     * @param colorResId    着色的颜色状态列表id
+     */
+    public TitleBar setLeftIconTintColorState(@DrawableRes int drawableResId, @ColorRes int colorResId) {
+        Drawable wrappedDrawable = getCanTintDrawable(ResourceUtils.getDrawable(drawableResId == 0 ? R.mipmap.ic_nav_back_black : drawableResId));
+        // 进行着色
+        DrawableCompat.setTintList(wrappedDrawable, ResourceUtils.getColorStateList(colorResId));
+        ivLeft.setImageDrawable(wrappedDrawable);
+        return this;
+    }
+
     public TitleBar setLeftIcon(Object leftIcon) {
         GlideUtils.setupImage(context, ivLeft, leftIcon);
         return this;
@@ -192,13 +259,23 @@ public class TitleBar extends RelativeLayout {
         return showLeftText();
     }
 
-    public TitleBar setLeftTextColor(int leftTextColor) {
+    public TitleBar setLeftTextColor(@ColorInt int leftTextColor) {
         tvLeft.setTextColor(leftTextColor);
         return this;
     }
 
-    public TitleBar setLeftTextColor(ColorStateList leftTextColors) {
-        tvLeft.setTextColor(leftTextColors);
+    public TitleBar setLeftTextColorRes(@ColorRes int leftTextColorRes) {
+        tvLeft.setTextColor(ResourceUtils.getColor(leftTextColorRes));
+        return this;
+    }
+
+    public TitleBar setLeftTextColorStateList(ColorStateList leftTextColorStateList) {
+        tvLeft.setTextColor(leftTextColorStateList);
+        return this;
+    }
+
+    public TitleBar setLeftTextColorStateListRes(@ColorRes int leftTextColorStateListRes) {
+        tvLeft.setTextColor(ResourceUtils.getColorStateList(leftTextColorStateListRes));
         return this;
     }
 
@@ -212,13 +289,23 @@ public class TitleBar extends RelativeLayout {
         return showRightText();
     }
 
-    public TitleBar setRightTextColor(int rightTextColor) {
+    public TitleBar setRightTextColor(@ColorInt int rightTextColor) {
         tvRight.setTextColor(rightTextColor);
         return this;
     }
 
-    public TitleBar setRightTextColor(ColorStateList rightTextColors) {
-        tvRight.setTextColor(rightTextColors);
+    public TitleBar setRightTextColorRes(@ColorRes int rightTextColorRes) {
+        tvRight.setTextColor(ResourceUtils.getColor(rightTextColorRes));
+        return this;
+    }
+
+    public TitleBar setRightTextColorStateList(ColorStateList rightTextColorStateList) {
+        tvRight.setTextColor(rightTextColorStateList);
+        return this;
+    }
+
+    public TitleBar setRightTextColorStateListRes(@ColorRes int rightTextColorStateListRes) {
+        tvRight.setTextColor(ResourceUtils.getColorStateList(rightTextColorStateListRes));
         return this;
     }
 
@@ -232,8 +319,23 @@ public class TitleBar extends RelativeLayout {
         return showTitleText();
     }
 
-    public TitleBar setTitleTextColor(int titleTextColor) {
+    public TitleBar setTitleTextColor(@ColorInt int titleTextColor) {
         tvTitle.setTextColor(titleTextColor);
+        return this;
+    }
+
+    public TitleBar setTitleTextColorRes(@ColorRes int titleTextColorRes) {
+        tvTitle.setTextColor(ResourceUtils.getColor(titleTextColorRes));
+        return this;
+    }
+
+    public TitleBar setTitleTextColorStateList(ColorStateList titleTextColorStateList) {
+        tvTitle.setTextColor(titleTextColorStateList);
+        return this;
+    }
+
+    public TitleBar setTitleTextColorStateListRes(@ColorRes int titleTextColorStateListRes) {
+        tvTitle.setTextColor(ResourceUtils.getColorStateList(titleTextColorStateListRes));
         return this;
     }
 
@@ -244,6 +346,11 @@ public class TitleBar extends RelativeLayout {
 
     public TitleBar setTitleBarBackgroundColor(@ColorInt int titleBarBackgroundColor) {
         rlTitleBar.setBackgroundColor(titleBarBackgroundColor);
+        return this;
+    }
+
+    public TitleBar setTitleBarBackgroundColorRes(@ColorRes int titleBarBackgroundColorRes) {
+        rlTitleBar.setBackgroundColor(ResourceUtils.getColor(titleBarBackgroundColorRes));
         return this;
     }
 

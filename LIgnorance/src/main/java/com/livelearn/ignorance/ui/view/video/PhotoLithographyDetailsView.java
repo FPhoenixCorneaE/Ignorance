@@ -14,22 +14,23 @@ import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.jude.easyrecyclerview.decoration.SpaceDecoration;
 import com.livelearn.ignorance.R;
+import com.livelearn.ignorance.callbacklistener.OnAppBarStateChangeListener;
 import com.livelearn.ignorance.common.Constant;
 import com.livelearn.ignorance.model.bean.video.PhotoLithographyDetailsModel;
 import com.livelearn.ignorance.presenter.contract.video.PhotoLithographyDetailsContract;
 import com.livelearn.ignorance.ui.adapter.video.PhotoLithographyRecommendListAdapter;
 import com.livelearn.ignorance.utils.DisplayUtils;
-import com.livelearn.ignorance.utils.GlideUtils;
 import com.livelearn.ignorance.utils.ResourceUtils;
 import com.livelearn.ignorance.utils.ToastUtils;
 import com.livelearn.ignorance.widget.RootView;
 import com.livelearn.ignorance.widget.StateLayout;
 import com.ms.expandable.ExpandableTextView;
+import com.xiao.nicevideoplayer.NiceVideoPlayer;
+import com.xiao.nicevideoplayer.NiceVideoPlayerController;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -42,8 +43,8 @@ import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
 
 public class PhotoLithographyDetailsView extends RootView implements PhotoLithographyDetailsContract.View {
 
-    @BindView(R.id.iv_picture)
-    ImageView ivPicture;
+    @BindView(R.id.nvp_nice)
+    NiceVideoPlayer nvpNice;
 
     @BindView(R.id.tb_toolbar)
     Toolbar tbToolbar;
@@ -66,8 +67,8 @@ public class PhotoLithographyDetailsView extends RootView implements PhotoLithog
     @BindView(R.id.tv_air_time)
     TextView tvAirTime;
 
-    @BindView(R.id.btn_play)
-    Button btnPlay;
+    @BindView(R.id.btn_jc_player)
+    Button btnJcPlayer;
 
     @BindView(R.id.tv_director)
     TextView tvDirector;
@@ -132,7 +133,7 @@ public class PhotoLithographyDetailsView extends RootView implements PhotoLithog
         //设置还没收缩时状态下字体颜色
         ctlCollapsingToolbar.setExpandedTitleColor(ResourceUtils.getColor(R.color.color_light_purple));
         //导航栏返回图标
-        tbToolbar.setNavigationIcon(R.mipmap.ic_arrow_back_white_24dp);
+//        tbToolbar.setNavigationIcon(R.mipmap.ic_arrow_back_white_24dp);
 
         rvRecommend.setAdapter(mAdapter = new PhotoLithographyRecommendListAdapter(null));
         rvRecommend.setLayoutManager(new GridLayoutManager(getContext(), 3));
@@ -167,7 +168,18 @@ public class PhotoLithographyDetailsView extends RootView implements PhotoLithog
             onEmpty();
         } else {
             hideProgress();
-            GlideUtils.setupImage(mContext, ivPicture, mData.getRet().getPic(), R.mipmap.ic_video_default_320w);
+
+            //初始化NiceVideoPlayer
+            NiceVideoPlayerController controller = new NiceVideoPlayerController(mContext);
+            //视频标题
+            controller.setTitle(mData.getRet().getTitle());
+            //视频未开始时显示的图片
+            controller.setImage(mData.getRet().getPic());
+            nvpNice.setController(controller);
+            //视频播放器类型
+            nvpNice.setPlayerType(NiceVideoPlayer.PLAYER_TYPE_IJK);
+            //视频地址
+            nvpNice.setUp(mData.getRet().getVideoUrl(), null);
 
             tvScore.setText(String.valueOf(mData.getRet().getScore()));
             tvType.setText(mData.getRet().getVideoType());
@@ -198,6 +210,22 @@ public class PhotoLithographyDetailsView extends RootView implements PhotoLithog
 
     @Override
     public void setListeners() {
+        ablAppBar.addOnOffsetChangedListener(new OnAppBarStateChangeListener() {
+            @Override
+            public void onStateChanged(AppBarLayout appBarLayout, State state) {
+                if (state == State.EXPANDED) {
+                    //展开状态,隐藏导航栏返回图标
+                    tbToolbar.setNavigationIcon(null);
+                    tbToolbar.setNavigationOnClickListener(null);
+                } else if (state == State.COLLAPSED) {
+                    //折叠状态
+                } else {
+                    //中间状态,显示导航栏返回图标
+                    tbToolbar.setNavigationIcon(R.mipmap.ic_arrow_back_white_24dp);
+                    tbToolbar.setNavigationOnClickListener(mOnBackClickListener);
+                }
+            }
+        });
         slStateLayout.getErrorView().setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -205,18 +233,19 @@ public class PhotoLithographyDetailsView extends RootView implements PhotoLithog
                 mPresenter.getPhotoLithographyDetailsByMediaId();
             }
         });
-        tbToolbar.setNavigationOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((Activity) mContext).onBackPressed();
-            }
-        });
     }
 
-    @OnClick({R.id.btn_play, R.id.fab_collection})
+    private OnClickListener mOnBackClickListener = new OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            ((Activity) mContext).onBackPressed();
+        }
+    };
+
+    @OnClick({R.id.btn_jc_player, R.id.fab_collection})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.btn_play:
+            case R.id.btn_jc_player:
                 if (null != mData && !mData.getRet().getVideoUrl().isEmpty()) {
                     JCVideoPlayer.startFullscreen(mContext, JCVideoPlayerStandard.class,
                             mData.getRet().getVideoUrl(), mData.getRet().getTitle());

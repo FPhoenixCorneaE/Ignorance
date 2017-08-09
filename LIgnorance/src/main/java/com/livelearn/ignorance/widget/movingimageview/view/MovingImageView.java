@@ -103,7 +103,7 @@ public class MovingImageView extends ImageView {
         updateAll();
     }
 
-    private void updateAll() {
+    public void updateAll() {
         if (getDrawable() != null) {
             updateImageSize();
             updateOffsets();

@@ -56,6 +56,10 @@ public class Constant {
      */
     public static final String CURRENT_THEME = "current_theme";
     /**
+     * 正在使用中的移动背景
+     */
+    public static final String BACKGROUND_URL_IN_USE = "background_url_in_use";
+    /**
      * 数据库版本号
      */
     public static final String DB_VERSION = "dbVersion";

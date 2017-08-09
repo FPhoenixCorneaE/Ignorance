@@ -412,7 +412,7 @@ public class EdgeSwipeBackLayout extends FrameLayout {
             } else if (mActivity != null && ((EdgeSwipeBackActivity) mActivity).swipeBackPriority()) {
                 return 1;
             }
-            
+
             return 0;
         }
 

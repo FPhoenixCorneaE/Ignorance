@@ -1,8 +1,6 @@
 package com.livelearn.ignorance.ui.activity.mine;
 
-import android.app.Activity;
 import android.app.Dialog;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -128,12 +126,7 @@ public class SettingsActivity extends BaseActivity implements ISettingsView {
     }
 
     @Override
-    public Context getmContext() {
-        return mContext;
-    }
-
-    @Override
-    public Activity getmActivity() {
+    public BaseActivity getmContext() {
         return mContext;
     }
 

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="100dp">
+
+    <com.livelearn.ignorance.widget.labelview.LabelImageView
+        android:id="@+id/liv_label_image"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:backgroundColor="@color/color_light_purple"
+        app:direction="leftTop"
+        app:labelBottomPadding="@dimen/margin_5dp"
+        app:labelCenterPadding="@dimen/margin_2dp"
+        app:labelTopDistance="@dimen/margin_15dp"
+        app:labelTopPadding="@dimen/margin_3dp"
+        app:textContent="原 创"
+        app:textContentColor="@color/color_pale"
+        app:textContentSize="@dimen/text_size_15sp"
+        app:textContentStyle="italic"
+        app:textTitle="VIP"
+        app:textTitleColor="@color/color_light_red"
+        app:textTitleSize="@dimen/text_size_13sp"
+        app:textTitleStyle="bold" />
+
+    <com.livelearn.ignorance.widget.animcheckbox.AnimCheckBox
+        android:id="@+id/cb_anim"
+        android:layout_width="@dimen/width_30dp"
+        android:layout_height="@dimen/width_30dp"
+        android:layout_alignParentEnd="true"
+        android:saveEnabled="false"
+        app:acb_checked="true"
+        app:acb_circle_color="@color/color_pale"
+        app:acb_stroke_color="@color/color_light_purple"
+        app:acb_stroke_width="1dp" />
+</RelativeLayout>

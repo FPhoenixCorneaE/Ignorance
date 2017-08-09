@@ -10,9 +10,11 @@ public interface WelcomeContract {
 
     interface View extends BaseView<Presenter, List<String>> {
 
-        boolean isActive();
+        void startMainActivity();
 
-        void jumpToNextActivity();
+        void startGuideActivity();
+
+        void doLogin();
 
     }
 

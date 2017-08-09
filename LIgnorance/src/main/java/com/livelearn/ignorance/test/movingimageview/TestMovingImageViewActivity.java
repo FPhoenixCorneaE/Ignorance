@@ -53,12 +53,6 @@ public class TestMovingImageViewActivity extends BaseActivity {
     int index;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-    }
-
-    @Override
     public int getLayoutResource() {
         return R.layout.activity_test_moving_image_view;
     }

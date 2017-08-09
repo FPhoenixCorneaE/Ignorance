@@ -6,6 +6,13 @@ import android.content.res.AssetFileDescriptor;
 import android.content.res.ColorStateList;
 import android.content.res.XmlResourceParser;
 import android.graphics.drawable.Drawable;
+import android.support.annotation.ArrayRes;
+import android.support.annotation.ColorRes;
+import android.support.annotation.DimenRes;
+import android.support.annotation.DrawableRes;
+import android.support.annotation.RawRes;
+import android.support.annotation.StringRes;
+import android.support.annotation.XmlRes;
 import android.support.v4.content.ContextCompat;
 
 import java.io.BufferedReader;
@@ -43,24 +50,24 @@ public class ResourceUtils {
     /**
      * Get raw file, ui/raw/file
      */
-    public static InputStream getRaw(int id) {
-        return mContext.getResources().openRawResource(id);
+    public static InputStream getRaw(@RawRes int resId) {
+        return mContext.getResources().openRawResource(resId);
     }
 
     /**
      * Get raw file descriptor, ui/raw/file. This function only works for resources that are stored in the package as
      * uncompressed data, which typically includes things like mp3 files and png images.
      */
-    public static AssetFileDescriptor getRawFd(int id) {
-        return mContext.getResources().openRawResourceFd(id);
+    public static AssetFileDescriptor getRawFd(@RawRes int resId) {
+        return mContext.getResources().openRawResourceFd(resId);
     }
 
     /**
      * Get raw text file, ui/raw/text
      */
-    public String getRawText(int id) {
+    public String getRawText(@RawRes int resId) {
         try {
-            InputStreamReader inputReader = new InputStreamReader(getRaw(id));
+            InputStreamReader inputReader = new InputStreamReader(getRaw(resId));
             BufferedReader bufReader = new BufferedReader(inputReader);
             String line = "";
             StringBuilder result = new StringBuilder();
@@ -77,50 +84,50 @@ public class ResourceUtils {
     /**
      * Get xml file, ui/xml/file
      */
-    public static XmlResourceParser getXml(int id) {
-        return mContext.getResources().getXml(id);
+    public static XmlResourceParser getXml(@XmlRes int resId) {
+        return mContext.getResources().getXml(resId);
     }
 
     /**
      * Get drawable, ui/drawable/file
      */
-    public static Drawable getDrawable(int id) {
-        return ContextCompat.getDrawable(mContext, id);
+    public static Drawable getDrawable(@DrawableRes int resId) {
+        return ContextCompat.getDrawable(mContext, resId);
     }
 
     /**
      * Get string, ui/values/strings.xml
      */
-    public static String getString(int id) {
-        return mContext.getResources().getString(id);
+    public static String getString(@StringRes int resId) {
+        return mContext.getResources().getString(resId);
     }
 
     /**
      * Get string array, ui/values/strings.xml
      */
-    public static String[] getStringArray(int id) {
-        return mContext.getResources().getStringArray(id);
+    public static String[] getStringArray(@ArrayRes int resId) {
+        return mContext.getResources().getStringArray(resId);
     }
 
     /**
      * Get int array, ui/values/strings.xml
      */
-    public static int[] getIntArray(int id) {
-        return mContext.getResources().getIntArray(id);
+    public static int[] getIntArray(@ArrayRes int resId) {
+        return mContext.getResources().getIntArray(resId);
     }
 
     /**
      * Get color, ui/values/colors.xml
      */
-    public static int getColor(int id) {
-        return ContextCompat.getColor(mContext, id);
+    public static int getColor(@ColorRes int resId) {
+        return ContextCompat.getColor(mContext, resId);
     }
 
     /**
      * Get color state list, ui/values/colors.xml
      */
-    public static ColorStateList getColorStateList(int id) {
-        return ContextCompat.getColorStateList(mContext, id);
+    public static ColorStateList getColorStateList(@ColorRes int resId) {
+        return ContextCompat.getColorStateList(mContext, resId);
     }
 
     /**
@@ -129,8 +136,8 @@ public class ResourceUtils {
      * @return View dimension value multiplied by the appropriate metric.
      * 获取某个dimen的值,如果是dp或sp的单位,将其乘以density,如果是px,则不乘   返回float
      */
-    public static float getDimension(int id) {
-        return mContext.getResources().getDimension(id);
+    public static float getDimension(@DimenRes int resId) {
+        return mContext.getResources().getDimension(resId);
     }
 
     /**
@@ -139,8 +146,8 @@ public class ResourceUtils {
      * @return View dimension value multiplied by the appropriate metric and truncated to integer pixels.
      * 获取某个dimen的值,如果是dp或sp的单位,将其乘以density,如果是px,则不乘  返回int
      */
-    public static int getDimensionPixelOffset(int id) {
-        return mContext.getResources().getDimensionPixelOffset(id);
+    public static int getDimensionPixelOffset(@DimenRes int resId) {
+        return mContext.getResources().getDimensionPixelOffset(resId);
     }
 
     /**
@@ -149,8 +156,8 @@ public class ResourceUtils {
      * @return View dimension value multiplied by the appropriate metric and truncated to integer pixels.
      * 不管写的是dp还是sp还是px,都会乘以density.
      */
-    public static int getDimensionPixelSize(int id) {
-        return mContext.getResources().getDimensionPixelSize(id);
+    public static int getDimensionPixelSize(@DimenRes int resId) {
+        return mContext.getResources().getDimensionPixelSize(resId);
     }
 
 }

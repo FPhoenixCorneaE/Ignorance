@@ -9,7 +9,7 @@
     app:umanoDragView="@+id/fl_sliding_drag"
     app:umanoOverlay="true"
     app:umanoPanelHeight="0dp"
-    app:umanoParallaxOffset="100dp"
+    app:umanoParallaxOffset="0dp"
     app:umanoScrollableView="@+id/rv_book_label"
     app:umanoShadowHeight="0dp">
 

@@ -28,7 +28,7 @@ public class LongTimeBookCollectionGridViewHolder extends BaseViewHolder<LongTim
     @Override
     public void setData(LongTimeBookCollection data) {
         LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) ivBookUrl.getLayoutParams();
-        layoutParams.height = (int) (layoutParams.width * 1.35);
+        layoutParams.height = (int) (layoutParams.width * 1.45);
         ivBookUrl.setLayoutParams(layoutParams);
         GlideUtils.setupImage(getContext(), ivBookUrl, data.getBook_image_url(), R.mipmap.ic_nocover);
         tvBookName.setText(data.getBook_name());

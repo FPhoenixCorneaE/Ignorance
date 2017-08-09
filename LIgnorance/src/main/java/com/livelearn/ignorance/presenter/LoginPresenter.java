@@ -1,5 +1,6 @@
 package com.livelearn.ignorance.presenter;
 
+import com.apkfuns.logutils.LogUtils;
 import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.common.Constant;
 import com.livelearn.ignorance.model.bean.UserInfo;
@@ -21,13 +22,17 @@ public class LoginPresenter {
         userInfo.setUserAccount(userAccount);
         userInfo.setUserAvatarPath(userAvatarPath);
         userInfo.setUserNickname(userNickname);
+        userInfo.setLoginStatus("1");
         userInfo.setPhoneModel(android.os.Build.MODEL);
         userInfo.setMacAddress(DeviceUtils.getLocalMacAddress());
         userInfo.setHostAddress(DeviceUtils.getHostAddress());
         userInfo.setAndroidId(DeviceUtils.getAndroidId(context));
 
+        LogUtils.e(userInfo);
+
         Constant.setUserInfo(userInfo);
 
+        //保存用户信息
         SharedPreferencesUtils.put(userAccount, Constant.LOGIN_STATE, true);
         SharedPreferencesUtils.put(userAccount, Constant.AUTO_LOGIN, autoLogin);
         SharedPreferencesUtils.put(userAccount, Constant.REMEMBER_PASSWORD, rememberPassword);

@@ -7,7 +7,7 @@ import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.common.Constant;
 import com.livelearn.ignorance.model.bean.image.GuideModel;
-import com.livelearn.ignorance.ui.fragment.guide.GuideFragment;
+import com.livelearn.ignorance.ui.fragment.GuideFragment;
 import com.livelearn.ignorance.utils.IntentUtils;
 import com.livelearn.ignorance.utils.SharedPreferencesUtils;
 import com.livelearn.ignorance.widget.smarttablayout.FragmentPagerItem;
@@ -59,7 +59,7 @@ public class GuideActivity extends BaseActivity {
                 if (once && position == mViewPager.getAdapter().getCount() - 1 && positionOffsetPixels > mViewPager.getHeight() / 3) {
                     once = false;
                     SharedPreferencesUtils.put(Constant.USER_INFO, Constant.GUIDE_STATE, true);
-                    IntentUtils.startActivity(GuideActivity.this, MainActivity.class);
+                    IntentUtils.startActivity(mContext, MainActivity.class);
                     finish();
                 }
             }

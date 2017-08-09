@@ -12,11 +12,11 @@ import android.widget.TextView;
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.ui.activity.book.SearchBookActivity;
-import com.livelearn.ignorance.ui.fragment.home.BookFragment;
-import com.livelearn.ignorance.ui.fragment.home.ImageFragment;
-import com.livelearn.ignorance.ui.fragment.home.MessageFragment;
-import com.livelearn.ignorance.ui.fragment.home.MineFragment;
-import com.livelearn.ignorance.ui.fragment.home.VideoFragment;
+import com.livelearn.ignorance.ui.fragment.BookFragment;
+import com.livelearn.ignorance.ui.fragment.ImageFragment;
+import com.livelearn.ignorance.ui.fragment.MessageFragment;
+import com.livelearn.ignorance.ui.fragment.MineFragment;
+import com.livelearn.ignorance.ui.fragment.VideoFragment;
 import com.livelearn.ignorance.utils.IntentUtils;
 import com.livelearn.ignorance.utils.ResourceUtils;
 import com.livelearn.ignorance.utils.SnackbarUtils;
@@ -32,6 +32,9 @@ import java.util.List;
 
 import butterknife.BindView;
 
+/**
+ * 主页
+ */
 public class MainActivity extends BaseActivity {
 
     @BindView(R.id.tb_title)

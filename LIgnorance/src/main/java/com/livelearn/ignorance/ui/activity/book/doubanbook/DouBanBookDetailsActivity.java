@@ -10,6 +10,9 @@ import com.livelearn.ignorance.ui.view.book.doubanbook.DouBanBookDetailsView;
 
 import butterknife.BindView;
 
+/**
+ * 豆瓣图书详情
+ */
 public class DouBanBookDetailsActivity extends BaseActivity {
 
     @BindView(R.id.v_dou_ban_book_details)

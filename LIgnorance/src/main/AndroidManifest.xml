@@ -92,7 +92,7 @@
         <activity
             android:name=".ui.activity.LoginActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppThemeMain" />
 
         <!-- 主界面 -->
         <activity
@@ -605,11 +605,30 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
-        <!--收藏-->
+        <!--我的收藏-->
         <activity
-            android:name=".ui.activity.mine.CollectionActivity"
+            android:name=".ui.activity.mine.MyCollectionActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
+
+        <!--我的资料-->
+        <activity
+            android:name=".ui.activity.mine.MyInformationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme" />
+
+        <!--编辑资料-->
+        <activity
+            android:name=".ui.activity.mine.EditDataActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme" />
+
+        <!--更换背景-->
+        <activity
+            android:name=".ui.activity.mine.ChangeBackgroundActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme" />
+
     </application>
 
 </manifest>

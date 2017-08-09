@@ -11,7 +11,7 @@
         tools:ignore="contentDescription" />
 
     <TextView
-        style="@style/_16sp_PaleText"
+        style="@style/_20sp_PaleText"
         android:layout_gravity="bottom|center"
         android:layout_margin="@dimen/margin_20dp"
         android:text="@string/welcome" />

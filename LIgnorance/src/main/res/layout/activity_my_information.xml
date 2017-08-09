@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/supl_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        app:umanoDragView="@+id/fl_sliding_drag"
+        app:umanoFadeColor="@color/transparent"
+        app:umanoOverlay="true"
+        app:umanoPanelHeight="188dp"
+        app:umanoParallaxOffset="0dp"
+        app:umanoScrollableView="@+id/fl_sliding_drag"
+        app:umanoShadowHeight="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.livelearn.ignorance.widget.movingimageview.view.MovingImageView
+                android:id="@+id/miv_moving_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                app:miv_load_on_create="true"
+                app:miv_max_relative_size="3.0"
+                app:miv_min_relative_offset="0.2"
+                app:miv_repetitions="-1"
+                app:miv_speed="80"
+                app:miv_start_delay="200" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_sliding_drag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:paddingBottom="56dp">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nsv_nested_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_16dp">
+
+                        <am.widget.shapeimageview.ShapeImageView
+                            android:id="@+id/iv_avatar"
+                            style="@style/_ShapeImageView_Circle_radius50dp"
+                            android:layout_width="@dimen/width_100dp"
+                            android:layout_height="@dimen/height_100dp"
+                            android:src="@drawable/shape_circle_solidlightgray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/margin_16dp"
+                            android:layout_toEndOf="@+id/iv_avatar"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_nickname"
+                                style="@style/_20sp_PaleText"
+                                android:text="艾斯德斯"
+                                tools:ignore="HardcodedText" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_5dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_age"
+                                    style="@style/_PaleText"
+                                    android:text="22岁"
+                                    android:textSize="@dimen/text_size_13sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/tv_sex"
+                                    style="@style/_PaleText"
+                                    android:layout_marginStart="@dimen/margin_16dp"
+                                    android:text="女"
+                                    android:textSize="@dimen/text_size_13sp"
+                                    tools:ignore="HardcodedText" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_personalized_signature"
+                                style="@style/_PaleText"
+                                android:layout_marginTop="@dimen/margin_5dp"
+                                android:ellipsize="end"
+                                android:gravity="fill_horizontal"
+                                android:lines="2"
+                                android:text="树欲静而风不止，子欲养而亲不待。人为财死鸟为食亡。人不为己天诛地灭。"
+                                android:textSize="@dimen/text_size_13sp"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_background_wall"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_200dp" />
+
+                    <RelativeLayout style="@style/_Margin_Left16dp_Right16dp">
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            style="@style/_PaleText"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/margin_10dp"
+                            android:ellipsize="end"
+                            android:gravity="fill_horizontal"
+                            android:maxLines="1"
+                            android:text="广东省广州市天河区珠江新城珠江西路15号珠江城大厦3502"
+                            android:textSize="@dimen/text_size_13sp"
+                            tools:ignore="HardcodedText" />
+
+                        <ImageView
+                            android:layout_width="@dimen/width_15dp"
+                            android:layout_height="@dimen/height_15dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/ic_arrow_right"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </FrameLayout>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/v_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/status_bar_height"
+            android:background="@color/transparent" />
+
+        <com.livelearn.ignorance.widget.TitleBar
+            android:id="@+id/tb_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_8dp"
+        android:paddingEnd="@dimen/margin_16dp"
+        android:paddingStart="@dimen/margin_16dp"
+        android:paddingTop="@dimen/margin_8dp">
+
+        <Button
+            android:id="@+id/btn_change_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_solid_normalpale_pressedlightgray_stroke_gray_corners_five"
+            android:gravity="center"
+            android:text="更改背景"
+            android:textColor="@color/color_dark_black"
+            android:textSize="@dimen/text_size_18sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_edit_data"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_solid_normallightpurple_presseddarkpurple_corners_five"
+            android:gravity="center"
+            android:text="编辑资料"
+            android:textColor="@color/color_pale"
+            android:textSize="@dimen/text_size_18sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</FrameLayout>

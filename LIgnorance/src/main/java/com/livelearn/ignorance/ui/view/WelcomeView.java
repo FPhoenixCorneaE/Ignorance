@@ -2,6 +2,7 @@ package com.livelearn.ignorance.ui.view;
 
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
+import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
@@ -16,7 +17,6 @@ import com.livelearn.ignorance.presenter.WelcomePresenter;
 import com.livelearn.ignorance.presenter.contract.WelcomeContract;
 import com.livelearn.ignorance.ui.activity.GuideActivity;
 import com.livelearn.ignorance.ui.activity.MainActivity;
-import com.livelearn.ignorance.ui.activity.WelcomeActivity;
 import com.livelearn.ignorance.utils.GlideUtils;
 import com.livelearn.ignorance.utils.IntentUtils;
 import com.livelearn.ignorance.utils.SharedPreferencesUtils;
@@ -81,11 +81,6 @@ public class WelcomeView extends RootView implements WelcomeContract.View {
     }
 
     @Override
-    public boolean isActive() {
-        return mActive;
-    }
-
-    @Override
     public void onSuccess(List<String> data) {
         if (data != null) {
             int index = getRandomNumber(0, data.size());
@@ -102,36 +97,39 @@ public class WelcomeView extends RootView implements WelcomeContract.View {
         }
     }
 
+    /**
+     * 获取随机数字
+     *
+     * @param min 最小
+     * @param max 最大
+     */
     public int getRandomNumber(int min, int max) {
         return new Random().nextInt(max) % (max - min + 1) + min;
     }
 
-    /**
-     * 跳转到导航界面或者登录页面或者进入主页面
-     */
-    public void jumpToNextActivity() {
-        boolean guideState = SharedPreferencesUtils.getBoolean(Constant.USER_INFO, Constant.GUIDE_STATE);
-        if (guideState) {//已经进入过导航页
-            String userAccountList = SharedPreferencesUtils.getString(Constant.USER_INFO, Constant.USER_ACCOUNT);
-            if (userAccountList != null && !TextUtils.isEmpty(userAccountList)) {//至少保存了一个账号
-                ArrayList<String> accountArray = new ArrayList<>();
-                Collections.addAll(accountArray, userAccountList.split(","));
-                String userAccount = accountArray.get(0);
-                boolean loginState = SharedPreferencesUtils.getBoolean(userAccount, Constant.LOGIN_STATE);
-                boolean autoLogin = SharedPreferencesUtils.getBoolean(userAccount, Constant.AUTO_LOGIN);
-                if (loginState && autoLogin) {//已登录状态并且自动登录
-                    String password = SharedPreferencesUtils.getString(userAccount, Constant.USER_PASSWORD);
-                    LoginPresenter.doLogin((BaseActivity) mContext, userAccount, password == null ? "" : password, true, true);
-                } else {
-                    IntentUtils.startActivity(mContext, MainActivity.class);
-                }
-            } else {
-                IntentUtils.startActivity(mContext, MainActivity.class);
-            }
-        } else {
-            IntentUtils.startActivity(mContext, GuideActivity.class);
+    @Override
+    public void startMainActivity() {
+        IntentUtils.startActivity(mContext, MainActivity.class);
+        ((Activity) mContext).finish();
+        ((Activity) mContext).overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+    }
+
+    @Override
+    public void startGuideActivity() {
+        IntentUtils.startActivity(mContext, GuideActivity.class);
+        ((Activity) mContext).finish();
+        ((Activity) mContext).overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+    }
+
+    @Override
+    public void doLogin() {
+        String userAccountList = SharedPreferencesUtils.getString(Constant.USER_INFO, Constant.USER_ACCOUNT);
+        if (userAccountList != null && !TextUtils.isEmpty(userAccountList)) {//至少保存了一个账号
+            ArrayList<String> accountArray = new ArrayList<>();
+            Collections.addAll(accountArray, userAccountList.split(","));
+            String userAccount = accountArray.get(0);
+            String password = SharedPreferencesUtils.getString(userAccount, Constant.USER_PASSWORD);
+            LoginPresenter.doLogin((BaseActivity) mContext, userAccount, password == null ? "" : password, true, true);
         }
-        ((WelcomeActivity) mContext).finish();
-        ((WelcomeActivity) mContext).overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 }

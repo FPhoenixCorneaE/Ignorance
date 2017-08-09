@@ -73,7 +73,7 @@ public abstract class BaseActivity<P extends BasePresenter> extends EdgeSwipeBac
         //绑定黄油刀
         unbinder = ButterKnife.bind(mContext);
         //注册EventBus
-        EventBus.getDefault().register(this);
+        EventBus.getDefault().register(mContext);
 
         LogUtils.e(TAG);
 
@@ -201,7 +201,7 @@ public abstract class BaseActivity<P extends BasePresenter> extends EdgeSwipeBac
         if (unbinder != null) {
             unbinder.unbind();
         }
-        EventBus.getDefault().unregister(this);
+        EventBus.getDefault().unregister(mContext);
     }
 
     /**

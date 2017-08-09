@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;
+import com.livelearn.ignorance.utils.ResourceUtils;
 import com.livelearn.ignorance.widget.ColorTrackView;
 import com.livelearn.ignorance.widget.TitleBar;
 
@@ -115,6 +116,7 @@ public class TestColorTrackViewActivity extends BaseActivity {
 
         ColorTrackView getTabView(int position, boolean isSelected) {
             ColorTrackView ctvColorTrack = (ColorTrackView) LayoutInflater.from(mContext).inflate(R.layout.item_tab_color_track, null);
+            ctvColorTrack.setTextChangeColor(ResourceUtils.getColor(R.color.color_light_purple));
             ctvColorTrack.setText(tabTitles[position]);
             if (isSelected) {
                 ctvColorTrack.setProgress(1f);

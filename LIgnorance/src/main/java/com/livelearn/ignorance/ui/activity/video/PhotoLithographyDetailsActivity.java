@@ -7,6 +7,7 @@ import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.common.Constant;
 import com.livelearn.ignorance.presenter.video.PhotoLithographyDetailsPresenter;
 import com.livelearn.ignorance.ui.view.video.PhotoLithographyDetailsView;
+import com.xiao.nicevideoplayer.NiceVideoPlayerManager;
 
 import butterknife.BindView;
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
@@ -43,12 +44,16 @@ public class PhotoLithographyDetailsActivity extends BaseActivity {
 
     @Override
     protected void onPause() {
-        super.onPause();
+        NiceVideoPlayerManager.instance().releaseNiceVideoPlayer();
         JCVideoPlayer.releaseAllVideos();
+        super.onPause();
     }
 
     @Override
     public void onBackPressed() {
+        if (NiceVideoPlayerManager.instance().onBackPressd()) {
+            return;
+        }
         if (JCVideoPlayer.backPress(mContext)) {
             return;
         }

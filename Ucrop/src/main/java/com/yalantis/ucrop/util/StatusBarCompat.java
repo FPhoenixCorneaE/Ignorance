@@ -35,7 +35,6 @@ public class StatusBarCompat {
             } else {
                 window.setStatusBarColor(COLOR_DEFAULT);
             }
-            window.setStatusBarColor(statusColor);
 
             ViewGroup mContentView = (ViewGroup) activity.findViewById(Window.ID_ANDROID_CONTENT);
             View mChildView = mContentView.getChildAt(0);

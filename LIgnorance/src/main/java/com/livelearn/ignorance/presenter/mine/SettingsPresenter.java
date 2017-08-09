@@ -1,7 +1,6 @@
 package com.livelearn.ignorance.presenter.mine;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.os.Handler;
 import android.view.Gravity;
 
@@ -10,6 +9,7 @@ import com.flyco.animation.SlideExit.SlideBottomExit;
 import com.flyco.dialog.listener.OnBtnClickL;
 import com.flyco.dialog.widget.NormalDialog;
 import com.livelearn.ignorance.R;
+import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.base.RxPresenter;
 import com.livelearn.ignorance.common.Constant;
 import com.livelearn.ignorance.ui.activity.LoginActivity;
@@ -29,7 +29,7 @@ import com.livelearn.ignorance.utils.ToastUtils;
 public class SettingsPresenter extends RxPresenter {
 
     private ISettingsView iSettingsView;
-    private Context mContext;
+    private BaseActivity mContext;
 
     public SettingsPresenter(ISettingsView iSettingsView) {
         this.iSettingsView = iSettingsView;
@@ -143,7 +143,8 @@ public class SettingsPresenter extends RxPresenter {
                         new Handler().postDelayed(new Runnable() {
                             @Override
                             public void run() {
-                                iSettingsView.getmActivity().finish();
+                                if (!mContext.isFinishing())
+                                    mContext.finish();
                             }
                         }, 520);
                     }
