@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -25,7 +26,6 @@ import butterknife.Unbinder;
 
 public abstract class BaseFragment<P extends BasePresenter> extends EdgeSwipeBackFragment implements VacantView {
 
-    private static final String WIFI_ACTION = "android.net.wifi.WIFI_STATE_CHANGED";
     private String TAG = this.getClass().getCanonicalName();
     protected OnAddFragmentListener mAddFragmentListener;
     protected Context mContext;
@@ -186,7 +186,7 @@ public abstract class BaseFragment<P extends BasePresenter> extends EdgeSwipeBac
      */
     private void regReceiver() {
         IntentFilter filter = new IntentFilter();
-        filter.addAction(WIFI_ACTION);
+        filter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
         mContext.registerReceiver(netListener, filter);
     }
 
@@ -195,7 +195,7 @@ public abstract class BaseFragment<P extends BasePresenter> extends EdgeSwipeBac
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
-            if (!TextUtils.isEmpty(action) && action.equals(WIFI_ACTION)) {
+            if (TextUtils.equals(action, ConnectivityManager.CONNECTIVITY_ACTION)) {
                 isConnected = NetworkUtils.isNetworkAvailable();
             }
         }

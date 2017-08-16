@@ -20,13 +20,13 @@ import java.util.ArrayList;
  * Created by android_ls on 16/11/2.
  */
 
-public class PhotoWallAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class TestPhotoWallAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private ArrayList<PhotoInfo> mPhotos;
     private LayoutInflater mLayoutInflater;
     private OnItemClickListener mOnItemClickListener;
 
-    public PhotoWallAdapter(ArrayList<PhotoInfo> photos, OnItemClickListener onItemClickListener) {
+    public TestPhotoWallAdapter(ArrayList<PhotoInfo> photos, OnItemClickListener onItemClickListener) {
         this.mPhotos = photos;
         this.mOnItemClickListener = onItemClickListener;
     }
@@ -37,7 +37,7 @@ public class PhotoWallAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
             mLayoutInflater = LayoutInflater.from(parent.getContext());
         }
 
-        final PhotoViewHolder photoViewHolder = new PhotoViewHolder(mLayoutInflater.inflate(R.layout.adapter_photo_wall, parent, false));
+        final PhotoViewHolder photoViewHolder = new PhotoViewHolder(mLayoutInflater.inflate(R.layout.adapter_test_photo_wall, parent, false));
         photoViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

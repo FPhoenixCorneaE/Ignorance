@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.support.v4.widget.SlidingPaneLayout;
 import android.support.v7.app.AppCompatDelegate;
@@ -43,7 +44,6 @@ public abstract class BaseActivity<P extends BasePresenter> extends EdgeSwipeBac
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
     }
 
-    private static final String WIFI_ACTION = "android.net.wifi.WIFI_STATE_CHANGED";
     public String TAG = this.getClass().getCanonicalName();
     public String className = this.getClass().getSimpleName();
     /**
@@ -209,19 +209,23 @@ public abstract class BaseActivity<P extends BasePresenter> extends EdgeSwipeBac
      */
     private void regReceiver() {
         IntentFilter filter = new IntentFilter();
-        filter.addAction(WIFI_ACTION);
+        filter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
         registerReceiver(netListener, filter);
     }
 
-    BroadcastReceiver netListener = new BroadcastReceiver() {
+    private BroadcastReceiver netListener = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
-            if (!TextUtils.isEmpty(action) && action.equals(WIFI_ACTION)) {
+            if (TextUtils.equals(action, ConnectivityManager.CONNECTIVITY_ACTION)) {
+                //网络状态已经改变
                 isConnected = NetworkUtils.isNetworkAvailable();
                 if (!isConnected) {
                     //TODO 此处应该提示用户去打开WLAN或者移动网络
                     ToastUtils.showToast("你已经进入了没有网络的异次元");
+                }
+                if (NetworkUtils.isMobileConnected()) {
+                    ToastUtils.showToast("你已经切换到了移动网络");
                 }
             }
         }

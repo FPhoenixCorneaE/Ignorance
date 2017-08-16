@@ -2,7 +2,16 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
 
 
-    <!--距离左边界16dp右边界8dp-->
+    <!--内边距：左边16dp右边16dp-->
+    <style name="_Padding_Left16dp_Right16dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_46dp</item>
+        <item name="android:paddingStart">@dimen/margin_16dp</item>
+        <item name="android:paddingEnd">@dimen/margin_16dp</item>
+        <item name="android:background">@color/background_white</item>
+    </style>
+
+    <!--外边距：左边16dp右边8dp-->
     <style name="_Margin_Left16dp_Right8dp">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/height_46dp</item>
@@ -10,7 +19,7 @@
         <item name="android:layout_marginEnd">@dimen/margin_8dp</item>
     </style>
 
-    <!--距离左边界16dp右边界16dp-->
+    <!--外边距：左边16dp右边16dp-->
     <style name="_Margin_Left16dp_Right16dp">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/height_46dp</item>
@@ -18,7 +27,7 @@
         <item name="android:layout_marginEnd">@dimen/margin_16dp</item>
     </style>
 
-    <!--距离左边界36dp右边界36dp-->
+    <!--外边距：左边36dp右边36dp-->
     <style name="_Margin_Left36dp_Right36dp">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/height_46dp</item>
@@ -68,6 +77,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/color_dark_black</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 浅灰色文字 -->
@@ -84,6 +94,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/color_gray</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 浅红色文字 -->
@@ -92,6 +103,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/color_light_red</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 浅紫色文字 -->
@@ -100,6 +112,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/color_light_purple</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 苍白色文字 -->
@@ -116,6 +129,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/color_light_green</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 浅黄色文字 -->
@@ -124,6 +138,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/color_light_yellow</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 浅蓝色文字 -->
@@ -132,6 +147,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/color_light_blue</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 粉红色文字 -->
@@ -140,6 +156,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/color_pink</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 11号黑色文字 -->
@@ -149,6 +166,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_11sp</item>
         <item name="android:textColor">@color/color_dark_black</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 13号灰色文字 -->
@@ -158,6 +176,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_13sp</item>
         <item name="android:textColor">@color/color_gray</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 13号黑色文字 -->
@@ -167,6 +186,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_13sp</item>
         <item name="android:textColor">@color/color_dark_black</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 13号浅红色文字 -->
@@ -176,6 +196,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_13sp</item>
         <item name="android:textColor">@color/color_light_red</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 13号浅紫色文字 -->
@@ -185,6 +206,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_13sp</item>
         <item name="android:textColor">@color/color_light_purple</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 14号灰色文字 -->
@@ -194,6 +216,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_14sp</item>
         <item name="android:textColor">@color/color_gray</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 15号灰色文字 -->
@@ -203,6 +226,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_15sp</item>
         <item name="android:textColor">@color/color_gray</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 15号浅紫色文字 -->
@@ -212,6 +236,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_15sp</item>
         <item name="android:textColor">@color/color_light_purple</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 15号黑色文字 -->
@@ -221,6 +246,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_15sp</item>
         <item name="android:textColor">@color/color_dark_black</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 15号苍白色文字 -->
@@ -248,6 +274,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_16sp</item>
         <item name="android:textColor">@color/color_gray</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 16号黑色文字 -->
@@ -257,6 +284,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_16sp</item>
         <item name="android:textColor">@color/color_dark_black</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 16号浅紫色文字 -->
@@ -266,6 +294,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_16sp</item>
         <item name="android:textColor">@color/color_light_purple</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 16号浅绿色文字 -->
@@ -275,6 +304,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_16sp</item>
         <item name="android:textColor">@color/color_light_green</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 18号黑色文字 -->
@@ -284,6 +314,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_18sp</item>
         <item name="android:textColor">@color/color_dark_black</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 18号浅蓝色文字 -->
@@ -293,6 +324,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_18sp</item>
         <item name="android:textColor">@color/color_light_blue</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 18号紫色文字 -->
@@ -302,6 +334,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_18sp</item>
         <item name="android:textColor">@color/purple</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 20号苍白色文字 -->
@@ -320,6 +353,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_20sp</item>
         <item name="android:textColor">@color/color_dark_black</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 20号紫色文字 -->
@@ -329,6 +363,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/text_size_20sp</item>
         <item name="android:textColor">@color/purple</item>
+        <item name="android:textColorHint">@color/color_gray</item>
     </style>
 
     <!-- 24号苍白色文字 -->

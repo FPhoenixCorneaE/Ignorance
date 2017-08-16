@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorPrimary"
@@ -17,8 +18,272 @@
         android:layout_height="match_parent"
         android:background="@color/background">
 
-        <ListView
-            android:id="@+id/lv_test"
-            style="@style/_ListView" />
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/shape_divider"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_16dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_photo_wall"
+                    style="@style/_Padding_Left16dp_Right16dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/height_46dp">
+
+                    <TextView
+                        style="@style/_16sp_BlackText"
+                        android:layout_centerVertical="true"
+                        android:text="照片墙"
+                        tools:ignore="HardcodedText" />
+
+                    <com.jude.easyrecyclerview.EasyRecyclerView
+                        android:id="@+id/rv_photo_wall"
+                        android:layout_width="184dp"
+                        android:layout_height="@dimen/height_60dp"
+                        android:layout_marginBottom="@dimen/margin_5dp"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_photo_wall_count"
+                        style="@style/_16sp_GrayText"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_16dp"
+                        android:layout_toStartOf="@+id/iv_arrow_photo_wall"
+                        android:text="15张"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow_photo_wall"
+                        android:layout_width="@dimen/width_18dp"
+                        android:layout_height="@dimen/height_18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_arrow_right"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_16dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_avatar"
+                    style="@style/_Padding_Left16dp_Right16dp">
+
+                    <TextView
+                        style="@style/_16sp_BlackText"
+                        android:layout_centerVertical="true"
+                        android:text="头像"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:layout_width="@dimen/width_18dp"
+                        android:layout_height="@dimen/height_18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_arrow_right"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_personalized_signature"
+                    style="@style/_Padding_Left16dp_Right16dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/height_46dp">
+
+                    <TextView
+                        style="@style/_16sp_BlackText"
+                        android:layout_centerVertical="true"
+                        android:text="签名"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_personalized_signature"
+                        style="@style/_16sp_BlackText"
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_16dp"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_toStartOf="@+id/iv_arrow_personalized_signature"
+                        android:ellipsize="end"
+                        android:gravity="fill_horizontal"
+                        android:hint="编辑签名彰显您的个性"
+                        android:lineSpacingExtra="@dimen/margin_2dp"
+                        android:maxLines="2"
+                        android:text=""
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow_personalized_signature"
+                        android:layout_width="@dimen/width_18dp"
+                        android:layout_height="@dimen/height_18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_arrow_right"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_16dp" />
+
+                <RelativeLayout style="@style/_Padding_Left16dp_Right16dp">
+
+                    <TextView
+                        style="@style/_16sp_BlackText"
+                        android:layout_centerVertical="true"
+                        android:text="昵称"
+                        tools:ignore="HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/et_nickname"
+                        style="@style/_16sp_BlackText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_16dp"
+                        android:layout_marginStart="80dp"
+                        android:background="@null"
+                        android:gravity="fill_horizontal|center_vertical"
+                        android:hint="填写昵称，更显亲近"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        tools:ignore="HardcodedText" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_sex"
+                    style="@style/_Padding_Left16dp_Right16dp">
+
+                    <TextView
+                        style="@style/_16sp_BlackText"
+                        android:layout_centerVertical="true"
+                        android:text="性别"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        style="@style/_16sp_BlackText"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="80dp"
+                        android:hint="选择性别，发现异性"
+                        tools:ignore="HardcodedText" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_birthday"
+                    style="@style/_Padding_Left16dp_Right16dp">
+
+                    <TextView
+                        style="@style/_16sp_BlackText"
+                        android:layout_centerVertical="true"
+                        android:text="生日"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_birthday"
+                        style="@style/_16sp_BlackText"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="80dp"
+                        android:hint="选择生日，收获祝福"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:layout_width="@dimen/width_18dp"
+                        android:layout_height="@dimen/height_18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_arrow_right"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_16dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_location"
+                    style="@style/_Padding_Left16dp_Right16dp">
+
+                    <TextView
+                        style="@style/_16sp_BlackText"
+                        android:layout_centerVertical="true"
+                        android:text="所在地"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        style="@style/_16sp_BlackText"
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_16dp"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_toStartOf="@+id/iv_arrow_location"
+                        android:ellipsize="end"
+                        android:gravity="fill_horizontal"
+                        android:hint="选择所在地"
+                        android:lineSpacingExtra="@dimen/margin_2dp"
+                        android:maxLines="2"
+                        android:text=""
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow_location"
+                        android:layout_width="@dimen/width_18dp"
+                        android:layout_height="@dimen/height_18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_arrow_right"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/_Padding_Left16dp_Right16dp">
+
+                    <TextView
+                        style="@style/_16sp_BlackText"
+                        android:layout_centerVertical="true"
+                        android:text="邮箱"
+                        tools:ignore="HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        style="@style/_16sp_BlackText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_16dp"
+                        android:layout_marginStart="80dp"
+                        android:background="@null"
+                        android:gravity="fill_horizontal|center_vertical"
+                        android:hint="您的邮箱"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        tools:ignore="HardcodedText" />
+                </RelativeLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_16dp" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
     </com.livelearn.ignorance.widget.overscroll.OverScrollLayout>
 </LinearLayout>

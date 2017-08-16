@@ -34,7 +34,7 @@ public class TestPhotoAlbumActivity extends BaseActivity implements LoaderManage
             MediaStore.Images.Media.MIME_TYPE};
 
     private ArrayList<PhotoInfo> mImageList = new ArrayList<>();
-    private PhotoWallAdapter mPhotoWallAdapter;
+    private TestPhotoWallAdapter mPhotoWallAdapter;
     private GridLayoutManager mLayoutManager;
 
     @Override
@@ -49,7 +49,7 @@ public class TestPhotoAlbumActivity extends BaseActivity implements LoaderManage
         RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.rv_photo_wall);
         mLayoutManager = new GridLayoutManager(this, 3);
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mPhotoWallAdapter = new PhotoWallAdapter(mImageList, new OnItemClickListener<PhotoInfo>() {
+        mPhotoWallAdapter = new TestPhotoWallAdapter(mImageList, new OnItemClickListener<PhotoInfo>() {
 
             @Override
             public void onItemClick(ArrayList<PhotoInfo> photos, int position) {

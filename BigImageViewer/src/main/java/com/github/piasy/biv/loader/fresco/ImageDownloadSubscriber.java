@@ -77,7 +77,7 @@ public abstract class ImageDownloadSubscriber
 
             mFinished = true;
             onSuccess(mTempFile);
-        } catch (IOException e) {
+        } catch (Exception e) {
             onFail(e);
         } finally {
             IOUtils.closeQuietly(inputStream);

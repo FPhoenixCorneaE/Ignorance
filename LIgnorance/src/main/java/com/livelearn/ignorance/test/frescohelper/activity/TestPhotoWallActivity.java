@@ -97,7 +97,7 @@ public class TestPhotoWallActivity extends BaseActivity {
         RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.rv_photo_wall);
         mLayoutManager = new GridLayoutManager(this, 3);
         mRecyclerView.setLayoutManager(mLayoutManager);
-        PhotoWallAdapter mPhotoWallAdapter = new PhotoWallAdapter(data, new OnItemClickListener<PhotoInfo>() {
+        TestPhotoWallAdapter mPhotoWallAdapter = new TestPhotoWallAdapter(data, new OnItemClickListener<PhotoInfo>() {
 
             @Override
             public void onItemClick(ArrayList<PhotoInfo> photos, int position) {
