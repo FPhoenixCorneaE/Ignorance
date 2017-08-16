@@ -36,6 +36,7 @@ import butterknife.BindView;
 import butterknife.OnClick;
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
+import io.vov.vitamio.activity.VideoPlayActivity;
 
 /**
  * Created on 2017/6/26.
@@ -242,13 +243,20 @@ public class PhotoLithographyDetailsView extends RootView implements PhotoLithog
         }
     };
 
-    @OnClick({R.id.btn_jc_player, R.id.fab_collection})
+    @OnClick({R.id.btn_jc_player, R.id.btn_vitamio_player, R.id.fab_collection})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.btn_jc_player:
+            case R.id.btn_jc_player:/*节操播放器*/
                 if (null != mData && !mData.getRet().getVideoUrl().isEmpty()) {
                     JCVideoPlayer.startFullscreen(mContext, JCVideoPlayerStandard.class,
                             mData.getRet().getVideoUrl(), mData.getRet().getTitle());
+                } else {
+                    ToastUtils.showToast("该视频暂时不能播放");
+                }
+                break;
+            case R.id.btn_vitamio_player:/*vitamio播放器*/
+                if (null != mData && !mData.getRet().getVideoUrl().isEmpty()) {
+                    VideoPlayActivity.startVideoPlay((Activity) mContext, mData.getRet().getVideoUrl(), mData.getRet().getTitle());
                 } else {
                     ToastUtils.showToast("该视频暂时不能播放");
                 }

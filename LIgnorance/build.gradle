@@ -458,5 +458,9 @@ dependencies {
      * IjkPlayer/MediaPlayer+TextureView，完美切换全屏、小窗口的Android视频播放器
      */
     compile project(path: ':NiceVideoPlayer')
+    /**
+     * 基于Vitamio，支持手动全屏播放，手势调整进度，音量，亮度，基本满足市面上播放器要求
+     */
+    compile project(path: ':Vitamio')
 }
 
