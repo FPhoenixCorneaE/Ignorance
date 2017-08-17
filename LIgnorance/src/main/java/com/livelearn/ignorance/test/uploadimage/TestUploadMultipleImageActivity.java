@@ -1,17 +1,12 @@
 package com.livelearn.ignorance.test.uploadimage;
 
-import android.app.Dialog;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;
-import com.livelearn.ignorance.common.Constant;
-import com.livelearn.ignorance.receiver.UploadImageBroadcastReceiver;
-import com.livelearn.ignorance.utils.DialogUtils;
 import com.livelearn.ignorance.utils.ToastUtils;
 import com.livelearn.ignorance.utils.aliyunupload.UploadMultipleImageUtils;
 import com.livelearn.ignorance.widget.StateButton;
@@ -45,9 +40,6 @@ public class TestUploadMultipleImageActivity extends BaseActivity {
 
     ArrayList<String> selectedPhotos;
 
-    private Dialog uploadingDialog;
-    private UploadImageBroadcastReceiver uploadImageBroadcastReceiver;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,8 +60,6 @@ public class TestUploadMultipleImageActivity extends BaseActivity {
         mprvOnlyShow.init(mContext, MultiPickResultView.ACTION_ONLY_SHOW, selectedPhotos);
 
         sbUploadStart.setText("开始上传");
-
-        uploadingDialog = DialogUtils.createLoadingIndicatorDialog(mContext, false, "正在拼命上传......");
     }
 
     @Override
@@ -83,8 +73,20 @@ public class TestUploadMultipleImageActivity extends BaseActivity {
             ToastUtils.showToast("请选择照片");
             return;
         }
-        uploadingDialog.show();
-        new UploadMultipleImageUtils(mContext, selectedPhotos).startUpload();
+
+        tvSelectedImageUrl.setText("");
+
+        new UploadMultipleImageUtils(mContext, selectedPhotos)
+                .setOnUploadSuccessListener(new UploadMultipleImageUtils.OnUploadSuccessListener() {
+                    private StringBuilder imageBuilder = new StringBuilder();
+
+                    @Override
+                    public void onUploadSuccess(int position, String imageUrl) {
+                        imageBuilder.append("第").append(position + 1).append("张：").append(imageUrl).append("|");
+                        tvSelectedImageUrl.setText(imageBuilder);
+                    }
+                })
+                .startUpload();
     }
 
     @Override
@@ -101,18 +103,5 @@ public class TestUploadMultipleImageActivity extends BaseActivity {
             selectedImageUrls = selectedImageUrls.append(selectedPhotos.get(i)).append("\n");
         }
         tvSelectedImageUrl.setText(selectedImageUrls);
-
-        //动态注册 上传图片广播receiver
-        IntentFilter filter = new IntentFilter(Constant.BROADCAST_ACTION_UPLOAD_IMAGE);
-        filter.addCategory(Intent.CATEGORY_DEFAULT);
-        uploadImageBroadcastReceiver = new UploadImageBroadcastReceiver(uploadingDialog, selectedPhotos.size());
-        registerReceiver(uploadImageBroadcastReceiver, filter);
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        if (uploadImageBroadcastReceiver != null)
-            unregisterReceiver(uploadImageBroadcastReceiver);
     }
 }

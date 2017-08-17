@@ -10,8 +10,10 @@ import com.livelearn.ignorance.common.Constant;
 import com.livelearn.ignorance.exception.OSSException;
 import com.livelearn.ignorance.model.enumeration.PhotoType;
 import com.livelearn.ignorance.utils.IntentUtils;
+import com.livelearn.ignorance.utils.ToastUtils;
 import com.livelearn.ignorance.utils.aliyunupload.ALiYunUploadUtils;
-import com.livelearn.ignorance.utils.aliyunupload.OssUpdateImgUtils;
+
+import org.simple.eventbus.EventBus;
 
 /**
  * 异步上传图片服务
@@ -33,7 +35,7 @@ import com.livelearn.ignorance.utils.aliyunupload.OssUpdateImgUtils;
 
 public class UploadImageService extends IntentService {
 
-    IntentService instance;
+    private IntentService instance;
 
     public UploadImageService() {
         super("UploadImageService");
@@ -61,20 +63,15 @@ public class UploadImageService extends IntentService {
      */
     private void startUpload(final int position, final byte[] dataByte) {
         try {
-            final Intent broadcastIntent = new Intent();
-            broadcastIntent.setAction(Constant.BROADCAST_ACTION_UPLOAD_IMAGE);
-            broadcastIntent.addCategory(Intent.CATEGORY_DEFAULT);
-            broadcastIntent.putExtra(Constant.POSITION, position);
-
             ALiYunUploadUtils aLiYunUploadUtils = new ALiYunUploadUtils();
             aLiYunUploadUtils.uploadPhoto(instance, dataByte, PhotoType.Feed, new OnUploadImgCallback() {
                 @Override
                 public void onSuccess(String imagePath) {
                     LogUtils.i("第" + (position + 1) + "张图片上传成功");
-                    LogUtils.i(OssUpdateImgUtils.feedPicFilterUrl + imagePath);
+                    LogUtils.i(imagePath);
 
-                    broadcastIntent.putExtra(Constant.RESULT_UPLOAD_IMAGE, Constant.RESULT_OK);
-                    sendBroadcast(broadcastIntent);
+                    ToastUtils.showToast("第" + (position + 1) + "张图片上传成功");
+                    EventBus.getDefault().post(new String[]{String.valueOf(position), imagePath}, Constant.PHOTO_UPLOAD_COMPLETED);
                 }
 
                 @Override
@@ -84,9 +81,7 @@ public class UploadImageService extends IntentService {
 
                 @Override
                 public void onFailure(String imagePath, OSSException ossException) {
-                    LogUtils.i("第" + (position + 1) + "张图片上传失败");
-                    broadcastIntent.putExtra(Constant.RESULT_UPLOAD_IMAGE, Constant.RESULT_ERROR);
-                    sendBroadcast(broadcastIntent);
+                    LogUtils.i("第" + (position + 1) + "张图片上传失败,将重新上传");
 
                     //上传失败重新添加进工作队列
                     Bundle bundle = new Bundle();

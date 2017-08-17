@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:actualImageScaleType="centerCrop"
+        app:placeholderImage="@mipmap/pic_default"
+        app:placeholderImageScaleType="centerCrop" />
+
+    <!--scb_color_checked:选中时填充颜色,scb_color_tick:对勾颜色,
+    scb_color_unchecked:未选中时填充颜色,scb_color_unchecked_stroke:未选中时边框颜色,
+    scb_duration:动画持续时间,scb_stroke_width:未选中时边框宽度-->
+    <com.livelearn.ignorance.widget.animcheckbox.SmoothCircleCheckBox
+        android:id="@+id/cb_anim"
+        android:layout_width="@dimen/width_24dp"
+        android:layout_height="@dimen/width_24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin_2dp"
+        app:scb_color_checked="@color/color_light_purple"
+        app:scb_color_tick="@color/color_pale"
+        app:scb_color_unchecked="@color/transparent"
+        app:scb_color_unchecked_stroke="@color/color_pale"
+        app:scb_duration="150"
+        app:scb_stroke_width="1px" />
+</RelativeLayout>

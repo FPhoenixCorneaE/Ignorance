@@ -629,6 +629,12 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
+        <!--照片墙-->
+        <activity
+            android:name=".ui.activity.mine.PhotoWallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme" />
+
     </application>
 
 </manifest>

@@ -59,12 +59,14 @@ public class AnimCheckBox extends View implements Checkable {
 
     private void init(AttributeSet attrs) {
         boolean checked = mChecked;
+        boolean clickable = true;
         if (attrs != null) {
             TypedArray array = getContext().obtainStyledAttributes(attrs, R.styleable.AnimCheckBox);
             mStrokeWidth = (int) array.getDimension(R.styleable.AnimCheckBox_acb_stroke_width, dip(mStrokeWidth));
             mStrokeColor = array.getColor(R.styleable.AnimCheckBox_acb_stroke_color, mStrokeColor);
             mCircleColor = array.getColor(R.styleable.AnimCheckBox_acb_circle_color, Color.WHITE);
             checked = array.getBoolean(R.styleable.AnimCheckBox_acb_checked, false);
+            clickable = array.getBoolean(R.styleable.AnimCheckBox_acb_clickable, true);
             array.recycle();
         } else {
             mStrokeWidth = dip(mStrokeWidth);
@@ -72,12 +74,14 @@ public class AnimCheckBox extends View implements Checkable {
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeWidth(mStrokeWidth);
         mPaint.setColor(mStrokeColor);
-        super.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setChecked(!mChecked);
-            }
-        });
+        if (clickable) {
+            super.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    setChecked(!mChecked);
+                }
+            });
+        }
         setCheckedViewInner(checked, false);
     }
 

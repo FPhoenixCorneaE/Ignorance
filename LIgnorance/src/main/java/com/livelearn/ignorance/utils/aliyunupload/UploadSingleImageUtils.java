@@ -32,16 +32,16 @@ import rx.functions.Action1;
  */
 public class UploadSingleImageUtils {
 
-    private static final int CAMERA = 1111;//拍照
-    private static final int ALBUM = 2222;//从相册选择
+    private static final int CAMERA = 0x111111;//拍照
+    private static final int ALBUM = 0x222222;//从相册选择
 
     protected BaseActivity context;
     private OnUploadImgCallback onUploadImgCallback;
-    private boolean isCrop = true;
-    private PhotoType photoType = PhotoType.Face;
+    private boolean isCrop;
+    private PhotoType photoType;
 
     public UploadSingleImageUtils(BaseActivity context) {
-        this.context = context;
+        this(context, true);
     }
 
     /**
@@ -49,8 +49,7 @@ public class UploadSingleImageUtils {
      * @param isCrop  是否需要裁剪图片
      */
     public UploadSingleImageUtils(BaseActivity context, boolean isCrop) {
-        this.context = context;
-        this.isCrop = isCrop;
+        this(context, isCrop, PhotoType.Face);
     }
 
     public UploadSingleImageUtils(BaseActivity context, boolean isCrop, PhotoType photoType) {
@@ -127,11 +126,9 @@ public class UploadSingleImageUtils {
                         @Override
                         public void run() {
                             uploadingDialog.cancel();
-                            String imgUrl = OssUpdateImgUtils.facePicFilterUrl + imagePath;
                             ToastUtils.showToast("上传成功");
                             if (onUploadImgCallback != null)
-                                onUploadImgCallback.onSuccess(imgUrl);
-
+                                onUploadImgCallback.onSuccess(imagePath);
                         }
                     });
                 }
@@ -288,8 +285,8 @@ public class UploadSingleImageUtils {
                 }
 
                 @Override
-                public void onPickCancle() {
-
+                public void onPickCancel() {
+                    ToastUtils.showToast("取消选择");
                 }
             });
         }

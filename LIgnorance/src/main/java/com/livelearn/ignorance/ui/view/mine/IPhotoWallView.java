@@ -1,23 +1,30 @@
 package com.livelearn.ignorance.ui.view.mine;
 
-import android.widget.TextView;
+import android.view.View;
 
 import com.jude.easyrecyclerview.EasyRecyclerView;
 import com.livelearn.ignorance.base.IBaseView;
+import com.livelearn.ignorance.widget.TitleBar;
 
 import java.util.List;
 
 /**
- * Created on 2017/8/10.
+ * Created on 2017/8/16.
  */
 
-public interface IEditDataView extends IBaseView {
+public interface IPhotoWallView extends IBaseView {
+
+    void savePhotoWallData(String photoWallString);
 
     String getSavedPhotoWallString();
 
     List<String> getPhotoWallList();
 
+    TitleBar getTitleBar();
+
     EasyRecyclerView getRecyclerView();
 
-    TextView getPhotoWallCountTextView();
+    View getDeletePhotoView();
+
+    View getUploadPhotoView();
 }

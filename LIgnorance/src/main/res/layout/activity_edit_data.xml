@@ -48,18 +48,19 @@
 
                     <com.jude.easyrecyclerview.EasyRecyclerView
                         android:id="@+id/rv_photo_wall"
-                        android:layout_width="184dp"
-                        android:layout_height="@dimen/height_60dp"
+                        android:layout_width="171dp"
+                        android:layout_height="55dp"
                         android:layout_marginBottom="@dimen/margin_5dp"
                         android:layout_marginStart="80dp"
                         android:layout_marginTop="@dimen/margin_5dp"
+                        android:scrollbars="none"
                         android:visibility="gone" />
 
                     <TextView
                         android:id="@+id/tv_photo_wall_count"
                         style="@style/_16sp_GrayText"
                         android:layout_centerVertical="true"
-                        android:layout_marginEnd="@dimen/margin_16dp"
+                        android:layout_marginEnd="@dimen/margin_8dp"
                         android:layout_toStartOf="@+id/iv_arrow_photo_wall"
                         android:text="15张"
                         android:visibility="gone"

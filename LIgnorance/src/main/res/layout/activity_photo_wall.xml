@@ -1,19 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorPrimary"
     android:clipToPadding="true"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical">
+    android:fitsSystemWindows="true">
 
-    <com.livelearn.ignorance.widget.TitleBar
-        android:id="@+id/tb_title"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:background="@color/background_white"
+        android:orientation="vertical">
 
-    <com.jude.easyrecyclerview.EasyRecyclerView
-        android:id="@+id/rv_photo_wall"
+        <com.livelearn.ignorance.widget.TitleBar
+            android:id="@+id/tb_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:id="@+id/rv_photo_wall"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_upload_photo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</LinearLayout>
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="@color/background"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_upload_photo"
+            style="@style/_Button_Background_LightPurpleDarkPurple_Text_PaleTranslucentPale"
+            android:layout_height="@dimen/height_40dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:background="@drawable/selector_solid_normallightpurple_presseddarkpurple_corners_five"
+            android:text="上传照片"
+            tools:ignore="HardcodedText" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_delete_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_delete_photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/selector_solid_normalwhite_pressedlightgray">
+
+            <View style="@style/_View_Divider_1px" />
+
+            <ImageView
+                android:layout_width="@dimen/width_24dp"
+                android:layout_height="@dimen/height_24dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_trash_can"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -25,7 +25,6 @@ import org.simple.eventbus.ThreadMode;
 
 import am.widget.shapeimageview.ShapeImageView;
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
@@ -186,6 +185,10 @@ public class MyInformationActivity extends BaseActivity {
         }
     }
 
+    /**
+     * 更换并保存背景
+     * @param selectedBackground 选中的背景
+     */
     @Subscriber(tag = Constant.BACKGROUND_URL_IN_USE, mode = ThreadMode.MAIN)
     public void updateMovingBg(String selectedBackground) {
         if (!TextUtils.equals(selectedBackground, mBackgroundUrlInUse)) {
@@ -194,12 +197,5 @@ public class MyInformationActivity extends BaseActivity {
             GlideUtils.setupImage(mContext, mivMovingBg, mBackgroundUrlInUse, -1, false, false, true, -1);
             mivMovingBg.updateAll();
         }
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // TODO: add setContentView(...) invocation
-        ButterKnife.bind(this);
     }
 }

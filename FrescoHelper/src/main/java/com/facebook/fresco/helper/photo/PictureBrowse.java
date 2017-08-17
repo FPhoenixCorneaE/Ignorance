@@ -12,6 +12,7 @@ import com.facebook.fresco.helper.photo.anim.ViewOptionsCompat;
 import com.facebook.fresco.helper.photo.entity.PhotoInfo;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by android_ls on 16/9/19.
@@ -46,7 +47,7 @@ public class PictureBrowse {
             mThumbnailList = new ArrayList<>();
             for (int i = 0; i < size; i++) {
                 PhotoInfo photoInfo = data.get(i);
-                if(!TextUtils.isEmpty(photoInfo.thumbnailUrl)) {
+                if (!TextUtils.isEmpty(photoInfo.thumbnailUrl)) {
                     mThumbnailList.add(photoInfo.thumbnailUrl);
                 }
             }
@@ -54,13 +55,16 @@ public class PictureBrowse {
             return this;
         }
 
-        public Builder setPhotoStringList(ArrayList<String> data) {
+        public Builder setPhotoStringList(List<String> data) {
             int size = data.size();
+            mThumbnailList = new ArrayList<>();
             ArrayList<PhotoInfo> photos = new ArrayList<>();
             for (int i = 0; i < size; i++) {
                 PhotoInfo photoInfo = new PhotoInfo();
                 photoInfo.originalUrl = data.get(i);
+                photoInfo.thumbnailUrl = data.get(i);
                 photos.add(photoInfo);
+                mThumbnailList.add(data.get(i));
             }
             mIntent.putParcelableArrayListExtra(PHOTO_LIST_KEY, photos);
             return this;

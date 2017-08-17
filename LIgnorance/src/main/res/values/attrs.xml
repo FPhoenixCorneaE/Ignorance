@@ -695,11 +695,22 @@
         </attr>
     </declare-styleable>
 
-    <!--动画复选框-->
+    <!--动画圆圈复选框-->
     <declare-styleable name="AnimCheckBox">
         <attr name="acb_stroke_width" format="dimension" />
         <attr name="acb_stroke_color" format="color" />
         <attr name="acb_circle_color" format="color" />
         <attr name="acb_checked" format="boolean" />
+        <attr name="acb_clickable" format="boolean" />
+    </declare-styleable>
+
+    <!--平滑圆圈复选框-->
+    <declare-styleable name="SmoothCircleCheckBox">
+        <attr name="scb_duration" format="integer" />
+        <attr name="scb_stroke_width" format="dimension" />
+        <attr name="scb_color_tick" format="color" />
+        <attr name="scb_color_checked" format="color" />
+        <attr name="scb_color_unchecked" format="color" />
+        <attr name="scb_color_unchecked_stroke" format="color" />
     </declare-styleable>
 </resources>

@@ -238,7 +238,7 @@ public class PhotoPickUtils {
             }
         } else {
             if (requestCode == PhotoPicker.REQUEST_CODE) {
-                pickHandler.onPickCancle();
+                pickHandler.onPickCancel();
             }
         }
     }
@@ -308,6 +308,6 @@ public class PhotoPickUtils {
 
         void onPickFail(String error);
 
-        void onPickCancle();
+        void onPickCancel();
     }
 }

@@ -128,7 +128,7 @@ public class MultiPickResultView extends FrameLayout {
                 }
 
                 @Override
-                public void onPickCancle() {
+                public void onPickCancel() {
                     Toast.makeText(getContext(), "取消选择", Toast.LENGTH_LONG).show();
                 }
             });

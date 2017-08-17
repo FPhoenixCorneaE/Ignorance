@@ -136,7 +136,7 @@ public class TestUploadSingleImageActivity extends BaseActivity {
                 });
                 break;
             case R.id.sdv_open_camera:
-                uploadSingleImageUtils.setCrop(true);
+                uploadSingleImageUtils = new UploadSingleImageUtils(mContext, true);
                 uploadSingleImageUtils.openCamera(new OnUploadImgCallback() {
                     @Override
                     public void onProgress(float percent, long currentSize, long totalSize) {
@@ -156,6 +156,7 @@ public class TestUploadSingleImageActivity extends BaseActivity {
                 });
                 break;
             case R.id.sdv_open_album:
+                uploadSingleImageUtils = new UploadSingleImageUtils(mContext, true);
                 uploadSingleImageUtils.openAlbum(new OnUploadImgCallback() {
                     @Override
                     public void onProgress(float percent, long currentSize, long totalSize) {

@@ -14,7 +14,15 @@ import com.livelearn.ignorance.common.Constant;
 import com.livelearn.ignorance.model.bean.UserInfo;
 import com.livelearn.ignorance.presenter.mine.EditDataPresenter;
 import com.livelearn.ignorance.ui.view.mine.IEditDataView;
+import com.livelearn.ignorance.utils.IntentUtils;
+import com.livelearn.ignorance.utils.SharedPreferencesUtils;
 import com.livelearn.ignorance.widget.TitleBar;
+
+import org.simple.eventbus.Subscriber;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -96,10 +104,13 @@ public class EditDataActivity extends BaseActivity implements IEditDataView {
                 .setTitleTextColorRes(R.color.color_pale);
 
         mEditDataPresenter = new EditDataPresenter(this);
+        //设置照片墙适配器
+        mEditDataPresenter.setPhotoWallAdapter();
     }
 
     @Override
     public void setListeners() {
+        mEditDataPresenter.setOnPhotoWallItemClickListeners();
         etNickname.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -124,6 +135,7 @@ public class EditDataActivity extends BaseActivity implements IEditDataView {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.rl_photo_wall:/*照片墙*/
+                IntentUtils.startActivity(mContext, PhotoWallActivity.class);
                 break;
             case R.id.rl_avatar:/*头像*/
                 break;
@@ -136,5 +148,40 @@ public class EditDataActivity extends BaseActivity implements IEditDataView {
             case R.id.rl_location:/*所在地*/
                 break;
         }
+    }
+
+    /**
+     * 更新照片墙
+     *
+     * @param photoWallList 照片墙列表
+     */
+    @Subscriber(tag = Constant.PHOTO_WALL_LIST)
+    public void updatePhotoWall(List<String> photoWallList) {
+        mEditDataPresenter.updatePhotoWall(photoWallList);
+    }
+
+    @Override
+    public String getSavedPhotoWallString() {
+        return SharedPreferencesUtils.getString(getmUserInfo().getUserAccount(), Constant.PHOTO_WALL_LIST);
+    }
+
+    @Override
+    public List<String> getPhotoWallList() {
+        String savedPhotoWallString = getSavedPhotoWallString();
+        ArrayList<String> photoWallList = new ArrayList<>();
+        if (null != savedPhotoWallString && !savedPhotoWallString.isEmpty()) {
+            Collections.addAll(photoWallList, savedPhotoWallString.split("\\|"));
+        }
+        return photoWallList;
+    }
+
+    @Override
+    public EasyRecyclerView getRecyclerView() {
+        return rvPhotoWall;
+    }
+
+    @Override
+    public TextView getPhotoWallCountTextView() {
+        return tvPhotoWallCount;
     }
 }

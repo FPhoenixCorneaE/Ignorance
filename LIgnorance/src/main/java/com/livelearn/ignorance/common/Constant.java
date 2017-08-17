@@ -60,6 +60,10 @@ public class Constant {
      */
     public static final String BACKGROUND_URL_IN_USE = "background_url_in_use";
     /**
+     * 照片墙
+     */
+    public static final String PHOTO_WALL_LIST = "photo_wall_list";
+    /**
      * 数据库版本号
      */
     public static final String DB_VERSION = "dbVersion";
@@ -76,11 +80,6 @@ public class Constant {
      */
     public static final String BACK_ANIMATION = "back_animation";
     /**
-     * 图片类型
-     */
-    public static final String PHOTO_BUCKET_FACE = "dd-face";
-    public static final String PHOTO_BUCKET_FEED = "dd-feed";
-    /**
      * 文件字节数组
      */
     public static final String FILE_BYTE_ARRAY = "file_byte_array";
@@ -89,15 +88,9 @@ public class Constant {
      */
     public static final String POSITION = "position";
     /**
-     * 上传图片广播
+     * 图片上传完成
      */
-    public static final String BROADCAST_ACTION_UPLOAD_IMAGE = "com.livelearn.ignore.action.UPLOAD_IMAGE";
-    /**
-     * 上传结果
-     */
-    public static final String RESULT_UPLOAD_IMAGE = "result_upload_image";
-    public static final int RESULT_OK = -1;
-    public static final int RESULT_ERROR = 0;
+    public static final String PHOTO_UPLOAD_COMPLETED = "photo_upload_completed";
     /**
      * 网络请求
      */
