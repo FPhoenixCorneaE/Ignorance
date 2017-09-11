@@ -61,3 +61,8 @@
 /CommonUtils/.gitignore
 /JieCaoVideoPlayer/.gitignore
 /Vitamio/build
+/CommonUtils/build
+/JieCaoVideoPlayer/build
+/JieCaoVideoPlayer/JieCaoVideoPlayer.iml
+/CommonUtils/CommonUtils.iml
+/NiceVideoPlayer/NiceVideoPlayer.iml
