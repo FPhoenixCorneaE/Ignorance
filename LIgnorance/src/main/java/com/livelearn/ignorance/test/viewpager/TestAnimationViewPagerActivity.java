@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
@@ -90,7 +91,7 @@ public class TestAnimationViewPagerActivity extends BaseActivity {
 
                 Glide.with(mContext)
                         .using(new ProgressModelLoader(
-                                new Handler() {
+                                new Handler(Looper.getMainLooper()) {
                                     @Override
                                     public void handleMessage(Message msg) {
                                         circleProgress.setLevel(msg.arg1);

@@ -1,9 +1,9 @@
 package com.livelearn.ignorance.test.loadingview;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
 import android.os.Message;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +33,7 @@ import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.widget.TitleBar;
 
+import java.lang.ref.WeakReference;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -123,17 +124,27 @@ public class TestLoadingViewActivity extends BaseActivity {
     private int mValueLVLineWithText = 0;
     private int mValueLVNews = 0;
 
-    private Handler mHandler = new Handler(Looper.myLooper()) {
+    private LoadingHandler mHandler = new LoadingHandler(this);
+
+    private static class LoadingHandler extends Handler {
+        private WeakReference<Context> weakReference;
+
+        LoadingHandler(Context context) {
+            weakReference = new WeakReference<>(context);
+        }
+
         @Override
         public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            if (msg.what == 2)
-                lvLineText.setValue(msg.arg1);
-            else if (msg.what == 1) {
-                lvNews.setValue(msg.arg1);
+            TestLoadingViewActivity activity = (TestLoadingViewActivity) weakReference.get();
+            if (activity != null) {
+                if (msg.what == 2)
+                    activity.lvLineText.setValue(msg.arg1);
+                else if (msg.what == 1) {
+                    activity.lvNews.setValue(msg.arg1);
+                }
             }
         }
-    };
+    }
 
     @Override
     public int getLayoutResource() {
@@ -397,5 +408,13 @@ public class TestLoadingViewActivity extends BaseActivity {
                 }
             }
         }, 0, 50);
+    }
+
+    @Override
+    protected void onDestroy() {
+        mTimerLVLineWithText.cancel();
+        mTimerLVNews.cancel();
+        mHandler.removeCallbacksAndMessages(null);
+        super.onDestroy();
     }
 }
