@@ -59,8 +59,11 @@
 /Ignorance.iml
 /MagicIndicator/build
 /CommonUtils/.gitignore
+/JieCaoVideoPlayer/.gitignore
 /Vitamio/build
-/CommonUtils/CommonUtils.iml
 /CommonUtils/build
+/JieCaoVideoPlayer/build
 /JieCaoVideoPlayer/JieCaoVideoPlayer.iml
+/CommonUtils/CommonUtils.iml
+/NiceVideoPlayer/NiceVideoPlayer.iml
 /Vitamio/Vitamio.iml

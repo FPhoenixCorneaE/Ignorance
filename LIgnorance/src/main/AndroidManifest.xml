@@ -228,10 +228,11 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme" />
 
-        <!-- 测试联动动画 -->
+        <!-- 测试联动动画 android:hardwareAccelerated="true",开启硬件加速-->
         <activity
             android:name=".test.linkageanimation.TestLinkageAnimationActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
             android:theme="@style/AppTheme" />
 
         <!-- 测试顶部快餐店 -->
