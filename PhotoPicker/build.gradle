@@ -1,13 +1,13 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
     resourcePrefix "__picker_"
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 25
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0.0"
 
@@ -16,7 +16,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -26,19 +26,21 @@ android {
     }
 
     sourceSets.main {
-        jni.srcDirs = [];
+        jni.srcDirs = []
     }
 }
 
+final SUPPORT_VERSION = rootProject.ext.SUPPORT_VERSION
+
 dependencies {
-    compile project(path: ':Ucrop')
-    compile 'com.android.support:support-v4:25.3.1'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:design:25.3.1'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
-    compile 'com.android.support:support-annotations:25.3.1'
-    compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'cn.finalteam:toolsfinal:1.1.4'
+    implementation project(path: ':Ucrop')
+    implementation "com.android.support:support-v4:$SUPPORT_VERSION"
+    implementation "com.android.support:design:$SUPPORT_VERSION"
+    implementation "com.android.support:appcompat-v7:$SUPPORT_VERSION"
+    implementation "com.android.support:recyclerview-v7:$SUPPORT_VERSION"
+    implementation "com.android.support:support-annotations:$SUPPORT_VERSION"
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'cn.finalteam:toolsfinal:1.1.5'
 }
 

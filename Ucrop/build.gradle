@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.2'
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 25
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 22
         versionName "2.2.0-native"
 
@@ -14,7 +14,7 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -29,14 +29,17 @@ android {
     resourcePrefix 'ucrop_'
 
     sourceSets.main {
-        jni.srcDirs = [];
+        jni.srcDirs = []
     }
 
 }
 
+final SUPPORT_VERSION = rootProject.ext.SUPPORT_VERSION
+final OKHTTP3_VERSION = rootProject.ext.OKHTTP3_VERSION
+
 dependencies {
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation "com.android.support:appcompat-v7:$SUPPORT_VERSION"
+    implementation "com.squareup.okhttp3:okhttp:$OKHTTP3_VERSION"
     //对状态栏着色
-    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
 }

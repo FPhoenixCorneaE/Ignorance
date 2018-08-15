@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="__picker_MyTitlebar">
+        <attr name="__picker_ptb_leftTxt" format="string" />
+        <attr name="__picker_ptb_title" format="string" />
+        <attr name="__picker_ptb_rightTxt" format="string" />
+        <attr name="__picker_ptb_left_icon" format="reference" />
+        <attr name="__picker_ptb_right_icon" format="reference" />
+    </declare-styleable>
+</resources>

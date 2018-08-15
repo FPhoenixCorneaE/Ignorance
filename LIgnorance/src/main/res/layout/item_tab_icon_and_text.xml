@@ -19,7 +19,7 @@
         android:layout_centerHorizontal="true"
         android:scaleType="center"
         app:srcCompat="@drawable/ic_home_video"
-        app:tint="@color/selector_selectedpurple_normalgray" />
+        app:tiv_tint="@color/selector_selectedpurple_normalgray" />
 
     <TextView
         android:id="@+id/tv_text"

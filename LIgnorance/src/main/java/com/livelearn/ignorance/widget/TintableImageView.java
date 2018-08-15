@@ -31,7 +31,7 @@ public class TintableImageView extends AppCompatImageView {
 
     private void init(Context context, AttributeSet attrs, int defStyle) {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TintableImageView, defStyle, 0);
-        tint = a.getColorStateList(R.styleable.TintableImageView_tint);
+        tint = a.getColorStateList(R.styleable.TintableImageView_tiv_tint);
         a.recycle();
     }
 

@@ -1,11 +1,11 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.2'
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 9
+        minSdkVersion 14
     }
 
     buildTypes {
@@ -19,11 +19,13 @@ android {
     }
 }
 
+final SUPPORT_VERSION = rootProject.ext.SUPPORT_VERSION
+
 dependencies {
-    compile 'com.android.support:recyclerview-v7:25.3.1'
-    compile 'com.android.support:support-v4:25.3.1'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    androidTestCompile('com.nineoldandroids:library:2.4.0') {
+    implementation "com.android.support:recyclerview-v7:$SUPPORT_VERSION"
+    implementation "com.android.support:support-v4:$SUPPORT_VERSION"
+    implementation "com.android.support:appcompat-v7:$SUPPORT_VERSION"
+    androidTestImplementation('com.nineoldandroids:library:2.4.0') {
         exclude module: 'support-v4'
     }
 }

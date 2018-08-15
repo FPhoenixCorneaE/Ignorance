@@ -648,7 +648,7 @@
     </declare-styleable>
 
     <declare-styleable name="TintableImageView">
-        <attr name="tint" format="reference|color" />
+        <attr name="tiv_tint" format="reference|color" />
     </declare-styleable>
 
     <!--百度贴吧加载中波浪视图-->

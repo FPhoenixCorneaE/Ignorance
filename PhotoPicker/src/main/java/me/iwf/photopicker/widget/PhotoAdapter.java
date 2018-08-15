@@ -88,8 +88,8 @@ public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.PhotoViewHol
                         .load("")
                         .centerCrop()
                         .thumbnail(0.1f)
-                        .placeholder(R.drawable.icon_add)
-                        .error(R.drawable.icon_add)
+                        .placeholder(R.drawable.__picker_icon_add)
+                        .error(R.drawable.__picker_icon_add)
                         .into(holder.ivPhoto);
                 holder.ivPhoto.setOnClickListener(new View.OnClickListener() {
                     @Override

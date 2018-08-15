@@ -669,7 +669,7 @@ public final class ResponseParsers {
             for (Iterator<String> it = headers.keySet().iterator(); it.hasNext();) {
                 String key = it.next();
 
-                if (key.indexOf(OSSHeaders.OSS_USER_METADATA_PREFIX) >= 0) {
+                if (key.contains(OSSHeaders.OSS_USER_METADATA_PREFIX)) {
                     objectMetadata.addUserMetadata(key, headers.get(key));
                 } else if (key.equals(OSSHeaders.LAST_MODIFIED) || key.equals(OSSHeaders.DATE)) {
                     try {

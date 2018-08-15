@@ -3,12 +3,12 @@ apply plugin: 'com.android.library'
 version = "2.0.0"    //版本号，以后每次更新library都得更改
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 25
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName version
 
@@ -18,17 +18,19 @@ android {
     
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
 
+final SUPPORT_VERSION = rootProject.ext.SUPPORT_VERSION
+
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    testCompile 'junit:junit:4.12'
+    implementation "com.android.support:appcompat-v7:$SUPPORT_VERSION"
+    testImplementation 'junit:junit:4.12'
 }

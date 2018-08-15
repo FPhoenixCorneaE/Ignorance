@@ -1,45 +1,47 @@
 apply plugin: 'com.android.application'
-apply plugin: 'thinR'
+//ButterKnife
+apply plugin:'com.jakewharton.butterknife'
 //使用greendao
 apply plugin: 'org.greenrobot.greendao'
 apply from: "${rootDir}/gradle/version.gradle"
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
-    productFlavors {
-        dev {
-            minSdkVersion 19
+    defaultConfig {
+        //应用包名
+        applicationId "com.livelearn.ignorance"
+        //最小sdk版本，如果设备小于这个版本或者大于maxSdkVersion(一般不用)将无法安装这个应用
+        minSdkVersion rootProject.ext.minSdkVersion
+        //目标sdk版本，如果设备等于这个版本那么android平台就不进行兼容性检查，运行效率会高一点
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        //版本更新了几次，第一版应用是1，以后每更新一次加1
+        versionCode rootProject.ext.versionCode
+        //版本信息，这个会显示给用户，就是用户看到的版本号
+        versionName rootProject.ext.versionName
+
+        //当方法数超过65535(方法的索引使用的是一个short值，而short最大值是65535)的时候允许打包成多个dex文件，动态加载dex
+        multiDexEnabled true
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //对Vector兼容性的支持
+        vectorDrawables.useSupportLibrary = true
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'x86'
+            //'armeabi-v7a', 'x86_64', 'arm64-v8a'
         }
-        prod {
-            minSdkVersion 17
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
         }
-    }
-
-    //设置你的产品发布的一些东西，比如软件需要发布到不同渠道，且不同渠道中的包名不同，那么可以在此进行配置,甚至可以设置不同的AndroidManifest.xml文件。
-    productFlavors {
-        LI_UC {}
-        LI_360 {}
-    }
-
-    //所谓ProductFlavors其实就是可定义的产品特性，
-    //配合 manifest merger 使用的时候就可以达成在一次编译
-    //过程中产生多个具有自己特性配置的版本。
-    //这个配置的作用就是，为每个渠道包产生不同的 UMENG_CHANNEL_VALUE 的值。
-    productFlavors.all {
-        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
     }
 
     //签名配置
-//    signingConfigs {
-//        config_release {
-//            keyAlias 'appcert.key'
-//            keyPassword 'password'
-//            storeFile file('location...')
-//            storePassword 'password'
-//        }
-//    }
     signingConfigs {
         release {
             def filePrivateProperties = file("private.properties")
@@ -52,31 +54,6 @@ android {
                 storePassword propsPrivate['key.store.password']
                 keyPassword propsPrivate['key.alias.password']
             }
-        }
-    }
-
-    defaultConfig {
-        //应用包名
-        applicationId "com.livelearn.ignorance"
-        //最小sdk版本，如果设备小于这个版本或者大于maxSdkVersion(一般不用)将无法安装这个应用
-        minSdkVersion 17
-        //目标sdk版本，如果设备等于这个版本那么android平台就不进行兼容性检查，运行效率会高一点
-        targetSdkVersion 25
-        //版本更新了几次，第一版应用是1，以后每更新一次加1
-        versionCode 1
-        //版本信息，这个会显示给用户，就是用户看到的版本号
-        versionName "1.0"
-
-        //当方法数超过65535(方法的索引使用的是一个short值，而short最大值是65535)的时候允许打包成多个dex文件，动态加载dex
-        multiDexEnabled true
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        //对Vector兼容性的支持
-        vectorDrawables.useSupportLibrary = true
-
-        ndk {
-            // 设置支持的SO库架构
-            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
         }
     }
 
@@ -94,13 +71,18 @@ android {
 
     //multiDex的一些相关配置，这样配置可以让你的编译速度更快
     dexOptions {
-        maxProcessCount 6
-        //增加java堆内存大小
-        javaMaxHeapSize "6g"
-        //让它不要对Lib做preDexing
-        preDexLibraries = false
-        //忽略方法数限制的检查
-        jumboMode = true
+        //最大堆内存
+        javaMaxHeapSize "8g"
+        //是否支持大工程模式
+        jumboMode true
+        //预编译
+        preDexLibraries true
+        //
+        dexInProcess true
+        //最大进程数
+        maxProcessCount 8
+        //线程数
+        threadCount 8
     }
 
     //表示构建类型。包括release和debug两种。可以在这里面配置启用混淆、zipAlign、签名信息等。
@@ -108,7 +90,6 @@ android {
         //release版本的配置
         release {
             //签名配置
-//            signingConfig signingConfigs.config_release
             def filePrivateProperties = file("private.properties")
             if (filePrivateProperties.exists()) {
                 signingConfig signingConfigs.release
@@ -179,11 +160,6 @@ android {
         enabled true
     }
 
-    thinR {
-        //为了不影响日常开发的编译速度，debug版本可以不用删除R
-        skipThinRDebug = true
-    }
-
     //数据库ORM框架之GreenDao配置
     greendao {
         //指定数据库schema版本号，迁移、新增等操作会用到
@@ -193,274 +169,283 @@ android {
         //自定义生成数据库文件的目录
         targetGenDir 'src/main/java'
     }
-
-    //采用动态替换字符串的方式生成不同的apk
-    applicationVariants.all { variant ->
-        def output = variant.outputs.get(0)
-        File apk = output.outputFile
-        String newName = output.outputFile.name.replace(".apk", "-${variant.mergedFlavor.versionCode}-${variant.mergedFlavor.versionName}-${project.ext.versionInfo.build}.apk")
-                .replace("app-", "${variant.mergedFlavor.applicationId}-")
-        output.outputFile = new File(apk.parentFile, newName)
-    }
 }
+
+final FRESCO_VERSION = rootProject.ext.FRESCO_VERSION
+final PICASSO_VERSION = rootProject.ext.PICASSO_VERSION
+final SUPPORT_VERSION = rootProject.ext.SUPPORT_VERSION
 
 //里面是项目的依赖信息，包括jar包和第三方库等信息
 dependencies {
-    final SUPPORT_VERSION = '25.3.1'
-
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile files('libs/rebound-core.jar')
-    testCompile 'junit:junit:4.12'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/rebound-core.jar')
+    testImplementation 'junit:junit:4.12'
     /**
      * Support Libs
      */
-    compile "com.android.support:support-v4:$SUPPORT_VERSION"
-    compile "com.android.support:animated-vector-drawable:$SUPPORT_VERSION"
-    compile "com.android.support:support-vector-drawable:$SUPPORT_VERSION"
-    compile "com.android.support:support-compat:$SUPPORT_VERSION"
-    compile "com.android.support:appcompat-v7:$SUPPORT_VERSION"
-    compile "com.android.support:design:$SUPPORT_VERSION"
-    compile "com.android.support:palette-v7:$SUPPORT_VERSION"
-    compile "com.android.support:preference-v7:$SUPPORT_VERSION"
+    implementation "com.android.support:support-v4:$SUPPORT_VERSION"
+    implementation "com.android.support:animated-vector-drawable:$SUPPORT_VERSION"
+    implementation "com.android.support:support-vector-drawable:$SUPPORT_VERSION"
+    implementation "com.android.support:support-compat:$SUPPORT_VERSION"
+    implementation "com.android.support:appcompat-v7:$SUPPORT_VERSION"
+    implementation "com.android.support:design:$SUPPORT_VERSION"
+    implementation "com.android.support:palette-v7:$SUPPORT_VERSION"
+    implementation "com.android.support:preference-v7:$SUPPORT_VERSION"
     /**
      * 应用方法数爆棚解决方案
      */
-    compile 'com.android.support:multidex:1.0.1'
+    implementation 'com.android.support:multidex:1.0.2'
     /**
      * 约束布局
      */
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha8'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0-beta3'
     /**
      * 再循环视图
      */
-    compile 'com.android.support:recyclerview-v7:25.3.1'
+    implementation "com.android.support:recyclerview-v7:$SUPPORT_VERSION"
     /**
      * 卡片view，可以设置阴影，圆角等等
      */
-    compile 'com.android.support:cardview-v7:25.3.1'
+    implementation "com.android.support:cardview-v7:$SUPPORT_VERSION"
     /**
      * 解放控件对象实例化,监听添加
      */
-    compile 'com.jakewharton:butterknife:8.4.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    implementation "com.jakewharton:butterknife:${VERSION_BUTTERKNIFE}"
+    implementation "com.jakewharton:butterknife-compiler:${VERSION_BUTTERKNIFE}"
+    implementation "com.jakewharton:butterknife-annotations:${VERSION_BUTTERKNIFE}"
     /**
      * 各种风格的Dialog
      */
-    compile project(path: ':FlycoDialog')
+    implementation project(path: ':FlycoDialog')
     /**
      * 快速创建对话框工具类库,集成了sweet-alert-dialog,Titanic的进度框动画样式,AVLoadingIndicatorView的动画样式
      */
-    compile project(path: ':CBDialog')
+    implementation project(path: ':CBDialog')
+    /**
+     * 微博和微信加载高清长图却不OOM,双击放大，单击返回，手动放大等，目前只能加载本地
+     */
+    implementation project(path: ':SubsamplingScaleImageView')
     /**
      * 拍照、从相册选择图片
      */
-    compile project(path: ':PhotoPicker')
+    implementation project(path: ':PhotoPicker')
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'cn.finalteam:toolsfinal:1.1.5'
+    /**
+     * 剪裁图片
+     */
+    implementation project(path: ':Ucrop')
     /**
      * Glide Google推荐的图片加载库，专注于流畅的滚动
      */
-    compile 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
     /**
      * Glide图形转换工具
      */
-    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    implementation 'jp.wasabeef:glide-transformations:2.0.1'
     /**
      * GPUImage
      */
-    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0'
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0'
     /**
      * Android日志管理器，支持对象、List、Map、数组等输出
      */
-    compile 'com.apkfuns.logutils:library:1.0.4'
+    implementation 'com.apkfuns.logutils:library:1.0.4'
     /**
      * 使用CircularReveal动画效果进行页面平面展开切换
      */
-    compile('com.github.ozodrukh:CircularReveal:1.3.1@aar') {
-        transitive = true;
+    implementation('com.github.ozodrukh:CircularReveal:1.3.1@aar') {
+        transitive = true
     }
     /**
      * 可以自定义各种形状的 ImageView, 并且支持边框
      */
-    compile 'am.widget:shapeimageview:1.1.0'
+    implementation 'am.widget:shapeimageview:1.1.0'
     /**
      * rxjava
      */
-    compile 'io.reactivex:rxjava:1.1.9'
+    implementation 'io.reactivex:rxjava:1.1.9'
     /**
      * rxandroid
      */
-    compile 'io.reactivex:rxandroid:1.2.1'
+    implementation 'io.reactivex:rxandroid:1.2.1'
     /**
      * retrofit
      */
-    compile 'com.squareup.retrofit2:retrofit:2.0.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
-    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
     /**
      * okhttp3
      */
-    compile 'com.squareup.okhttp3:okhttp:3.4.1'
-    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
     /**
      * rxcache
      */
-    compile 'com.github.VictorAlbertos.RxCache:core:1.4.6'
+    implementation 'com.github.VictorAlbertos.RxCache:core:1.4.6'
     /**
      * RxPermissions权限管理
      */
-    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.8.0@aar'
+    implementation 'com.tbruyelle.rxpermissions:rxpermissions:0.8.0@aar'
     /**
      * eventbus
      */
-    compile 'org.simple:androideventbus:1.0.5.1'
+    implementation 'org.simple:androideventbus:1.0.5.1'
     /**
      * Java的HTML解析器，可直接解析URL地址、HTML文本内容
      */
-    compile 'org.jsoup:jsoup:1.9.2'
+    implementation 'org.jsoup:jsoup:1.9.2'
     /**
      * fresco 控件
      */
-    compile 'com.facebook.fresco:drawee:0.14.1'
+    implementation "com.facebook.fresco:drawee:$FRESCO_VERSION"
+    /**
+     * FaceBook图片加载库
+     */
+    implementation "com.facebook.fresco:fresco:$FRESCO_VERSION"
     /**
      * FaceBook图片加载库Fresco的使用帮助类
      */
-    compile project(path: ':FrescoHelper')
+    implementation project(path: ':FrescoHelper')
     /**
      * Fresco的封装，快速上手，图像后处理，超大图高清预览，缩小放大，双击放大等一一俱全
      */
-    compile project(path: ':FrescoUtils')
+    implementation project(path: ':FrescoUtils')
     /**
      * Square公司开源的一个Android图形缓存库
      */
-    compile 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
     /**
      * 十分灵活且功能强大的流式布局，而且使用方便
      */
-    compile project(path: ':DragWithFlowLayout')
+    implementation project(path: ':DragWithFlowLayout')
     /**
      * 支持下拉刷新,加载更多,没有更多,自定义加载页面,空白页面,ArrayAdapter,Header/Footer,使用简单
      */
-    compile project(path: ':EasyRecyclerView')
+    implementation project(path: ':EasyRecyclerView')
     /**
      * viewpager的图片轮播框架,支持无限循环,触摸时暂停轮播,设置播放时间间隔、透明度、指示器（指示器可以是默认原点，数字，也可以自定义图片）
      */
-    compile 'com.jude:rollviewpager:1.3.2'
+    implementation 'com.jude:rollviewpager:1.3.2'
     /**
      * FloatingActionButton 悬浮活动菜单按钮
      */
-    compile project(path: ':FloatingActionButton')
+    implementation project(path: ':FloatingActionButton')
     /**
      * 顶部显示Snackbar
      */
-    compile project(path: ':TopSnackbar')
+    implementation project(path: ':TopSnackbar')
     /**
      * 阿里云对象存储OSS
      */
-    compile project(path: ':ALiYunOSS')
+    implementation project(path: ':ALiYunOSS')
     /**
      * 鲁班压缩 类似于微信朋友圈的压缩算法
      */
-    compile project(path: ':LubanCompress')
+    implementation project(path: ':LubanCompress')
     /**
      * 通用的Item布局(左边为不变部分：图标加文字，右边为可变部分：文字、文字加箭头、箭头、开关按钮)
      */
-    compile project(path: ':BaseItemLayout')
+    implementation project(path: ':BaseItemLayout')
     /**
      * 共用头部且滚动中固定导航栏的Viewpager,支持listview,recyclerview,gridview,webview,scrollview.支持下拉刷新
      */
-    compile project(path: ':StickyHeaderViewPager')
+    implementation project(path: ':StickyHeaderViewPager')
     /**
      * 快速实现异常奔溃统一管理,页面加载中、加载失败、无数据等状态以及下拉刷新和自动加载
      */
-    compile project(path: ':LCRapidDevelop')
+    implementation project(path: ':LCRapidDevelop')
     /**
      * Banner实现无限循环,集成简单
      */
-    compile 'cn.bingoogolapple:bga-banner:2.0.9@aar'
+    implementation 'cn.bingoogolapple:bga-banner:2.0.9@aar'
     /**
      * 仿哔哩哔哩搜索框效果
      */
-    compile project(path: ':SearchDialog')
+    implementation project(path: ':SearchDialog')
     /**
      * 监听滚动视图滚动事件的库，帮助与Toolbar的交互动效处理与MaterialDesign的实现
      */
-    debugCompile project(path: ':ObservableScrollView')
+    debugImplementation project(path: ':ObservableScrollView')
     /**
      * Release build uses the synced latest version
      */
-    releaseCompile "com.github.ksoichiro:android-observablescrollview:${SYNCED_VERSION_NAME_OBSERVABLEVIEW}"
+    releaseImplementation "com.github.ksoichiro:android-observablescrollview:${VERSION_OBSERVABLEVIEW}"
     /**
      * 下拉刷新加载更多组件
      */
-    compile project(path: ':PullToRefreshWithLoadMore')
+    implementation project(path: ':PullToRefreshWithLoadMore')
     /**
      * Json解析之Gson
      */
-    compile 'com.google.code.gson:gson:2.7'
+    implementation 'com.google.code.gson:gson:2.7'
     /**
      * GreenDAO 优势: 一个精简的库; 性能最大化; 内存开销最小化; 易于使用的APIs; 对Android进行高度优化
      */
-    compile 'org.greenrobot:greendao:3.2.0'
+    implementation 'org.greenrobot:greendao:3.2.0'
     /**
      * 标签Span、文本Span（可点击）、图片Span
      */
-    compile project(path: ':SimplifySpan')
+    implementation project(path: ':SimplifySpan')
     /**
      * 平滑可定制的进度条
      */
-    compile project(path: ':SmoothProgressBar')
+    implementation project(path: ':SmoothProgressBar')
     /**
      * 分组悬停、索引右侧边栏
      */
-    compile project(path: ':SuspensionIndexBar')
+    implementation project(path: ':SuspensionIndexBar')
     /**
      * 强大的大图查看库
      */
-    compile project(path: ':BigImageViewer')
+    implementation project(path: ':BigImageViewer')
     /**
      * 可收缩展开的TextView
      */
-    compile project(path: ':ExpandableTextView')
+    implementation project(path: ':ExpandableTextView')
     /**
      * 上拉面板效果
      */
-    compile project(path: ':SlidingUpPanelLayout')
+    implementation project(path: ':SlidingUpPanelLayout')
     /**
      * 从缩略图到原图的无缝过渡转变，功能体系仿照并涵盖ios版本的QQ、微信朋友圈、新浪微博的图片浏览功能。
      */
-    compile project(path: ':Transferee')
+    implementation project(path: ':Transferee')
+    implementation 'com.zhy:base-adapter:3.0.3'
     /**
      * 基于HttpURLConnection简单易用的网络库，支持Http，Https，Http文件上传，图片加载，面向接口的API调用方式，轻量的设计风格
      */
-    compile 'cn.alien95:resthttp:1.0.6'
+    implementation 'cn.alien95:resthttp:1.0.6'
     /**
      * 简单的带有动画效果的加载控件
      */
-    compile project(path: ':LoadingView')
+    implementation project(path: ':LoadingView')
     /**
      * 节操视频播放控件
      */
-    compile project(path: ':JieCaoVideoPlayer')
+    implementation project(path: ':JieCaoVideoPlayer')
     /**
      * VirtualLayout是一个针对RecyclerView的LayoutManager扩展, 主要提供一整套布局方案和布局间的组件复用的问题。
      */
-    compile('com.alibaba.android:vlayout:1.0.9@aar') {
+    implementation('com.alibaba.android:vlayout:1.0.9@aar') {
         transitive = true
     }
     /**
      * 强大、可定制、易扩展的 ViewPager 指示器框架。是ViewPagerIndicator、TabLayout、PagerSlidingTabStrip的最佳替代品。
      */
-    compile project(path: ':MagicIndicator')
+    implementation project(path: ':MagicIndicator')
     /**
      * 快速开发工具类收集，史上最全的开发工具类
      */
-    compile project(path: ':CommonUtils')
+    implementation project(path: ':CommonUtils')
     /**
      * IjkPlayer/MediaPlayer+TextureView，完美切换全屏、小窗口的Android视频播放器
      */
-    compile project(path: ':NiceVideoPlayer')
+    implementation project(path: ':NiceVideoPlayer')
     /**
      * 基于Vitamio，支持手动全屏播放，手势调整进度，音量，亮度，基本满足市面上播放器要求
      */
-    compile project(path: ':Vitamio')
+    implementation project(path: ':Vitamio')
 }
 

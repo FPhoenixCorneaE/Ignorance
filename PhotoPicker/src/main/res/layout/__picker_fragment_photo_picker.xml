@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:drawablePadding="5dp"
-            android:drawableRight="@drawable/icon_test_list_start"
+            android:drawableRight="@drawable/__picker_icon_test_list_start"
             android:gravity="center"
             android:text="@string/__picker_all_image"
             android:textColor="@android:color/white" />

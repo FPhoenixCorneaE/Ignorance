@@ -112,6 +112,7 @@ public class SimpleNineGridView extends GridView {
         }
 
         setAdapter(new CommonAdapter<String>(mContext, R.layout.adapter_simple_nine_grid_view, mDatas) {
+
             @Override
             protected void convert(ViewHolder viewHolder, String item, final int position) {
                 ImageView ivChild = viewHolder.getView(R.id.iv_child);

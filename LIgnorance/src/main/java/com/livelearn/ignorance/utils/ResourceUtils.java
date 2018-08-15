@@ -96,35 +96,35 @@ public class ResourceUtils {
     }
 
     /**
-     * Get string, ui/values/strings.xml
+     * Get string, ui/values/__picker_strings.xml
      */
     public static String getString(@StringRes int resId) {
         return mContext.getResources().getString(resId);
     }
 
     /**
-     * Get string array, ui/values/strings.xml
+     * Get string array, ui/values/__picker_strings.xml
      */
     public static String[] getStringArray(@ArrayRes int resId) {
         return mContext.getResources().getStringArray(resId);
     }
 
     /**
-     * Get int array, ui/values/strings.xml
+     * Get int array, ui/values/__picker_strings.xml
      */
     public static int[] getIntArray(@ArrayRes int resId) {
         return mContext.getResources().getIntArray(resId);
     }
 
     /**
-     * Get color, ui/values/colors.xml
+     * Get color, ui/values/__picker_colors.xml
      */
     public static int getColor(@ColorRes int resId) {
         return ContextCompat.getColor(mContext, resId);
     }
 
     /**
-     * Get color state list, ui/values/colors.xml
+     * Get color state list, ui/values/__picker_colors.xml
      */
     public static ColorStateList getColorStateList(@ColorRes int resId) {
         return ContextCompat.getColorStateList(mContext, resId);

@@ -2,13 +2,13 @@ apply plugin: 'com.android.library'
 
 android {
 
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
 
         minSdkVersion 14
-        targetSdkVersion 25
+        targetSdkVersion rootProject.ext.targetSdkVersion
 
         versionCode 1
         versionName "1.0"
@@ -17,22 +17,24 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
 
+final SUPPORT_VERSION = rootProject.ext.SUPPORT_VERSION
+
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:support-v4:25.3.1'
-    compile 'com.facebook.fresco:fresco:0.14.1'
-    compile 'com.facebook.fresco:animated-gif:0.14.1'
-    compile 'me.relex:photodraweeview:1.1.2'
-    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:$SUPPORT_VERSION"
+    implementation "com.android.support:support-v4:$SUPPORT_VERSION"
+    implementation 'com.facebook.fresco:fresco:0.14.1'
+    implementation 'com.facebook.fresco:animated-gif:0.14.1'
+    implementation 'me.relex:photodraweeview:1.1.2'
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0'
     /**
      * 微博和微信加载高清长图却不OOM,双击放大，单击返回，手动放大等，目前只能加载本地
      */
-    compile project(path: ':SubsamplingScaleImageView')
+    implementation project(path: ':SubsamplingScaleImageView')
 }

@@ -5,12 +5,12 @@ repositories {
 }
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 25
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionName "1.0"
         versionCode 1
     }
@@ -20,7 +20,9 @@ android {
     }
 }
 
+final SUPPORT_VERSION = rootProject.ext.SUPPORT_VERSION
+
 dependencies {
-    compile 'com.android.support:support-annotations:25.3.1'
+    implementation "com.android.support:support-annotations:$SUPPORT_VERSION"
 }
 

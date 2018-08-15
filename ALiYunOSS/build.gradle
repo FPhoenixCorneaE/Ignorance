@@ -2,8 +2,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'jacoco'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
     useLibrary 'org.apache.http.legacy'
 
     compileOptions {
@@ -12,15 +13,15 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 10
-        targetSdkVersion 25
+        minSdkVersion 14
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 23
         versionName "2.3.0"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             testCoverageEnabled false
         }
@@ -39,10 +40,13 @@ jacoco {
     toolVersion = "0.7.1.201405082137"
 }
 
+final SUPPORT_VERSION = rootProject.ext.SUPPORT_VERSION
+final OKHTTP3_VERSION = rootProject.ext.OKHTTP3_VERSION
+
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:25.3.1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation "com.android.support:appcompat-v7:$SUPPORT_VERSION"
 }
 
 repositories {
@@ -50,8 +54,8 @@ repositories {
 }
 
 dependencies {
-    compile 'com.squareup.okhttp3:okhttp:3.4.1'
-    androidTestCompile 'com.parse.bolts:bolts-tasks:1.3.0'
+    implementation "com.squareup.okhttp3:okhttp:$OKHTTP3_VERSION"
+    androidTestImplementation 'com.parse.bolts:bolts-tasks:1.3.0'
 }
 
 task releaseJar(type: Copy, dependsOn: build) {

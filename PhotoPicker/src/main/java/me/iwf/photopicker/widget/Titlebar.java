@@ -172,13 +172,13 @@ public class Titlebar extends FrameLayout {
 
         TypedArray typedArray = null;
         try {
-            typedArray = context.obtainStyledAttributes(attrs, R.styleable.MyTitlebar);
-            String leftTxt = typedArray.getString(R.styleable.MyTitlebar_mtb_leftTxt);
-            String title = typedArray.getString(R.styleable.MyTitlebar_mtb_title);
-            String rightTxt = typedArray.getString(R.styleable.MyTitlebar_mtb_rightTxt);
+            typedArray = context.obtainStyledAttributes(attrs, R.styleable.__picker_MyTitlebar);
+            String leftTxt = typedArray.getString(R.styleable.__picker_MyTitlebar___picker_ptb_leftTxt);
+            String title = typedArray.getString(R.styleable.__picker_MyTitlebar___picker_ptb_title);
+            String rightTxt = typedArray.getString(R.styleable.__picker_MyTitlebar___picker_ptb_rightTxt);
 
-            Drawable leftDrawable = typedArray.getDrawable(R.styleable.MyTitlebar_mtb_left_icon);
-            Drawable rightDrawable = typedArray.getDrawable(R.styleable.MyTitlebar_mtb_right_icon);
+            Drawable leftDrawable = typedArray.getDrawable(R.styleable.__picker_MyTitlebar___picker_ptb_left_icon);
+            Drawable rightDrawable = typedArray.getDrawable(R.styleable.__picker_MyTitlebar___picker_ptb_right_icon);
 
             //left:drawable first
             setLeft(leftDrawable, leftTxt, null);
@@ -200,7 +200,7 @@ public class Titlebar extends FrameLayout {
     }
 
     private void initView(Context context) {
-        rootView = (RelativeLayout) View.inflate(context, R.layout.view_titlebar, null);
+        rootView = (RelativeLayout) View.inflate(context, R.layout.__picker_view_titlebar, null);
         ivLeft = (ImageView) rootView.findViewById(R.id.iv_left);
         tvLeft = (TextView) rootView.findViewById(R.id.tv_left);
 

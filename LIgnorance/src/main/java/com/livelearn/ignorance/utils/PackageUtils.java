@@ -13,6 +13,7 @@ import android.text.TextUtils;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -157,18 +158,19 @@ public class PackageUtils {
         List<ResolveInfo> resolveinfoList = context.getPackageManager()
                 .queryIntentActivities(resolveIntent, 0);
 
-        ResolveInfo resolveinfo = resolveinfoList.iterator().next();
-        if (resolveinfo != null) {
-            String pkgName = resolveinfo.activityInfo.packageName;
-            String className = resolveinfo.activityInfo.name;
+        for (ResolveInfo resolveinfo : resolveinfoList) {
+            if (resolveinfo != null) {
+                String pkgName = resolveinfo.activityInfo.packageName;
+                String className = resolveinfo.activityInfo.name;
 
-            Intent intent = new Intent(Intent.ACTION_MAIN);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.addCategory(Intent.CATEGORY_LAUNCHER);
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.addCategory(Intent.CATEGORY_LAUNCHER);
 
-            ComponentName cn = new ComponentName(pkgName, className);
-            intent.setComponent(cn);
-            context.startActivity(intent);
+                ComponentName cn = new ComponentName(pkgName, className);
+                intent.setComponent(cn);
+                context.startActivity(intent);
+            }
         }
     }
 }
