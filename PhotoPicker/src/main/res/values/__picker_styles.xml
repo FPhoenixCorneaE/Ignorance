@@ -8,9 +8,9 @@
 
     <style name="__picker_mystyle" parent="android:Animation">
         <!--进入时的动画-->
-        <item name="@android:windowEnterAnimation">@anim/__picker_dialog_enter</item>
+        <item name="android:windowEnterAnimation">@anim/__picker_dialog_enter</item>
         <!--退出时的动画-->
-        <item name="@android:windowExitAnimation">@anim/__picker_dialog_exit</item>
+        <item name="android:windowExitAnimation">@anim/__picker_dialog_exit</item>
     </style>
 
 </resources>

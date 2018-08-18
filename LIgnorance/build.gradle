@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 //ButterKnife
-apply plugin:'com.jakewharton.butterknife'
+apply plugin: 'com.jakewharton.butterknife'
 //使用greendao
 apply plugin: 'org.greenrobot.greendao'
 apply from: "${rootDir}/gradle/version.gradle"
@@ -65,7 +65,7 @@ android {
             //jni文件
             jni.srcDirs 'src/main/jni'
             //jni库
-            jniLibs.srcDir 'src/main/jniLibs'
+            jniLibs.srcDirs = ['src/main/jniLibs', 'libs']
         }
     }
 
@@ -168,6 +168,12 @@ android {
         daoPackage 'com.livelearn.ignorance.model.db.dbdao'
         //自定义生成数据库文件的目录
         targetGenDir 'src/main/java'
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
     }
 }
 
@@ -339,7 +345,8 @@ dependencies {
     /**
      * 阿里云对象存储OSS
      */
-    implementation project(path: ':ALiYunOSS')
+//    implementation project(path: ':ALiYunOSS')
+    implementation 'com.aliyun.dpa:oss-android-sdk:2.3.0'
     /**
      * 鲁班压缩 类似于微信朋友圈的压缩算法
      */
