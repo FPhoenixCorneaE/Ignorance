@@ -40,7 +40,6 @@ public class DisplayOptimizeListener implements SubsamplingScaleImageView.OnImag
         mImageView = imageView;
     }
 
-    @Override
     public void onReady() {
         float result = 0.5f;
         int imageWidth = mImageView.getSWidth();
@@ -78,27 +77,22 @@ public class DisplayOptimizeListener implements SubsamplingScaleImageView.OnImag
         mImageView.setDoubleTapZoomScale(result);
     }
 
-    @Override
     public void onImageLoaded() {
 
     }
 
-    @Override
     public void onPreviewLoadError(Exception e) {
 
     }
 
-    @Override
     public void onImageLoadError(Exception e) {
 
     }
 
-    @Override
     public void onTileLoadError(Exception e) {
 
     }
 
-    @Override
     public void onPreviewReleased() {
 
     }

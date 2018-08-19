@@ -36,8 +36,18 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
         }
     }
 }
@@ -64,5 +74,6 @@ dependencies {
     /**
      * 微博和微信加载高清长图却不OOM,双击放大，单击返回，手动放大等，目前只能加载本地
      */
-    implementation project(path: ':SubsamplingScaleImageView')
+//    implementation project(path: ':SubsamplingScaleImageView')
+    implementation(name: 'SubsamplingScaleImageView-1.0', ext: 'aar')
 }

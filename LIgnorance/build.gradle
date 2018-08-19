@@ -197,6 +197,7 @@ dependencies {
     implementation "com.android.support:design:$SUPPORT_VERSION"
     implementation "com.android.support:palette-v7:$SUPPORT_VERSION"
     implementation "com.android.support:preference-v7:$SUPPORT_VERSION"
+    implementation "com.android.support:support-annotations:$SUPPORT_VERSION"
     /**
      * 应用方法数爆棚解决方案
      */
@@ -230,7 +231,8 @@ dependencies {
     /**
      * 微博和微信加载高清长图却不OOM,双击放大，单击返回，手动放大等，目前只能加载本地
      */
-    implementation project(path: ':SubsamplingScaleImageView')
+//    implementation project(path: ':SubsamplingScaleImageView')
+    implementation(name: 'SubsamplingScaleImageView-1.0', ext: 'aar')
     /**
      * 拍照、从相册选择图片
      */
@@ -346,7 +348,7 @@ dependencies {
      * 阿里云对象存储OSS
      */
 //    implementation project(path: ':ALiYunOSS')
-    implementation 'com.aliyun.dpa:oss-android-sdk:2.3.0'
+    implementation(name: 'ALiYunOSS-2.3.0', ext: 'aar')
     /**
      * 鲁班压缩 类似于微信朋友圈的压缩算法
      */
