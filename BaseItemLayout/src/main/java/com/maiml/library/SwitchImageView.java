@@ -1,15 +1,15 @@
 package com.maiml.library;
 
 import android.content.Context;
+import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.ImageView;
 
 /**
  * Created by maimingliang on 2016/11/13.
  */
 
-public class SwitchImageView extends ImageView {
+public class SwitchImageView extends AppCompatImageView {
 
 
     private boolean isCheck;

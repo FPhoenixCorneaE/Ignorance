@@ -15,11 +15,17 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
-    
+
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    android {
+        lintOptions {
+            abortOnError false
         }
     }
 }
@@ -34,3 +40,5 @@ dependencies {
     implementation "com.android.support:appcompat-v7:$SUPPORT_VERSION"
     testImplementation 'junit:junit:4.12'
 }
+
+

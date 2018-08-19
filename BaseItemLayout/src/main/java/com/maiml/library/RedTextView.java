@@ -1,14 +1,12 @@
 package com.maiml.library;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
-import android.os.Build;
+import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 import com.maiml.library.utils.DensityUtil;
 
@@ -17,7 +15,7 @@ import com.maiml.library.utils.DensityUtil;
  * Created by maimingliang on 2016/11/23.
  */
 
-public class RedTextView extends TextView {
+public class RedTextView extends AppCompatTextView {
 
     private String badgeCount = "0";
     private Paint badgerPaint;
@@ -40,12 +38,6 @@ public class RedTextView extends TextView {
 
     public RedTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init(context, attrs);
-    }
-
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public RedTextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
         init(context, attrs);
     }
 
