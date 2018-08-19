@@ -19,7 +19,7 @@ ext {
     versionCode = 1000
     versionName = "1.0.0.0"
 
-    FRESCO_VERSION = '1.9.0'
+    FRESCO_VERSION = '0.14.1'
     GLIDE_VERSION = '4.7.1'
     GSON_VERSION = '2.8.0'
     OKHTTP3_VERSION = '3.10.0'

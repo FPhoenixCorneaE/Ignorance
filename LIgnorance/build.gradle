@@ -178,6 +178,7 @@ android {
 }
 
 final FRESCO_VERSION = rootProject.ext.FRESCO_VERSION
+final OKHTTP3_VERSION = rootProject.ext.OKHTTP3_VERSION
 final PICASSO_VERSION = rootProject.ext.PICASSO_VERSION
 final SUPPORT_VERSION = rootProject.ext.SUPPORT_VERSION
 
@@ -201,11 +202,11 @@ dependencies {
     /**
      * 应用方法数爆棚解决方案
      */
-    implementation 'com.android.support:multidex:1.0.2'
+    implementation 'com.android.support:multidex:1.0.3'
     /**
      * 约束布局
      */
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0-beta3'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.0-alpha2'
     /**
      * 再循环视图
      */
@@ -286,7 +287,7 @@ dependencies {
     /**
      * okhttp3
      */
-    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation "com.squareup.okhttp3:okhttp:$OKHTTP3_VERSION"
     implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
     /**
      * rxcache
@@ -295,7 +296,9 @@ dependencies {
     /**
      * RxPermissions权限管理
      */
-    implementation 'com.tbruyelle.rxpermissions:rxpermissions:0.8.0@aar'
+    implementation ('com.tbruyelle.rxpermissions:rxpermissions:0.8.2@aar'){
+        exclude module: 'rxjava'
+    }
     /**
      * eventbus
      */
@@ -358,6 +361,9 @@ dependencies {
      */
 //    implementation project(path: ':BaseItemLayout')
     implementation(name: 'BaseItemLayout-2.0.0', ext: 'aar')
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.0'
+    implementation 'commons-io:commons-io:2.5'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
     /**
      * 共用头部且滚动中固定导航栏的Viewpager,支持listview,recyclerview,gridview,webview,scrollview.支持下拉刷新
      */
@@ -409,7 +415,8 @@ dependencies {
     /**
      * 强大的大图查看库
      */
-    implementation project(path: ':BigImageViewer')
+//    implementation project(path: ':BigImageViewer')
+    implementation(name: 'BigImageViewer-1.2.0', ext: 'aar')
     /**
      * 可收缩展开的TextView
      */
