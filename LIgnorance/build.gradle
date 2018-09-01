@@ -457,7 +457,8 @@ dependencies {
     /**
      * 快速开发工具类收集，史上最全的开发工具类
      */
-    implementation project(path: ':CommonUtils')
+//    implementation project(path: ':CommonUtils')
+    implementation(name: 'CommonUtils-1.0', ext: 'aar')
     /**
      * IjkPlayer/MediaPlayer+TextureView，完美切换全屏、小窗口的Android视频播放器
      */
