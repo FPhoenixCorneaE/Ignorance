@@ -298,7 +298,7 @@ dependencies {
     /**
      * RxPermissions权限管理
      */
-    implementation ('com.tbruyelle.rxpermissions:rxpermissions:0.8.2@aar'){
+    implementation('com.tbruyelle.rxpermissions:rxpermissions:0.8.2@aar') {
         exclude module: 'rxjava'
     }
     /**
@@ -332,7 +332,8 @@ dependencies {
     /**
      * 十分灵活且功能强大的流式布局，而且使用方便
      */
-    implementation project(path: ':DragWithFlowLayout')
+//    implementation project(path: ':DragWithFlowLayout')
+    implementation(name: 'DragWithFlowLayout-1.0', ext: 'aar')
     /**
      * 支持下拉刷新,加载更多,没有更多,自定义加载页面,空白页面,ArrayAdapter,Header/Footer,使用简单
      */
