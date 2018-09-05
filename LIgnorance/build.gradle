@@ -346,7 +346,8 @@ dependencies {
     /**
      * FloatingActionButton 悬浮活动菜单按钮
      */
-    implementation project(path: ':FloatingActionButton')
+//    implementation project(path: ':FloatingActionButton')
+    implementation(name: 'FloatingActionButton-1.6.0', ext: 'aar')
     /**
      * 顶部显示Snackbar
      */
