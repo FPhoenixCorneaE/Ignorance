@@ -337,7 +337,8 @@ dependencies {
     /**
      * 支持下拉刷新,加载更多,没有更多,自定义加载页面,空白页面,ArrayAdapter,Header/Footer,使用简单
      */
-    implementation project(path: ':EasyRecyclerView')
+//    implementation project(path: ':EasyRecyclerView')
+    implementation(name: 'EasyRecyclerView-1.0', ext: 'aar')
     /**
      * viewpager的图片轮播框架,支持无限循环,触摸时暂停轮播,设置播放时间间隔、透明度、指示器（指示器可以是默认原点，数字，也可以自定义图片）
      */
