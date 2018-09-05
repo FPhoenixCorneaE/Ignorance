@@ -224,7 +224,8 @@ dependencies {
     /**
      * 各种风格的Dialog
      */
-    implementation project(path: ':FlycoDialog')
+//    implementation project(path: ':FlycoDialog')
+    implementation(name: 'FlycoDialog-1.3.2', ext: 'aar')
     /**
      * 快速创建对话框工具类库,集成了sweet-alert-dialog,Titanic的进度框动画样式,AVLoadingIndicatorView的动画样式
      */
