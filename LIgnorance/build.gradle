@@ -331,7 +331,9 @@ dependencies {
     /**
      * Fresco的封装，快速上手，图像后处理，超大图高清预览，缩小放大，双击放大等一一俱全
      */
-    implementation project(path: ':FrescoUtils')
+//    implementation project(path: ':FrescoUtils')
+    implementation(name: 'FrescoUtils-1.0', ext: 'aar')
+    implementation 'me.relex:photodraweeview:1.1.2'
     /**
      * Square公司开源的一个Android图形缓存库
      */
