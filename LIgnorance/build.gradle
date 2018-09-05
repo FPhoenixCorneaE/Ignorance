@@ -424,7 +424,8 @@ dependencies {
     /**
      * 可收缩展开的TextView
      */
-    implementation project(path: ':ExpandableTextView')
+//    implementation project(path: ':ExpandableTextView')
+    implementation(name: 'ExpandableTextView-1.0.0', ext: 'aar')
     /**
      * 上拉面板效果
      */
