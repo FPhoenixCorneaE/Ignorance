@@ -321,7 +321,13 @@ dependencies {
     /**
      * FaceBook图片加载库Fresco的使用帮助类
      */
-    implementation project(path: ':FrescoHelper')
+//    implementation project(path: ':FrescoHelper')
+    implementation(name: 'FrescoHelper-1.0.1', ext: 'aar')
+    implementation 'com.facebook.fresco:animated-base-support:0.14.1'
+    implementation 'com.facebook.fresco:animated-gif:0.14.1'
+    implementation 'com.facebook.fresco:webpsupport:0.14.1'
+    implementation 'com.facebook.fresco:animated-webp:0.14.1'
+    implementation 'com.facebook.fresco:imagepipeline-okhttp3:0.14.1'
     /**
      * Fresco的封装，快速上手，图像后处理，超大图高清预览，缩小放大，双击放大等一一俱全
      */
