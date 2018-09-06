@@ -240,7 +240,8 @@ dependencies {
     /**
      * 拍照、从相册选择图片
      */
-    implementation project(path: ':PhotoPicker')
+//    implementation project(path: ':PhotoPicker')
+    implementation(name: 'PhotoPicker-1.0.0', ext: 'aar')
     implementation 'com.nineoldandroids:library:2.4.0'
     implementation 'cn.finalteam:toolsfinal:1.1.5'
     /**
