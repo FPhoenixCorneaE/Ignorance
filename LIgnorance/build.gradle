@@ -409,7 +409,8 @@ dependencies {
     /**
      * 下拉刷新加载更多组件
      */
-    implementation project(path: ':PullToRefreshWithLoadMore')
+//    implementation project(path: ':PullToRefreshWithLoadMore')
+    implementation(name: 'PullToRefreshWithLoadMore-1.0.0', ext: 'aar')
     /**
      * Json解析之Gson
      */
