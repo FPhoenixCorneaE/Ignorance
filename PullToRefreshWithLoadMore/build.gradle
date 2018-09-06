@@ -7,6 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 100
+        versionName "1.0.0"
     }
 
     lintOptions {
@@ -15,7 +17,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }

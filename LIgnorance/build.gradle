@@ -470,7 +470,8 @@ dependencies {
     /**
      * 强大、可定制、易扩展的 ViewPager 指示器框架。是ViewPagerIndicator、TabLayout、PagerSlidingTabStrip的最佳替代品。
      */
-    implementation project(path: ':MagicIndicator')
+//    implementation project(path: ':MagicIndicator')
+    implementation(name: 'MagicIndicator-1.0', ext: 'aar')
     /**
      * 快速开发工具类收集，史上最全的开发工具类
      */
