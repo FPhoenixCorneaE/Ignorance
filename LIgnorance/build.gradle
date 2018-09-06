@@ -480,7 +480,15 @@ dependencies {
     /**
      * IjkPlayer/MediaPlayer+TextureView，完美切换全屏、小窗口的Android视频播放器
      */
+//    implementation project(path: ':NiceVideoPlayer')
     implementation project(path: ':NiceVideoPlayer')
+    implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-armv5:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-arm64:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.8'
     /**
      * 基于Vitamio，支持手动全屏播放，手势调整进度，音量，亮度，基本满足市面上播放器要求
      */
