@@ -28,12 +28,22 @@ android {
     sourceSets.main {
         jni.srcDirs = []
     }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
 }
 
 final SUPPORT_VERSION = rootProject.ext.SUPPORT_VERSION
+final OKHTTP3_VERSION = rootProject.ext.OKHTTP3_VERSION
 
 dependencies {
-    implementation project(path: ':Ucrop')
+//    implementation project(path: ':Ucrop')
+    implementation(name: 'Ucrop-2.2.0-native', ext: 'aar')
+    implementation "com.squareup.okhttp3:okhttp:$OKHTTP3_VERSION"
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
     implementation "com.android.support:support-v4:$SUPPORT_VERSION"
     implementation "com.android.support:design:$SUPPORT_VERSION"
     implementation "com.android.support:appcompat-v7:$SUPPORT_VERSION"

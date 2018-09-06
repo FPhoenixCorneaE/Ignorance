@@ -247,7 +247,9 @@ dependencies {
     /**
      * 剪裁图片
      */
-    implementation project(path: ':Ucrop')
+//    implementation project(path: ':Ucrop')
+    implementation(name: 'Ucrop-2.2.0-native', ext: 'aar')
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
     /**
      * Glide Google推荐的图片加载库，专注于流畅的滚动
      */
@@ -361,7 +363,8 @@ dependencies {
     /**
      * 顶部显示Snackbar
      */
-    implementation project(path: ':TopSnackbar')
+//    implementation project(path: ':TopSnackbar')
+    implementation(name: 'TopSnackbar-1.9', ext: 'aar')
     /**
      * 阿里云对象存储OSS
      */
@@ -383,7 +386,8 @@ dependencies {
     /**
      * 共用头部且滚动中固定导航栏的Viewpager,支持listview,recyclerview,gridview,webview,scrollview.支持下拉刷新
      */
-    implementation project(path: ':StickyHeaderViewPager')
+//    implementation project(path: ':StickyHeaderViewPager')
+    implementation(name: 'StickyHeaderViewPager-1.0', ext: 'aar')
     /**
      * 快速实现异常奔溃统一管理,页面加载中、加载失败、无数据等状态以及下拉刷新和自动加载
      */
@@ -396,7 +400,8 @@ dependencies {
     /**
      * 仿哔哩哔哩搜索框效果
      */
-    implementation project(path: ':SearchDialog')
+//    implementation project(path: ':SearchDialog')
+    implementation(name: 'SearchDialog-1.0', ext: 'aar')
     /**
      * 监听滚动视图滚动事件的库，帮助与Toolbar的交互动效处理与MaterialDesign的实现
      */
@@ -422,15 +427,19 @@ dependencies {
     /**
      * 标签Span、文本Span（可点击）、图片Span
      */
-    implementation project(path: ':SimplifySpan')
+//    implementation project(path: ':SimplifySpan')
+    implementation(name: 'SimplifySpan-1.0', ext: 'aar')
     /**
      * 平滑可定制的进度条
      */
-    implementation project(path: ':SmoothProgressBar')
+//    implementation project(path: ':SmoothProgressBar')
+    implementation(name: 'SmoothProgressBar-1.0', ext: 'aar')
     /**
      * 分组悬停、索引右侧边栏
      */
-    implementation project(path: ':SuspensionIndexBar')
+//    implementation project(path: ':SuspensionIndexBar')
+    implementation(name: 'SuspensionIndexBar-1.0', ext: 'aar')
+    implementation 'com.github.promeg:tinypinyin:1.0.0'
     /**
      * 强大的大图查看库
      */
@@ -444,11 +453,15 @@ dependencies {
     /**
      * 上拉面板效果
      */
-    implementation project(path: ':SlidingUpPanelLayout')
+//    implementation project(path: ':SlidingUpPanelLayout')
+    implementation(name: 'SlidingUpPanelLayout-3.3.1', ext: 'aar')
     /**
      * 从缩略图到原图的无缝过渡转变，功能体系仿照并涵盖ios版本的QQ、微信朋友圈、新浪微博的图片浏览功能。
      */
-    implementation project(path: ':Transferee')
+//    implementation project(path: ':Transferee')
+    implementation(name: 'Transferee-1.0.0', ext: 'aar')
+    implementation 'com.github.filippudak.progresspieview:library:1.0.4'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
     implementation 'com.zhy:base-adapter:3.0.3'
     /**
      * 基于HttpURLConnection简单易用的网络库，支持Http，Https，Http文件上传，图片加载，面向接口的API调用方式，轻量的设计风格
@@ -495,6 +508,7 @@ dependencies {
     /**
      * 基于Vitamio，支持手动全屏播放，手势调整进度，音量，亮度，基本满足市面上播放器要求
      */
-    implementation project(path: ':Vitamio')
+//    implementation project(path: ':Vitamio')
+    implementation(name: 'Vitamio-4.0.0', ext: 'aar')
 }
 
