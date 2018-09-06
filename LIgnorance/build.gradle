@@ -399,7 +399,8 @@ dependencies {
     /**
      * 监听滚动视图滚动事件的库，帮助与Toolbar的交互动效处理与MaterialDesign的实现
      */
-    debugImplementation project(path: ':ObservableScrollView')
+//    debugImplementation project(path: ':ObservableScrollView')
+    debugImplementation(name: 'ObservableScrollView-1.0', ext: 'aar')
     /**
      * Release build uses the synced latest version
      */
@@ -481,7 +482,7 @@ dependencies {
      * IjkPlayer/MediaPlayer+TextureView，完美切换全屏、小窗口的Android视频播放器
      */
 //    implementation project(path: ':NiceVideoPlayer')
-    implementation project(path: ':NiceVideoPlayer')
+    implementation(name: 'NiceVideoPlayer-1.1', ext: 'aar')
     implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
     implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
     implementation 'tv.danmaku.ijk.media:ijkplayer-armv5:0.8.8'
