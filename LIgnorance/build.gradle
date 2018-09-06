@@ -453,7 +453,8 @@ dependencies {
     /**
      * 简单的带有动画效果的加载控件
      */
-    implementation project(path: ':LoadingView')
+//    implementation project(path: ':LoadingView')
+    implementation(name: 'LoadingView-1.0', ext: 'aar')
     /**
      * 节操视频播放控件
      */
