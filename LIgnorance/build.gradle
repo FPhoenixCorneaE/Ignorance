@@ -369,7 +369,8 @@ dependencies {
     /**
      * 鲁班压缩 类似于微信朋友圈的压缩算法
      */
-    implementation project(path: ':LubanCompress')
+//    implementation project(path: ':LubanCompress')
+    implementation(name: 'LubanCompress-1.0', ext: 'aar')
     /**
      * 通用的Item布局(左边为不变部分：图标加文字，右边为可变部分：文字、文字加箭头、箭头、开关按钮)
      */
