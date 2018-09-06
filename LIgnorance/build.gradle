@@ -385,7 +385,8 @@ dependencies {
     /**
      * 快速实现异常奔溃统一管理,页面加载中、加载失败、无数据等状态以及下拉刷新和自动加载
      */
-    implementation project(path: ':LCRapidDevelop')
+//    implementation project(path: ':LCRapidDevelop')
+    implementation(name: 'LCRapidDevelop-1.0', ext: 'aar')
     /**
      * Banner实现无限循环,集成简单
      */
