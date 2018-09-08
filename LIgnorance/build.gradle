@@ -83,6 +83,7 @@ android {
         maxProcessCount 8
         //线程数
         threadCount 8
+        incremental true
     }
 
     //表示构建类型。包括release和debug两种。可以在这里面配置启用混淆、zipAlign、签名信息等。
@@ -127,8 +128,8 @@ android {
 
     //在这里你可以进行 Java 的版本配置，以便使用对应版本的一些新特性
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
     //为了解决部分第三方库重复打包了META-INF的问题,重复什么就排除什么
@@ -187,6 +188,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation files('libs/rebound-core.jar')
     testImplementation 'junit:junit:4.12'
+
     /**
      * Support Libs
      */
@@ -199,304 +201,395 @@ dependencies {
     implementation "com.android.support:palette-v7:$SUPPORT_VERSION"
     implementation "com.android.support:preference-v7:$SUPPORT_VERSION"
     implementation "com.android.support:support-annotations:$SUPPORT_VERSION"
+
     /**
      * 应用方法数爆棚解决方案
      */
     implementation 'com.android.support:multidex:1.0.3'
+
     /**
      * 约束布局
      */
     implementation 'com.android.support.constraint:constraint-layout:2.0.0-alpha2'
+
     /**
      * 再循环视图
      */
     implementation "com.android.support:recyclerview-v7:$SUPPORT_VERSION"
+
     /**
      * 卡片view，可以设置阴影，圆角等等
      */
     implementation "com.android.support:cardview-v7:$SUPPORT_VERSION"
+
     /**
      * 解放控件对象实例化,监听添加
      */
     implementation "com.jakewharton:butterknife:${VERSION_BUTTERKNIFE}"
     implementation "com.jakewharton:butterknife-compiler:${VERSION_BUTTERKNIFE}"
     implementation "com.jakewharton:butterknife-annotations:${VERSION_BUTTERKNIFE}"
+
     /**
      * 各种风格的Dialog
      */
-//    implementation project(path: ':FlycoDialog')
+
+    //    implementation project(path: ':FlycoDialog')
     implementation(name: 'FlycoDialog-1.3.2', ext: 'aar')
+
     /**
      * 快速创建对话框工具类库,集成了sweet-alert-dialog,Titanic的进度框动画样式,AVLoadingIndicatorView的动画样式
      */
-//    implementation project(path: ':CBDialog')
+
+    //    implementation project(path: ':CBDialog')
     implementation(name: 'CBDialog-1.0', ext: 'aar')
     implementation 'net.frakbot:jumpingbeans:1.3.0'
+
     /**
      * 微博和微信加载高清长图却不OOM,双击放大，单击返回，手动放大等，目前只能加载本地
      */
-//    implementation project(path: ':SubsamplingScaleImageView')
+
+    //    implementation project(path: ':SubsamplingScaleImageView')
     implementation(name: 'SubsamplingScaleImageView-1.0', ext: 'aar')
+
     /**
      * 拍照、从相册选择图片
      */
-//    implementation project(path: ':PhotoPicker')
+
+    //    implementation project(path: ':PhotoPicker')
     implementation(name: 'PhotoPicker-1.0.0', ext: 'aar')
     implementation 'com.nineoldandroids:library:2.4.0'
     implementation 'cn.finalteam:toolsfinal:1.1.5'
+
     /**
      * 剪裁图片
      */
-//    implementation project(path: ':Ucrop')
+
+    //    implementation project(path: ':Ucrop')
     implementation(name: 'Ucrop-2.2.0-native', ext: 'aar')
     implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+
     /**
      * Glide Google推荐的图片加载库，专注于流畅的滚动
      */
     implementation 'com.github.bumptech.glide:glide:3.7.0'
+
     /**
      * Glide图形转换工具
      */
     implementation 'jp.wasabeef:glide-transformations:2.0.1'
+
     /**
      * GPUImage
      */
     implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0'
+
     /**
      * Android日志管理器，支持对象、List、Map、数组等输出
      */
     implementation 'com.apkfuns.logutils:library:1.0.4'
+
     /**
      * 使用CircularReveal动画效果进行页面平面展开切换
      */
     implementation('com.github.ozodrukh:CircularReveal:1.3.1@aar') {
         transitive = true
     }
+
     /**
      * 可以自定义各种形状的 ImageView, 并且支持边框
      */
     implementation 'am.widget:shapeimageview:1.1.0'
+
     /**
      * rxjava
      */
     implementation 'io.reactivex:rxjava:1.1.9'
+
     /**
      * rxandroid
      */
     implementation 'io.reactivex:rxandroid:1.2.1'
+
     /**
      * retrofit
      */
     implementation 'com.squareup.retrofit2:retrofit:2.0.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.0.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
+
     /**
      * okhttp3
      */
     implementation "com.squareup.okhttp3:okhttp:$OKHTTP3_VERSION"
     implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
     /**
      * rxcache
      */
     implementation 'com.github.VictorAlbertos.RxCache:core:1.4.6'
+
     /**
      * RxPermissions权限管理
      */
     implementation('com.tbruyelle.rxpermissions:rxpermissions:0.8.2@aar') {
         exclude module: 'rxjava'
     }
+
     /**
      * eventbus
      */
     implementation 'org.simple:androideventbus:1.0.5.1'
+
     /**
      * Java的HTML解析器，可直接解析URL地址、HTML文本内容
      */
     implementation 'org.jsoup:jsoup:1.9.2'
+
     /**
      * fresco 控件
      */
     implementation "com.facebook.fresco:drawee:$FRESCO_VERSION"
+
     /**
      * FaceBook图片加载库
      */
     implementation "com.facebook.fresco:fresco:$FRESCO_VERSION"
+
     /**
      * FaceBook图片加载库Fresco的使用帮助类
      */
-//    implementation project(path: ':FrescoHelper')
+
+    //    implementation project(path: ':FrescoHelper')
     implementation(name: 'FrescoHelper-1.0.1', ext: 'aar')
     implementation 'com.facebook.fresco:animated-base-support:0.14.1'
     implementation 'com.facebook.fresco:animated-gif:0.14.1'
     implementation 'com.facebook.fresco:webpsupport:0.14.1'
     implementation 'com.facebook.fresco:animated-webp:0.14.1'
     implementation 'com.facebook.fresco:imagepipeline-okhttp3:0.14.1'
+
     /**
      * Fresco的封装，快速上手，图像后处理，超大图高清预览，缩小放大，双击放大等一一俱全
      */
-//    implementation project(path: ':FrescoUtils')
+
+    //    implementation project(path: ':FrescoUtils')
     implementation(name: 'FrescoUtils-1.0', ext: 'aar')
     implementation 'me.relex:photodraweeview:1.1.2'
+
     /**
      * Square公司开源的一个Android图形缓存库
      */
     implementation 'com.squareup.picasso:picasso:2.5.2'
+
     /**
      * 十分灵活且功能强大的流式布局，而且使用方便
      */
-//    implementation project(path: ':DragWithFlowLayout')
+
+    //    implementation project(path: ':DragWithFlowLayout')
     implementation(name: 'DragWithFlowLayout-1.0', ext: 'aar')
+
     /**
      * 支持下拉刷新,加载更多,没有更多,自定义加载页面,空白页面,ArrayAdapter,Header/Footer,使用简单
      */
-//    implementation project(path: ':EasyRecyclerView')
+
+    //    implementation project(path: ':EasyRecyclerView')
     implementation(name: 'EasyRecyclerView-1.0', ext: 'aar')
+
     /**
      * viewpager的图片轮播框架,支持无限循环,触摸时暂停轮播,设置播放时间间隔、透明度、指示器（指示器可以是默认原点，数字，也可以自定义图片）
      */
     implementation 'com.jude:rollviewpager:1.3.2'
+
     /**
      * FloatingActionButton 悬浮活动菜单按钮
      */
-//    implementation project(path: ':FloatingActionButton')
+
+    //    implementation project(path: ':FloatingActionButton')
     implementation(name: 'FloatingActionButton-1.6.0', ext: 'aar')
+
     /**
      * 顶部显示Snackbar
      */
-//    implementation project(path: ':TopSnackbar')
+
+    //    implementation project(path: ':TopSnackbar')
     implementation(name: 'TopSnackbar-1.9', ext: 'aar')
+
     /**
      * 阿里云对象存储OSS
      */
-//    implementation project(path: ':ALiYunOSS')
+
+    //    implementation project(path: ':ALiYunOSS')
     implementation(name: 'ALiYunOSS-2.3.0', ext: 'aar')
+
     /**
      * 鲁班压缩 类似于微信朋友圈的压缩算法
      */
-//    implementation project(path: ':LubanCompress')
+
+    //    implementation project(path: ':LubanCompress')
     implementation(name: 'LubanCompress-1.0', ext: 'aar')
+
     /**
      * 通用的Item布局(左边为不变部分：图标加文字，右边为可变部分：文字、文字加箭头、箭头、开关按钮)
      */
-//    implementation project(path: ':BaseItemLayout')
+
+    //    implementation project(path: ':BaseItemLayout')
     implementation(name: 'BaseItemLayout-2.0.0', ext: 'aar')
     implementation 'io.reactivex.rxjava2:rxjava:2.0.0'
     implementation 'commons-io:commons-io:2.5'
     implementation 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+
     /**
      * 共用头部且滚动中固定导航栏的Viewpager,支持listview,recyclerview,gridview,webview,scrollview.支持下拉刷新
      */
-//    implementation project(path: ':StickyHeaderViewPager')
+
+    //    implementation project(path: ':StickyHeaderViewPager')
     implementation(name: 'StickyHeaderViewPager-1.0', ext: 'aar')
+
     /**
      * 快速实现异常奔溃统一管理,页面加载中、加载失败、无数据等状态以及下拉刷新和自动加载
      */
-//    implementation project(path: ':LCRapidDevelop')
+
+    //    implementation project(path: ':LCRapidDevelop')
     implementation(name: 'LCRapidDevelop-1.0', ext: 'aar')
+
     /**
      * Banner实现无限循环,集成简单
      */
     implementation 'cn.bingoogolapple:bga-banner:2.0.9@aar'
+
     /**
      * 仿哔哩哔哩搜索框效果
      */
-//    implementation project(path: ':SearchDialog')
+
+    //    implementation project(path: ':SearchDialog')
     implementation(name: 'SearchDialog-1.0', ext: 'aar')
+
     /**
      * 监听滚动视图滚动事件的库，帮助与Toolbar的交互动效处理与MaterialDesign的实现
      */
-//    debugImplementation project(path: ':ObservableScrollView')
+
+    //    debugImplementation project(path: ':ObservableScrollView')
     debugImplementation(name: 'ObservableScrollView-1.0', ext: 'aar')
+
     /**
      * Release build uses the synced latest version
      */
     releaseImplementation "com.github.ksoichiro:android-observablescrollview:${VERSION_OBSERVABLEVIEW}"
+
     /**
      * 下拉刷新加载更多组件
      */
-//    implementation project(path: ':PullToRefreshWithLoadMore')
+
+    //    implementation project(path: ':PullToRefreshWithLoadMore')
     implementation(name: 'PullToRefreshWithLoadMore-1.0.0', ext: 'aar')
+
     /**
      * Json解析之Gson
      */
     implementation 'com.google.code.gson:gson:2.7'
+
     /**
      * GreenDAO 优势: 一个精简的库; 性能最大化; 内存开销最小化; 易于使用的APIs; 对Android进行高度优化
      */
     implementation 'org.greenrobot:greendao:3.2.0'
+
     /**
      * 标签Span、文本Span（可点击）、图片Span
      */
-//    implementation project(path: ':SimplifySpan')
+
+    //    implementation project(path: ':SimplifySpan')
     implementation(name: 'SimplifySpan-1.0', ext: 'aar')
+
     /**
      * 平滑可定制的进度条
      */
-//    implementation project(path: ':SmoothProgressBar')
+
+    //    implementation project(path: ':SmoothProgressBar')
     implementation(name: 'SmoothProgressBar-1.0', ext: 'aar')
+
     /**
      * 分组悬停、索引右侧边栏
      */
-//    implementation project(path: ':SuspensionIndexBar')
+
+    //    implementation project(path: ':SuspensionIndexBar')
     implementation(name: 'SuspensionIndexBar-1.0', ext: 'aar')
     implementation 'com.github.promeg:tinypinyin:1.0.0'
+
     /**
      * 强大的大图查看库
      */
-//    implementation project(path: ':BigImageViewer')
+
+    //    implementation project(path: ':BigImageViewer')
     implementation(name: 'BigImageViewer-1.2.0', ext: 'aar')
+
     /**
      * 可收缩展开的TextView
      */
-//    implementation project(path: ':ExpandableTextView')
+
+    //    implementation project(path: ':ExpandableTextView')
     implementation(name: 'ExpandableTextView-1.0.0', ext: 'aar')
+
     /**
      * 上拉面板效果
      */
-//    implementation project(path: ':SlidingUpPanelLayout')
+
+    //    implementation project(path: ':SlidingUpPanelLayout')
     implementation(name: 'SlidingUpPanelLayout-3.3.1', ext: 'aar')
+
     /**
      * 从缩略图到原图的无缝过渡转变，功能体系仿照并涵盖ios版本的QQ、微信朋友圈、新浪微博的图片浏览功能。
      */
-//    implementation project(path: ':Transferee')
+
+    //    implementation project(path: ':Transferee')
     implementation(name: 'Transferee-1.0.0', ext: 'aar')
     implementation 'com.github.filippudak.progresspieview:library:1.0.4'
     implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
     implementation 'com.zhy:base-adapter:3.0.3'
+
     /**
      * 基于HttpURLConnection简单易用的网络库，支持Http，Https，Http文件上传，图片加载，面向接口的API调用方式，轻量的设计风格
      */
     implementation 'cn.alien95:resthttp:1.0.6'
+
     /**
      * 简单的带有动画效果的加载控件
      */
-//    implementation project(path: ':LoadingView')
+
+    //    implementation project(path: ':LoadingView')
     implementation(name: 'LoadingView-1.0', ext: 'aar')
+
     /**
      * 节操视频播放控件
      */
-//    implementation project(path: ':JieCaoVideoPlayer')
+
+    //    implementation project(path: ':JieCaoVideoPlayer')
     implementation(name: 'JieCaoVideoPlayer-5.5.4', ext: 'aar')
+
     /**
      * VirtualLayout是一个针对RecyclerView的LayoutManager扩展, 主要提供一整套布局方案和布局间的组件复用的问题。
      */
     implementation('com.alibaba.android:vlayout:1.0.9@aar') {
         transitive = true
     }
+
     /**
      * 强大、可定制、易扩展的 ViewPager 指示器框架。是ViewPagerIndicator、TabLayout、PagerSlidingTabStrip的最佳替代品。
      */
-//    implementation project(path: ':MagicIndicator')
+
+    //    implementation project(path: ':MagicIndicator')
     implementation(name: 'MagicIndicator-1.0', ext: 'aar')
+
     /**
      * 快速开发工具类收集，史上最全的开发工具类
      */
-//    implementation project(path: ':CommonUtils')
+
+    //    implementation project(path: ':CommonUtils')
     implementation(name: 'CommonUtils-1.0', ext: 'aar')
+
     /**
      * IjkPlayer/MediaPlayer+TextureView，完美切换全屏、小窗口的Android视频播放器
      */
-//    implementation project(path: ':NiceVideoPlayer')
+
+    //    implementation project(path: ':NiceVideoPlayer')
     implementation(name: 'NiceVideoPlayer-1.1', ext: 'aar')
     implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
     implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
@@ -505,10 +598,12 @@ dependencies {
     implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.8'
     implementation 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.8.8'
     implementation 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.8'
+
     /**
      * 基于Vitamio，支持手动全屏播放，手势调整进度，音量，亮度，基本满足市面上播放器要求
      */
-//    implementation project(path: ':Vitamio')
+
+    //    implementation project(path: ':Vitamio')
     implementation(name: 'Vitamio-4.0.0', ext: 'aar')
 }
 
