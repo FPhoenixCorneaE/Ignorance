@@ -108,7 +108,7 @@ android {
             //关闭jni调试
             jniDebuggable false
             //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules-universal.pro', 'proguard-rules-library.pro'
         }
 
         //debug版本的配置
@@ -128,8 +128,8 @@ android {
 
     //在这里你可以进行 Java 的版本配置，以便使用对应版本的一些新特性
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
 
     //为了解决部分第三方库重复打包了META-INF的问题,重复什么就排除什么
@@ -468,12 +468,7 @@ dependencies {
      */
 
     //    debugImplementation project(path: ':ObservableScrollView')
-    debugImplementation(name: 'ObservableScrollView-1.0', ext: 'aar')
-
-    /**
-     * Release build uses the synced latest version
-     */
-    releaseImplementation "com.github.ksoichiro:android-observablescrollview:${VERSION_OBSERVABLEVIEW}"
+    implementation(name: 'ObservableScrollView-1.0', ext: 'aar')
 
     /**
      * 下拉刷新加载更多组件
