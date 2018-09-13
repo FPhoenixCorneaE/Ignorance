@@ -74,9 +74,7 @@ class SmoothMarkDrawerCheckBox extends SmoothMarkDrawer {
 //		final int viewHeight = view.getHeight();
 		updateCheckPaintColorFilter(view);
 		final int sc = canvas
-				.saveLayer(mCheckRectF, null, Canvas.MATRIX_SAVE_FLAG | Canvas.CLIP_SAVE_FLAG
-						| Canvas.HAS_ALPHA_LAYER_SAVE_FLAG | Canvas.FULL_COLOR_LAYER_SAVE_FLAG
-						| Canvas.CLIP_TO_LAYER_SAVE_FLAG);
+				.saveLayer(mCheckRectF, null, Canvas.ALL_SAVE_FLAG);
 		final float fraction = interpolator.getInterpolation(fraction1);
 		if (fraction == 0f) {
 			mPaint.setColor(mColorOff);

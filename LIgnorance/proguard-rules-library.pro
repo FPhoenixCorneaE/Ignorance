@@ -16,60 +16,163 @@
 #   public *;
 #}
 
+-ignorewarnings
+
+#---------------------------------------------------------------------------
+# WebView
+-keep public class android.net.http.SslError
+-keep public class android.webkit.WebViewClient
+-keepclassmembers class fqcn.of.javascript.interface.for.Webview { public *; }
+-keepclassmembers class * extends android.webkit.WebViewClient {
+    public void *(android.webkit.WebView, java.lang.String, android.graphics.Bitmap);
+    public boolean *(android.webkit.WebView, java.lang.String);
+}
+-keepclassmembers class * extends android.webkit.WebViewClient {
+    public void *(android.webkit.WebView, jav.lang.String);
+}
+-dontwarn android.webkit.WebView
+-dontwarn android.net.http.SslError
+-dontwarn android.webkit.WebViewClient
+#----------------------------------------------------------------------------
+
 
 #######################     常用第三方模块的混淆选项         ###################################
-#gson
-#如果用用到Gson解析包的，直接添加下面这几行就能成功混淆，不然会报错。
+
+#----------------------------------------------------------------------------
+# okhttp3
+-keep class okhttp3.internal.**{*;}
+-dontwarn okhttp3.**
+-dontwarn okio.**
+#----------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------
+# nineoldandroids-2.4.0.jar
+-keep public class com.nineoldandroids.** {*;}
+#----------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------
+# Retrofit2
+-keep class retrofit2.** { *; }
 -keepattributes Signature
-# Gson specific classes
--keep class sun.misc.Unsafe { *; }
-# Application classes that will be serialized/deserialized over Gson
--keep class com.google.gson.** { *; }
--keep class com.google.gson.stream.** { *; }
+-keepattributes Exceptions
+-dontwarn retrofit2.**
+#----------------------------------------------------------------------------
 
-#mob
--keep class android.net.http.SslError
--keep class android.webkit.**{*;}
--keep class cn.sharesdk.**{*;}
--keep class com.sina.**{*;}
--keep class m.framework.**{*;}
--keep class **.R$* {*;}
--keep class **.R{*;}
--dontwarn cn.sharesdk.**
--dontwarn **.R$*
+#----------------------------------------------------------------------------
+# universal-image-loader
+-keep class com.nostra13.universalimageloader.** { *; }
+-dontwarn com.nostra13.universalimageloader.**
+#----------------------------------------------------------------------------
 
-#butterknife
+#----------------------------------------------------------------------------
+# butterknife
 -keep class butterknife.** { *; }
--dontwarn butterknife.internal.**
 -keep class **$$ViewBinder { *; }
-
 -keepclasseswithmembernames class * {
     @butterknife.* <fields>;
 }
-
 -keepclasseswithmembernames class * {
     @butterknife.* <methods>;
 }
+-dontwarn butterknife.**
+#----------------------------------------------------------------------------
 
-######引用的其他Module可以直接在app的这个混淆文件里配置
+#----------------------------------------------------------------------------
+# EventBus
+-keepclassmembers class ** {
+    public void onEvent*(**);
+}
+-keepclassmembers class ** {
+    public void xxxxxx(**);
+}
+#----------------------------------------------------------------------------
 
-# 如果使用了Gson之类的工具要使被它解析的JavaBean类即实体类不被混淆。
--keep class com.matrix.app.entity.json.** { *; }
--keep class com.matrix.appsdk.network.model.** { *; }
+#----------------------------------------------------------------------------
+# Gson
+-keep class com.google.gson.** {*;}
+-keep class com.google.**{*;}
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.stream.** { *; }
+-keep class com.google.gson.examples.android.model.** { *; }
+-keepattributes EnclosingMethod
+-dontwarn com.google.**
+#----------------------------------------------------------------------------
 
-#####混淆保护自己项目的部分代码以及引用的第三方jar包library#######
-#如果在当前的application module或者依赖的library module中使用了第三方的库，并不需要显式添加规则
-#-libraryjars xxx
-#添加了反而有可能在打包的时候遭遇同一个jar多次被指定的错误，一般只需要添加忽略警告和保持某些class不被混淆的声明。
-#以libaray的形式引用了开源项目,如果不想混淆 keep 掉，在引入的module的build.gradle中设置minifyEnabled=false
--keep class com.nineoldandroids.** { *; }
--keep interface com.nineoldandroids.** { *; }
--dontwarn com.nineoldandroids.**
-# 下拉刷新
--keep class in.srain.cube.** { *; }
--keep interface in.srain.cube.** { *; }
--dontwarn in.srain.cube.**
-# observablescrollview：tab fragment
--keep class com.github.ksoichiro.** { *; }
--keep interface com.github.ksoichiro.** { *; }
--dontwarn com.github.ksoichiro.**
+#----------------------------------------------------------------------------
+# picasso
+-keep class com.squareup.picasso.** {*; }
+-dontwarn com.squareup.**
+#----------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------
+# glide
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep public class * extends com.bumptech.glide.module.AppGlideModule
+-keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
+    **[] $VALUES;
+    public *;
+}
+#----------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------
+# GreenDao
+-keep class de.greenrobot.dao.** {*;}
+-keep class **$Properties
+-keepclassmembers class * extends de.greenrobot.dao.AbstractDao {
+    public static Java.lang.String TABLENAME;
+}
+-dontwarn org.greenrobot.**
+#----------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------
+# rxjava
+-dontwarn rx.*
+-dontwarn javax.annotation.**
+-dontwarn javax.inject.**
+#----------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------
+# RxAndroid
+-dontwarn sun.misc.**
+
+#解决在6.0系统出现java.lang.InternalError
+-keepclassmembers class rx.internal.util.unsafe.*ArrayQueue*Field* {
+    long producerIndex;
+    long consumerIndex;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueProducerNodeRef {
+    rx.internal.util.atomic.LinkedQueueNode producerNode;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueConsumerNodeRef {
+    rx.internal.util.atomic.LinkedQueueNode consumerNode;
+}
+#----------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------
+# AndroidEventBus
+-keep class org.simple.** { *; }
+-keep interface org.simple.** { *; }
+-keepclassmembers class * {
+    @org.simple.eventbus.Subscriber <methods>;
+}
+#----------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------
+# RxCache
+-keep class io.rx_cache.internal.Record { *; }
+-keep class io.rx_cache.Source { *; }
+-dontwarn io.rx_cache.internal.**
+#----------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------
+# BigImageView
+-dontwarn com.github.piasy.**
+#----------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------
+# rebound-core.jar
+#-libraryjars   libs/rebound-core.jar
+-keep class com.facebook.rebound.** { *; }
+-keep interface com.facebook.rebound.** { *; }
+-dontwarn com.facebook.rebound.**
+#----------------------------------------------------------------------------

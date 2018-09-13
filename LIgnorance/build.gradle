@@ -44,15 +44,27 @@ android {
     //签名配置
     signingConfigs {
         release {
-            def filePrivateProperties = file("private.properties")
+            def filePrivateProperties = file("../config/signing.properties")
             if (filePrivateProperties.exists()) {
                 Properties propsPrivate = new Properties()
                 propsPrivate.load(new FileInputStream(filePrivateProperties))
 
-                storeFile file(propsPrivate['key.store'])
-                keyAlias propsPrivate['key.alias']
-                storePassword propsPrivate['key.store.password']
-                keyPassword propsPrivate['key.alias.password']
+                storeFile file(propsPrivate['STORE_FILE'])
+                keyAlias propsPrivate['KEY_ALIAS']
+                storePassword propsPrivate['STORE_PASSWORD']
+                keyPassword propsPrivate['KEY_PASSWORD']
+            }
+        }
+        debug {
+            def filePrivateProperties = file("../config/signing.properties")
+            if (filePrivateProperties.exists()) {
+                Properties propsPrivate = new Properties()
+                propsPrivate.load(new FileInputStream(filePrivateProperties))
+
+                storeFile file(propsPrivate['STORE_FILE'])
+                keyAlias propsPrivate['KEY_ALIAS']
+                storePassword propsPrivate['STORE_PASSWORD']
+                keyPassword propsPrivate['KEY_PASSWORD']
             }
         }
     }
@@ -83,7 +95,6 @@ android {
         maxProcessCount 8
         //线程数
         threadCount 8
-        incremental true
     }
 
     //表示构建类型。包括release和debug两种。可以在这里面配置启用混淆、zipAlign、签名信息等。
@@ -91,10 +102,8 @@ android {
         //release版本的配置
         release {
             //签名配置
-            def filePrivateProperties = file("private.properties")
-            if (filePrivateProperties.exists()) {
-                signingConfig signingConfigs.release
-            }
+            signingConfig signingConfigs.release
+
             //不显示Log
             buildConfigField "boolean", "LOG_DEBUG", "false"
             //是否进行混淆
@@ -113,6 +122,9 @@ android {
 
         //debug版本的配置
         debug {
+            //签名配置
+            signingConfig signingConfigs.debug
+
             //显示Log
             buildConfigField "boolean", "LOG_DEBUG", "true"
 
@@ -186,7 +198,6 @@ final SUPPORT_VERSION = rootProject.ext.SUPPORT_VERSION
 //里面是项目的依赖信息，包括jar包和第三方库等信息
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation files('libs/rebound-core.jar')
     testImplementation 'junit:junit:4.12'
 
     /**

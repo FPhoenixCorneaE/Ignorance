@@ -10,10 +10,10 @@ ext {
     //项目中公共配置项可在这里设定
 
     //Android configuration
-    compileSdkVersion = 27
-    buildToolsVersion = "27.0.3"
+    compileSdkVersion = 28
+    buildToolsVersion = "28.0.2"
     minSdkVersion = 17
-    targetSdkVersion = 27
+    targetSdkVersion = 28
 
     //version
     versionCode = 1000
