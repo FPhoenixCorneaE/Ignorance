@@ -183,6 +183,13 @@ android {
         targetGenDir 'src/main/java'
     }
 
+    //压缩PNG文件
+    //aapt工具可能会影响已经被压缩过的PNG文件
+    //建议把cruncherEnabled设为false，然后通过工具（比如pngcrush, pngquant, zopflipng,tinypng,guetzli）手工压缩PNG图片。
+    aaptOptions {
+        cruncherEnabled = false
+    }
+
     repositories {
         flatDir {
             dirs 'libs'
