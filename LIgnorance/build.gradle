@@ -618,5 +618,20 @@ dependencies {
 
     //    implementation project(path: ':Vitamio')
     implementation(name: 'Vitamio-4.0.0', ext: 'aar')
+
+    /**
+     * 奇虎360插件化方案RePlugin插件lib
+     */
+    implementation "com.qihoo360.replugin:replugin-plugin-lib:$replugin_version"
+}
+
+// 这个plugin需要放在android配置之后，因为需要读取android中的配置项
+apply plugin: 'replugin-plugin-gradle'
+repluginPluginConfig {
+    pluginName = "Ignorance"
+//    hostApplicationId = "com.qihoo360.replugin.sample.host"
+//    hostAppLauncherActivity = "com.qihoo360.replugin.sample.host.MainActivity"
+    hostApplicationId = "com.wkz.pleasedreading"
+    hostAppLauncherActivity = "com.wkz.pleasedreading.main.PRMainActivity"
 }
 

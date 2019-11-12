@@ -2,6 +2,8 @@
 apply from: 'config/dependencies.gradle'
 
 buildscript {
+    ext.replugin_version = "2.3.3"
+
     repositories {
         google()
         jcenter()
@@ -23,6 +25,9 @@ buildscript {
 
         //ORM框架之GreenDao
         classpath 'org.greenrobot:greendao-gradle-plugin:3.2.1'
+
+        //奇虎360插件化方案RePlugin
+        classpath "com.qihoo360.replugin:replugin-plugin-gradle:$replugin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
