@@ -25,7 +25,7 @@ import java.util.Locale;
  */
 public class OssUpdateImgUtils {
 
-    private static final String ACCESS_KEY_ID = "dQZta010R0nSUjlJ"; // 实际使用时，不建议AK/SK明文保存在代码中
+    private static final String ACCESS_KEY_ID = ""; // 实际使用时，不建议AK/SK明文保存在代码中
     private static final String ACCESS_KEY_SECRET = "kM9Ys2gKrv4zgKm9op4dNd1nTuavI7";
     // 发帖图片地址
     private static final String FEED_PICTURE_FILTER_URL = "http://dd-feed.digi123.cn/";
