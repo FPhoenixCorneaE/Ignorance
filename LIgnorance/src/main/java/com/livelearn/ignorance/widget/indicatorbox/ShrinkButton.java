@@ -6,8 +6,9 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.v4.view.MotionEventCompat;
-import android.support.v7.widget.AppCompatButton;
+
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.core.view.MotionEventCompat;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -285,7 +286,9 @@ public class ShrinkButton extends AppCompatButton implements View.OnTouchListene
      * Start back-expanding animation.
      */
     private void startExpandingAnimation() {
-        if (!isWindowFocused) return;
+        if (!isWindowFocused) {
+            return;
+        }
         if (mExpandingController == null) {
             initExpandingAnimationController();
         }

@@ -3,7 +3,7 @@ package com.github.ksoichiro.observablescrollview.test;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.test.InstrumentationTestCase;
 import android.test.TouchUtils;
 import android.util.TypedValue;

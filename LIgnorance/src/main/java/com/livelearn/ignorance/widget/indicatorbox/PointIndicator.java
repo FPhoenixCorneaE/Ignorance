@@ -5,13 +5,14 @@ import android.animation.AnimatorInflater;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.database.DataSetObserver;
-import android.support.annotation.DrawableRes;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Interpolator;
 import android.widget.LinearLayout;
+
+import androidx.annotation.DrawableRes;
+import androidx.viewpager.widget.ViewPager;
 
 import com.livelearn.ignorance.R;
 
@@ -158,8 +159,9 @@ public class PointIndicator extends LinearLayout {
                 mAnimatorUnselected.start();
             }
             //handle position for Infinite
-            if (position >= mIndicatorNum)
+            if (position >= mIndicatorNum) {
                 position = convertForInifite(position);
+            }
             View selectedIndicator = getChildAt(position);
             selectedIndicator.setBackgroundResource(mIndicatorBackgroundResId);
             mAnimatorSelected.setTarget(selectedIndicator);

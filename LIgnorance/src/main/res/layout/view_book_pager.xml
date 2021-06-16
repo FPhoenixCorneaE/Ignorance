@@ -5,23 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v4.widget.SwipeRefreshLayout
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/srl_book_pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_book_pager"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
-        </android.support.v4.widget.SwipeRefreshLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_return_top"
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -33,5 +33,5 @@
             app:layout_behavior="com.livelearn.ignorance.widget.behavior.ScrollAwareFABBehavior"
             app:rippleColor="@color/color_dark_purple"
             app:srcCompat="@drawable/ic_arrow_upward_white" />
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity>

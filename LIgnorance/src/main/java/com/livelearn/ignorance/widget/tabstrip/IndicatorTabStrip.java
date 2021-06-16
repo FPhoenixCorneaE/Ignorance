@@ -11,12 +11,12 @@ import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.annotation.ColorInt;
-import android.support.annotation.ColorRes;
-import android.support.annotation.DrawableRes;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.ColorInt;
+import androidx.annotation.ColorRes;
+import androidx.annotation.DrawableRes;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.ViewCompat;
+import androidx.viewpager.widget.ViewPager;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 

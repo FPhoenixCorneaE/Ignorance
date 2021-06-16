@@ -1,6 +1,6 @@
 package com.livelearn.ignorance.utils;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.widget.TextView;
 
 import java.util.List;

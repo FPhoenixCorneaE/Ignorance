@@ -8,11 +8,12 @@ import android.content.IntentFilter;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
-import android.support.v4.widget.SlidingPaneLayout;
-import android.support.v7.app.AppCompatDelegate;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.slidingpanelayout.widget.SlidingPaneLayout;
 
 import com.apkfuns.logutils.LogUtils;
 import com.livelearn.ignorance.R;

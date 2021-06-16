@@ -1,4 +1,4 @@
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/_CardView"
     android:layout_height="match_parent">
@@ -42,4 +42,4 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/white" />
     </RelativeLayout>
-</android.support.v7.widget.CardView>
+</androidx.cardview.widget.CardView>

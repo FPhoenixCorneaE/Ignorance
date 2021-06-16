@@ -2,14 +2,14 @@ package com.jingewenku.abrahamcaijin.commonutil;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.annotation.ColorInt;
-import android.support.annotation.DrawableRes;
+import androidx.annotation.ColorInt;
+import androidx.annotation.DrawableRes;
 import android.support.annotation.IdRes;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewCompat;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.core.view.ViewCompat;
 import android.view.View;
 
 import java.util.ArrayList;

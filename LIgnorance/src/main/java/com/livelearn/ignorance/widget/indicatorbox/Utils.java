@@ -23,6 +23,7 @@ public class Utils {
                 break;
             case View.MeasureSpec.UNSPECIFIED:
                 break;
+            default:
         }
         return result;
     }

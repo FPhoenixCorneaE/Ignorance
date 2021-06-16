@@ -1,6 +1,7 @@
 package com.livelearn.ignorance.callbacklistener;
 
-import android.support.design.widget.AppBarLayout;
+
+import com.google.android.material.appbar.AppBarLayout;
 
 /**
  * Created on 2017/8/4.
@@ -9,8 +10,8 @@ import android.support.design.widget.AppBarLayout;
 public abstract class OnAppBarStateChangeListener implements AppBarLayout.OnOffsetChangedListener {
 
     public enum State {
-        EXPANDED,
         COLLAPSED,
+        EXPANDED,
         IDLE
     }
 

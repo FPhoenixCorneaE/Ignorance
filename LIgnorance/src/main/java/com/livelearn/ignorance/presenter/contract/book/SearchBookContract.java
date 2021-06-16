@@ -1,6 +1,7 @@
 package com.livelearn.ignorance.presenter.contract.book;
 
-import android.support.v4.app.FragmentActivity;
+
+import androidx.fragment.app.FragmentActivity;
 
 import com.livelearn.ignorance.base.BasePresenter;
 import com.livelearn.ignorance.base.BaseView;

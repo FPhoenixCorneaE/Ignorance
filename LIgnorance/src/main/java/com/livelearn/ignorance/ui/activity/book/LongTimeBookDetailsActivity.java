@@ -1,11 +1,12 @@
 package com.livelearn.ignorance.ui.activity.book;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.CoordinatorLayout;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+
+import androidx.annotation.NonNull;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;

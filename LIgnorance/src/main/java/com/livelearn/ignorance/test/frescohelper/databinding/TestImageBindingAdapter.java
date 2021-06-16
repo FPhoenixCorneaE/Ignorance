@@ -1,6 +1,6 @@
 package com.livelearn.ignorance.test.frescohelper.databinding;
 
-import android.databinding.BindingAdapter;
+import androidx.databinding.BindingAdapter;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;

@@ -2,8 +2,6 @@
 apply from: 'config/dependencies.gradle'
 
 buildscript {
-    ext.replugin_version = "2.3.3"
-
     repositories {
         google()
         jcenter()
@@ -11,23 +9,16 @@ buildscript {
         maven {
             url "https://jitpack.io"
         }
-        //ButterKnife
-        maven {
-            url "https://oss.sonatype.org/content/repositories/snapshots"
-        }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:4.2.1'
 
         //ButterKnife
-        classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0-SNAPSHOT'
+        classpath "com.jakewharton:butterknife-gradle-plugin:${VERSION_BUTTERKNIFE}"
 
         //ORM框架之GreenDao
-        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.1'
-
-        //奇虎360插件化方案RePlugin
-        classpath "com.qihoo360.replugin:replugin-plugin-gradle:$replugin_version"
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -41,10 +32,6 @@ allprojects {
         mavenCentral()
         maven {
             url "https://jitpack.io"
-        }
-        //ButterKnife
-        maven {
-            url "https://oss.sonatype.org/content/repositories/snapshots"
         }
     }
 

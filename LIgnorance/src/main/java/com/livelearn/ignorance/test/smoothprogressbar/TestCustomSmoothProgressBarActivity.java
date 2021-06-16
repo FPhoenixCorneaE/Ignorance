@@ -2,7 +2,6 @@ package com.livelearn.ignorance.test.smoothprogressbar;
 
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.v4.view.animation.FastOutSlowInInterpolator;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
@@ -18,6 +17,8 @@ import android.widget.CompoundButton;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;

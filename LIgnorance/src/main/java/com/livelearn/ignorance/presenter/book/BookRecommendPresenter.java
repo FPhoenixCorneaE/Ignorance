@@ -1,6 +1,7 @@
 package com.livelearn.ignorance.presenter.book;
 
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.apkfuns.logutils.LogUtils;
 import com.livelearn.ignorance.base.RxPresenter;

@@ -1,10 +1,11 @@
 package com.livelearn.ignorance.test.assembleessay.activity;
 
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
 import android.widget.AdapterView;
+
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.develop.rth.gragwithflowlayout.FlowDragLayoutConstant;
 import com.develop.rth.gragwithflowlayout.FlowDragLayoutManager;
@@ -105,8 +106,12 @@ public class TestAssembleEssayActivity extends BaseActivity implements AssembleE
 
     @Override
     public void onEssayLoaded(List<String> datas) {
-        if (datas == null) return;
-        if (datas.size() == 0) return;
+        if (datas == null) {
+            return;
+        }
+        if (datas.size() == 0) {
+            return;
+        }
         adapter.setDatas(datas);
         adapter.notifyDataSetChanged();
     }

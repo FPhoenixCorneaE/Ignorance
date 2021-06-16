@@ -1,8 +1,9 @@
 package com.livelearn.ignorance.test.observablescrollview;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.jude.easyrecyclerview.EasyRecyclerView;
 import com.jude.easyrecyclerview.adapter.BaseViewHolder;

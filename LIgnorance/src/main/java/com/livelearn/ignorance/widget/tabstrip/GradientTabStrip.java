@@ -11,11 +11,11 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
-import android.support.annotation.ColorInt;
-import android.support.annotation.DrawableRes;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.ColorInt;
+import androidx.annotation.DrawableRes;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.ViewCompat;
+import androidx.viewpager.widget.ViewPager;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 
@@ -995,10 +995,12 @@ public class GradientTabStrip extends BaseTabStrip {
          */
         public abstract Drawable getSelectedDrawable(int position, Context context);
 
+        @Override
         public boolean isTagEnable(int position) {
             return false;
         }
 
+        @Override
         public String getTag(int position) {
             return null;
         }

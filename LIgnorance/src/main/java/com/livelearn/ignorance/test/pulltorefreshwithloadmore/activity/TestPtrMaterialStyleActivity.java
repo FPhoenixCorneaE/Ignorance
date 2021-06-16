@@ -2,7 +2,7 @@ package com.livelearn.ignorance.test.pulltorefreshwithloadmore.activity;
 
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.view.View;
 import android.widget.ImageView;
 

@@ -5,11 +5,13 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.IntDef;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.widget.ViewDragHelper;
+
+import androidx.annotation.IntDef;
+import androidx.core.view.ViewCompat;
+import androidx.customview.widget.ViewDragHelper;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -455,7 +457,9 @@ public class EdgeSwipeBackLayout extends FrameLayout {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        if (!mEnable) return super.onInterceptTouchEvent(ev);
+        if (!mEnable) {
+            return super.onInterceptTouchEvent(ev);
+        }
         return mHelper.shouldInterceptTouchEvent(ev);
     }
 

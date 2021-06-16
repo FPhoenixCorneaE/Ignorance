@@ -1,7 +1,8 @@
 package com.livelearn.ignorance.widget.viewpagertransformer;
 
-import android.support.v4.view.ViewPager;
 import android.view.View;
+
+import androidx.viewpager.widget.ViewPager;
 
 import com.nineoldandroids.view.ViewHelper;
 
@@ -18,7 +19,9 @@ public class OverspreadTransformer implements ViewPager.PageTransformer {
     public void transformPage(View view, float position) {
         int pageWidth = view.getWidth();
         View wallpaper = view.findViewWithTag(PARALLAX_EFFECT);
-        if (wallpaper == null) return;
+        if (wallpaper == null) {
+            return;
+        }
         if (position < -1) {// [-Infinity,-1)
             ViewHelper.setTranslationX(wallpaper, 0);
             ViewHelper.setTranslationX(view, 0);

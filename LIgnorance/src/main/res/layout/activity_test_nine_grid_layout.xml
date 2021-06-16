@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <android.support.v4.widget.Space
+    <Space
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_10dp" />
 

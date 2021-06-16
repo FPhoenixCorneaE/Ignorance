@@ -1,9 +1,10 @@
 package com.livelearn.ignorance.ui.view.book;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.view.View;
+
+import androidx.annotation.NonNull;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.common.Constant;

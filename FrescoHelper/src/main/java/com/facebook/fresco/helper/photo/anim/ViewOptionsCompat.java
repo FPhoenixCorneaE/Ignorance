@@ -3,7 +3,7 @@ package com.facebook.fresco.helper.photo.anim;
 import android.app.Activity;
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
+import androidx.recyclerview.widget.GridLayoutManager;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.WindowManager;

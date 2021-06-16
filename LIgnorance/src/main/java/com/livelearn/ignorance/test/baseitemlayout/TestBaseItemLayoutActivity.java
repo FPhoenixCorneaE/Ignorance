@@ -36,6 +36,7 @@ public class TestBaseItemLayoutActivity extends BaseActivity {
         return R.layout.activity_test_base_item_layout;
     }
 
+    @Override
     public void initLayout(Bundle savedInstanceState) {
 
         tbTitle.setTitleText(className);

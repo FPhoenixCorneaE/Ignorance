@@ -19,9 +19,9 @@ package com.jude.easyrecyclerview.swipe;
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
-import android.support.v4.view.MotionEventCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.widget.RecyclerView;
+import androidx.core.view.MotionEventCompat;
+import androidx.core.view.ViewCompat;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -92,7 +92,7 @@ public class SwipeRefreshLayout extends FrameLayout {
     private static final int DEFAULT_CIRCLE_TARGET = 64;
 
     private View mTarget; // the target of the gesture
-    private android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener mListener;
+    private androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener mListener;
     private boolean mRefreshing = false;
     private int mTouchSlop;
     private float mTotalDragDistance = -1;
@@ -322,7 +322,7 @@ public class SwipeRefreshLayout extends FrameLayout {
      * Set the listener to be notified when a refresh is triggered via the swipe
      * gesture.
      */
-    public void setOnRefreshListener(android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener listener) {
+    public void setOnRefreshListener(androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener listener) {
         mListener = listener;
     }
 

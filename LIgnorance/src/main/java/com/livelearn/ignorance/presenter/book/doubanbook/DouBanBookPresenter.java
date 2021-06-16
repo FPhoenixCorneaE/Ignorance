@@ -1,6 +1,7 @@
 package com.livelearn.ignorance.presenter.book.doubanbook;
 
-import android.support.v4.app.Fragment;
+
+import androidx.fragment.app.Fragment;
 
 import com.livelearn.ignorance.base.RxPresenter;
 import com.livelearn.ignorance.presenter.contract.book.doubanbook.DouBanBookContract;
@@ -11,7 +12,7 @@ import com.livelearn.ignorance.presenter.contract.book.doubanbook.DouBanBookCont
 
 public class DouBanBookPresenter extends RxPresenter implements DouBanBookContract.Presenter {
 
-    public DouBanBookPresenter(Fragment fragment,DouBanBookContract.View mView) {
+    public DouBanBookPresenter(Fragment fragment, DouBanBookContract.View mView) {
         mView.setPresenter(fragment,this);
     }
 }

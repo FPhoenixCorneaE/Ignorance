@@ -1,8 +1,9 @@
 package com.livelearn.ignorance.application;
 
+import android.app.Application;
 import android.content.Context;
-import android.support.multidex.MultiDex;
-import android.support.multidex.MultiDexApplication;
+
+import androidx.multidex.MultiDex;
 
 import com.apkfuns.logutils.LogUtils;
 import com.facebook.fresco.helper.Phoenix;
@@ -20,7 +21,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-public class IgnoranceApplication extends MultiDexApplication {
+public class IgnoranceApplication extends Application {
 
     private static IgnoranceApplication instance;
 

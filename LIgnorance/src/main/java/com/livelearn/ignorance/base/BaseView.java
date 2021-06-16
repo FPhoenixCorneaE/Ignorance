@@ -1,6 +1,7 @@
 package com.livelearn.ignorance.base;
 
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 public interface BaseView<P, M> {
 

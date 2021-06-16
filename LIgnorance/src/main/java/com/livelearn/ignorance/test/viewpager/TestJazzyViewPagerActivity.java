@@ -3,7 +3,7 @@ package com.livelearn.ignorance.test.viewpager;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
+import androidx.viewpager.widget.PagerAdapter;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -142,7 +142,9 @@ public class TestJazzyViewPagerActivity extends BaseActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == 1) {
-            if (data == null) return;
+            if (data == null) {
+                return;
+            }
             JazzyViewPager.TransitionEffect effect = JazzyViewPager.TransitionEffect.valueOf(data.getStringExtra("JazzyEffect"));
             setupJazziness(effect);
         }

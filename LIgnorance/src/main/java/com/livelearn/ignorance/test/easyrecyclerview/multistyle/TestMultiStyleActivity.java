@@ -2,7 +2,8 @@ package com.livelearn.ignorance.test.easyrecyclerview.multistyle;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.jude.easyrecyclerview.EasyRecyclerView;
 import com.jude.easyrecyclerview.decoration.DividerDecoration;

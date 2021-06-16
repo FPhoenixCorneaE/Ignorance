@@ -2,7 +2,7 @@ package com.maiml.library.utils;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.annotation.ColorInt;
+import androidx.annotation.ColorInt;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 

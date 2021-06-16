@@ -1,12 +1,13 @@
 package com.livelearn.ignorance.test.ninegridimagelayout.nicenineimage;
 
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.widget.TitleBar;

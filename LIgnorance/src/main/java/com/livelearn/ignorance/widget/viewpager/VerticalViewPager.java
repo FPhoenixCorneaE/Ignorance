@@ -1,10 +1,11 @@
 package com.livelearn.ignorance.widget.viewpager;
 
 import android.content.Context;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * From http://stackoverflow.com/a/22797619/2719186

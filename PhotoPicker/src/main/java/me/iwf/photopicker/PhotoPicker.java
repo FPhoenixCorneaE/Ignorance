@@ -7,7 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.widget.Toast;
 
 import java.io.File;
@@ -96,7 +96,7 @@ public class PhotoPicker {
          * @param fragment    Fragment to receive result
          * @param requestCode requestCode for result
          */
-        public void start(@NonNull Context context, @NonNull android.support.v4.app.Fragment fragment, int requestCode) {
+        public void start(@NonNull Context context, @NonNull androidx.fragment.app.Fragment fragment, int requestCode) {
             fragment.startActivityForResult(getIntent(context), requestCode);
         }
 
@@ -105,7 +105,7 @@ public class PhotoPicker {
          *
          * @param fragment Fragment to receive result
          */
-        public void start(@NonNull Context context, @NonNull android.support.v4.app.Fragment fragment) {
+        public void start(@NonNull Context context, @NonNull androidx.fragment.app.Fragment fragment) {
             fragment.startActivityForResult(getIntent(context), REQUEST_CODE);
         }
 

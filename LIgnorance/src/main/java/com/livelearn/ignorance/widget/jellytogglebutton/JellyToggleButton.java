@@ -14,7 +14,7 @@ import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.text.Layout;
 import android.text.StaticLayout;
 import android.text.TextPaint;
@@ -278,22 +278,35 @@ public class JellyToggleButton extends CompoundButton {
             mDraggable = ta.getBoolean(R.styleable.JellyToggleButton_jtbDraggable, DEFAULT_DRAGGABLE);
 
             int colorChangeTypeInteger = ta.getInteger(R.styleable.JellyToggleButton_jtbColorChangeType, -1);
-            if (colorChangeTypeInteger != -1) mColorChangeType = ColorChangeType.values()[colorChangeTypeInteger];
-            else mColorChangeType = DEFAULT_COLOR_CHANGE_TYPE;
+            if (colorChangeTypeInteger != -1) {
+                mColorChangeType = ColorChangeType.values()[colorChangeTypeInteger];
+            } else {
+                mColorChangeType = DEFAULT_COLOR_CHANGE_TYPE;
+            }
 
             int jellyInteger = ta.getInteger(R.styleable.JellyToggleButton_jtbJelly, -1);
-            if (jellyInteger != -1) mJelly = Jelly.values()[jellyInteger];
-            else mJelly = DEFAULT_JELLY;
+            if (jellyInteger != -1) {
+                mJelly = Jelly.values()[jellyInteger];
+            } else {
+                mJelly = DEFAULT_JELLY;
+            }
 
             int easeTypeInteger = ta.getInteger(R.styleable.JellyToggleButton_jtbEaseType, -1);
-            if (easeTypeInteger != -1) mEaseType = EaseType.values()[easeTypeInteger];
-            else mEaseType = DEFAULT_EASE_TYPE;
+            if (easeTypeInteger != -1) {
+                mEaseType = EaseType.values()[easeTypeInteger];
+            } else {
+                mEaseType = DEFAULT_EASE_TYPE;
+            }
 
             ta.recycle();
         }
 
-        if (mLeftText == null) mLeftText = DEFAULT_LEFT_TEXT;
-        if (mRightText == null) mRightText = DEFAULT_RIGHT_TEXT;
+        if (mLeftText == null) {
+            mLeftText = DEFAULT_LEFT_TEXT;
+        }
+        if (mRightText == null) {
+            mRightText = DEFAULT_RIGHT_TEXT;
+        }
 
         mLeftTextPaint.setTextSize(mLeftTextSize);
         mRightTextPaint.setTextSize(mRightTextSize);
@@ -360,8 +373,12 @@ public class JellyToggleButton extends CompoundButton {
             mThumbMinRadius = Math.max(mTextWidth / 2 + mTextMarginLeft, mTextWidth / 2 + mTextMarginRight);
             mThumbMaxRadius = mTextWidth / 2 + Math.max(leftMaxThumbToText, rightMaxThumbToText);
 
-            if (mThumbRadius < mThumbMinRadius) mThumbRadius = mThumbMinRadius;
-            if (mThumbRadius > mThumbMaxRadius) mThumbRadius = mThumbMaxRadius;
+            if (mThumbRadius < mThumbMinRadius) {
+                mThumbRadius = mThumbMinRadius;
+            }
+            if (mThumbRadius > mThumbMaxRadius) {
+                mThumbRadius = mThumbMaxRadius;
+            }
             mThumbRadius = Math.max(mThumbRadius, MIN_THUMB_RADIUS_DP * getResources().getDisplayMetrics().density);
         }
 
@@ -532,7 +549,9 @@ public class JellyToggleButton extends CompoundButton {
                 break;
 
             case MotionEvent.ACTION_MOVE:
-                if (!mDraggable) return true;
+                if (!mDraggable) {
+                    return true;
+                }
                 float x = event.getX();
                 setProcess(getProcess() + (x - mLastX) / (getNoExtractTotalLength() * mTouchMoveRatioValue), true);
                 mLastX = x;
@@ -626,12 +645,16 @@ public class JellyToggleButton extends CompoundButton {
         if (mState.equals(State.LEFT)) {
             super.setChecked(false);
             // if the jelly type is random, change it here
-            if (mJelly.equals(Jelly.RANDOM)) randomChangeJelly();
+            if (mJelly.equals(Jelly.RANDOM)) {
+                randomChangeJelly();
+            }
         }
         if (mState.equals(State.RIGHT)) {
             super.setChecked(true);
             // if the jelly type is random, change it here
-            if (mJelly.equals(Jelly.RANDOM)) randomChangeJelly();
+            if (mJelly.equals(Jelly.RANDOM)) {
+                randomChangeJelly();
+            }
         }
         if (callListener && mOnStateChangeListener != null) {
             if (mState.equals(State.LEFT) || mState.equals(State.RIGHT)) {
@@ -649,7 +672,9 @@ public class JellyToggleButton extends CompoundButton {
 
     private void randomChangeJelly() {
         int r = (int) (Math.random() * 17);
-        while (r == mLastRandomValue) r = (int) (Math.random() * 17);
+        while (r == mLastRandomValue) {
+            r = (int) (Math.random() * 17);
+        }
         mLastRandomValue = r;
         mRandomJelly = Jelly.values()[r];
     }
@@ -675,8 +700,11 @@ public class JellyToggleButton extends CompoundButton {
         if (resetToTarget) {
             // this situation happens when user drag the thumb to target,
             // but then leave the target for a bit.
-            if (checked) duration *= 1 - mProcess;
-            else duration *= mProcess - 0;
+            if (checked) {
+                duration *= 1 - mProcess;
+            } else {
+                duration *= mProcess - 0;
+            }
         }
         mProcessAnimator.setDuration(duration);
         mProcessAnimator.start();
@@ -696,13 +724,17 @@ public class JellyToggleButton extends CompoundButton {
 
     @Override
     public void setChecked(boolean checked) {
-        if (mStopRestoreChecked) return;
+        if (mStopRestoreChecked) {
+            return;
+        }
         setChecked(checked, true);
     }
 
     public void setChecked(boolean checked, boolean callListener) {
         mProcess = checked ? 0 : 1;
-        if (callListener) lastState = checked ? State.LEFT : State.RIGHT;
+        if (callListener) {
+            lastState = checked ? State.LEFT : State.RIGHT;
+        }
         animateToState(checked, callListener, false);
         super.setChecked(checked);
     }
@@ -716,7 +748,9 @@ public class JellyToggleButton extends CompoundButton {
         if (mProcessAnimator != null && mProcessAnimator.isRunning()) {
             mProcessAnimator.cancel();
         }
-        if (callListener) lastState = null;
+        if (callListener) {
+            lastState = null;
+        }
         setProcess(checked ? 1 : 0, callListener);
     }
 
@@ -731,14 +765,19 @@ public class JellyToggleButton extends CompoundButton {
         mProcessAnimator.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
-                if (mProcess == 0) JellyToggleButton.super.setChecked(false);
-                if (mProcess == 1) JellyToggleButton.super.setChecked(true);
+                if (mProcess == 0) {
+                    JellyToggleButton.super.setChecked(false);
+                }
+                if (mProcess == 1) {
+                    JellyToggleButton.super.setChecked(true);
+                }
                 super.onAnimationEnd(animation);
             }
         });
         mProcessAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
     }
 
+    @Override
     public void toggle() {
         toggle(true);
     }
@@ -789,6 +828,7 @@ public class JellyToggleButton extends CompoundButton {
         setRightBackgroundColor(ContextCompat.getColor(getContext(), res));
     }
 
+    @Override
     public void setBackgroundColor(int color) {
         setLeftBackgroundColor(color);
         setRightBackgroundColor(color);
@@ -883,6 +923,7 @@ public class JellyToggleButton extends CompoundButton {
         setRightTextColor(ContextCompat.getColor(getContext(), res));
     }
 
+    @Override
     public void setTextColor(int color) {
         setLeftTextColor(color);
         setRightTextColor(color);
@@ -961,7 +1002,9 @@ public class JellyToggleButton extends CompoundButton {
     public void setLeftTextSize(int textSize) {
         this.mLeftTextSize = textSize;
 
-        if (mLeftTextPaint != null) mLeftTextPaint.setTextSize(mLeftTextSize);
+        if (mLeftTextPaint != null) {
+            mLeftTextPaint.setTextSize(mLeftTextSize);
+        }
 
         mLeftTextLayout = null;
         mRightTextLayout = null;
@@ -979,7 +1022,9 @@ public class JellyToggleButton extends CompoundButton {
     public void setRightTextSize(int textSize) {
         this.mRightTextSize = textSize;
 
-        if (mRightTextPaint != null) mRightTextPaint.setTextSize(mRightTextSize);
+        if (mRightTextPaint != null) {
+            mRightTextPaint.setTextSize(mRightTextSize);
+        }
 
         mLeftTextLayout = null;
         mRightTextLayout = null;
@@ -1323,10 +1368,12 @@ public class JellyToggleButton extends CompoundButton {
 
         public static final Parcelable.Creator<SavedState> CREATOR
                 = new Parcelable.Creator<SavedState>() {
+            @Override
             public SavedState createFromParcel(Parcel in) {
                 return new SavedState(in);
             }
 
+            @Override
             public SavedState[] newArray(int size) {
                 return new SavedState[size];
             }

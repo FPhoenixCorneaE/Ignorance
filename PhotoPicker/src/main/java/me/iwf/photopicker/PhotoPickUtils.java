@@ -8,7 +8,7 @@ import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.annotation.ColorInt;
+import androidx.annotation.ColorInt;
 import android.util.Log;
 
 import com.yalantis.ucrop.UCrop;

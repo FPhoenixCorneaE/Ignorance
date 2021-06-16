@@ -1,7 +1,7 @@
 package com.facebook.fresco.helper.controller;
 
 import android.graphics.drawable.Animatable;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.ViewGroup;
 
 import com.facebook.drawee.controller.BaseControllerListener;

@@ -1,7 +1,8 @@
 package com.livelearn.ignorance.test.frescohelper.activity;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.fresco.helper.ImageLoader;

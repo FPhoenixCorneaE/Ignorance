@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Build;
-import android.support.v4.widget.DrawerLayout;
+import androidx.core.widget.DrawerLayout;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;

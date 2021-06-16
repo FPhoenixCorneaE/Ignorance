@@ -1,7 +1,7 @@
 package com.livelearn.ignorance.ui.view.book;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;

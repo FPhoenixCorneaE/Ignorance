@@ -57,10 +57,12 @@ public class TestMovingImageViewActivity extends BaseActivity {
         return R.layout.activity_test_moving_image_view;
     }
 
+    @Override
     public void initLayout(Bundle savedInstanceState) {
         tbTitle.setTitleText(className);
     }
 
+    @Override
     public void setListeners() {
         mivMoving.getMovingAnimator().addListener(new Animator.AnimatorListener() {
             @Override

@@ -1,11 +1,12 @@
 package com.livelearn.ignorance.widget.swipeback;
 
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.livelearn.ignorance.R;
 

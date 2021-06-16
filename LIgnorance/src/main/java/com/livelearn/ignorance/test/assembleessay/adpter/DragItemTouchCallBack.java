@@ -1,7 +1,8 @@
 package com.livelearn.ignorance.test.assembleessay.adpter;
 
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
+
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by rth on 16-11-16.

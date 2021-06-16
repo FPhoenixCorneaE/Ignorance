@@ -101,8 +101,9 @@ public class HospitalDBHelper {
         List<Hospital> hospitalList = GreenDaoManager.getInstance().getSession().getHospitalDao().queryBuilder().where(HospitalDao.Properties.HOSPITAL_NAME.like("%" + keyword + "%")).list();
         List<String> hospitalNameList = new ArrayList<>();
         for (Hospital hospital : hospitalList) {
-            if (!hospitalNameList.contains(hospital.getHOSPITAL_NAME()))
+            if (!hospitalNameList.contains(hospital.getHOSPITAL_NAME())) {
                 hospitalNameList.add(hospital.getHOSPITAL_NAME());
+            }
         }
         return hospitalNameList;
     }

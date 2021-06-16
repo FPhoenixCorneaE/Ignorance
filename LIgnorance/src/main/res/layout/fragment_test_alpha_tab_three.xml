@@ -10,7 +10,7 @@
         android:layout_height="@dimen/status_bar_height"
         android:background="@color/color_pink" />
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/tb_title"
         android:layout_width="match_parent"
         android:layout_height="@dimen/actionBarSize"
@@ -22,5 +22,5 @@
             android:text="发现"
             android:textStyle="bold"
             tools:ignore="HardcodedText" />
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 </LinearLayout>

@@ -1,8 +1,8 @@
 package com.develop.rth.gragwithflowlayout;
 
 import android.graphics.Rect;
-import android.support.v4.util.Pools;
-import android.support.v7.widget.RecyclerView;
+import androidx.core.util.Pools;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;

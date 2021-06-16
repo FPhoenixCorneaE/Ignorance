@@ -1,7 +1,8 @@
 package com.livelearn.ignorance.widget.viewpagertransformer;
 
-import android.support.v4.view.ViewPager;
 import android.view.View;
+
+import androidx.viewpager.widget.ViewPager;
 
 import com.nineoldandroids.view.ViewHelper;
 
@@ -9,6 +10,7 @@ public class RotationAlphaTransformer implements ViewPager.PageTransformer {
 
     private static final float MAX_ROATE = 360f;
 
+    @Override
     public void transformPage(View view, float position) {
         int pageWidth = view.getWidth();
         int pageHeight = view.getHeight();

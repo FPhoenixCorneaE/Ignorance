@@ -18,7 +18,7 @@
         android:layout_height="match_parent"
         android:background="@color/background">
 
-        <android.support.v4.widget.NestedScrollView
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scrollbars="none">
@@ -30,7 +30,7 @@
                 android:orientation="vertical"
                 android:showDividers="middle">
 
-                <android.support.v4.widget.Space
+                <Space
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/height_16dp" />
 
@@ -76,7 +76,7 @@
                         tools:ignore="ContentDescription" />
                 </RelativeLayout>
 
-                <android.support.v4.widget.Space
+                <Space
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/height_16dp" />
 
@@ -139,7 +139,7 @@
                         tools:ignore="ContentDescription" />
                 </RelativeLayout>
 
-                <android.support.v4.widget.Space
+                <Space
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/height_16dp" />
 
@@ -214,7 +214,7 @@
                         tools:ignore="ContentDescription" />
                 </RelativeLayout>
 
-                <android.support.v4.widget.Space
+                <Space
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/height_16dp" />
 
@@ -281,10 +281,10 @@
                         tools:ignore="HardcodedText" />
                 </RelativeLayout>
 
-                <android.support.v4.widget.Space
+                <Space
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/height_16dp" />
             </LinearLayout>
-        </android.support.v4.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
     </com.livelearn.ignorance.widget.overscroll.OverScrollLayout>
 </LinearLayout>

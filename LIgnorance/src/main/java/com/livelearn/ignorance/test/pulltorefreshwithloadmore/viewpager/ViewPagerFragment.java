@@ -1,7 +1,6 @@
 package com.livelearn.ignorance.test.pulltorefreshwithloadmore.viewpager;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +9,8 @@ import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.test.pulltorefreshwithloadmore.adapter.ListViewDataAdapter;

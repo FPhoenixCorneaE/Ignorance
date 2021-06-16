@@ -9,14 +9,17 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.VectorDrawable;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.StringRes;
-import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.annotation.StringRes;
+import androidx.core.content.ContextCompat;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.google.android.material.snackbar.Snackbar;
+import com.livelearn.ignorance.R;
 
 /**
  * 类描述：Snackbar工具类
@@ -52,8 +55,9 @@ public class SnackbarUtils {
     }
 
     public Snackbar.SnackbarLayout getSnackbarLayout() {
-        if (null == mSnackbar)
+        if (null == mSnackbar) {
             throw new NullPointerException("You must construct Snackbar object!");
+        }
         return (Snackbar.SnackbarLayout) mSnackbar.getView();
     }
 
@@ -112,7 +116,7 @@ public class SnackbarUtils {
      * 设置Snackbar中Action的字体颜色
      */
     public SnackbarUtils setActionTextColor(int color) {
-        Button btnAction = (Button) getSnackbarLayout().findViewById(android.support.design.R.id.snackbar_action);
+        Button btnAction = (Button) getSnackbarLayout().findViewById(R.id.snackbar_action);
         btnAction.setTextColor(color);
         return this;
     }
@@ -123,7 +127,7 @@ public class SnackbarUtils {
      * @param sizeSp Action的字体大小(单位为sp)
      */
     public SnackbarUtils setActionTextSize(float sizeSp) {
-        Button btnAction = (Button) getSnackbarLayout().findViewById(android.support.design.R.id.snackbar_action);
+        Button btnAction = (Button) getSnackbarLayout().findViewById(R.id.snackbar_action);
         btnAction.setTextSize(sizeSp);
         return this;
     }
@@ -134,7 +138,7 @@ public class SnackbarUtils {
      * @param color TextView控件的文字颜色
      */
     public SnackbarUtils setTextColor(int color) {
-        TextView tvText = (TextView) getSnackbarLayout().findViewById(android.support.design.R.id.snackbar_text);
+        TextView tvText = (TextView) getSnackbarLayout().findViewById(R.id.snackbar_text);
         tvText.setTextColor(color);
         return this;
     }
@@ -145,7 +149,7 @@ public class SnackbarUtils {
      * @param sizeSp TextView控件的文字大小
      */
     public SnackbarUtils setTextSize(float sizeSp) {
-        TextView tvText = (TextView) getSnackbarLayout().findViewById(android.support.design.R.id.snackbar_text);
+        TextView tvText = (TextView) getSnackbarLayout().findViewById(R.id.snackbar_text);
         tvText.setTextSize(sizeSp);
         return this;
     }
@@ -157,6 +161,7 @@ public class SnackbarUtils {
      * @param drawableResId 添加的icon资源ID
      * @param sizeDp        icon的宽度与高度值
      */
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public SnackbarUtils setIconLeft(int drawableResId, float sizeDp) {
         Snackbar.SnackbarLayout snackbarLayout = getSnackbarLayout();
         //snackbar不同于Toast，snackbar依赖于Activity而存在
@@ -164,7 +169,7 @@ public class SnackbarUtils {
         if (mContext == null) {
             return this;
         }
-        TextView tvText = (TextView) snackbarLayout.findViewById(android.support.design.R.id.snackbar_text);
+        TextView tvText = (TextView) snackbarLayout.findViewById(R.id.snackbar_text);
 
         Drawable drawable = ContextCompat.getDrawable(mContext, drawableResId);
         if (drawable != null) {
@@ -179,7 +184,9 @@ public class SnackbarUtils {
     }
 
     public void show() {
-        if (null == mSnackbar) return;
+        if (null == mSnackbar) {
+            return;
+        }
         mSnackbar.show();
     }
 
@@ -189,6 +196,7 @@ public class SnackbarUtils {
      * @param drawable 原始drawable
      * @param sizePx   指定的drawable压缩宽高
      */
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private Drawable fitDrawable(Resources resources, Drawable drawable, int sizePx) {
         if (drawable.getIntrinsicWidth() != sizePx || drawable.getIntrinsicHeight() != sizePx) {
             if (drawable instanceof BitmapDrawable) {
@@ -202,6 +210,7 @@ public class SnackbarUtils {
     /**
      * 将Drawable转化为Bitmap
      */
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private Bitmap getBitmap(Drawable drawable) {
         if (drawable instanceof BitmapDrawable) {
             return ((BitmapDrawable) drawable).getBitmap();

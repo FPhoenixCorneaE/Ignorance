@@ -18,9 +18,9 @@ package com.livelearn.ignorance.widget.swipeback;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v4.widget.ViewDragHelper;
+import androidx.core.view.ViewCompat;
+import androidx.customview.widget.ViewDragHelper;
+import androidx.viewpager.widget.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;

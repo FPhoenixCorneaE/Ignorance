@@ -1,9 +1,10 @@
 package com.livelearn.ignorance.test.alphatabview.fragment;
 
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+
+import androidx.appcompat.widget.Toolbar;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseFragment;

@@ -1,9 +1,10 @@
 package com.livelearn.ignorance.ui.fragment.video;
 
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+
+import androidx.viewpager.widget.ViewPager;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseFragment;
@@ -70,10 +71,11 @@ public class PhotoLithographyFragment extends BaseFragment {
         //ColorTrackView这个东西存在一个小小的问题，就是颜色改变会乱掉
         //每次恢复的时候重新设置颜色
         for (int i = 0; i < catalogArray.length; i++) {
-            if (i == currentPosition)
+            if (i == currentPosition) {
                 ((ColorTrackView) stlVideo.getTabAt(currentPosition).findViewById(R.id.ctv_text)).setProgress(1f);
-            else
+            } else {
                 ((ColorTrackView) stlVideo.getTabAt(i).findViewById(R.id.ctv_text)).setProgress(0f);
+            }
         }
     }
 

@@ -42,7 +42,7 @@
             android:background="@color/transparent"
             android:paddingBottom="56dp">
 
-            <android.support.v4.widget.NestedScrollView
+            <androidx.core.widget.NestedScrollView
                 android:id="@+id/nsv_nested_scroll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
                         </LinearLayout>
                     </RelativeLayout>
 
-                    <android.support.v7.widget.RecyclerView
+                    <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rv_background_wall"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/height_200dp" />
@@ -143,7 +143,7 @@
                             tools:ignore="ContentDescription" />
                     </RelativeLayout>
                 </LinearLayout>
-            </android.support.v4.widget.NestedScrollView>
+            </androidx.core.widget.NestedScrollView>
         </FrameLayout>
     </com.sothree.slidinguppanel.SlidingUpPanelLayout>
 

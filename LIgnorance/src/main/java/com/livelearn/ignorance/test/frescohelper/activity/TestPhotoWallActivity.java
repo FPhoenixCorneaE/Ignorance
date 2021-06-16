@@ -1,9 +1,10 @@
 package com.livelearn.ignorance.test.frescohelper.activity;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.facebook.fresco.helper.photo.PictureBrowse;
 import com.facebook.fresco.helper.photo.entity.PhotoInfo;

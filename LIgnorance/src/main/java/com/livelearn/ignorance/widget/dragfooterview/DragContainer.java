@@ -8,11 +8,12 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.IntDef;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.IntDef;
 
 import com.livelearn.ignorance.R;
 

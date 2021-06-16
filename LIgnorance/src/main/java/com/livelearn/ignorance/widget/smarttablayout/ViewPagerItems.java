@@ -1,8 +1,8 @@
 package com.livelearn.ignorance.widget.smarttablayout;
 
 import android.content.Context;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.StringRes;
+import androidx.annotation.LayoutRes;
+import androidx.annotation.StringRes;
 
 public class ViewPagerItems extends PagerItems<ViewPagerItem> {
 

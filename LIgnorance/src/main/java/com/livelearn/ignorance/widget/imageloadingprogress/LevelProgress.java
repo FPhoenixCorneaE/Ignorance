@@ -4,8 +4,9 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
 
 import com.livelearn.ignorance.widget.imageloadingprogress.base.BaseBuilder;
 import com.livelearn.ignorance.widget.imageloadingprogress.base.BaseProgress;

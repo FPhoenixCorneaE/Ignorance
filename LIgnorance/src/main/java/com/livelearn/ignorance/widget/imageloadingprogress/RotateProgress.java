@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Rect;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.livelearn.ignorance.widget.imageloadingprogress.base.BaseBuilder;
 import com.livelearn.ignorance.widget.imageloadingprogress.base.BaseProgress;

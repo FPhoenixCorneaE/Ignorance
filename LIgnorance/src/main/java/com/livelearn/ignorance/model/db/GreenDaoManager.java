@@ -13,6 +13,7 @@ import com.livelearn.ignorance.model.db.dbentity.Disease;
 import com.livelearn.ignorance.model.db.dbentity.Hospital;
 import com.livelearn.ignorance.model.db.dbentity.ProvinceCity;
 import com.livelearn.ignorance.model.db.dbentity.Symptom;
+import com.livelearn.ignorance.utils.AssetsUtils;
 import com.livelearn.ignorance.utils.GsonUtils;
 import com.livelearn.ignorance.utils.ResourceUtils;
 
@@ -81,7 +82,7 @@ public class GreenDaoManager {
         ArrayList<Department> departmentList = GsonUtils.getListFromJson(departmentJson, new TypeToken<List<Department>>() {
         });
         //疾病
-        String diseaseJson = ResourceUtils.getString(R.string.DB_Disease);
+        String diseaseJson = AssetsUtils.readFileFromAssets(IgnoranceApplication.getInstance(), "db_disease.json");
         ArrayList<Disease> diseaseList = GsonUtils.getListFromJson(diseaseJson, new TypeToken<List<Disease>>() {
         });
         //医院

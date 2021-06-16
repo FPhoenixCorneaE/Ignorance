@@ -55,7 +55,7 @@
             app:roundingBorderColor="@color/color_pale"
             app:roundingBorderWidth="2dp" />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/register_user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -67,9 +67,9 @@
                 style="@style/_EditText_MaterialLoginRegister"
                 android:hint="@string/name"
                 android:inputType="textVisiblePassword|textNoSuggestions" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/register_nickname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,9 +81,9 @@
                 style="@style/_EditText_MaterialLoginRegister"
                 android:hint="@string/nickname"
                 android:inputType="textPersonName|textNoSuggestions" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/register_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,9 +95,9 @@
                 style="@style/_EditText_MaterialLoginRegister"
                 android:hint="@string/password"
                 android:inputType="textPassword" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/register_pass_rep"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                 style="@style/_EditText_MaterialLoginRegister"
                 android:hint="@string/repeat_password"
                 android:inputType="textPassword" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <FrameLayout
             android:layout_width="match_parent"

@@ -51,6 +51,7 @@ public class TestUploadMultipleImageActivity extends BaseActivity {
         return R.layout.activity_test_upload_multiple_image;
     }
 
+    @Override
     public void initLayout(Bundle savedInstanceState) {
         tbTitle.setTitleText(className);
 

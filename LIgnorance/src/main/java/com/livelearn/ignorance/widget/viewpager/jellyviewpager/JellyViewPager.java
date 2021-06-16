@@ -4,9 +4,9 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Rect;
 import android.os.Build;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 import android.util.AttributeSet;
 import android.util.SparseArray;
 import android.view.MotionEvent;
@@ -438,8 +438,9 @@ public class JellyViewPager extends ViewPager {
             return;
         int layerType = enableHardware ? View.LAYER_TYPE_HARDWARE
                 : View.LAYER_TYPE_NONE;
-        if (layerType != v.getLayerType())
+        if (layerType != v.getLayerType()) {
             v.setLayerType(layerType, null);
+        }
     }
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
@@ -449,8 +450,9 @@ public class JellyViewPager extends ViewPager {
         View v;
         for (int i = 0; i < getChildCount(); i++) {
             v = getChildAt(i);
-            if (v.getLayerType() != View.LAYER_TYPE_NONE)
+            if (v.getLayerType() != View.LAYER_TYPE_NONE) {
                 v.setLayerType(View.LAYER_TYPE_NONE, null);
+            }
         }
     }
 

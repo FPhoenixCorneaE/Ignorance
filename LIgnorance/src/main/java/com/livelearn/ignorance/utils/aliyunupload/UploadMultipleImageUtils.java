@@ -3,7 +3,7 @@ package com.livelearn.ignorance.utils.aliyunupload;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.widget.AdapterView;
 
@@ -84,7 +84,9 @@ public class UploadMultipleImageUtils {
      * 开始上传
      */
     public void startUpload() {
-        if (null == selectedPhotos || selectedPhotos.isEmpty()) return;
+        if (null == selectedPhotos || selectedPhotos.isEmpty()) {
+            return;
+        }
 
         //上传弹窗
         uploadingDialog.show();

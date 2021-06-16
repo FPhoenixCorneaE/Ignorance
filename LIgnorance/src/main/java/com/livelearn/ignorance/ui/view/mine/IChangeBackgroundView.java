@@ -1,6 +1,7 @@
 package com.livelearn.ignorance.ui.view.mine;
 
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.livelearn.ignorance.base.IBaseView;
 

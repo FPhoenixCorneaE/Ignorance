@@ -1,9 +1,10 @@
 package com.livelearn.ignorance.ui.fragment.image;
 
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+
+import androidx.viewpager.widget.ViewPager;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseFragment;
@@ -68,10 +69,11 @@ public class TianGouPrettyPictureFragment extends BaseFragment {
         //ColorTrackView这个东西存在一个小小的问题，就是颜色改变会乱掉
         //每次恢复的时候重新设置颜色
         for (int i = 0; i < prettyPictureArray.length; i++) {
-            if (i == currentPosition)
+            if (i == currentPosition) {
                 ((ColorTrackView) stlImage.getTabAt(currentPosition).findViewById(R.id.ctv_text)).setProgress(1f);
-            else
+            } else {
                 ((ColorTrackView) stlImage.getTabAt(i).findViewById(R.id.ctv_text)).setProgress(0f);
+            }
         }
     }
 

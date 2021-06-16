@@ -9,12 +9,14 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.graphics.drawable.DrawableCompat;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.SoundEffectConstants;
@@ -216,8 +218,9 @@ public abstract class BaseTabStrip extends View {
      * 创建子项背景
      */
     protected void createItemBackgrounds() {
-        if (!hasItemBackgrounds())
+        if (!hasItemBackgrounds()) {
             return;
+        }
         int count = getItemCount();
         if (count > 0) {
             for (int i = 0; i < count; i++) {
@@ -246,8 +249,9 @@ public abstract class BaseTabStrip extends View {
      */
     protected void recreateItemBackgrounds() {
         clearItemBackground();
-        if (!hasItemBackgrounds())
+        if (!hasItemBackgrounds()) {
             return;
+        }
         int count = getItemCount();
         for (int i = 0; i < count; i++) {
             Drawable tag;
@@ -406,10 +410,12 @@ public abstract class BaseTabStrip extends View {
 
         public static final Creator<BaseTabStripSavedState> CREATOR =
                 new Creator<BaseTabStripSavedState>() {
+                    @Override
                     public BaseTabStripSavedState createFromParcel(Parcel in) {
                         return new BaseTabStripSavedState(in);
                     }
 
+                    @Override
                     public BaseTabStripSavedState[] newArray(int size) {
                         return new BaseTabStripSavedState[size];
                     }
@@ -471,11 +477,13 @@ public abstract class BaseTabStrip extends View {
             return;
         }
         float mPositionOffset = positionOffset;
-        if (mLastKnownPositionOffset == 0 || mLastKnownPositionOffset == 1)
-            if (mPositionOffset > 0.5f)
+        if (mLastKnownPositionOffset == 0 || mLastKnownPositionOffset == 1) {
+            if (mPositionOffset > 0.5f) {
                 mLastKnownPositionOffset = 1;
-            else
+            } else {
                 mLastKnownPositionOffset = 0;
+            }
+        }
         int nextPager;
         if (position > mLastKnownPosition) {
             mLastKnownPosition = position - 1;
@@ -520,8 +528,9 @@ public abstract class BaseTabStrip extends View {
      * @param current 位置
      */
     private void notifyJumpTo(int current) {
-        if (changeListeners == null)
+        if (changeListeners == null) {
             return;
+        }
         for (OnChangeListener listener : changeListeners) {
             listener.jumpTo(current);
         }
@@ -535,8 +544,9 @@ public abstract class BaseTabStrip extends View {
      * @param offset  偏移
      */
     private void notifyGotoLeft(int current, int next, float offset) {
-        if (changeListeners == null)
+        if (changeListeners == null) {
             return;
+        }
         for (OnChangeListener listener : changeListeners) {
             listener.gotoLeft(current, next, offset);
         }
@@ -550,8 +560,9 @@ public abstract class BaseTabStrip extends View {
      * @param offset  偏移
      */
     private void notifyGotoRight(int current, int next, float offset) {
-        if (changeListeners == null)
+        if (changeListeners == null) {
             return;
+        }
         for (OnChangeListener listener : changeListeners) {
             listener.gotoRight(current, next, offset);
         }
@@ -801,10 +812,12 @@ public abstract class BaseTabStrip extends View {
      */
     @SuppressWarnings("unused")
     public void addOnChangeListener(OnChangeListener listener) {
-        if (listener == null)
+        if (listener == null) {
             return;
-        if (changeListeners == null)
+        }
+        if (changeListeners == null) {
             changeListeners = new ArrayList<>();
+        }
         changeListeners.add(listener);
         listener.jumpTo(mCurrentPager);
     }
@@ -816,8 +829,9 @@ public abstract class BaseTabStrip extends View {
      */
     @SuppressWarnings("unused")
     public void removeOnChangeListener(OnChangeListener listener) {
-        if (changeListeners == null)
+        if (changeListeners == null) {
             return;
+        }
         changeListeners.remove(listener);
     }
 
@@ -844,8 +858,9 @@ public abstract class BaseTabStrip extends View {
      */
     @SuppressWarnings("unused")
     protected int getMinItemBackgroundWidth() {
-        if (!hasItemBackgrounds())
+        if (!hasItemBackgrounds()) {
             return 0;
+        }
         return mTabItemBackground.getMinimumWidth();
     }
 
@@ -856,8 +871,9 @@ public abstract class BaseTabStrip extends View {
      */
     @SuppressWarnings("unused")
     protected int getMinItemBackgroundHeight() {
-        if (!hasItemBackgrounds())
+        if (!hasItemBackgrounds()) {
             return 0;
+        }
         return mTabItemBackground.getMinimumHeight();
     }
 
@@ -894,16 +910,18 @@ public abstract class BaseTabStrip extends View {
      */
     @SuppressWarnings("unused")
     public void invalidate(int... dirty) {
-        if (dirty == null || dirty.length <= 0)
+        if (dirty == null || dirty.length <= 0) {
             return;
+        }
         mRefreshRect.set(0, 0, 0, 0);
         for (int position : dirty) {
             mRefreshTempRect.set(0, 0, 0, 0);
             getItemRect(position, mRefreshTempRect);
             mRefreshRect.union(mRefreshTempRect);
         }
-        if (!mRefreshTempRect.isEmpty())
+        if (!mRefreshTempRect.isEmpty()) {
             invalidate(mRefreshTempRect);
+        }
     }
 
     /**

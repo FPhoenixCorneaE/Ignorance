@@ -1,13 +1,14 @@
 package com.livelearn.ignorance.test.suspensionindexbar.activity;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.jude.easyrecyclerview.EasyRecyclerView;
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;

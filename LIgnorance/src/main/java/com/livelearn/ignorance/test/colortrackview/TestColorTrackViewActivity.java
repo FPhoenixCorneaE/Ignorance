@@ -1,13 +1,14 @@
 package com.livelearn.ignorance.test.colortrackview;
 
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.utils.ResourceUtils;
@@ -41,10 +42,12 @@ public class TestColorTrackViewActivity extends BaseActivity {
         tlTab.setupWithViewPager(vpPager);
         for (int i = 0; i < tlTab.getTabCount(); i++) {
             TabLayout.Tab tab = tlTab.getTabAt(i);
-            if (tab == null) return;
-            if (i == 0)
+            if (tab == null) {
+                return;
+            }
+            if (i == 0) {
                 tab.setCustomView(pagerAdapter.getTabView(i, true));
-            else {
+            } else {
                 tab.setCustomView(pagerAdapter.getTabView(i, false));
             }
         }

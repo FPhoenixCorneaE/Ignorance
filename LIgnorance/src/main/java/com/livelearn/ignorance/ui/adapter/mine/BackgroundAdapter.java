@@ -1,7 +1,8 @@
 package com.livelearn.ignorance.ui.adapter.mine;
 
-import android.support.v4.util.ArrayMap;
 import android.view.View;
+
+import androidx.collection.ArrayMap;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.model.bean.mine.BackgroundBean;

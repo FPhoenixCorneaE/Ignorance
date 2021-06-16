@@ -1,7 +1,7 @@
 package com.livelearn.ignorance.ui.activity;
 
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.ViewPager;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;

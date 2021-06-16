@@ -5,9 +5,10 @@ import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.os.Build;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.ViewPager;
+import androidx.core.view.ViewCompat;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
@@ -189,7 +190,7 @@ public class SmartTabLayout extends HorizontalScrollView {
 
   /**
    * Set the color used for styling the tab text. This will need to be called prior to calling
-   * {@link #setViewPager(android.support.v4.view.ViewPager)} otherwise it will not get set
+   * {@link #setViewPager(androidx.viewpager.widget.ViewPager)} otherwise it will not get set
    *
    * @param color to use for tab text
    */
@@ -199,7 +200,7 @@ public class SmartTabLayout extends HorizontalScrollView {
 
   /**
    * Sets the colors used for styling the tab text. This will need to be called prior to calling
-   * {@link #setViewPager(android.support.v4.view.ViewPager)} otherwise it will not get set
+   * {@link #setViewPager(androidx.viewpager.widget.ViewPager)} otherwise it will not get set
    *
    * @param colors ColorStateList to use for tab text
    */

@@ -7,13 +7,14 @@ import android.graphics.Camera;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.os.Build;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
+
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import com.livelearn.ignorance.R;
 import com.nineoldandroids.view.ViewHelper;
@@ -127,7 +128,9 @@ public class JazzyViewPager extends ViewPager {
     }
 
     private View wrapChild(View child) {
-        if (!mOutlineEnabled || child instanceof OutlineContainer) return child;
+        if (!mOutlineEnabled || child instanceof OutlineContainer) {
+            return child;
+        }
         OutlineContainer out = new OutlineContainer(getContext());
         out.setLayoutParams(generateDefaultLayoutParams());
         child.setLayoutParams(new OutlineContainer.LayoutParams(
@@ -136,10 +139,12 @@ public class JazzyViewPager extends ViewPager {
         return out;
     }
 
+    @Override
     public void addView(View child) {
         super.addView(wrapChild(child));
     }
 
+    @Override
     public void addView(View child, int index) {
         super.addView(wrapChild(child), index);
     }
@@ -148,6 +153,7 @@ public class JazzyViewPager extends ViewPager {
         super.addView(wrapChild(child), params);
     }
 
+    @Override
     public void addView(View child, int width, int height) {
         super.addView(wrapChild(child), width, height);
     }
@@ -347,8 +353,9 @@ public class JazzyViewPager extends ViewPager {
                 if (mRot > 90.0f) {
                     left.setVisibility(View.INVISIBLE);
                 } else {
-                    if (left.getVisibility() == View.INVISIBLE)
+                    if (left.getVisibility() == View.INVISIBLE) {
                         left.setVisibility(View.VISIBLE);
+                    }
                     mTrans = positionOffsetPixels;
                     ViewHelper.setPivotX(left, left.getMeasuredWidth() * 0.5f);
                     ViewHelper.setPivotY(left, left.getMeasuredHeight() * 0.5f);
@@ -362,8 +369,9 @@ public class JazzyViewPager extends ViewPager {
                 if (mRot < -90.0f) {
                     right.setVisibility(View.INVISIBLE);
                 } else {
-                    if (right.getVisibility() == View.INVISIBLE)
+                    if (right.getVisibility() == View.INVISIBLE) {
                         right.setVisibility(View.VISIBLE);
+                    }
                     mTrans = -getWidth() - getPageMargin() + positionOffsetPixels;
                     ViewHelper.setPivotX(right, right.getMeasuredWidth() * 0.5f);
                     ViewHelper.setPivotY(right, right.getMeasuredHeight() * 0.5f);
@@ -382,8 +390,9 @@ public class JazzyViewPager extends ViewPager {
                 if (mRot > 90.0f) {
                     left.setVisibility(View.INVISIBLE);
                 } else {
-                    if (left.getVisibility() == View.INVISIBLE)
+                    if (left.getVisibility() == View.INVISIBLE) {
                         left.setVisibility(View.VISIBLE);
+                    }
                     mTrans = positionOffsetPixels;
                     ViewHelper.setPivotX(left, left.getMeasuredWidth() * 0.5f);
                     ViewHelper.setPivotY(left, left.getMeasuredHeight() * 0.5f);
@@ -397,8 +406,9 @@ public class JazzyViewPager extends ViewPager {
                 if (mRot < -90.0f) {
                     right.setVisibility(View.INVISIBLE);
                 } else {
-                    if (right.getVisibility() == View.INVISIBLE)
+                    if (right.getVisibility() == View.INVISIBLE) {
                         right.setVisibility(View.VISIBLE);
+                    }
                     mTrans = -getWidth() - getPageMargin() + positionOffsetPixels;
                     ViewHelper.setPivotX(right, right.getMeasuredWidth() * 0.5f);
                     ViewHelper.setPivotY(right, right.getMeasuredHeight() * 0.5f);
@@ -427,20 +437,26 @@ public class JazzyViewPager extends ViewPager {
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void manageLayer(View v, boolean enableHardware) {
-        if (!API_11) return;
+        if (!API_11) {
+            return;
+        }
         int layerType = enableHardware ? View.LAYER_TYPE_HARDWARE : View.LAYER_TYPE_NONE;
-        if (layerType != v.getLayerType())
+        if (layerType != v.getLayerType()) {
             v.setLayerType(layerType, null);
+        }
     }
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void disableHardwareLayer() {
-        if (!API_11) return;
+        if (!API_11) {
+            return;
+        }
         View v;
         for (int i = 0; i < getChildCount(); i++) {
             v = getChildAt(i);
-            if (v.getLayerType() != View.LAYER_TYPE_NONE)
+            if (v.getLayerType() != View.LAYER_TYPE_NONE) {
                 v.setLayerType(View.LAYER_TYPE_NONE, null);
+            }
         }
     }
 
@@ -473,8 +489,9 @@ public class JazzyViewPager extends ViewPager {
     }
 
     protected void animateOutline(View left, View right) {
-        if (!(left instanceof OutlineContainer))
+        if (!(left instanceof OutlineContainer)) {
             return;
+        }
         if (mState != State.IDLE) {
             manageLayer(left, true);
             ((OutlineContainer) left).setOutlineAlpha(1.0f);
@@ -486,8 +503,9 @@ public class JazzyViewPager extends ViewPager {
         } else {
             ((OutlineContainer) left).start();
 
-            if (right != null)
+            if (right != null) {
                 ((OutlineContainer) right).start();
+            }
         }
     }
 
@@ -498,10 +516,11 @@ public class JazzyViewPager extends ViewPager {
             mState = position == oldPage ? State.GOING_RIGHT : State.GOING_LEFT;
         }
         boolean goingRight = position == oldPage;
-        if (mState == State.GOING_RIGHT && !goingRight)
+        if (mState == State.GOING_RIGHT && !goingRight) {
             mState = State.GOING_LEFT;
-        else if (mState == State.GOING_LEFT && goingRight)
+        } else if (mState == State.GOING_LEFT && goingRight) {
             mState = State.GOING_RIGHT;
+        }
 
         float effectOffset = isSmall(positionOffset) ? 0 : positionOffset;
 
@@ -510,10 +529,12 @@ public class JazzyViewPager extends ViewPager {
         View mLeft = findViewFromObject(position);
         mRight = findViewFromObject(position + 1);
 
-        if (mFadeEnabled)
+        if (mFadeEnabled) {
             animateFade(mLeft, mRight, effectOffset);
-        if (mOutlineEnabled)
+        }
+        if (mOutlineEnabled) {
             animateOutline(mLeft, mRight);
+        }
 
         switch (mEffect) {
             case Standard:
@@ -578,8 +599,9 @@ public class JazzyViewPager extends ViewPager {
         View v;
         for (int i = 0; i < getChildCount(); i++) {
             v = getChildAt(i);
-            if (a.isViewFromObject(v, o))
+            if (a.isViewFromObject(v, o)) {
                 return v;
+            }
         }
         return null;
     }

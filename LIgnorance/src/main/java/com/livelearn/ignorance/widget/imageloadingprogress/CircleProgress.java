@@ -8,8 +8,9 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.SweepGradient;
-import android.support.annotation.ColorInt;
-import android.support.annotation.ColorRes;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.ColorRes;
 
 import com.livelearn.ignorance.widget.imageloadingprogress.base.BaseBuilder;
 import com.livelearn.ignorance.widget.imageloadingprogress.base.BaseProgress;
@@ -103,10 +104,10 @@ public class CircleProgress extends BaseProgress {
 
         mCirclePaint.setStrokeWidth(mCircleWidth);
         if (mGradientColor != null) {
-            if (mGradientType == GradientType.LINEAR)
+            if (mGradientType == GradientType.LINEAR) {
                 mCirclePaint.setShader(new LinearGradient(bounds.centerX(), bounds.centerY() - mCircleRadius,
                         bounds.centerX(), bounds.centerY() + mCircleRadius, mGradientColor, null, Shader.TileMode.MIRROR));
-            else {
+            } else {
                 mCirclePaint.setShader(new SweepGradient(bounds.centerX(), bounds.centerY(), mGradientColor, null));
             }
 

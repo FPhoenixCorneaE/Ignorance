@@ -2,12 +2,13 @@ package com.livelearn.ignorance.widget.viewpager;
 
 import android.content.Context;
 import android.graphics.Rect;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 import android.view.animation.TranslateAnimation;
+
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * 回弹ViewPager

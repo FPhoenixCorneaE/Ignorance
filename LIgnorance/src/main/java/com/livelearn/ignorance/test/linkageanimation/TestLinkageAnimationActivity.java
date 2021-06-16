@@ -7,10 +7,11 @@ import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.viewpager.widget.ViewPager;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;
@@ -56,6 +57,7 @@ public class TestLinkageAnimationActivity extends BaseActivity {
         return R.layout.activity_test_linkage_animation;
     }
 
+    @Override
     public void initLayout(Bundle savedInstanceState) {
         //限定预加载页面个数
         vpViewpager.setOffscreenPageLimit(mViews.size());
@@ -167,6 +169,7 @@ public class TestLinkageAnimationActivity extends BaseActivity {
     /**
      * UI事件监听
      */
+    @Override
     public void setListeners() {
         vpViewpager.addOnPageChangeListener(mOnPageChangeListener);
     }

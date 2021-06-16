@@ -3,10 +3,11 @@ package com.livelearn.ignorance.ui.activity;
 import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.ActivityCompat;
+import androidx.annotation.NonNull;
+import com.google.android.material.textfield.TextInputLayout;
+
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -122,8 +123,9 @@ public class LoginActivity extends BaseActivity {
                 }
                 jtbRemember.setChecked(true);
             }
-            if (autoLogin)
+            if (autoLogin) {
                 jtbAutoLogin.setChecked(true);
+            }
         }
         GlideUtils.setupImage(mContext, loginAvatar, userAvatarPath, R.drawable.shape_circle_solidlightgray);
     }
@@ -136,11 +138,15 @@ public class LoginActivity extends BaseActivity {
             @Override
             public void onLogin(TextInputLayout loginUser, TextInputLayout loginPass) {
                 String userAccount = checkUserAccount(loginUser);
-                if (userAccount == null) return;
+                if (userAccount == null) {
+                    return;
+                }
                 loginUser.setError("");
 
                 String pass = checkPass(loginPass);
-                if (pass == null) return;
+                if (pass == null) {
+                    return;
+                }
                 loginPass.setError("");
 
                 boolean isRegistered = false;
@@ -171,7 +177,9 @@ public class LoginActivity extends BaseActivity {
             @Override
             public void onRegister(TextInputLayout registerUser, TextInputLayout registerNickname, TextInputLayout registerPass, TextInputLayout registerPassRep) {
                 String userAccount = checkUserAccount(registerUser);
-                if (userAccount == null) return;
+                if (userAccount == null) {
+                    return;
+                }
                 registerUser.setError("");
 
                 String userNickname = "";
@@ -180,10 +188,14 @@ public class LoginActivity extends BaseActivity {
                 }
 
                 String pass = checkPass(registerPass);
-                if (pass == null) return;
+                if (pass == null) {
+                    return;
+                }
                 registerPass.setError("");
 
-                if (checkPassRep(registerPassRep, pass)) return;
+                if (checkPassRep(registerPassRep, pass)) {
+                    return;
+                }
                 registerPassRep.setError("");
 
                 saveUserInfo(userAccount, userNickname, pass);
@@ -253,7 +265,9 @@ public class LoginActivity extends BaseActivity {
      * 核对用户名
      */
     private String checkUserAccount(TextInputLayout registerUser) {
-        if (registerUser.getEditText() == null) return null;
+        if (registerUser.getEditText() == null) {
+            return null;
+        }
         String userName = registerUser.getEditText().getText().toString().trim();
         if (userName.isEmpty()) {
             registerUser.setError(ResourceUtils.getString(R.string.user_name_empty));
@@ -270,7 +284,9 @@ public class LoginActivity extends BaseActivity {
      */
     @Nullable
     private String checkPass(TextInputLayout registerPass) {
-        if (registerPass.getEditText() == null) return null;
+        if (registerPass.getEditText() == null) {
+            return null;
+        }
         String pass = registerPass.getEditText().getText().toString().trim();
         if (pass.isEmpty()) {
             registerPass.setError(ResourceUtils.getString(R.string.user_password_empty));
@@ -286,7 +302,9 @@ public class LoginActivity extends BaseActivity {
      * 核对确认密码
      */
     private boolean checkPassRep(TextInputLayout registerPassRep, String pass) {
-        if (registerPassRep.getEditText() == null) return true;
+        if (registerPassRep.getEditText() == null) {
+            return true;
+        }
         String passRep = registerPassRep.getEditText().getText().toString().trim();
         if (passRep.isEmpty()) {
             registerPassRep.setError(ResourceUtils.getString(R.string.user_password_empty));

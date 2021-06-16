@@ -15,6 +15,7 @@ package com.livelearn.ignorance.widget.viewpager.animationviewpager;
  * limitations under the License.
  */
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -27,20 +28,22 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.SystemClock;
-import android.support.annotation.DrawableRes;
-import android.support.v4.os.ParcelableCompat;
-import android.support.v4.os.ParcelableCompatCreatorCallbacks;
-import android.support.v4.view.AccessibilityDelegateCompat;
-import android.support.v4.view.MotionEventCompat;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.VelocityTrackerCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.ViewConfigurationCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v4.view.accessibility.AccessibilityEventCompat;
-import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
-import android.support.v4.view.accessibility.AccessibilityRecordCompat;
-import android.support.v4.widget.EdgeEffectCompat;
+
+import androidx.annotation.DrawableRes;
+import androidx.core.os.ParcelableCompat;
+import androidx.core.os.ParcelableCompatCreatorCallbacks;
+import androidx.core.view.AccessibilityDelegateCompat;
+import androidx.core.view.MotionEventCompat;
+import androidx.core.view.VelocityTrackerCompat;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.ViewConfigurationCompat;
+import androidx.core.view.accessibility.AccessibilityEventCompat;
+import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
+import androidx.core.view.accessibility.AccessibilityRecordCompat;
+import androidx.core.widget.EdgeEffectCompat;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.FocusFinder;
@@ -66,7 +69,7 @@ import java.util.Comparator;
 /**
  * Layout manager that allows the user to flip left and right
  * through pages of data.  You supply an implementation of a
- * {@link android.support.v4.view.PagerAdapter} to generate the pages that the view shows.
+ * {@link androidx.viewpager.widget.PagerAdapter} to generate the pages that the view shows.
  * <p/>
  * <p>Note this class is currently under early design and
  * development.  The API will likely change in later updates of
@@ -77,8 +80,8 @@ import java.util.Comparator;
  * which is a convenient way to supply and manage the lifecycle of each page.
  * There are standard adapters implemented for using fragments with the ViewPager,
  * which cover the most common use cases.  These are
- * {@link android.support.v4.app.FragmentPagerAdapter} and
- * {@link android.support.v4.app.FragmentStatePagerAdapter}; each of these
+ * {@link androidx.fragment.app.FragmentPagerAdapter} and
+ * {@link androidx.fragment.app.FragmentStatePagerAdapter}; each of these
  * classes have simple code showing how to build a full user interface
  * with them.
  * <p/>
@@ -134,6 +137,7 @@ public class AnimationViewPager extends ViewGroup {
     };
 
     private static final Interpolator sInterpolator = new Interpolator() {
+        @Override
         public float getInterpolation(float t) {
             t -= 1.0f;
             return t * t * t * t * t + 1.0f;
@@ -252,6 +256,7 @@ public class AnimationViewPager extends ViewGroup {
     public static final int SCROLL_STATE_SETTLING = 2;
 
     private final Runnable mEndScrollRunnable = new Runnable() {
+        @Override
         public void run() {
             setScrollState(SCROLL_STATE_IDLE);
             populate();
@@ -639,7 +644,9 @@ public class AnimationViewPager extends ViewGroup {
         } else {
             mDrawingOrder = DRAW_ORDER_DEFAULT;
         }
-        if (needsPopulate) populate();
+        if (needsPopulate) {
+            populate();
+        }
 //        }
     }
 
@@ -754,7 +761,9 @@ public class AnimationViewPager extends ViewGroup {
      */
     public void setPageMarginDrawable(Drawable d) {
         mMarginDrawable = d;
-        if (d != null) refreshDrawableState();
+        if (d != null) {
+            refreshDrawableState();
+        }
         setWillNotDraw(d == null);
         invalidate();
     }
@@ -957,7 +966,9 @@ public class AnimationViewPager extends ViewGroup {
         // fling to a new position until we have finished the scroll to
         // that position, avoiding glitches from happening at that point.
         if (mPopulatePending) {
-            if (DEBUG) Log.i(TAG, "populate is pending, skipping for now...");
+            if (DEBUG) {
+                Log.i(TAG, "populate is pending, skipping for now...");
+            }
             sortChildDrawingOrder();
             return;
         }
@@ -997,7 +1008,9 @@ public class AnimationViewPager extends ViewGroup {
         for (curIndex = 0; curIndex < mItems.size(); curIndex++) {
             final ItemInfo ii = mItems.get(curIndex);
             if (ii.position >= mCurItem) {
-                if (ii.position == mCurItem) curItem = ii;
+                if (ii.position == mCurItem) {
+                    curItem = ii;
+                }
                 break;
             }
         }
@@ -1208,7 +1221,9 @@ public class AnimationViewPager extends ViewGroup {
             }
             offset -= ii.widthFactor + marginOffset;
             ii.offset = offset;
-            if (ii.position == 0) mFirstOffset = offset;
+            if (ii.position == 0) {
+                mFirstOffset = offset;
+            }
         }
         offset = curItem.offset + curItem.widthFactor + marginOffset;
         pos = curItem.position + 1;
@@ -1466,8 +1481,10 @@ public class AnimationViewPager extends ViewGroup {
         for (int i = 0; i < size; ++i) {
             final View child = getChildAt(i);
             if (child.getVisibility() != GONE) {
-                if (DEBUG) Log.v(TAG, "Measuring #" + i + " " + child
-                        + ": " + mChildWidthMeasureSpec);
+                if (DEBUG) {
+                    Log.v(TAG, "Measuring #" + i + " " + child
+                            + ": " + mChildWidthMeasureSpec);
+                }
 
                 final LayoutParams lp = (LayoutParams) child.getLayoutParams();
                 if (lp == null || !lp.isDecor) {
@@ -1608,9 +1625,11 @@ public class AnimationViewPager extends ViewGroup {
                                 MeasureSpec.EXACTLY);
                         child.measure(widthSpec, heightSpec);
                     }
-                    if (DEBUG) Log.v(TAG, "Positioning #" + i + " " + child + " f=" + ii.object
-                            + ":" + childLeft + "," + childTop + " " + child.getMeasuredWidth()
-                            + "x" + child.getMeasuredHeight());
+                    if (DEBUG) {
+                        Log.v(TAG, "Positioning #" + i + " " + child + " f=" + ii.object
+                                + ":" + childLeft + "," + childTop + " " + child.getMeasuredWidth()
+                                + "x" + child.getMeasuredHeight());
+                    }
                     child.layout(childLeft, childTop,
                             childLeft + child.getMeasuredWidth(),
                             childTop + child.getMeasuredHeight());
@@ -1701,7 +1720,9 @@ public class AnimationViewPager extends ViewGroup {
             for (int i = 0; i < childCount; i++) {
                 final View child = getChildAt(i);
                 final LayoutParams lp = (LayoutParams) child.getLayoutParams();
-                if (!lp.isDecor) continue;
+                if (!lp.isDecor) {
+                    continue;
+                }
 
                 final int hgrav = lp.gravity & Gravity.HORIZONTAL_GRAVITY_MASK;
                 int childLeft;
@@ -1745,7 +1766,9 @@ public class AnimationViewPager extends ViewGroup {
                 final View child = getChildAt(i);
                 final LayoutParams lp = (LayoutParams) child.getLayoutParams();
 
-                if (lp.isDecor) continue;
+                if (lp.isDecor) {
+                    continue;
+                }
 
                 final float transformPos = (float) (child.getLeft() - scrollX) / getClientWidth();
                 mPageTransformer.transformPage(child, transformPos);
@@ -1812,7 +1835,9 @@ public class AnimationViewPager extends ViewGroup {
         // Always take care of the touch gesture being complete.
         if (action == MotionEvent.ACTION_CANCEL || action == MotionEvent.ACTION_UP) {
             // Release the drag.
-            if (DEBUG) Log.v(TAG, "Intercept done!");
+            if (DEBUG) {
+                Log.v(TAG, "Intercept done!");
+            }
             mIsBeingDragged = false;
             mIsUnableToDrag = false;
             mActivePointerId = INVALID_POINTER;
@@ -1827,11 +1852,15 @@ public class AnimationViewPager extends ViewGroup {
         // are dragging.
         if (action != MotionEvent.ACTION_DOWN) {
             if (mIsBeingDragged) {
-                if (DEBUG) Log.v(TAG, "Intercept returning true!");
+                if (DEBUG) {
+                    Log.v(TAG, "Intercept returning true!");
+                }
                 return true;
             }
             if (mIsUnableToDrag) {
-                if (DEBUG) Log.v(TAG, "Intercept returning false!");
+                if (DEBUG) {
+                    Log.v(TAG, "Intercept returning false!");
+                }
                 return false;
             }
         }
@@ -1859,7 +1888,9 @@ public class AnimationViewPager extends ViewGroup {
                 final float xDiff = Math.abs(dx);
                 final float y = MotionEventCompat.getY(ev, pointerIndex);
                 final float yDiff = Math.abs(y - mInitialMotionY);
-                if (DEBUG) Log.v(TAG, "Moved x to " + x + "," + y + " diff=" + xDiff + "," + yDiff);
+                if (DEBUG) {
+                    Log.v(TAG, "Moved x to " + x + "," + y + " diff=" + xDiff + "," + yDiff);
+                }
 
                 if (dx != 0 && !isGutterDrag(mLastMotionX, dx) &&
                         canScroll(this, false, (int) dx, (int) x, (int) y)) {
@@ -1870,7 +1901,9 @@ public class AnimationViewPager extends ViewGroup {
                     return false;
                 }
                 if (xDiff > mTouchSlop && xDiff * 0.5f > yDiff) {
-                    if (DEBUG) Log.v(TAG, "Starting drag!");
+                    if (DEBUG) {
+                        Log.v(TAG, "Starting drag!");
+                    }
                     mIsBeingDragged = true;
                     requestParentDisallowInterceptTouchEvent(true);
                     setScrollState(SCROLL_STATE_DRAGGING);
@@ -1883,7 +1916,9 @@ public class AnimationViewPager extends ViewGroup {
                     // direction to be counted as a drag...  abort
                     // any attempt to drag horizontally, to work correctly
                     // with children that have scrolling containers.
-                    if (DEBUG) Log.v(TAG, "Starting unable to drag!");
+                    if (DEBUG) {
+                        Log.v(TAG, "Starting unable to drag!");
+                    }
                     mIsUnableToDrag = true;
                 }
                 if (mIsBeingDragged) {
@@ -1922,9 +1957,11 @@ public class AnimationViewPager extends ViewGroup {
                     mIsBeingDragged = false;
                 }
 
-                if (DEBUG) Log.v(TAG, "Down at " + mLastMotionX + "," + mLastMotionY
-                        + " mIsBeingDragged=" + mIsBeingDragged
-                        + "mIsUnableToDrag=" + mIsUnableToDrag);
+                if (DEBUG) {
+                    Log.v(TAG, "Down at " + mLastMotionX + "," + mLastMotionY
+                            + " mIsBeingDragged=" + mIsBeingDragged
+                            + "mIsUnableToDrag=" + mIsUnableToDrag);
+                }
                 break;
             }
 
@@ -1992,10 +2029,13 @@ public class AnimationViewPager extends ViewGroup {
                     final float xDiff = Math.abs(x - mLastMotionX);
                     final float y = MotionEventCompat.getY(ev, pointerIndex);
                     final float yDiff = Math.abs(y - mLastMotionY);
-                    if (DEBUG)
+                    if (DEBUG) {
                         Log.v(TAG, "Moved x to " + x + "," + y + " diff=" + xDiff + "," + yDiff);
+                    }
                     if (xDiff > mTouchSlop && xDiff > yDiff) {
-                        if (DEBUG) Log.v(TAG, "Starting drag!");
+                        if (DEBUG) {
+                            Log.v(TAG, "Starting drag!");
+                        }
                         mIsBeingDragged = true;
                         requestParentDisallowInterceptTouchEvent(true);
                         mLastMotionX = x - mInitialMotionX > 0 ? mInitialMotionX + mTouchSlop :
@@ -2511,6 +2551,7 @@ public class AnimationViewPager extends ViewGroup {
         }
     }
 
+    @Override
     public boolean canScrollHorizontally(int direction) {
         if (mAdapter == null) {
             return false;
@@ -2804,6 +2845,7 @@ public class AnimationViewPager extends ViewGroup {
         return false;
     }
 
+    @SuppressLint("WrongConstant")
     @Override
     public boolean dispatchPopulateAccessibilityEvent(AccessibilityEvent event) {
         // Dispatch scroll events from this ViewPager.

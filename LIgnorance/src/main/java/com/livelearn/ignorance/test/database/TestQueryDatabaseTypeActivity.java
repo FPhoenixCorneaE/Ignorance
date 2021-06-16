@@ -63,6 +63,7 @@ public class TestQueryDatabaseTypeActivity extends BaseActivity {
                 bundle.putString(TestQueryDatabaseActivity.TYPE, TestQueryDatabaseActivity.DISEASE);
                 IntentUtils.startActivityForResult(mContext, TestQueryDatabaseActivity.class, 3, bundle);
                 break;
+            default:
         }
     }
 
@@ -80,6 +81,7 @@ public class TestQueryDatabaseTypeActivity extends BaseActivity {
                 case 3:
                     tvReturnResult.setText(String.valueOf(data.getStringExtra(TestQueryDatabaseActivity.DISEASE) + data.getStringExtra("disease_id")));
                     break;
+                default:
             }
         }
     }

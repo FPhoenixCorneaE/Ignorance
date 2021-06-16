@@ -1,14 +1,15 @@
 package com.livelearn.ignorance.test.pulltorefreshwithloadmore.viewpager;
 
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
+
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
@@ -63,6 +64,7 @@ public class TabPageIndicator extends HorizontalScrollView implements PageIndica
     private Runnable mTabSelector;
 
     private final View.OnClickListener mTabClickListener = new View.OnClickListener() {
+        @Override
         public void onClick(View view) {
             ViewHolderBase viewHolderBase = (ViewHolderBase) view.getTag();
             final int oldSelected = mViewPager.getCurrentItem();
@@ -195,6 +197,7 @@ public class TabPageIndicator extends HorizontalScrollView implements PageIndica
         notifyDataSetChanged();
     }
 
+    @Override
     public void notifyDataSetChanged() {
         mTabLayout.removeAllViews();
         PagerAdapter adapter = mViewPager.getAdapter();

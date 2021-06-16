@@ -2,7 +2,7 @@ package com.github.ksoichiro.observablescrollview.test;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import android.view.MotionEvent;
 import android.widget.FrameLayout;
 import android.widget.TextView;

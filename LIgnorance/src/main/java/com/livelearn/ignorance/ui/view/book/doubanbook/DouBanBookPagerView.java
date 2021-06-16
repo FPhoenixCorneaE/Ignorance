@@ -5,15 +5,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.base.BaseRecyclerAdapter;
@@ -131,8 +132,8 @@ public class DouBanBookPagerView extends RootView implements DouBanBookPagerCont
 
     @Override
     public void onFailure(String msg) {
-        if (PULLMode.PULL_TO_REFRESH == mPullMode)
-            paProgress.showError(ResourceUtils.getDrawable(R.mipmap.pic_load_error), Constant.ERROR_TITLE, Constant.ERROR_CONTEXT, Constant.ERROR_BUTTON, new View.OnClickListener() {
+        if (PULLMode.PULL_TO_REFRESH == mPullMode) {
+            paProgress.showError(ResourceUtils.getDrawable(R.mipmap.pic_load_error), Constant.ERROR_TITLE, Constant.ERROR_CONTEXT, Constant.ERROR_BUTTON, new OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     showProgress();
@@ -140,7 +141,7 @@ public class DouBanBookPagerView extends RootView implements DouBanBookPagerCont
                     pullRefresh();
                 }
             });
-        else {
+        } else {
             ToastUtils.showToast("电波无法到达哟");
             footerView.setVisibility(GONE);
         }
@@ -148,8 +149,9 @@ public class DouBanBookPagerView extends RootView implements DouBanBookPagerCont
 
     @Override
     public void onCompleted() {
-        if (srlBookPager.isRefreshing())
+        if (srlBookPager.isRefreshing()) {
             srlBookPager.setRefreshing(false);
+        }
         footerView.setVisibility(GONE);
     }
 
@@ -165,7 +167,9 @@ public class DouBanBookPagerView extends RootView implements DouBanBookPagerCont
     public void pullOnLoading() {
         mPullMode = PULLMode.PULL_ON_LOADING;
 
-        if (douBanBookPagerAdapter.getStart() == mStart) return;
+        if (douBanBookPagerAdapter.getStart() == mStart) {
+            return;
+        }
 
         mStart = douBanBookPagerAdapter.getStart();
         mPresenter.loadingData(mStart, RECORD_COUNT);

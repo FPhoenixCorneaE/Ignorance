@@ -1,6 +1,7 @@
 package com.livelearn.ignorance.presenter;
 
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.livelearn.ignorance.base.BaseFragment;
 import com.livelearn.ignorance.base.RxPresenter;

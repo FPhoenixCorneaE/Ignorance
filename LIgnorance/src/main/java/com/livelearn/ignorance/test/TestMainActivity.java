@@ -62,6 +62,7 @@ public class TestMainActivity extends BaseActivity implements TestMainAdapter.On
         return R.layout.activity_test_main;
     }
 
+    @Override
     public void initLayout(Bundle savedInstanceState) {
         tbTitle.setTitleText(ResourceUtils.getString(R.string.test_main_title));
 

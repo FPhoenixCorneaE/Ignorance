@@ -1,11 +1,11 @@
 package com.github.ksoichiro.observablescrollview.test;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.view.ViewPager;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.viewpager.widget.ViewPager;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 
 import com.github.ksoichiro.observablescrollview.CacheFragmentStatePagerAdapter;

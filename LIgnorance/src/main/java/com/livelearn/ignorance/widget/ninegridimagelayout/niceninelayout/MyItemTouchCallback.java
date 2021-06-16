@@ -3,9 +3,10 @@ package com.livelearn.ignorance.widget.ninegridimagelayout.niceninelayout;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
+
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.alibaba.android.vlayout.VirtualLayoutManager;
 
@@ -100,8 +101,12 @@ public class MyItemTouchCallback extends ItemTouchHelper.Callback {
             onDragListener.onFinishDrag();
         }
         viewHolder.itemView.setAlpha(1.0f);
-        if (background != null) viewHolder.itemView.setBackground(background);
-        if (bkcolor != -1) viewHolder.itemView.setBackgroundColor(bkcolor);
+        if (background != null) {
+            viewHolder.itemView.setBackground(background);
+        }
+        if (bkcolor != -1) {
+            viewHolder.itemView.setBackgroundColor(bkcolor);
+        }
         //viewHolder.itemView.setBackgroundColor(0);
 
 

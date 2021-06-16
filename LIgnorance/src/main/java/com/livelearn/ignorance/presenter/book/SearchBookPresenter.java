@@ -1,6 +1,7 @@
 package com.livelearn.ignorance.presenter.book;
 
-import android.support.v4.app.FragmentActivity;
+
+import androidx.fragment.app.FragmentActivity;
 
 import com.livelearn.ignorance.base.RxPresenter;
 import com.livelearn.ignorance.presenter.contract.book.SearchBookContract;

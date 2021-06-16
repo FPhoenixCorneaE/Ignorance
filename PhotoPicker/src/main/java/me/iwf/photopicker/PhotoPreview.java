@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import java.util.ArrayList;
 
 /**
@@ -52,7 +52,7 @@ public class PhotoPreview {
      * @param fragment    Fragment to receive result
      * @param requestCode requestCode for result
      */
-    public void start(@NonNull Context context, @NonNull android.support.v4.app.Fragment fragment, int requestCode) {
+    public void start(@NonNull Context context, @NonNull androidx.fragment.app.Fragment fragment, int requestCode) {
       fragment.startActivityForResult(getIntent(context), requestCode);
     }
 
@@ -61,7 +61,7 @@ public class PhotoPreview {
      *
      * @param fragment    Fragment to receive result
      */
-    public void start(@NonNull Context context, @NonNull android.support.v4.app.Fragment fragment) {
+    public void start(@NonNull Context context, @NonNull androidx.fragment.app.Fragment fragment) {
       fragment.startActivityForResult(getIntent(context), REQUEST_CODE);
     }
 

@@ -1,7 +1,7 @@
 package com.livelearn.ignorance.widget.ninegridimagelayout.ninegridlayout;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.view.View;
 import android.widget.ImageView;
 

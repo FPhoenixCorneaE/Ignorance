@@ -3,7 +3,7 @@ package com.xiao.nicevideoplayer;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.CountDownTimer;
-import android.support.annotation.DrawableRes;
+import androidx.annotation.DrawableRes;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;

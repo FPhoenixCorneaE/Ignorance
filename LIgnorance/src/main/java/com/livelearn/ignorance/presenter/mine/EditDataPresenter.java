@@ -1,7 +1,8 @@
 package com.livelearn.ignorance.presenter.mine;
 
-import android.support.v7.widget.GridLayoutManager;
 import android.view.View;
+
+import androidx.recyclerview.widget.GridLayoutManager;
 
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
 import com.livelearn.ignorance.base.BaseActivity;

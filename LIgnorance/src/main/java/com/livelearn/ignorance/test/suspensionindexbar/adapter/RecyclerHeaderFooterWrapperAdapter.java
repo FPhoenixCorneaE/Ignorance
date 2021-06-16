@@ -1,11 +1,12 @@
 package com.livelearn.ignorance.test.suspensionindexbar.adapter;
 
-import android.support.v4.util.SparseArrayCompat;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.collection.SparseArrayCompat;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 /**
  * 介绍：一个给RecyclerView添加HeaderView FooterView的装饰Adapter类
@@ -195,8 +196,9 @@ public abstract class RecyclerHeaderFooterWrapperAdapter extends RecyclerView.Ad
                     } else if (mFooterViews.get(viewType) != null) {
                         return gridLayoutManager.getSpanCount();
                     }
-                    if (spanSizeLookup != null)
+                    if (spanSizeLookup != null) {
                         return spanSizeLookup.getSpanSize(position);
+                    }
                     return 1;
                 }
             });

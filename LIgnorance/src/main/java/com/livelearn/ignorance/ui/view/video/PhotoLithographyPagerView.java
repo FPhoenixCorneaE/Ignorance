@@ -2,9 +2,9 @@ package com.livelearn.ignorance.ui.view.video;
 
 import android.content.Context;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.GridLayoutManager;
+import androidx.annotation.NonNull;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.recyclerview.widget.GridLayoutManager;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -91,10 +91,13 @@ public class PhotoLithographyPagerView extends RootView implements PhotoLithogra
     @Override
     public void onSuccess(PhotoLithographyTypeListModel mData) {
         hideProgress();
-        if (pageNum == 1) mAdapter.clear();
+        if (pageNum == 1) {
+            mAdapter.clear();
+        }
         mAdapter.addAll(mData.getRet().getList());
-        if (mAdapter.getAllData().isEmpty())
+        if (mAdapter.getAllData().isEmpty()) {
             rvVideoList.showEmpty();
+        }
     }
 
     @Override

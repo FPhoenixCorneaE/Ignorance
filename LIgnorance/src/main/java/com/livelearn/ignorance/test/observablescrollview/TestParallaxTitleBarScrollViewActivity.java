@@ -1,7 +1,8 @@
 package com.livelearn.ignorance.test.observablescrollview;
 
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatImageView;
+
+import androidx.appcompat.widget.AppCompatImageView;
 
 import com.github.ksoichiro.observablescrollview.ObservableScrollView;
 import com.github.ksoichiro.observablescrollview.ObservableScrollViewCallbacks;

@@ -15,7 +15,7 @@
         android:minWidth="@dimen/actionBarSize"
         android:orientation="horizontal">
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_left"
             android:layout_width="@dimen/title_bar_icon_size"
             android:layout_height="@dimen/title_bar_icon_size"
@@ -65,7 +65,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_right"
             android:layout_width="@dimen/title_bar_icon_size"
             android:layout_height="@dimen/title_bar_icon_size"

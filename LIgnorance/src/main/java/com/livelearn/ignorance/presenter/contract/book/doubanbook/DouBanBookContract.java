@@ -1,6 +1,7 @@
 package com.livelearn.ignorance.presenter.contract.book.doubanbook;
 
-import android.support.v4.app.Fragment;
+
+import androidx.fragment.app.Fragment;
 
 import com.livelearn.ignorance.base.BasePresenter;
 import com.livelearn.ignorance.base.BaseView;

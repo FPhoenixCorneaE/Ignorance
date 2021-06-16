@@ -8,17 +8,15 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.widget.NestedScrollView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import android.transition.Explode;
 import android.transition.Fade;
 import android.transition.Transition;
@@ -34,6 +32,10 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;
 import com.livelearn.ignorance.common.Constant;
@@ -554,7 +556,7 @@ public class DouBanBookDetailsView extends RootView implements DouBanBookDetails
             llShortComment.setVisibility(VISIBLE);
             tvShortCommentTitle.setText("短评");
             //NestedScrollView嵌套RecyclerView时滑动不流畅问题的解决办法
-            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(mContext, LinearLayout.VERTICAL, false);
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(mContext, RecyclerView.VERTICAL, false);
             linearLayoutManager.setSmoothScrollbarEnabled(true);
             linearLayoutManager.setAutoMeasureEnabled(true);
             rvShortComment.setLayoutManager(linearLayoutManager);
@@ -571,7 +573,7 @@ public class DouBanBookDetailsView extends RootView implements DouBanBookDetails
             llBookReview.setVisibility(VISIBLE);
             tvBookReviewTitle.setText("书评");
             //NestedScrollView嵌套RecyclerView时滑动不流畅问题的解决办法
-            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(mContext, LinearLayout.VERTICAL, false);
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(mContext, RecyclerView.VERTICAL, false);
             linearLayoutManager.setSmoothScrollbarEnabled(true);
             linearLayoutManager.setAutoMeasureEnabled(true);
             rvBookReview.setLayoutManager(linearLayoutManager);
@@ -595,7 +597,7 @@ public class DouBanBookDetailsView extends RootView implements DouBanBookDetails
             tvLikeBookTitle.setText("喜欢读这本书的人也喜欢...");
             rvLikeBook.setVisibility(VISIBLE);
             //NestedScrollView嵌套RecyclerView时滑动不流畅问题的解决办法
-            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(mContext, LinearLayout.HORIZONTAL, false);
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(mContext, RecyclerView.HORIZONTAL, false);
             linearLayoutManager.setSmoothScrollbarEnabled(true);
             linearLayoutManager.setAutoMeasureEnabled(true);
             rvLikeBook.setLayoutManager(linearLayoutManager);
@@ -750,7 +752,9 @@ public class DouBanBookDetailsView extends RootView implements DouBanBookDetails
      * 书评详情
      */
     private void showBottomSheetDialog(String bookReviewTitle, String bookReviewFullContent) {
-        if (bookReviewTitle.isEmpty()) return;
+        if (bookReviewTitle.isEmpty()) {
+            return;
+        }
         ablBookDetails.setExpanded(false);
         bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
         tvIntroTitle.setText(bookReviewTitle);

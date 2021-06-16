@@ -1,8 +1,9 @@
 package com.livelearn.ignorance.test.dragfooterview;
 
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
+
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.livelearn.ignorance.R;
 import com.livelearn.ignorance.base.BaseActivity;

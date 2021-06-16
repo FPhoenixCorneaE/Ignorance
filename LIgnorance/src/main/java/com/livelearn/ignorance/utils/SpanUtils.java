@@ -1,7 +1,7 @@
 package com.livelearn.ignorance.utils;
 
 import android.content.Context;
-import android.support.annotation.ColorRes;
+import androidx.annotation.ColorRes;
 import android.widget.TextView;
 
 import com.livelearn.ignorance.R;

@@ -1,10 +1,11 @@
 package com.livelearn.ignorance.widget.viewpager;
 
 import android.content.Context;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
+
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * 解决SwipeBackLayout滑动返回与ViewPager水平滑动冲突

@@ -1,0 +1,9571 @@
+[
+  {
+    "dept_id": 222,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "疾病好多",
+    "disease_id": 20000003
+  },
+  {
+    "dept_id": 222,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "疾病好多",
+    "disease_id": 20000002
+  },
+  {
+    "dept_id": 222,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "疾病好多",
+    "disease_id": 20000001
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿肺炎",
+    "disease_id": 10000001
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿感冒",
+    "disease_id": 10000002
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿咳嗽",
+    "disease_id": 10000003
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿支气管炎",
+    "disease_id": 10000004
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿哮喘",
+    "disease_id": 10000005
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "发烧",
+    "disease_id": 10000006
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿腹泻",
+    "disease_id": 10000007
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿癫痫",
+    "disease_id": 10000008
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿肾病",
+    "disease_id": 10000009
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "儿童白血病",
+    "disease_id": 10000010
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "矮小症",
+    "disease_id": 10000011
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "过敏性紫癜",
+    "disease_id": 10000012
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "新生儿黄疸",
+    "disease_id": 10000013
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "性早熟",
+    "disease_id": 10000014
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "川崎病",
+    "disease_id": 10000015
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "抽动症",
+    "disease_id": 10000016
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿脑瘫",
+    "disease_id": 10000017
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿心肌炎",
+    "disease_id": 10000018
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "新生儿黄疸",
+    "disease_id": 10000019
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "新生儿肺炎",
+    "disease_id": 10000020
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "发烧",
+    "disease_id": 10000021
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "新生儿缺氧缺血性脑病",
+    "disease_id": 10000022
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿哮喘",
+    "disease_id": 10000023
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿咳嗽",
+    "disease_id": 10000024
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿肺炎",
+    "disease_id": 10000025
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿支气管炎",
+    "disease_id": 10000026
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿感冒",
+    "disease_id": 10000027
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿肺炎支原体肺炎",
+    "disease_id": 10000028
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿支气管肺炎",
+    "disease_id": 10000029
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿腹泻",
+    "disease_id": 10000030
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿胃炎",
+    "disease_id": 10000031
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿消化不良",
+    "disease_id": 10000032
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿肠炎",
+    "disease_id": 10000033
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "矮小症",
+    "disease_id": 10000034
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "发育迟缓",
+    "disease_id": 10000035
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "营养不良",
+    "disease_id": 10000036
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿多动症",
+    "disease_id": 10000037
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "佝偻病",
+    "disease_id": 10000038
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "营养缺乏症",
+    "disease_id": 10000039
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿厌食",
+    "disease_id": 10000040
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "婴儿喂养",
+    "disease_id": 10000041
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿消化不良",
+    "disease_id": 10000042
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "学习障碍",
+    "disease_id": 10000043
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿癫痫",
+    "disease_id": 10000044
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "抽动症",
+    "disease_id": 10000045
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "惊厥",
+    "disease_id": 10000046
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿多动症",
+    "disease_id": 10000047
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "遗传代谢病",
+    "disease_id": 10000048
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿脑瘫",
+    "disease_id": 10000049
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "苯丙酮尿症",
+    "disease_id": 10000050
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑发育不良",
+    "disease_id": 10000051
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "学习障碍",
+    "disease_id": 10000052
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性心脏病",
+    "disease_id": 10000053
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "房间隔缺损",
+    "disease_id": 10000054
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿心律失常",
+    "disease_id": 10000055
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "川崎病",
+    "disease_id": 10000056
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "室间隔缺损",
+    "disease_id": 10000057
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿心肌炎",
+    "disease_id": 10000058
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心肌病",
+    "disease_id": 10000059
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心肌致密化不全",
+    "disease_id": 10000060
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿感染性心内膜炎",
+    "disease_id": 10000061
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿肾病",
+    "disease_id": 10000062
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿紫癜性肾炎",
+    "disease_id": 10000063
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿血尿",
+    "disease_id": 10000064
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿肾病综合征",
+    "disease_id": 10000065
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "性早熟",
+    "disease_id": 10000066
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "矮小症",
+    "disease_id": 10000067
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿甲状腺疾病",
+    "disease_id": 10000068
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "发育迟缓",
+    "disease_id": 10000069
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "过敏性紫癜",
+    "disease_id": 10000070
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿类风湿病",
+    "disease_id": 10000071
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "红斑狼疮",
+    "disease_id": 10000072
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "白塞氏病",
+    "disease_id": 10000073
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿湿疹",
+    "disease_id": 10000074
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "血管瘤",
+    "disease_id": 10000075
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿腺样体肥大",
+    "disease_id": 10000076
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿鼻炎",
+    "disease_id": 10000077
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "中耳炎",
+    "disease_id": 10000078
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "扁桃体炎",
+    "disease_id": 10000079
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿耳聋",
+    "disease_id": 10000080
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "儿童中耳炎",
+    "disease_id": 10000081
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "儿童白血病",
+    "disease_id": 10000082
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "血小板减少性紫癜",
+    "disease_id": 10000083
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿肺炎",
+    "disease_id": 10000084
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿腹泻",
+    "disease_id": 10000085
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿支气管炎",
+    "disease_id": 10000086
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "手足口病",
+    "disease_id": 10000087
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿咳嗽",
+    "disease_id": 10000088
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乙肝",
+    "disease_id": 10000089
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝炎",
+    "disease_id": 10000090
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿肺炎支原体肺炎",
+    "disease_id": 10000091
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿支气管肺炎",
+    "disease_id": 10000092
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "抽动症",
+    "disease_id": 10000093
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "精神分裂症",
+    "disease_id": 10000094
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿多动症",
+    "disease_id": 10000095
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "自闭症",
+    "disease_id": 10000096
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心理咨询",
+    "disease_id": 10000097
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "学习障碍",
+    "disease_id": 10000098
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "婴幼儿阴道炎",
+    "disease_id": 10000099
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿疝气",
+    "disease_id": 10000100
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆道先天性畸形",
+    "disease_id": 10000101
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性巨结肠",
+    "disease_id": 10000102
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "血管瘤",
+    "disease_id": 10000103
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "阑尾炎",
+    "disease_id": 10000104
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "尿道下裂",
+    "disease_id": 10000105
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "漏斗胸",
+    "disease_id": 10000106
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "室间隔缺损",
+    "disease_id": 10000107
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性心脏病",
+    "disease_id": 10000108
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "房间隔缺损",
+    "disease_id": 10000109
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "法洛四联症",
+    "disease_id": 10000110
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "动脉导管未闭",
+    "disease_id": 10000111
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "大动脉错位",
+    "disease_id": 10000112
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肺静脉异位引流",
+    "disease_id": 10000113
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肺动脉口狭窄",
+    "disease_id": 10000114
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "复杂性先天性心脏病",
+    "disease_id": 10000115
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性心脏病",
+    "disease_id": 10000116
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "漏斗胸",
+    "disease_id": 10000117
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "室间隔缺损",
+    "disease_id": 10000118
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "法洛四联症",
+    "disease_id": 10000119
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性肺囊性病",
+    "disease_id": 10000120
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿先天性髋关节脱位",
+    "disease_id": 10000121
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿骨折",
+    "disease_id": 10000122
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性足畸形",
+    "disease_id": 10000123
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脊柱侧弯",
+    "disease_id": 10000124
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性骨与关节畸形",
+    "disease_id": 10000125
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性并指多指畸形",
+    "disease_id": 10000126
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性膝关节畸形",
+    "disease_id": 10000127
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性肌性斜颈",
+    "disease_id": 10000128
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "X型腿",
+    "disease_id": 10000129
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "O型腿",
+    "disease_id": 10000130
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿肾积水",
+    "disease_id": 10000131
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "尿道下裂",
+    "disease_id": 10000132
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "隐睾",
+    "disease_id": 10000133
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "包皮过长",
+    "disease_id": 10000134
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "男性生殖器畸形",
+    "disease_id": 10000135
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性泌尿系畸形",
+    "disease_id": 10000136
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "包茎",
+    "disease_id": 10000137
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑积水",
+    "disease_id": 10000138
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脊柱裂",
+    "disease_id": 10000139
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿脑瘫",
+    "disease_id": 10000140
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿癫痫",
+    "disease_id": 10000141
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿肺炎",
+    "disease_id": 10000142
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿咳嗽",
+    "disease_id": 10000143
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿支气管炎",
+    "disease_id": 10000144
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿感冒",
+    "disease_id": 10000145
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "发烧",
+    "disease_id": 10000146
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿哮喘",
+    "disease_id": 10000147
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿腹泻",
+    "disease_id": 10000148
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿急性喉炎",
+    "disease_id": 10000149
+  },
+  {
+    "dept_id": 100002,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿肠炎",
+    "disease_id": 10000150
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "子宫肌瘤",
+    "disease_id": 10000151
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "卵巢囊肿",
+    "disease_id": 10000152
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "子宫内膜异位症",
+    "disease_id": 10000153
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫颈癌前病变",
+    "disease_id": 10000154
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫颈炎",
+    "disease_id": 10000155
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "不孕不育",
+    "disease_id": 10000156
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "阴道炎",
+    "disease_id": 10000157
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "月经失调",
+    "disease_id": 10000158
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫颈癌",
+    "disease_id": 10000159
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "卵巢肿瘤",
+    "disease_id": 10000160
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "多囊卵巢综合征",
+    "disease_id": 10000161
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "子宫腺肌症",
+    "disease_id": 10000162
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫外孕",
+    "disease_id": 10000163
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "畸胎瘤",
+    "disease_id": 10000164
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "子宫内膜癌",
+    "disease_id": 10000165
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "子宫内膜息肉",
+    "disease_id": 10000166
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "输卵管堵塞",
+    "disease_id": 10000167
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "盆腔炎",
+    "disease_id": 10000168
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "功能性子宫出血",
+    "disease_id": 10000169
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "内分泌失调",
+    "disease_id": 10000170
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "痛经",
+    "disease_id": 10000171
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "外阴瘙痒",
+    "disease_id": 10000172
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "白带异常",
+    "disease_id": 10000173
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "卵巢癌",
+    "disease_id": 10000174
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫颈糜烂",
+    "disease_id": 10000175
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "霉菌性阴道炎",
+    "disease_id": 10000176
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "多囊卵巢综合征",
+    "disease_id": 10000183
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "不孕不育",
+    "disease_id": 10000184
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "月经失调",
+    "disease_id": 10000185
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "内分泌失调",
+    "disease_id": 10000186
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "功能性子宫出血",
+    "disease_id": 10000187
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "闭经",
+    "disease_id": 10000188
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "卵巢早衰",
+    "disease_id": 10000189
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "高泌乳素血症",
+    "disease_id": 10000190
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "女性生殖器官创伤",
+    "disease_id": 10000191
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "子宫脱垂",
+    "disease_id": 10000192
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "尿失禁",
+    "disease_id": 10000193
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "人流",
+    "disease_id": 10000201
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "引产",
+    "disease_id": 10000202
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "子宫肌瘤",
+    "disease_id": 10000203
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "不孕不育",
+    "disease_id": 10000204
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫颈癌前病变",
+    "disease_id": 10000205
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫颈炎",
+    "disease_id": 10000206
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "卵巢囊肿",
+    "disease_id": 10000207
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "月经失调",
+    "disease_id": 10000208
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "子宫内膜异位症",
+    "disease_id": 10000209
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫颈癌",
+    "disease_id": 10000210
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "阴道炎",
+    "disease_id": 10000211
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫外孕",
+    "disease_id": 10000212
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "卵巢肿瘤",
+    "disease_id": 10000213
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "多囊卵巢综合征",
+    "disease_id": 10000214
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "输卵管堵塞",
+    "disease_id": 10000215
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "盆腔炎",
+    "disease_id": 10000216
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "畸胎瘤",
+    "disease_id": 10000217
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "功能性子宫出血",
+    "disease_id": 10000218
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "习惯性流产",
+    "disease_id": 10000219
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "痛经",
+    "disease_id": 10000220
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "内分泌失调",
+    "disease_id": 10000221
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "外阴瘙痒",
+    "disease_id": 10000222
+  },
+  {
+    "dept_id": 100004,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "白带异常",
+    "disease_id": 10000223
+  },
+  {
+    "dept_id": 100005,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "妊娠合并症",
+    "disease_id": 10000177
+  },
+  {
+    "dept_id": 100005,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "异常妊娠",
+    "disease_id": 10000178
+  },
+  {
+    "dept_id": 100005,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "妊高症",
+    "disease_id": 10000179
+  },
+  {
+    "dept_id": 100005,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先兆流产",
+    "disease_id": 10000180
+  },
+  {
+    "dept_id": 100005,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "习惯性流产",
+    "disease_id": 10000181
+  },
+  {
+    "dept_id": 100005,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胎停",
+    "disease_id": 10000182
+  },
+  {
+    "dept_id": 100005,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胎停",
+    "disease_id": 10000194
+  },
+  {
+    "dept_id": 100005,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先兆流产",
+    "disease_id": 10000195
+  },
+  {
+    "dept_id": 100005,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "异常妊娠",
+    "disease_id": 10000196
+  },
+  {
+    "dept_id": 100005,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "羊水异常",
+    "disease_id": 10000197
+  },
+  {
+    "dept_id": 100005,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胎儿先天畸形",
+    "disease_id": 10000198
+  },
+  {
+    "dept_id": 100005,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "遗传代谢病",
+    "disease_id": 10000199
+  },
+  {
+    "dept_id": 100005,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "特纳综合征",
+    "disease_id": 10000200
+  },
+  {
+    "dept_id": 100007,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "痣",
+    "disease_id": 10000901
+  },
+  {
+    "dept_id": 100007,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "黄褐斑",
+    "disease_id": 10000902
+  },
+  {
+    "dept_id": 100007,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "眼部整形",
+    "disease_id": 10000903
+  },
+  {
+    "dept_id": 100007,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "湿疹",
+    "disease_id": 10000904
+  },
+  {
+    "dept_id": 100007,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "白癜风",
+    "disease_id": 10000905
+  },
+  {
+    "dept_id": 100007,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "雀斑",
+    "disease_id": 10000906
+  },
+  {
+    "dept_id": 100008,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "尖锐湿疣",
+    "disease_id": 10000882
+  },
+  {
+    "dept_id": 100008,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "梅毒",
+    "disease_id": 10000883
+  },
+  {
+    "dept_id": 100008,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "性病",
+    "disease_id": 10000884
+  },
+  {
+    "dept_id": 100008,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "生殖器疱疹",
+    "disease_id": 10000885
+  },
+  {
+    "dept_id": 100008,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "淋病",
+    "disease_id": 10000886
+  },
+  {
+    "dept_id": 100008,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "男性生殖器官感染",
+    "disease_id": 10000887
+  },
+  {
+    "dept_id": 100008,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "外阴尖锐湿疣",
+    "disease_id": 10000888
+  },
+  {
+    "dept_id": 100008,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "非淋菌性尿道炎",
+    "disease_id": 10000889
+  },
+  {
+    "dept_id": 100009,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "不孕不育",
+    "disease_id": 10000548
+  },
+  {
+    "dept_id": 100009,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "多囊卵巢综合征",
+    "disease_id": 10000549
+  },
+  {
+    "dept_id": 100009,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "男性不育",
+    "disease_id": 10000550
+  },
+  {
+    "dept_id": 100009,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "输卵管堵塞",
+    "disease_id": 10000551
+  },
+  {
+    "dept_id": 100009,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "月经失调",
+    "disease_id": 10000552
+  },
+  {
+    "dept_id": 100009,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "卵巢早衰",
+    "disease_id": 10000553
+  },
+  {
+    "dept_id": 100009,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "试管婴儿",
+    "disease_id": 10000554
+  },
+  {
+    "dept_id": 100009,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫腔镜",
+    "disease_id": 10000555
+  },
+  {
+    "dept_id": 100009,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "人工授精",
+    "disease_id": 10000556
+  },
+  {
+    "dept_id": 100010,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "男性不育",
+    "disease_id": 10000890
+  },
+  {
+    "dept_id": 100010,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "性功能障碍",
+    "disease_id": 10000891
+  },
+  {
+    "dept_id": 100010,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "前列腺炎",
+    "disease_id": 10000892
+  },
+  {
+    "dept_id": 100010,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "包皮过长",
+    "disease_id": 10000893
+  },
+  {
+    "dept_id": 100010,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "精索静脉曲张",
+    "disease_id": 10000894
+  },
+  {
+    "dept_id": 100010,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "包皮龟头炎",
+    "disease_id": 10000895
+  },
+  {
+    "dept_id": 100010,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "附睾炎",
+    "disease_id": 10000896
+  },
+  {
+    "dept_id": 100010,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "精囊炎",
+    "disease_id": 10000897
+  },
+  {
+    "dept_id": 100010,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "包茎",
+    "disease_id": 10000898
+  },
+  {
+    "dept_id": 100010,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "早泄",
+    "disease_id": 10000899
+  },
+  {
+    "dept_id": 100010,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "阳痿",
+    "disease_id": 10000900
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "冠心病",
+    "disease_id": 10000343
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "高血压",
+    "disease_id": 10000344
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "糖尿病",
+    "disease_id": 10000345
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑梗塞",
+    "disease_id": 10000346
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨质疏松",
+    "disease_id": 10000347
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑血管病",
+    "disease_id": 10000348
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "痴呆",
+    "disease_id": 10000349
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "高脂血症",
+    "disease_id": 10000350
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "感冒",
+    "disease_id": 10000351
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "三高症",
+    "disease_id": 10000352
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "高血压",
+    "disease_id": 10000353
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "冠心病",
+    "disease_id": 10000354
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "糖尿病",
+    "disease_id": 10000355
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑梗塞",
+    "disease_id": 10000356
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胃病",
+    "disease_id": 10000357
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胃炎",
+    "disease_id": 10000358
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑血栓",
+    "disease_id": 10000359
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "感冒",
+    "disease_id": 10000360
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胃溃疡",
+    "disease_id": 10000361
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肺炎",
+    "disease_id": 10000362
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "支气管炎",
+    "disease_id": 10000363
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "咳嗽",
+    "disease_id": 10000364
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "发烧",
+    "disease_id": 10000365
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "头痛",
+    "disease_id": 10000366
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝炎",
+    "disease_id": 10000367
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心律失常",
+    "disease_id": 10000368
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "类风湿性关节炎",
+    "disease_id": 10000369
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肠胃炎",
+    "disease_id": 10000370
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肾病",
+    "disease_id": 10000371
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "头晕",
+    "disease_id": 10000372
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "失眠",
+    "disease_id": 10000373
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腹泻",
+    "disease_id": 10000374
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑血管病",
+    "disease_id": 10000375
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "消化道出血",
+    "disease_id": 10000376
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肠炎",
+    "disease_id": 10000377
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "贫血",
+    "disease_id": 10000378
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "老年病",
+    "disease_id": 10000379
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腹痛",
+    "disease_id": 10000380
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "高脂血症",
+    "disease_id": 10000381
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "结肠炎",
+    "disease_id": 10000382
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "扁桃体炎",
+    "disease_id": 10000383
+  },
+  {
+    "dept_id": 100012,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胃出血",
+    "disease_id": 10000384
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "哮喘",
+    "disease_id": 10000304
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肺炎",
+    "disease_id": 10000305
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肺癌",
+    "disease_id": 10000306
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "支气管炎",
+    "disease_id": 10000307
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "咳嗽",
+    "disease_id": 10000308
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "慢阻肺",
+    "disease_id": 10000309
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肺结核",
+    "disease_id": 10000310
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肺气肿",
+    "disease_id": 10000311
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "支气管扩张",
+    "disease_id": 10000312
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肺心病",
+    "disease_id": 10000313
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肺栓塞",
+    "disease_id": 10000314
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胸膜炎",
+    "disease_id": 10000315
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "睡眠呼吸暂停综合征",
+    "disease_id": 10000316
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "结节病",
+    "disease_id": 10000317
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "间质性肺炎",
+    "disease_id": 10000318
+  },
+  {
+    "dept_id": 100013,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "慢性支气管炎",
+    "disease_id": 10000319
+  },
+  {
+    "dept_id": 100013,
+    "source": "",
+    "status": 1,
+    "disease_name": "尘肺",
+    "disease_id": 10001345
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "冠心病",
+    "disease_id": 10000224
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "高血压",
+    "disease_id": 10000225
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心律失常",
+    "disease_id": 10000226
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "房颤",
+    "disease_id": 10000227
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "阵发性室上性心动过速",
+    "disease_id": 10000228
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心衰",
+    "disease_id": 10000229
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "房间隔缺损",
+    "disease_id": 10000230
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性心脏病",
+    "disease_id": 10000231
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心肌炎",
+    "disease_id": 10000232
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心肌病",
+    "disease_id": 10000233
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "风湿性心脏病",
+    "disease_id": 10000234
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心肌梗死",
+    "disease_id": 10000235
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心绞痛",
+    "disease_id": 10000236
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "急性感染性心内膜炎",
+    "disease_id": 10000237
+  },
+  {
+    "dept_id": 100014,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心肌缺血",
+    "disease_id": 10000238
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑梗塞",
+    "disease_id": 10000239
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "癫痫",
+    "disease_id": 10000240
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "帕金森",
+    "disease_id": 10000241
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "头痛",
+    "disease_id": 10000242
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "头晕",
+    "disease_id": 10000243
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "重症肌无力",
+    "disease_id": 10000244
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑出血",
+    "disease_id": 10000245
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "抑郁症",
+    "disease_id": 10000246
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "失眠",
+    "disease_id": 10000247
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑炎",
+    "disease_id": 10000248
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "痴呆",
+    "disease_id": 10000249
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑供血不足",
+    "disease_id": 10000250
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肌病",
+    "disease_id": 10000251
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "运动神经元病",
+    "disease_id": 10000252
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "多发性硬化",
+    "disease_id": 10000253
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑栓塞",
+    "disease_id": 10000254
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑血栓",
+    "disease_id": 10000255
+  },
+  {
+    "dept_id": 100015,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "偏头痛",
+    "disease_id": 10000256
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胃炎",
+    "disease_id": 10000257
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胃溃疡",
+    "disease_id": 10000258
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝硬化",
+    "disease_id": 10000259
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "反流性食管炎",
+    "disease_id": 10000260
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胰腺炎",
+    "disease_id": 10000261
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "溃疡性结肠炎",
+    "disease_id": 10000262
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "消化道出血",
+    "disease_id": 10000263
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肠炎",
+    "disease_id": 10000264
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胃癌",
+    "disease_id": 10000265
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "结肠炎",
+    "disease_id": 10000266
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肠胃炎",
+    "disease_id": 10000267
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "消化不良",
+    "disease_id": 10000268
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腹泻",
+    "disease_id": 10000269
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腹痛",
+    "disease_id": 10000270
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "便秘",
+    "disease_id": 10000271
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "十二指肠溃疡",
+    "disease_id": 10000272
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "慢性萎缩性胃炎",
+    "disease_id": 10000273
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "急性肠炎",
+    "disease_id": 10000274
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "慢性腹泻",
+    "disease_id": 10000275
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "慢性胃炎",
+    "disease_id": 10000276
+  },
+  {
+    "dept_id": 100016,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "慢性浅表性胃炎",
+    "disease_id": 10000277
+  },
+  {
+    "dept_id": 100017,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肾炎",
+    "disease_id": 10000320
+  },
+  {
+    "dept_id": 100017,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肾病综合征",
+    "disease_id": 10000321
+  },
+  {
+    "dept_id": 100017,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肾功能衰竭",
+    "disease_id": 10000322
+  },
+  {
+    "dept_id": 100017,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "IGA肾病",
+    "disease_id": 10000323
+  },
+  {
+    "dept_id": 100017,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "尿毒症",
+    "disease_id": 10000324
+  },
+  {
+    "dept_id": 100017,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "狼疮性肾炎",
+    "disease_id": 10000325
+  },
+  {
+    "dept_id": 100017,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "紫癜性肾炎",
+    "disease_id": 10000326
+  },
+  {
+    "dept_id": 100017,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "尿路感染",
+    "disease_id": 10000327
+  },
+  {
+    "dept_id": 100017,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肾小球肾炎",
+    "disease_id": 10000328
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "糖尿病",
+    "disease_id": 10000278
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "甲亢",
+    "disease_id": 10000279
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "甲减",
+    "disease_id": 10000280
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "甲状腺炎",
+    "disease_id": 10000281
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "甲状腺瘤",
+    "disease_id": 10000282
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "矮小症",
+    "disease_id": 10000283
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "垂体瘤",
+    "disease_id": 10000284
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "糖尿病足",
+    "disease_id": 10000285
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨质疏松",
+    "disease_id": 10000286
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "内分泌失调",
+    "disease_id": 10000287
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肥胖症",
+    "disease_id": 10000288
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "糖尿病神经病变",
+    "disease_id": 10000289
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "Graves病",
+    "disease_id": 10000290
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "2型糖尿病",
+    "disease_id": 10000291
+  },
+  {
+    "dept_id": 100018,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "1型糖尿病",
+    "disease_id": 10000292
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "红斑狼疮",
+    "disease_id": 10000293
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "类风湿性关节炎",
+    "disease_id": 10000294
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "强直性脊柱炎",
+    "disease_id": 10000295
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "干燥综合征",
+    "disease_id": 10000296
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "痛风",
+    "disease_id": 10000297
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "皮肌炎",
+    "disease_id": 10000298
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "白塞氏病",
+    "disease_id": 10000299
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "成人斯蒂尔病",
+    "disease_id": 10000300
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "血管炎",
+    "disease_id": 10000301
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "血清阴性脊柱关节病",
+    "disease_id": 10000302
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "系统性红斑狼疮",
+    "disease_id": 10000303
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "过敏性鼻炎",
+    "disease_id": 10000339
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "哮喘",
+    "disease_id": 10000340
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "皮肤过敏",
+    "disease_id": 10000341
+  },
+  {
+    "dept_id": 100019,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "花粉症",
+    "disease_id": 10000342
+  },
+  {
+    "dept_id": 100020,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "白血病",
+    "disease_id": 10000329
+  },
+  {
+    "dept_id": 100020,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "淋巴瘤",
+    "disease_id": 10000330
+  },
+  {
+    "dept_id": 100020,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "再生障碍性贫血",
+    "disease_id": 10000331
+  },
+  {
+    "dept_id": 100020,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "多发性骨髓瘤",
+    "disease_id": 10000332
+  },
+  {
+    "dept_id": 100020,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "贫血",
+    "disease_id": 10000333
+  },
+  {
+    "dept_id": 100020,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "血小板减少性紫癜",
+    "disease_id": 10000334
+  },
+  {
+    "dept_id": 100020,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨髓增生异常综合征",
+    "disease_id": 10000335
+  },
+  {
+    "dept_id": 100020,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "过敏性紫癜",
+    "disease_id": 10000336
+  },
+  {
+    "dept_id": 100020,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "慢性粒细胞白血病",
+    "disease_id": 10000337
+  },
+  {
+    "dept_id": 100020,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "急性淋巴细胞白血病",
+    "disease_id": 10000338
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺癌",
+    "disease_id": 10000455
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺纤维瘤",
+    "disease_id": 10000456
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺增生",
+    "disease_id": 10000457
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺炎",
+    "disease_id": 10000458
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "副乳",
+    "disease_id": 10000459
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "尿毒症",
+    "disease_id": 10000508
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝癌",
+    "disease_id": 10000509
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肾功能衰竭",
+    "disease_id": 10000510
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝硬化",
+    "disease_id": 10000511
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆结石",
+    "disease_id": 10000512
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "甲状腺瘤",
+    "disease_id": 10000513
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆囊炎",
+    "disease_id": 10000514
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆囊息肉",
+    "disease_id": 10000515
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆囊结石",
+    "disease_id": 10000516
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆管结石",
+    "disease_id": 10000517
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝外胆管结石",
+    "disease_id": 10000518
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝内胆管结石",
+    "disease_id": 10000519
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胃癌",
+    "disease_id": 10000520
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆结石",
+    "disease_id": 10000521
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "甲状腺瘤",
+    "disease_id": 10000522
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "甲状腺癌",
+    "disease_id": 10000523
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "直肠癌",
+    "disease_id": 10000524
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "结肠癌",
+    "disease_id": 10000525
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "疝",
+    "disease_id": 10000526
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺癌",
+    "disease_id": 10000527
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肠瘘",
+    "disease_id": 10000528
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "阑尾炎",
+    "disease_id": 10000529
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胰腺炎",
+    "disease_id": 10000530
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肠梗阻",
+    "disease_id": 10000531
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝癌",
+    "disease_id": 10000532
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺纤维瘤",
+    "disease_id": 10000533
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "痔疮",
+    "disease_id": 10000534
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胰腺癌",
+    "disease_id": 10000535
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺增生",
+    "disease_id": 10000536
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆囊炎",
+    "disease_id": 10000537
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆囊息肉",
+    "disease_id": 10000538
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺肿瘤",
+    "disease_id": 10000539
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "静脉曲张",
+    "disease_id": 10000540
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腹股沟疝",
+    "disease_id": 10000541
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腹膜后血肿",
+    "disease_id": 10000542
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腹外疝",
+    "disease_id": 10000543
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "十二指肠溃疡",
+    "disease_id": 10000544
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "粘连性肠梗阻",
+    "disease_id": 10000545
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胃出血",
+    "disease_id": 10000546
+  },
+  {
+    "dept_id": 100021,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "纤维瘤",
+    "disease_id": 10000547
+  },
+  {
+    "dept_id": 100021,
+    "source": "",
+    "status": 1,
+    "disease_name": "疼痛",
+    "disease_id": 10001344
+  },
+  {
+    "dept_id": 100021,
+    "source": "",
+    "status": 1,
+    "disease_name": "麻醉",
+    "disease_id": 10001343
+  },
+  {
+    "dept_id": 100023,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肺癌",
+    "disease_id": 10000422
+  },
+  {
+    "dept_id": 100023,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "食道癌",
+    "disease_id": 10000423
+  },
+  {
+    "dept_id": 100023,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "纵隔肿瘤",
+    "disease_id": 10000424
+  },
+  {
+    "dept_id": 100023,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "气胸",
+    "disease_id": 10000425
+  },
+  {
+    "dept_id": 100023,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "漏斗胸",
+    "disease_id": 10000426
+  },
+  {
+    "dept_id": 100023,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "多汗症",
+    "disease_id": 10000427
+  },
+  {
+    "dept_id": 100023,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "支气管扩张",
+    "disease_id": 10000428
+  },
+  {
+    "dept_id": 100023,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胸腔积液",
+    "disease_id": 10000429
+  },
+  {
+    "dept_id": 100023,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胸膜炎",
+    "disease_id": 10000430
+  },
+  {
+    "dept_id": 100023,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胸部创伤",
+    "disease_id": 10000431
+  },
+  {
+    "dept_id": 100023,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "血胸",
+    "disease_id": 10000432
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "垂体瘤",
+    "disease_id": 10000385
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑膜瘤",
+    "disease_id": 10000386
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑肿瘤",
+    "disease_id": 10000387
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胶质瘤",
+    "disease_id": 10000388
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑出血",
+    "disease_id": 10000389
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑动脉瘤",
+    "disease_id": 10000390
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑外伤",
+    "disease_id": 10000391
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑血管畸形",
+    "disease_id": 10000392
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "椎管内肿瘤",
+    "disease_id": 10000393
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "面肌痉挛",
+    "disease_id": 10000394
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "听神经瘤",
+    "disease_id": 10000395
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "三叉神经痛",
+    "disease_id": 10000396
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "癫痫",
+    "disease_id": 10000397
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑积水",
+    "disease_id": 10000398
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "颅咽管瘤",
+    "disease_id": 10000399
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑血管病",
+    "disease_id": 10000400
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脊髓空洞症",
+    "disease_id": 10000401
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "生殖细胞瘤",
+    "disease_id": 10000402
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "癫痫",
+    "disease_id": 10000403
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "帕金森",
+    "disease_id": 10000404
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿癫痫",
+    "disease_id": 10000405
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿脑瘫",
+    "disease_id": 10000406
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "面肌痉挛",
+    "disease_id": 10000407
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "三叉神经痛",
+    "disease_id": 10000408
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "锥体外系疾病",
+    "disease_id": 10000409
+  },
+  {
+    "dept_id": 100024,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "强迫症",
+    "disease_id": 10000410
+  },
+  {
+    "dept_id": 100025,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆结石",
+    "disease_id": 10000476
+  },
+  {
+    "dept_id": 100025,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝癌",
+    "disease_id": 10000477
+  },
+  {
+    "dept_id": 100025,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胰腺癌",
+    "disease_id": 10000478
+  },
+  {
+    "dept_id": 100025,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝血管瘤",
+    "disease_id": 10000479
+  },
+  {
+    "dept_id": 100025,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆管癌",
+    "disease_id": 10000480
+  },
+  {
+    "dept_id": 100025,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆囊息肉",
+    "disease_id": 10000481
+  },
+  {
+    "dept_id": 100025,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆囊炎",
+    "disease_id": 10000482
+  },
+  {
+    "dept_id": 100025,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胰腺炎",
+    "disease_id": 10000483
+  },
+  {
+    "dept_id": 100025,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝硬化",
+    "disease_id": 10000484
+  },
+  {
+    "dept_id": 100025,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆囊癌",
+    "disease_id": 10000485
+  },
+  {
+    "dept_id": 100025,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "门静脉高压症",
+    "disease_id": 10000486
+  },
+  {
+    "dept_id": 100025,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝脓肿",
+    "disease_id": 10000487
+  },
+  {
+    "dept_id": 100025,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆囊结石",
+    "disease_id": 10000488
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肾肿瘤",
+    "disease_id": 10000460
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肾结石",
+    "disease_id": 10000461
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "膀胱癌",
+    "disease_id": 10000462
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "前列腺癌",
+    "disease_id": 10000463
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "前列腺增生",
+    "disease_id": 10000464
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "前列腺炎",
+    "disease_id": 10000465
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "输尿管结石",
+    "disease_id": 10000466
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肾上腺肿瘤",
+    "disease_id": 10000467
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肾积水",
+    "disease_id": 10000468
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肾囊肿",
+    "disease_id": 10000469
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "尿结石",
+    "disease_id": 10000470
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "性功能障碍",
+    "disease_id": 10000471
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "尿路感染",
+    "disease_id": 10000472
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "精索静脉曲张",
+    "disease_id": 10000473
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "尿道下裂",
+    "disease_id": 10000474
+  },
+  {
+    "dept_id": 100026,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "男性不育",
+    "disease_id": 10000475
+  },
+  {
+    "dept_id": 100028,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "痔疮",
+    "disease_id": 10000489
+  },
+  {
+    "dept_id": 100028,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "直肠癌",
+    "disease_id": 10000490
+  },
+  {
+    "dept_id": 100028,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肛瘘",
+    "disease_id": 10000491
+  },
+  {
+    "dept_id": 100028,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "结肠癌",
+    "disease_id": 10000492
+  },
+  {
+    "dept_id": 100028,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肛周脓肿",
+    "disease_id": 10000493
+  },
+  {
+    "dept_id": 100028,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肛裂",
+    "disease_id": 10000494
+  },
+  {
+    "dept_id": 100028,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "直肠息肉",
+    "disease_id": 10000495
+  },
+  {
+    "dept_id": 100028,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "直肠脱垂",
+    "disease_id": 10000496
+  },
+  {
+    "dept_id": 100029,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "甲状腺癌",
+    "disease_id": 10000780
+  },
+  {
+    "dept_id": 100029,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "甲状腺瘤",
+    "disease_id": 10000781
+  },
+  {
+    "dept_id": 100029,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "口腔颌面部肿瘤",
+    "disease_id": 10000782
+  },
+  {
+    "dept_id": 100029,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "喉癌",
+    "disease_id": 10000783
+  },
+  {
+    "dept_id": 100029,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "舌癌",
+    "disease_id": 10000784
+  },
+  {
+    "dept_id": 100029,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "咽部肿瘤",
+    "disease_id": 10000785
+  },
+  {
+    "dept_id": 100029,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿腺样体肥大",
+    "disease_id": 10000786
+  },
+  {
+    "dept_id": 100029,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "颈动脉体瘤",
+    "disease_id": 10000787
+  },
+  {
+    "dept_id": 100029,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "颅底肿瘤",
+    "disease_id": 10000788
+  },
+  {
+    "dept_id": 100029,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "颈部创伤",
+    "disease_id": 10000789
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心脏瓣膜性疾病",
+    "disease_id": 10000411
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "风湿性心脏病",
+    "disease_id": 10000412
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性心脏病",
+    "disease_id": 10000413
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "室间隔缺损",
+    "disease_id": 10000414
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "冠心病",
+    "disease_id": 10000415
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "主动脉瘤",
+    "disease_id": 10000416
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "房间隔缺损",
+    "disease_id": 10000417
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "法洛四联症",
+    "disease_id": 10000418
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "风湿性心脏瓣膜病",
+    "disease_id": 10000419
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "二尖瓣脱垂综合症",
+    "disease_id": 10000420
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "继发性肺动脉高压",
+    "disease_id": 10000421
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "静脉曲张",
+    "disease_id": 10000497
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "主动脉瘤",
+    "disease_id": 10000498
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "动脉硬化闭塞症",
+    "disease_id": 10000499
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "下肢静脉血栓",
+    "disease_id": 10000500
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "血管瘤",
+    "disease_id": 10000501
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脉管炎",
+    "disease_id": 10000502
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "糖尿病足",
+    "disease_id": 10000503
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "易栓症",
+    "disease_id": 10000504
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "下肢淋巴水肿",
+    "disease_id": 10000505
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "动脉栓塞",
+    "disease_id": 10000506
+  },
+  {
+    "dept_id": 100030,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "动脉瘤",
+    "disease_id": 10000507
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "拇外翻",
+    "disease_id": 10000557
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "足部骨折",
+    "disease_id": 10000558
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性足畸形",
+    "disease_id": 10000559
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "踝部扭伤",
+    "disease_id": 10000560
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "扁平足",
+    "disease_id": 10000561
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性马蹄内翻足",
+    "disease_id": 10000562
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨折",
+    "disease_id": 10000563
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腰椎间盘突出",
+    "disease_id": 10000564
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "颈椎病",
+    "disease_id": 10000565
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "膝关节损伤",
+    "disease_id": 10000566
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脊柱侧弯",
+    "disease_id": 10000567
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腰椎管狭窄",
+    "disease_id": 10000568
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脊柱骨折",
+    "disease_id": 10000569
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "股骨头坏死",
+    "disease_id": 10000570
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨质增生",
+    "disease_id": 10000571
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨肿瘤",
+    "disease_id": 10000572
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "关节炎",
+    "disease_id": 10000573
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "手外伤",
+    "disease_id": 10000574
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腰痛",
+    "disease_id": 10000575
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脊柱结核",
+    "disease_id": 10000576
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨髓炎",
+    "disease_id": 10000577
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性足畸形",
+    "disease_id": 10000578
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨质疏松",
+    "disease_id": 10000579
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "关节损伤",
+    "disease_id": 10000580
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨不连",
+    "disease_id": 10000581
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "强直性脊柱炎",
+    "disease_id": 10000582
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿先天性髋关节脱位",
+    "disease_id": 10000583
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腱鞘囊肿",
+    "disease_id": 10000584
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肩关节脱位",
+    "disease_id": 10000585
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腰腿痛",
+    "disease_id": 10000586
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腰肌劳损",
+    "disease_id": 10000587
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腰椎间盘突出",
+    "disease_id": 10000588
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "颈椎病",
+    "disease_id": 10000589
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腰椎管狭窄",
+    "disease_id": 10000590
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脊柱侧弯",
+    "disease_id": 10000591
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "寰枢椎脱位",
+    "disease_id": 10000592
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脊柱肿瘤",
+    "disease_id": 10000593
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "手外伤",
+    "disease_id": 10000594
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性并指多指畸形",
+    "disease_id": 10000595
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "臂丛神经损伤",
+    "disease_id": 10000596
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "神经卡压综合征",
+    "disease_id": 10000597
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腱鞘炎",
+    "disease_id": 10000598
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨折",
+    "disease_id": 10000599
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "膝关节损伤",
+    "disease_id": 10000600
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "足部骨折",
+    "disease_id": 10000601
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "踝部扭伤",
+    "disease_id": 10000602
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨盆骨折",
+    "disease_id": 10000603
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨不连",
+    "disease_id": 10000604
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肩关节损伤",
+    "disease_id": 10000605
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "关节损伤",
+    "disease_id": 10000606
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "运动创伤",
+    "disease_id": 10000607
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "膝关节损伤",
+    "disease_id": 10000608
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "股骨头坏死",
+    "disease_id": 10000609
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "关节炎",
+    "disease_id": 10000610
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "韧带损伤",
+    "disease_id": 10000611
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "关节损伤",
+    "disease_id": 10000612
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "类风湿性关节炎",
+    "disease_id": 10000613
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "踝部扭伤",
+    "disease_id": 10000614
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "股骨头坏死",
+    "disease_id": 10000615
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性足畸形",
+    "disease_id": 10000616
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性膝关节畸形",
+    "disease_id": 10000617
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨延长",
+    "disease_id": 10000618
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "成人先天性髋关节脱位",
+    "disease_id": 10000619
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿先天性髋关节脱位",
+    "disease_id": 10000620
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "拇外翻",
+    "disease_id": 10000621
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性骨与关节畸形",
+    "disease_id": 10000622
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "X型腿",
+    "disease_id": 10000623
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "O型腿",
+    "disease_id": 10000624
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "鸡胸",
+    "disease_id": 10000625
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性马蹄内翻足",
+    "disease_id": 10000626
+  },
+  {
+    "dept_id": 100031,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "扁平足",
+    "disease_id": 10000627
+  },
+  {
+    "dept_id": 100033,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "烧伤",
+    "disease_id": 10000907
+  },
+  {
+    "dept_id": 100033,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "褥疮",
+    "disease_id": 10000908
+  },
+  {
+    "dept_id": 100033,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "烫伤",
+    "disease_id": 10000909
+  },
+  {
+    "dept_id": 100033,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "烧伤整形",
+    "disease_id": 10000910
+  },
+  {
+    "dept_id": 100033,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "皮肤整形",
+    "disease_id": 10000911
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "月经失调",
+    "disease_id": 10000948
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "不孕不育",
+    "disease_id": 10000949
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "多囊卵巢综合征",
+    "disease_id": 10000950
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "盆腔炎",
+    "disease_id": 10000951
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "子宫肌瘤",
+    "disease_id": 10000952
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "子宫内膜异位症",
+    "disease_id": 10000953
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "痛经",
+    "disease_id": 10000954
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "阴道炎",
+    "disease_id": 10000955
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫颈炎",
+    "disease_id": 10000956
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "输卵管堵塞",
+    "disease_id": 10000957
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "功能性子宫出血",
+    "disease_id": 10000958
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "妇科炎症",
+    "disease_id": 10000959
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "卵巢囊肿",
+    "disease_id": 10000960
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "更年期综合症",
+    "disease_id": 10000961
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "子宫腺肌症",
+    "disease_id": 10000962
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "内分泌失调",
+    "disease_id": 10000963
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺增生",
+    "disease_id": 10000964
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫颈癌前病变",
+    "disease_id": 10000965
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "白带异常",
+    "disease_id": 10000966
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "产后风湿",
+    "disease_id": 10000967
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿咳嗽",
+    "disease_id": 10000968
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿感冒",
+    "disease_id": 10000969
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿肺炎",
+    "disease_id": 10000970
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "过敏性紫癜",
+    "disease_id": 10000971
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿哮喘",
+    "disease_id": 10000972
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿支气管炎",
+    "disease_id": 10000973
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "抽动症",
+    "disease_id": 10000974
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "发烧",
+    "disease_id": 10000975
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿腹泻",
+    "disease_id": 10000976
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿厌食",
+    "disease_id": 10000977
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿肾病",
+    "disease_id": 10000978
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿鼻炎",
+    "disease_id": 10000979
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿遗尿",
+    "disease_id": 10000980
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "扁桃体炎",
+    "disease_id": 10000981
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "性早熟",
+    "disease_id": 10000982
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿腺样体肥大",
+    "disease_id": 10000983
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿心肌炎",
+    "disease_id": 10000984
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿湿疹",
+    "disease_id": 10000985
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿急性喉炎",
+    "disease_id": 10000986
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腰椎间盘突出",
+    "disease_id": 10000987
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨折",
+    "disease_id": 10000988
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "颈椎病",
+    "disease_id": 10000989
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "膝关节损伤",
+    "disease_id": 10000990
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腰痛",
+    "disease_id": 10000991
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "股骨头坏死",
+    "disease_id": 10000992
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "关节炎",
+    "disease_id": 10000993
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "足部骨折",
+    "disease_id": 10000994
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肩周炎",
+    "disease_id": 10000995
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "滑膜炎",
+    "disease_id": 10000996
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "手外伤",
+    "disease_id": 10000997
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "踝部扭伤",
+    "disease_id": 10000998
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨质疏松",
+    "disease_id": 10000999
+  },
+  {
+    "dept_id": 100034,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腱鞘炎",
+    "disease_id": 10001000
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "关节损伤",
+    "disease_id": 10001001
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "韧带损伤",
+    "disease_id": 10001002
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "类风湿性关节炎",
+    "disease_id": 10001003
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "筋膜炎",
+    "disease_id": 10001004
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "小儿先天性髋关节脱位",
+    "disease_id": 10001005
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "腱鞘囊肿",
+    "disease_id": 10001006
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "运动创伤",
+    "disease_id": 10001007
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "痤疮",
+    "disease_id": 10001008
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "湿疹",
+    "disease_id": 10001009
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "银屑病",
+    "disease_id": 10001010
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "荨麻疹",
+    "disease_id": 10001011
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "皮肤过敏",
+    "disease_id": 10001012
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "皮炎",
+    "disease_id": 10001013
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "白癜风",
+    "disease_id": 10001014
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "带状疱疹",
+    "disease_id": 10001015
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脱发",
+    "disease_id": 10001016
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "扁平疣",
+    "disease_id": 10001017
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脂溢性皮炎",
+    "disease_id": 10001018
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "黄褐斑",
+    "disease_id": 10001019
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "皮肤瘙痒",
+    "disease_id": 10001020
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "癣",
+    "disease_id": 10001021
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "日光性皮炎",
+    "disease_id": 10001022
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "系统性红斑狼疮",
+    "disease_id": 10001023
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "激素依赖性皮炎",
+    "disease_id": 10001024
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "糖尿病",
+    "disease_id": 10001025
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "甲亢",
+    "disease_id": 10001026
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "甲减",
+    "disease_id": 10001027
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "甲状腺炎",
+    "disease_id": 10001028
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "内分泌失调",
+    "disease_id": 10001029
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "痤疮",
+    "disease_id": 10001030
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "月经失调",
+    "disease_id": 10001031
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "更年期综合症",
+    "disease_id": 10001032
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "胃炎",
+    "disease_id": 10001033
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "胃溃疡",
+    "disease_id": 10001034
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "溃疡性结肠炎",
+    "disease_id": 10001035
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "反流性食管炎",
+    "disease_id": 10001036
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "腹泻",
+    "disease_id": 10001037
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "结肠炎",
+    "disease_id": 10001038
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "便秘",
+    "disease_id": 10001039
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝硬化",
+    "disease_id": 10001040
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "消化不良",
+    "disease_id": 10001041
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "乙肝",
+    "disease_id": 10001042
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肠炎",
+    "disease_id": 10001043
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肠胃炎",
+    "disease_id": 10001044
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "胆囊炎",
+    "disease_id": 10001045
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肠易激综合征",
+    "disease_id": 10001046
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脂肪肝",
+    "disease_id": 10001047
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "咳嗽",
+    "disease_id": 10001048
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "哮喘",
+    "disease_id": 10001049
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "支气管炎",
+    "disease_id": 10001050
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肺炎",
+    "disease_id": 10001051
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "感冒",
+    "disease_id": 10001052
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "急性上呼吸道感染",
+    "disease_id": 10001053
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "过敏性鼻炎",
+    "disease_id": 10001054
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "间质性肺炎",
+    "disease_id": 10001055
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "慢性支气管炎",
+    "disease_id": 10001056
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肾炎",
+    "disease_id": 10001057
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肾病综合征",
+    "disease_id": 10001058
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肾功能衰竭",
+    "disease_id": 10001059
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "IGA肾病",
+    "disease_id": 10001060
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "尿路感染",
+    "disease_id": 10001061
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "糖尿病肾病",
+    "disease_id": 10001062
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "尿毒症",
+    "disease_id": 10001063
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "紫癜性肾炎",
+    "disease_id": 10001064
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "狼疮性肾炎",
+    "disease_id": 10001065
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "小儿肾病",
+    "disease_id": 10001066
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "类风湿性关节炎",
+    "disease_id": 10001067
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "强直性脊柱炎",
+    "disease_id": 10001068
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "红斑狼疮",
+    "disease_id": 10001069
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "风湿病",
+    "disease_id": 10001070
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "干燥综合征",
+    "disease_id": 10001071
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "痛风",
+    "disease_id": 10001072
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "产后风湿",
+    "disease_id": 10001073
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "白塞氏病",
+    "disease_id": 10001074
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "皮肌炎",
+    "disease_id": 10001075
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "血清阴性脊柱关节病",
+    "disease_id": 10001076
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "硬皮病",
+    "disease_id": 10001077
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "过敏性紫癜",
+    "disease_id": 10001078
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "结节性红斑",
+    "disease_id": 10001079
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "系统性红斑狼疮",
+    "disease_id": 10001080
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "冠心病",
+    "disease_id": 10001081
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "高血压",
+    "disease_id": 10001082
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "心律失常",
+    "disease_id": 10001083
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脑梗塞",
+    "disease_id": 10001084
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "失眠",
+    "disease_id": 10001085
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脑血栓",
+    "disease_id": 10001086
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "头痛",
+    "disease_id": 10001087
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "头晕",
+    "disease_id": 10001088
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "抑郁症",
+    "disease_id": 10001089
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脑出血",
+    "disease_id": 10001090
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脑血管病",
+    "disease_id": 10001091
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肺癌",
+    "disease_id": 10001092
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "乳腺癌",
+    "disease_id": 10001093
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "胃癌",
+    "disease_id": 10001094
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝癌",
+    "disease_id": 10001095
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "结肠癌",
+    "disease_id": 10001096
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "直肠癌",
+    "disease_id": 10001097
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "食道癌",
+    "disease_id": 10001098
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "卵巢肿瘤",
+    "disease_id": 10001099
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "宫颈癌",
+    "disease_id": 10001100
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "胰腺癌",
+    "disease_id": 10001101
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "淋巴瘤",
+    "disease_id": 10001102
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "鼻咽癌",
+    "disease_id": 10001103
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "甲状腺癌",
+    "disease_id": 10001104
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "子宫内膜癌",
+    "disease_id": 10001105
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "膀胱癌",
+    "disease_id": 10001106
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "血小板减少性紫癜",
+    "disease_id": 10001107
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "再生障碍性贫血",
+    "disease_id": 10001108
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "白血病",
+    "disease_id": 10001109
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "贫血",
+    "disease_id": 10001110
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "多发性骨髓瘤",
+    "disease_id": 10001111
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "白细胞减少症",
+    "disease_id": 10001112
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "乙肝",
+    "disease_id": 10001113
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝硬化",
+    "disease_id": 10001114
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝炎",
+    "disease_id": 10001115
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脂肪肝",
+    "disease_id": 10001116
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝腹水",
+    "disease_id": 10001117
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "自身免疫性肝病",
+    "disease_id": 10001118
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "酒精肝",
+    "disease_id": 10001119
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "黄疸",
+    "disease_id": 10001120
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "鼻炎",
+    "disease_id": 10001121
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "咽炎",
+    "disease_id": 10001122
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "过敏性鼻炎",
+    "disease_id": 10001123
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "鼻窦炎",
+    "disease_id": 10001124
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "中耳炎",
+    "disease_id": 10001125
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "小儿腺样体肥大",
+    "disease_id": 10001126
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "耳鸣",
+    "disease_id": 10001127
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "扁桃体炎",
+    "disease_id": 10001128
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "小儿鼻炎",
+    "disease_id": 10001129
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "儿童鼻窦炎",
+    "disease_id": 10001130
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "耵聍栓塞",
+    "disease_id": 10001131
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "前列腺炎",
+    "disease_id": 10001132
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "男性不育",
+    "disease_id": 10001133
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "性功能障碍",
+    "disease_id": 10001134
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "精索静脉曲张",
+    "disease_id": 10001135
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "前列腺增生",
+    "disease_id": 10001136
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "精囊炎",
+    "disease_id": 10001137
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "附睾炎",
+    "disease_id": 10001138
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "面瘫",
+    "disease_id": 10001139
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "颈椎病",
+    "disease_id": 10001140
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰椎间盘突出",
+    "disease_id": 10001141
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脑梗塞",
+    "disease_id": 10001142
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰痛",
+    "disease_id": 10001143
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "失眠",
+    "disease_id": 10001144
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脑血栓",
+    "disease_id": 10001145
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "头痛",
+    "disease_id": 10001146
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肩周炎",
+    "disease_id": 10001147
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "疼痛",
+    "disease_id": 10001148
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "颈椎病",
+    "disease_id": 10001149
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰椎间盘突出",
+    "disease_id": 10001150
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰痛",
+    "disease_id": 10001151
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肩周炎",
+    "disease_id": 10001152
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰肌劳损",
+    "disease_id": 10001153
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "胆结石",
+    "disease_id": 10001154
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "乳腺炎",
+    "disease_id": 10001155
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "乳腺增生",
+    "disease_id": 10001156
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "阑尾炎",
+    "disease_id": 10001157
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "甲状腺瘤",
+    "disease_id": 10001158
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "甲状腺炎",
+    "disease_id": 10001159
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "乳腺癌",
+    "disease_id": 10001160
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "静脉曲张",
+    "disease_id": 10001161
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "甲沟炎",
+    "disease_id": 10001162
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "乳腺炎",
+    "disease_id": 10001163
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "乳腺癌",
+    "disease_id": 10001164
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "乳腺增生",
+    "disease_id": 10001165
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "乳腺纤维瘤",
+    "disease_id": 10001166
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "痔疮",
+    "disease_id": 10001167
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肛瘘",
+    "disease_id": 10001168
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肛周脓肿",
+    "disease_id": 10001169
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肛裂",
+    "disease_id": 10001170
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "便秘",
+    "disease_id": 10001171
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "结肠炎",
+    "disease_id": 10001172
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "溃疡性结肠炎",
+    "disease_id": 10001173
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肠炎",
+    "disease_id": 10001174
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "高血压",
+    "disease_id": 10001175
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "失眠",
+    "disease_id": 10001176
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "糖尿病",
+    "disease_id": 10001177
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "胃病",
+    "disease_id": 10001178
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "冠心病",
+    "disease_id": 10001179
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "头痛",
+    "disease_id": 10001180
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脑梗塞",
+    "disease_id": 10001181
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "抑郁症",
+    "disease_id": 10001182
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "痴呆",
+    "disease_id": 10001183
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "高脂血症",
+    "disease_id": 10001184
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "胃炎",
+    "disease_id": 10001185
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "月经失调",
+    "disease_id": 10001186
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "咳嗽",
+    "disease_id": 10001187
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "不孕不育",
+    "disease_id": 10001188
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "失眠",
+    "disease_id": 10001189
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "糖尿病",
+    "disease_id": 10001190
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "高血压",
+    "disease_id": 10001191
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "冠心病",
+    "disease_id": 10001192
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脑血栓",
+    "disease_id": 10001193
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "头痛",
+    "disease_id": 10001194
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "多囊卵巢综合征",
+    "disease_id": 10001195
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "颈椎病",
+    "disease_id": 10001196
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脑梗塞",
+    "disease_id": 10001197
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "哮喘",
+    "disease_id": 10001198
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "支气管炎",
+    "disease_id": 10001199
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "痤疮",
+    "disease_id": 10001200
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肾病",
+    "disease_id": 10001201
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肾炎",
+    "disease_id": 10001202
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "头晕",
+    "disease_id": 10001203
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "乙肝",
+    "disease_id": 10001204
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰椎间盘突出",
+    "disease_id": 10001205
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "更年期综合症",
+    "disease_id": 10001206
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰痛",
+    "disease_id": 10001207
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝病",
+    "disease_id": 10001208
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "痛经",
+    "disease_id": 10001209
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "前列腺炎",
+    "disease_id": 10001210
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "胃溃疡",
+    "disease_id": 10001211
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "口腔溃疡",
+    "disease_id": 10001212
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "心律失常",
+    "disease_id": 10001213
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "结肠炎",
+    "disease_id": 10001214
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "乙肝",
+    "disease_id": 10001215
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "胃病",
+    "disease_id": 10001216
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "高血压",
+    "disease_id": 10001217
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "胰腺炎",
+    "disease_id": 10001218
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "胃炎",
+    "disease_id": 10001219
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "红斑狼疮",
+    "disease_id": 10001220
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "月经失调",
+    "disease_id": 10001221
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "类风湿性关节炎",
+    "disease_id": 10001222
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脂肪肝",
+    "disease_id": 10001223
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "糖尿病",
+    "disease_id": 10001224
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "多囊卵巢综合征",
+    "disease_id": 10001225
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "痤疮",
+    "disease_id": 10001226
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝硬化",
+    "disease_id": 10001227
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "失眠",
+    "disease_id": 10001228
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝炎",
+    "disease_id": 10001229
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "冠心病",
+    "disease_id": 10001230
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "强直性脊柱炎",
+    "disease_id": 10001231
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "脑梗塞",
+    "disease_id": 10001232
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肾炎",
+    "disease_id": 10001233
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "咳嗽",
+    "disease_id": 10001234
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "支气管炎",
+    "disease_id": 10001235
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "头晕",
+    "disease_id": 10001236
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肾病",
+    "disease_id": 10001237
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "高脂血症",
+    "disease_id": 10001238
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "过敏性紫癜",
+    "disease_id": 10001239
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "抑郁症",
+    "disease_id": 10001240
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "风湿病",
+    "disease_id": 10001241
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "颈椎病",
+    "disease_id": 10001242
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "面瘫",
+    "disease_id": 10001243
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "内分泌失调",
+    "disease_id": 10001244
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肾病综合征",
+    "disease_id": 10001245
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肺气肿",
+    "disease_id": 10001246
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "不孕不育",
+    "disease_id": 10001247
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肺癌",
+    "disease_id": 10001248
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝癌",
+    "disease_id": 10001249
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "男性不育",
+    "disease_id": 10001250
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "乳腺增生",
+    "disease_id": 10001251
+  },
+  {
+    "dept_id": 100034,
+    "source": "",
+    "status": 1,
+    "disease_name": "鼻咽癌",
+    "disease_id": 10001252
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "中耳炎",
+    "disease_id": 10000759
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "鼻窦炎",
+    "disease_id": 10000760
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "鼻炎",
+    "disease_id": 10000761
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿腺样体肥大",
+    "disease_id": 10000762
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "耳聋",
+    "disease_id": 10000763
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "鼻中隔偏曲",
+    "disease_id": 10000764
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "内耳眩晕",
+    "disease_id": 10000765
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "鼻息肉",
+    "disease_id": 10000766
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胆脂瘤型中耳炎",
+    "disease_id": 10000767
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "过敏性鼻炎",
+    "disease_id": 10000768
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "喉癌",
+    "disease_id": 10000769
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "咽炎",
+    "disease_id": 10000770
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "声带息肉",
+    "disease_id": 10000771
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "耳鸣",
+    "disease_id": 10000772
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "扁桃体炎",
+    "disease_id": 10000773
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "鼓膜穿孔",
+    "disease_id": 10000774
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "睡眠呼吸暂停综合征",
+    "disease_id": 10000775
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "鼻咽癌",
+    "disease_id": 10000776
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "慢性咽炎",
+    "disease_id": 10000777
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "急性咽炎",
+    "disease_id": 10000778
+  },
+  {
+    "dept_id": 100035,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "老年性聋",
+    "disease_id": 10000779
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "葡萄膜炎",
+    "disease_id": 10000638
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "结膜炎",
+    "disease_id": 10000639
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "黄斑变性",
+    "disease_id": 10000640
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "屈光不正",
+    "disease_id": 10000641
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "糖尿病视网膜病变",
+    "disease_id": 10000642
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "泪道阻塞",
+    "disease_id": 10000643
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "干眼症",
+    "disease_id": 10000644
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "上睑下垂",
+    "disease_id": 10000645
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "角膜病",
+    "disease_id": 10000646
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "霰粒肿",
+    "disease_id": 10000647
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "麦粒肿",
+    "disease_id": 10000648
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "眼睑异常",
+    "disease_id": 10000649
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿斜视",
+    "disease_id": 10000650
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿弱视",
+    "disease_id": 10000651
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿斜视",
+    "disease_id": 10000652
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "近视",
+    "disease_id": 10000653
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "泪道阻塞",
+    "disease_id": 10000654
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "屈光不正",
+    "disease_id": 10000655
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "结膜炎",
+    "disease_id": 10000656
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "霰粒肿",
+    "disease_id": 10000657
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "上睑下垂",
+    "disease_id": 10000658
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "泪囊炎",
+    "disease_id": 10000659
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿弱视",
+    "disease_id": 10000660
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "早产儿视网膜病变",
+    "disease_id": 10000661
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "视网膜脱落",
+    "disease_id": 10000662
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "眼底病",
+    "disease_id": 10000663
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "糖尿病视网膜病变",
+    "disease_id": 10000664
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "视网膜病",
+    "disease_id": 10000665
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "黄斑变性",
+    "disease_id": 10000666
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "黄斑裂孔",
+    "disease_id": 10000667
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "黄斑前膜",
+    "disease_id": 10000668
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "中浆",
+    "disease_id": 10000669
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "中渗",
+    "disease_id": 10000670
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "角膜炎",
+    "disease_id": 10000671
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "圆锥角膜",
+    "disease_id": 10000672
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "青光眼",
+    "disease_id": 10000673
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "白内障",
+    "disease_id": 10000674
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "眼外伤",
+    "disease_id": 10000675
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "视网膜脱落",
+    "disease_id": 10000676
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "眼眶肿瘤",
+    "disease_id": 10000677
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "眼肿瘤",
+    "disease_id": 10000678
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "视网膜母细胞瘤",
+    "disease_id": 10000679
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "葡萄膜肿瘤",
+    "disease_id": 10000680
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "近视",
+    "disease_id": 10000681
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "远视",
+    "disease_id": 10000682
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "老花眼",
+    "disease_id": 10000683
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "散光",
+    "disease_id": 10000684
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "上睑下垂",
+    "disease_id": 10000685
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "眼部整形",
+    "disease_id": 10000686
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "倒睫",
+    "disease_id": 10000687
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "内眦赘皮",
+    "disease_id": 10000688
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "眼睑闭合不全",
+    "disease_id": 10000689
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "睑外翻",
+    "disease_id": 10000690
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小睑裂",
+    "disease_id": 10000691
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "白内障",
+    "disease_id": 10000692
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "干眼症",
+    "disease_id": 10000693
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "青光眼",
+    "disease_id": 10000694
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "近视",
+    "disease_id": 10000695
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "葡萄膜炎",
+    "disease_id": 10000696
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "眼底病",
+    "disease_id": 10000697
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "角膜炎",
+    "disease_id": 10000698
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "结膜炎",
+    "disease_id": 10000699
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "斜视",
+    "disease_id": 10000700
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "视网膜病",
+    "disease_id": 10000701
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿弱视",
+    "disease_id": 10000702
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "黄斑变性",
+    "disease_id": 10000703
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "糖尿病视网膜病变",
+    "disease_id": 10000704
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "弱视",
+    "disease_id": 10000705
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "白内障",
+    "disease_id": 10000628
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "视网膜脱落",
+    "disease_id": 10000629
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "青光眼",
+    "disease_id": 10000630
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "斜视",
+    "disease_id": 10000631
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "近视",
+    "disease_id": 10000632
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "眼外伤",
+    "disease_id": 10000633
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "眼底病",
+    "disease_id": 10000634
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "弱视",
+    "disease_id": 10000635
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "角膜炎",
+    "disease_id": 10000636
+  },
+  {
+    "dept_id": 100036,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "视网膜病",
+    "disease_id": 10000637
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙颌畸形",
+    "disease_id": 10000706
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙痛",
+    "disease_id": 10000707
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "龋齿",
+    "disease_id": 10000708
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙周炎",
+    "disease_id": 10000709
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙髓炎",
+    "disease_id": 10000710
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "口腔颌面部肿瘤",
+    "disease_id": 10000711
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙周病",
+    "disease_id": 10000712
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "口腔溃疡",
+    "disease_id": 10000713
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙体病",
+    "disease_id": 10000714
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "阻生齿",
+    "disease_id": 10000715
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "拔牙",
+    "disease_id": 10000716
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "唇腭裂",
+    "disease_id": 10000717
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "口腔颌面部肿瘤",
+    "disease_id": 10000718
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "口腔颌面部囊肿",
+    "disease_id": 10000719
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙颌畸形",
+    "disease_id": 10000720
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "口腔颌面部损伤",
+    "disease_id": 10000721
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "颞下颌关节病",
+    "disease_id": 10000722
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "舌癌",
+    "disease_id": 10000723
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "口腔颌面部血管瘤",
+    "disease_id": 10000724
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "阻生齿",
+    "disease_id": 10000725
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙颌畸形",
+    "disease_id": 10000726
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "龋齿",
+    "disease_id": 10000727
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙髓炎",
+    "disease_id": 10000728
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙痛",
+    "disease_id": 10000729
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "根尖周炎",
+    "disease_id": 10000730
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙体病",
+    "disease_id": 10000731
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙周炎",
+    "disease_id": 10000732
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙周炎",
+    "disease_id": 10000733
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙周病",
+    "disease_id": 10000734
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙龈炎",
+    "disease_id": 10000735
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙龈萎缩",
+    "disease_id": 10000736
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "口腔扁平苔藓",
+    "disease_id": 10000737
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "口腔粘膜病",
+    "disease_id": 10000738
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "口腔溃疡",
+    "disease_id": 10000739
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "口腔白斑病",
+    "disease_id": 10000740
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "口腔单纯性疱疹",
+    "disease_id": 10000741
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "鹅口疮",
+    "disease_id": 10000742
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "儿童牙病",
+    "disease_id": 10000743
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "唇腭裂",
+    "disease_id": 10000744
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙颌畸形",
+    "disease_id": 10000745
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "龋齿",
+    "disease_id": 10000746
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "舌系带过短",
+    "disease_id": 10000747
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙痛",
+    "disease_id": 10000748
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "口腔修复",
+    "disease_id": 10000749
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "根管治疗",
+    "disease_id": 10000750
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙齿美白",
+    "disease_id": 10000751
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "烤瓷牙",
+    "disease_id": 10000752
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙齿种植",
+    "disease_id": 10000753
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "龋齿",
+    "disease_id": 10000754
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙痛",
+    "disease_id": 10000755
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙周病",
+    "disease_id": 10000756
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙髓炎",
+    "disease_id": 10000757
+  },
+  {
+    "dept_id": 100037,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "牙体病",
+    "disease_id": 10000758
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肺癌",
+    "disease_id": 10000790
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺癌",
+    "disease_id": 10000791
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "淋巴瘤",
+    "disease_id": 10000792
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胃癌",
+    "disease_id": 10000793
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "结肠癌",
+    "disease_id": 10000794
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "直肠癌",
+    "disease_id": 10000795
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "食道癌",
+    "disease_id": 10000796
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝癌",
+    "disease_id": 10000797
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "鼻咽癌",
+    "disease_id": 10000798
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "癌痛",
+    "disease_id": 10000799
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胃癌",
+    "disease_id": 10000800
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺癌",
+    "disease_id": 10000801
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肺癌",
+    "disease_id": 10000802
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "直肠癌",
+    "disease_id": 10000803
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "结肠癌",
+    "disease_id": 10000804
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝癌",
+    "disease_id": 10000805
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "甲状腺瘤",
+    "disease_id": 10000806
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺纤维瘤",
+    "disease_id": 10000807
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "食道癌",
+    "disease_id": 10000808
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺肿瘤",
+    "disease_id": 10000809
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫颈癌",
+    "disease_id": 10000810
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "子宫肌瘤",
+    "disease_id": 10000811
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "卵巢肿瘤",
+    "disease_id": 10000812
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫颈癌前病变",
+    "disease_id": 10000813
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "子宫内膜癌",
+    "disease_id": 10000814
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "卵巢囊肿",
+    "disease_id": 10000815
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "绒毛膜癌",
+    "disease_id": 10000816
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "葡萄胎",
+    "disease_id": 10000817
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "畸胎瘤",
+    "disease_id": 10000818
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "卵巢癌",
+    "disease_id": 10000819
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "鼻咽癌",
+    "disease_id": 10000820
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肺癌",
+    "disease_id": 10000821
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "食道癌",
+    "disease_id": 10000822
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "宫颈癌",
+    "disease_id": 10000823
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺癌",
+    "disease_id": 10000824
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "淋巴瘤",
+    "disease_id": 10000825
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "直肠癌",
+    "disease_id": 10000826
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胃癌",
+    "disease_id": 10000827
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝癌",
+    "disease_id": 10000828
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脑肿瘤",
+    "disease_id": 10000829
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨肉瘤",
+    "disease_id": 10000830
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨癌",
+    "disease_id": 10000831
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨巨细胞瘤",
+    "disease_id": 10000832
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "软骨瘤",
+    "disease_id": 10000833
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨转移癌",
+    "disease_id": 10000834
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "骨瘤",
+    "disease_id": 10000835
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肺癌",
+    "disease_id": 10000836
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "乳腺癌",
+    "disease_id": 10000837
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "鼻咽癌",
+    "disease_id": 10000838
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胃癌",
+    "disease_id": 10000839
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "淋巴瘤",
+    "disease_id": 10000840
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "肝癌",
+    "disease_id": 10000841
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "胰腺癌",
+    "disease_id": 10000842
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "食道癌",
+    "disease_id": 10000843
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "结肠癌",
+    "disease_id": 10000844
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "直肠癌",
+    "disease_id": 10000845
+  },
+  {
+    "dept_id": 100038,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "癌痛",
+    "disease_id": 10000846
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "血管瘤",
+    "disease_id": 10001291
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "房间隔缺损",
+    "disease_id": 10001292
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "输卵管堵塞",
+    "disease_id": 10001293
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "肺癌",
+    "disease_id": 10001294
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "脑动脉瘤",
+    "disease_id": 10001295
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "布卡综合症",
+    "disease_id": 10001296
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "动脉导管未闭",
+    "disease_id": 10001297
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "子宫肌瘤",
+    "disease_id": 10001300
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝癌",
+    "disease_id": 10001290
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "胆管癌",
+    "disease_id": 10001301
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "冠心病",
+    "disease_id": 10001302
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "先天性心脏病",
+    "disease_id": 10001303
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "脑血管畸形",
+    "disease_id": 10001304
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "动静脉瘘",
+    "disease_id": 10001305
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝母细胞瘤",
+    "disease_id": 10001306
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "周围动脉瘤",
+    "disease_id": 10001307
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝血管瘤",
+    "disease_id": 10001299
+  },
+  {
+    "dept_id": 100038,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰椎间盘突出",
+    "disease_id": 10001298
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "肠结核",
+    "disease_id": 10001281
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝腹水",
+    "disease_id": 10001275
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "肺结核",
+    "disease_id": 10001276
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "胸膜炎",
+    "disease_id": 10001277
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "结核性脑膜炎",
+    "disease_id": 10001278
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "结核性腹膜炎",
+    "disease_id": 10001279
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "骨结核病",
+    "disease_id": 10001280
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "脊柱结核",
+    "disease_id": 10001282
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "胸壁结核",
+    "disease_id": 10001283
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "皮肤结核病",
+    "disease_id": 10001284
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "妊娠合并肺结核",
+    "disease_id": 10001289
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "髋关节结核",
+    "disease_id": 10001288
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "结核性胸膜炎",
+    "disease_id": 10001287
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "膝关节结核",
+    "disease_id": 10001286
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "生殖器结核",
+    "disease_id": 10001285
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "乙肝",
+    "disease_id": 10001253
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝硬化",
+    "disease_id": 10001254
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝炎",
+    "disease_id": 10001255
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "丙肝",
+    "disease_id": 10001256
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝癌",
+    "disease_id": 10001257
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "脂肪肝",
+    "disease_id": 10001258
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "自身免疫性肝病",
+    "disease_id": 10001259
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "酒精肝",
+    "disease_id": 10001260
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "黄疸",
+    "disease_id": 10001261
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "病毒性肝炎",
+    "disease_id": 10001262
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "小三阳",
+    "disease_id": 10001263
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "大三阳",
+    "disease_id": 10001264
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "乙肝",
+    "disease_id": 10001265
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝硬化",
+    "disease_id": 10001266
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝炎",
+    "disease_id": 10001267
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "艾滋病",
+    "disease_id": 10001268
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "黄疸",
+    "disease_id": 10001269
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "病毒性肝炎",
+    "disease_id": 10001270
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "乙肝",
+    "disease_id": 10001271
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝炎",
+    "disease_id": 10001272
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝硬化",
+    "disease_id": 10001273
+  },
+  {
+    "dept_id": 100039,
+    "source": "",
+    "status": 1,
+    "disease_name": "肝癌",
+    "disease_id": 10001274
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "抑郁症",
+    "disease_id": 10000912
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "精神分裂症",
+    "disease_id": 10000913
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "焦虑症",
+    "disease_id": 10000914
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "情感障碍",
+    "disease_id": 10000915
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "强迫症",
+    "disease_id": 10000916
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "失眠",
+    "disease_id": 10000917
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "躁郁症",
+    "disease_id": 10000918
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "躁狂症",
+    "disease_id": 10000919
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心理咨询",
+    "disease_id": 10000920
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "神经官能症",
+    "disease_id": 10000921
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "恐惧症",
+    "disease_id": 10000922
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心理障碍",
+    "disease_id": 10000923
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "进食障碍",
+    "disease_id": 10000924
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "网瘾",
+    "disease_id": 10000925
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "发作性睡病",
+    "disease_id": 10000926
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "烟草依赖",
+    "disease_id": 10000927
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "抑郁症",
+    "disease_id": 10000928
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "焦虑症",
+    "disease_id": 10000929
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "精神分裂症",
+    "disease_id": 10000930
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "强迫症",
+    "disease_id": 10000931
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "失眠",
+    "disease_id": 10000932
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心理咨询",
+    "disease_id": 10000933
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "情感障碍",
+    "disease_id": 10000934
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "心理障碍",
+    "disease_id": 10000935
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "家庭心理问题",
+    "disease_id": 10000936
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "婚恋心理问题",
+    "disease_id": 10000937
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "网瘾",
+    "disease_id": 10000938
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "职场心理问题",
+    "disease_id": 10000939
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "精神分裂症",
+    "disease_id": 10000940
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "抑郁症",
+    "disease_id": 10000941
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "焦虑症",
+    "disease_id": 10000942
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "精神分裂症",
+    "disease_id": 10000943
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "睡眠障碍",
+    "disease_id": 10000944
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "网瘾",
+    "disease_id": 10000945
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "产后抑郁",
+    "disease_id": 10000946
+  },
+  {
+    "dept_id": 100040,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "儿童焦虑症",
+    "disease_id": 10000947
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "脑血栓",
+    "disease_id": 10001324
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "肩周炎",
+    "disease_id": 10001325
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "面瘫",
+    "disease_id": 10001326
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "偏瘫",
+    "disease_id": 10001327
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "脊髓损伤",
+    "disease_id": 10001328
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "小儿脑瘫",
+    "disease_id": 10001329
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "截瘫",
+    "disease_id": 10001330
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "抽动症",
+    "disease_id": 10001331
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "骨折",
+    "disease_id": 10001323
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰痛",
+    "disease_id": 10001322
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "带状疱疹",
+    "disease_id": 10001313
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "头痛",
+    "disease_id": 10001312
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "肩周炎",
+    "disease_id": 10001310
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰椎间盘突出",
+    "disease_id": 10001309
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "颈椎病",
+    "disease_id": 10001308
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "失眠",
+    "disease_id": 10001314
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "头晕",
+    "disease_id": 10001315
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "三叉神经痛",
+    "disease_id": 10001316
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "脑梗塞",
+    "disease_id": 10001321
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰椎间盘突出",
+    "disease_id": 10001320
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "颈椎病",
+    "disease_id": 10001319
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "面肌痉挛",
+    "disease_id": 10001318
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰肌劳损",
+    "disease_id": 10001317
+  },
+  {
+    "dept_id": 100041,
+    "source": "",
+    "status": 1,
+    "disease_name": "面瘫",
+    "disease_id": 10001311
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "疤痕",
+    "disease_id": 10000433
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "痣",
+    "disease_id": 10000434
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "烧伤",
+    "disease_id": 10000435
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "男性乳房肥大",
+    "disease_id": 10000436
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "唇腭裂",
+    "disease_id": 10000437
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "血管瘤",
+    "disease_id": 10000438
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "瘢痕疙瘩",
+    "disease_id": 10000439
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "上睑下垂",
+    "disease_id": 10000440
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腋臭",
+    "disease_id": 10000441
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "雀斑",
+    "disease_id": 10000442
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "倒睫",
+    "disease_id": 10000443
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "眼睑异常",
+    "disease_id": 10000444
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "两性畸形",
+    "disease_id": 10000445
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "多乳头多乳房畸形",
+    "disease_id": 10000446
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "男性生殖器畸形",
+    "disease_id": 10000447
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "先天性无阴道",
+    "disease_id": 10000448
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "KT综合征",
+    "disease_id": 10000449
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "烫伤",
+    "disease_id": 10000450
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "难治性伤口",
+    "disease_id": 10000451
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "太田痣",
+    "disease_id": 10000452
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "面部轮廓整形",
+    "disease_id": 10000453
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "副乳",
+    "disease_id": 10000454
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "痤疮",
+    "disease_id": 10000847
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "湿疹",
+    "disease_id": 10000848
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "银屑病",
+    "disease_id": 10000849
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "白癜风",
+    "disease_id": 10000850
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "尖锐湿疣",
+    "disease_id": 10000851
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "荨麻疹",
+    "disease_id": 10000852
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "皮肤过敏",
+    "disease_id": 10000853
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "皮炎",
+    "disease_id": 10000854
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "痣",
+    "disease_id": 10000855
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脱发",
+    "disease_id": 10000856
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "带状疱疹",
+    "disease_id": 10000857
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "扁平疣",
+    "disease_id": 10000858
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "红斑狼疮",
+    "disease_id": 10000859
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "疣",
+    "disease_id": 10000860
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "神经性皮炎",
+    "disease_id": 10000861
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "梅毒",
+    "disease_id": 10000862
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "硬皮病",
+    "disease_id": 10000863
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "癣",
+    "disease_id": 10000864
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "皮肤瘙痒",
+    "disease_id": 10000865
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "小儿湿疹",
+    "disease_id": 10000866
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "毛囊炎",
+    "disease_id": 10000867
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "性病",
+    "disease_id": 10000868
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "脚气",
+    "disease_id": 10000869
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "腋臭",
+    "disease_id": 10000870
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "鸡眼",
+    "disease_id": 10000871
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "冻伤",
+    "disease_id": 10000872
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "男性型秃发",
+    "disease_id": 10000873
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "瘙痒症",
+    "disease_id": 10000874
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "手癣",
+    "disease_id": 10000875
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "头癣",
+    "disease_id": 10000876
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "夏季皮炎",
+    "disease_id": 10000877
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "鲜红斑痣",
+    "disease_id": 10000878
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "痒疹",
+    "disease_id": 10000879
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "体癣",
+    "disease_id": 10000880
+  },
+  {
+    "dept_id": 100043,
+    "source": "系统生成",
+    "status": 1,
+    "disease_name": "激素依赖性皮炎",
+    "disease_id": 10000881
+  },
+  {
+    "dept_id": 100046,
+    "source": "",
+    "status": 1,
+    "disease_name": "坐骨神经痛",
+    "disease_id": 10001340
+  },
+  {
+    "dept_id": 100046,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰腿痛",
+    "disease_id": 10001342
+  },
+  {
+    "dept_id": 100046,
+    "source": "",
+    "status": 1,
+    "disease_name": "癌痛",
+    "disease_id": 10001341
+  },
+  {
+    "dept_id": 100046,
+    "source": "",
+    "status": 1,
+    "disease_name": "肩周炎",
+    "disease_id": 10001339
+  },
+  {
+    "dept_id": 100046,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰椎间盘突出",
+    "disease_id": 10001332
+  },
+  {
+    "dept_id": 100046,
+    "source": "",
+    "status": 1,
+    "disease_name": "疼痛",
+    "disease_id": 10001333
+  },
+  {
+    "dept_id": 100046,
+    "source": "",
+    "status": 1,
+    "disease_name": "颈椎病",
+    "disease_id": 10001334
+  },
+  {
+    "dept_id": 100046,
+    "source": "",
+    "status": 1,
+    "disease_name": "带状疱疹",
+    "disease_id": 10001335
+  },
+  {
+    "dept_id": 100046,
+    "source": "",
+    "status": 1,
+    "disease_name": "三叉神经痛",
+    "disease_id": 10001336
+  },
+  {
+    "dept_id": 100046,
+    "source": "",
+    "status": 1,
+    "disease_name": "腰痛",
+    "disease_id": 10001337
+  },
+  {
+    "dept_id": 100046,
+    "source": "",
+    "status": 1,
+    "disease_name": "头痛",
+    "disease_id": 10001338
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "维生素D缺乏病",
+    "disease_id": 20000014
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "维生素A过多",
+    "disease_id": 20000015
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "维生素A缺乏",
+    "disease_id": 20000016
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "进行性脂肪营养不良",
+    "disease_id": 20000017
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "烟酸缺乏",
+    "disease_id": 20000018
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "氨基酸代谢病",
+    "disease_id": 20000019
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "营养代谢障碍",
+    "disease_id": 20000020
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "锌缺乏",
+    "disease_id": 20000021
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "叶酸缺乏症",
+    "disease_id": 20000013
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "营养不良",
+    "disease_id": 20000012
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "儿童营养",
+    "disease_id": 20000004
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "内分泌营养",
+    "disease_id": 20000005
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "婴幼营养",
+    "disease_id": 20000006
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "亚健康营养",
+    "disease_id": 20000007
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "疾病营养",
+    "disease_id": 20000008
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "孕妇营养",
+    "disease_id": 20000009
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "中医养生",
+    "disease_id": 20000010
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "恶性营养不良",
+    "disease_id": 20000011
+  },
+  {
+    "dept_id": 300001,
+    "source": "用户添加",
+    "status": 1,
+    "disease_name": "碘缺乏症",
+    "disease_id": 20000022
+  }
+]

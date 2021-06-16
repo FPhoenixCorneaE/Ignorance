@@ -1,7 +1,8 @@
 package com.livelearn.ignorance.presenter;
 
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
 
 import com.livelearn.ignorance.base.RxPresenter;
 import com.livelearn.ignorance.common.Constant;

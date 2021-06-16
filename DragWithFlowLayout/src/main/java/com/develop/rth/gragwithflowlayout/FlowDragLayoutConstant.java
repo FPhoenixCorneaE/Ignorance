@@ -1,6 +1,6 @@
 package com.develop.rth.gragwithflowlayout;
 
-import android.support.annotation.IntDef;
+import androidx.annotation.IntDef;
 
 /**
  * Created by rth on 16/11/26.

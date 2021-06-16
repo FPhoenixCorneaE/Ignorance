@@ -10,8 +10,8 @@ import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
-import android.support.annotation.ColorRes;
-import android.support.annotation.NonNull;
+import androidx.annotation.ColorRes;
+import androidx.annotation.NonNull;
 import android.widget.ImageView;
 
 import com.facebook.drawee.generic.GenericDraweeHierarchy;
@@ -120,8 +120,9 @@ public abstract class BaseProgress extends Drawable {
             if (mTarget.getDrawable() == null) {
                 addToImageView(false);
             } else if (mProgress < mMaxValue) {
-                if (!mTarget.getDrawable().getClass().equals(LayerDrawable.class))
+                if (!mTarget.getDrawable().getClass().equals(LayerDrawable.class)) {
                     addToImageView(true);
+                }
             }
         }
         long origin = mProgress;
@@ -140,8 +141,9 @@ public abstract class BaseProgress extends Drawable {
      * bacause listview cache
     */
     private void clearProgress() {
-        if (mTarget == null || mTarget.getDrawable() == null || !mTarget.getDrawable().getClass().equals(LayerDrawable.class))
+        if (mTarget == null || mTarget.getDrawable() == null || !mTarget.getDrawable().getClass().equals(LayerDrawable.class)) {
             return;
+        }
         LayerDrawable levelDrawable = (LayerDrawable) mTarget.getDrawable();
         if (levelDrawable.getNumberOfLayers() == 2) {
             if (levelDrawable.getDrawable(1).getClass().isAssignableFrom(BaseProgress.class) && !levelDrawable.getDrawable(1).equals(this)) {
